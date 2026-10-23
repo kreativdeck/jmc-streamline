@@ -1,0 +1,189 @@
+---
+/**
+ * Kontaktformular (Seite „Kontakt“ und Kontakt-Modal).
+ *
+ * Lokalisierter Versand über den serverseitigen SMTP-Endpunkt.
+ * SMTP-Zugangsdaten bleiben ausschließlich im separaten Serverprozess.
+ */
+import type { Lang } from '../data/site';
+import { site } from '../data/site';
+
+interface Props {
+  lang: Lang;
+  id?: string;
+}
+
+const { lang, id = 'contact-form' } = Astro.props;
+const f = site[lang].form;
+const notices = lang === 'de' ? {
+  sent: 'Vielen Dank! Ihre Nachricht wurde gesendet. Sie erhalten eine Bestätigung per E-Mail.',
+  not_configured: 'Der Formularversand ist noch nicht eingerichtet. Es wurde keine Nachricht gesendet. Bitte kontaktieren Sie uns direkt per E-Mail.',
+  send_failed: 'Ihre Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es erneut oder kontaktieren Sie uns direkt per E-Mail.',
+  confirmation_failed: 'Ihre Anfrage ist angekommen, die Bestätigungs-E-Mail konnte jedoch nicht gesendet werden. Sie können die Bestätigung erneut anfordern, indem Sie nochmals auf Absenden klicken.',
+  rate_limited: 'Zu viele Versuche. Bitte versuchen Sie es in zehn Minuten erneut oder kontaktieren Sie uns direkt per E-Mail.',
+} : {
+  sent: 'Thank you! Your message has been sent. You will receive an email confirmation.',
+  not_configured: 'The contact form is not configured yet. No message has been sent. Please contact us directly by email.',
+  send_failed: 'Your message could not be sent. Please try again or contact us directly by email.',
+  confirmation_failed: 'Your enquiry has been received, but the confirmation email could not be sent. You can request it again by clicking Send once more.',
+  rate_limited: 'Too many attempts. Please try again in ten minutes or contact us directly by email.',
+};
+
+const field =
+  'peer/field w-full rounded-none border-0 border-b border-solid border-primary bg-transparent px-[16px] py-[8px] text-[1.6rem] font-normal text-primary-dark transition-colors placeholder:text-primary-dark placeholder:opacity-50 focus:outline-0';
+const feedback =
+  'hidden group-data-[validated=true]/form:peer-invalid/field:mt-[0.5em] group-data-[validated=true]/form:peer-invalid/field:block group-data-[validated=true]/form:peer-invalid/field:text-xs group-data-[validated=true]/form:peer-invalid/field:text-error';
+const cell = 'relative mb-[1.5em] w-full max-w-full flex-[0_0_100%] px-[10px]';
+---
+
+<div class="text-primary-dark">
+  <form
+    id={id}
+    data-contact-form
+    data-notices={JSON.stringify(notices)}
+    data-validated="false"
+    class="group/form w-full text-s leading-[1.4] max-narrow:text-xs"
+    method="post"
+    action="/api/contact"
+    novalidate
+  >
+    <input type="hidden" name="lang" value={lang} />
+    <div class="hidden" aria-hidden="true">
+      <label for={`${id}-website`}>Website</label>
+      <input id={`${id}-website`} type="text" name="website" tabindex="-1" autocomplete="off" />
+    </div>
+    <div class="-mx-[10px] flex flex-wrap">
+      <fieldset class="relative m-0 w-full max-w-full min-w-0 flex-[0_0_100%] border-0 px-[10px]" aria-label={f.sectionLabel}>
+        <legend class="sr-only">{f.sectionLabel}</legend>
+        <div class="-mx-[10px] flex flex-wrap">
+          <div class={cell}>
+            <input
+              type="text"
+              id={`${id}-name`}
+              name="name"
+              placeholder={f.namePlaceholder}
+              class:list={[field, 'block h-[5rem] leading-none']}
+              aria-label={f.nameLabel}
+              autocomplete="name"
+              maxlength="200"
+            />
+            <div class={feedback} aria-hidden="true">{f.requiredNotice}</div>
+          </div>
+          <div class:list={[cell, 'wide:max-w-[50%] wide:flex-[0_0_50%]']}>
+            <input
+              type="email"
+              id={`${id}-email`}
+              name="email"
+              required
+              aria-required="true"
+              placeholder={f.emailPlaceholder}
+              class:list={[field, 'block h-[5rem] leading-none']}
+              aria-label={f.emailLabel}
+              autocomplete="email"
+              maxlength="254"
+            />
+            <div class={feedback} aria-hidden="true">{f.requiredNotice}</div>
+          </div>
+          <div class:list={[cell, 'wide:max-w-[50%] wide:flex-[0_0_50%]']}>
+            <input
+              type="tel"
+              id={`${id}-phone`}
+              name="phone"
+              inputmode="tel"
+              placeholder={f.phonePlaceholder}
+              class:list={[field, 'block h-[5rem] leading-none']}
+              aria-label={f.phoneLabel}
+              autocomplete="tel"
+              maxlength="80"
+            />
+            <div class={feedback} aria-hidden="true">{f.requiredNotice}</div>
+          </div>
+          <div class={cell}>
+            <textarea
+              id={`${id}-message`}
+              name="message"
+              rows="2"
+              maxlength="10000"
+              required
+              aria-required="true"
+              placeholder={f.messagePlaceholder}
+              class:list={[field, 'inline-block min-h-[5rem] resize-y leading-[1.4]']}
+              aria-label={f.messageLabel}></textarea>
+            <div class={feedback} aria-hidden="true">{f.requiredNotice}</div>
+          </div>
+          <div class={cell}>
+            <div>
+              {f.dsgvoText}{' '}<a class="text-link no-underline" title="jmc. | Streamline Processes S.L. Datenschutz" href={f.dsgvoHref}
+                ><u>{f.dsgvoLinkLabel}</u></a
+              >
+            </div>
+          </div>
+          <div class:list={[cell, 'self-end wide:max-w-[25%] wide:flex-[0_0_25%]']}>
+            <button
+              type="submit"
+              class="box-border inline-block min-h-[5rem] w-full cursor-pointer rounded-base border-[0.25rem] border-solid border-primary bg-primary px-[1.5em] py-[0.75em] text-center text-[length:clamp(1.4rem,calc(0.3824091778vw+1.2776290631rem),1.8rem)] leading-none font-normal wrap-break-word text-white no-underline transition-all duration-300 ease-[ease] hover:border-primary-hover hover:bg-primary-hover hover:text-white focus-visible:shadow-[0_0_0_4px_hsl(193_59%_48%/0.25)] focus-visible:outline-0"
+              aria-label={f.submitLabel}
+            >
+              {f.submitLabel}
+            </button>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+    <p
+      class="m-0 rounded-base bg-accent-ultra-light px-[1em] py-[0.75em] text-xs text-primary-dark"
+      data-form-notice
+      role="status"
+      hidden
+    ></p>
+  </form>
+</div>
+
+<script>
+  document.querySelectorAll<HTMLFormElement>('form[data-contact-form]').forEach((form) => {
+    let requestId = crypto.randomUUID();
+    let previousPayload = '';
+    let sending = false;
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      if (sending) return;
+      form.dataset.validated = 'true';
+      if (!form.reportValidity()) return;
+      const notice = form.querySelector<HTMLElement>('[data-form-notice]');
+      const button = form.querySelector<HTMLButtonElement>('button[type="submit"]');
+      const notices = JSON.parse(form.dataset.notices || '{}') as Record<string, string>;
+      const payload = JSON.stringify(Object.fromEntries(new FormData(form)));
+      if (previousPayload !== payload) requestId = crypto.randomUUID();
+      previousPayload = payload;
+      sending = true;
+      form.setAttribute('aria-busy', 'true');
+      if (button) button.disabled = true;
+      let code = 'send_failed';
+      try {
+        const response = await fetch(form.action, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Idempotency-Key': requestId },
+          body: payload,
+          signal: AbortSignal.timeout(60000),
+        });
+        const result = await response.json();
+        code = response.ok && result.code === 'sent' ? 'sent' : result.code;
+        if (code === 'sent') {
+          form.reset();
+          form.dataset.validated = 'false';
+          requestId = crypto.randomUUID();
+          previousPayload = '';
+        }
+      } catch { /* Show a localized error and retain the form values. */ }
+      finally {
+        sending = false;
+        form.removeAttribute('aria-busy');
+        if (button) button.disabled = false;
+        if (notice) {
+          notice.textContent = notices[code] || notices.send_failed;
+          notice.hidden = false;
+        }
+      }
+    });
+  });
+</script>

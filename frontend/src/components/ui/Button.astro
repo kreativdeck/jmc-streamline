@@ -1,0 +1,80 @@
+---
+/**
+ * Button / Button-Link. Varianten:
+ *  solid   – dunkel gefüllt
+ *  outline – dunkle Kontur, füllt sich beim Hover
+ *  ghost   – Kontur in Textfarbe des Umfelds (Hero auf Video)
+ * as="span" rendert – wie die Vorlage – eine Box mit Link darin.
+ */
+import { arrowIcon } from '../../data/icons';
+
+interface Props {
+  variant?: 'solid' | 'outline' | 'ghost';
+  as?: 'a' | 'button' | 'span';
+  href?: string;
+  title?: string;
+  arrow?: boolean;
+  type?: 'button' | 'submit';
+  /** Anordnung/Übergang überschreiben (Standard: inline-flex) */
+  layout?: string;
+  /** Klassen für den Link innerhalb von as="span" */
+  linkClass?: string;
+  class?: string;
+  [attr: string]: unknown;
+}
+
+const {
+  variant = 'solid',
+  as: Tag = 'a',
+  href,
+  title,
+  arrow = false,
+  type = 'button',
+  layout = 'inline-flex gap-[10px] transition-colors',
+  linkClass = '',
+  class: className = '',
+  ...attrs
+} = Astro.props;
+
+const variants = {
+  solid:
+    'border-primary bg-primary text-primary-ultra-light hover:border-primary-hover hover:bg-primary-dark hover:text-primary-ultra-light',
+  outline:
+    'border-primary bg-transparent text-primary hover:border-primary-hover hover:bg-primary-hover hover:text-primary-ultra-light',
+  ghost: 'border-current bg-transparent text-inherit',
+};
+const classes = [
+  'group/button w-auto items-center justify-center rounded-base border-2 border-solid px-[1.5em] py-[0.75em] text-center text-m leading-none font-normal',
+  layout,
+  variants[variant],
+  className,
+].join(' ');
+---
+
+{
+  Tag === 'span' ? (
+    <span class={classes}>
+      <a class={linkClass} href={href} title={title} {...attrs}>
+        <slot />
+      </a>
+    </span>
+  ) : Tag === 'button' ? (
+    <button class={classes} type={type} {...attrs}>
+      <slot />
+    </button>
+  ) : (
+    <a class={classes} href={href} title={title} {...attrs}>
+      <slot />
+      {arrow && (
+        <svg
+          class="size-[1.5em] fill-white group-hover/button:animate-nudge"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
+          <path d={arrowIcon} />
+        </svg>
+      )}
+    </a>
+  )
+}

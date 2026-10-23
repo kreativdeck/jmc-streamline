@@ -1,0 +1,124 @@
+---
+/**
+ * Kontakt-Modal der Services-Seite: öffnet über [data-contact-open],
+ * schließt über [data-modal-close] und Escape.
+ */
+import type { Lang } from '../data/site';
+import { site, company, logos } from '../data/site';
+import ContactForm from './ContactForm.astro';
+import type { ImageData } from '../data/pages';
+
+interface Props {
+  lang: Lang;
+  image: ImageData;
+}
+
+const { lang, image } = Astro.props;
+const t = site[lang];
+const m = t.modal;
+---
+
+<div
+  id="contact-modal"
+  data-contact-modal
+  data-state="closed"
+  role="dialog"
+  aria-modal="true"
+  aria-hidden="true"
+  aria-label={m.heading}
+  class="fixed top-header left-0 z-[9999] hidden h-dvh w-full items-center justify-center data-[state=open]:flex"
+>
+  <div data-modal-close class="absolute top-0 left-0 size-full bg-primary/60"></div>
+  <button
+    class="absolute top-3 right-3 z-[1001] grid size-11 cursor-pointer place-items-center rounded-base border-0 bg-transparent p-2 text-white transition-opacity hover:opacity-80 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+    type="button"
+    aria-label={m.closeLabel}
+    data-modal-close
+  >
+    <svg class="size-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" focusable="false">
+      <path d="m6 6 12 12M18 6 6 18" />
+    </svg>
+  </button>
+  <div
+    data-modal-panel
+    class="relative z-[1000] box-border max-h-[min(calc(100%-100px),calc(100dvh-2*var(--spacing-header)))] w-full max-w-[calc(100%-100px)] overflow-y-auto rounded-base bg-white p-m [scrollbar-width:none] max-narrow:max-h-[calc(100dvh-2*var(--spacing-header))] max-narrow:max-w-[calc(100%-50px)] [&::-webkit-scrollbar]:hidden"
+  >
+    <div class="grid grid-cols-[minmax(0,2fr)_minmax(0,3fr)] grid-rows-1 content-stretch gap-m max-phablet:grid-cols-1">
+      <div class="flex flex-col items-center justify-center gap-y-m p-xl text-center max-phablet:items-start max-phablet:px-0 max-phablet:pt-xl max-phablet:pb-xs max-phablet:text-left">
+        <div class="flex w-full flex-col items-center gap-y-s text-center max-phablet:items-start max-phablet:text-left">
+          <p data-modal-heading tabindex="-1" class="m-0 text-h3 leading-[1.2] font-bold text-heading text-pretty focus:outline-none">{m.heading}</p>
+          <p class="m-0 max-w-[60ch] max-narrow:hidden">{m.lede}</p>
+        </div>
+        <div class="w-full">
+          <ContactForm lang={lang} id={`contact-form-modal-${lang}`} />
+        </div>
+      </div>
+
+      <div class="relative order-first flex overflow-hidden rounded-base max-phablet:hidden">
+        <figure class="w-full grow">
+          <img class="size-full object-cover" src={image.src} alt={image.alt} loading="lazy" />
+        </figure>
+        <div
+          class="absolute inset-0 flex flex-col items-center justify-center gap-y-m bg-primary/80 p-l text-center text-neutral-ultra-light"
+        >
+          <a href={t.homeUrl}>
+            <img class="h-auto w-[12em]" src={logos.light} alt="site_title" loading="lazy" />
+          </a>
+          <p class="m-0 text-center">{m.sidebarText}</p>
+          <div
+            class="flex w-auto flex-col items-center gap-y-[0.25em] text-center text-neutral-ultra-light transition-opacity duration-300 hover:opacity-80"
+          >
+            <span>{m.phoneLabel}</span>
+            <p class="m-0 font-semibold underline underline-offset-[0.25em]">
+              <a class="text-neutral-ultra-light" title={company.phoneTitle} href={company.phoneHref}>{company.phone}</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const modal = document.querySelector<HTMLElement>('[data-contact-modal]');
+  const openButtons = document.querySelectorAll<HTMLElement>('[data-contact-open]');
+  const header = document.querySelector<HTMLElement>('[data-site-header]');
+  let returnFocus: HTMLElement | null = null;
+
+  const setOpen = (open: boolean) => {
+    if (!modal) return;
+    modal.dataset.state = open ? 'open' : 'closed';
+    modal.setAttribute('aria-hidden', String(!open));
+    document.body.dataset.scrollLock = String(open);
+    if (header) {
+      header.dataset.modalOpen = String(open);
+      if (open) header.dataset.hidden = 'false';
+    }
+    openButtons.forEach((button) => button.setAttribute('aria-expanded', String(open)));
+    if (open) {
+      returnFocus = document.activeElement instanceof HTMLElement ? document.activeElement : null;
+      modal.querySelector<HTMLElement>('[data-modal-heading]')?.focus({ preventScroll: true });
+    } else {
+      returnFocus?.focus({ preventScroll: true });
+      returnFocus = null;
+    }
+  };
+
+  openButtons.forEach((button) => button.addEventListener('click', () => setOpen(true)));
+  modal?.querySelectorAll('[data-modal-close]').forEach((el) => el.addEventListener('click', () => setOpen(false)));
+  document.addEventListener('keydown', (e) => {
+    if (modal?.dataset.state !== 'open') return;
+    if (e.key === 'Escape') setOpen(false);
+    if (e.key === 'Tab') {
+      const focusable = [...modal.querySelectorAll<HTMLElement>('a[href], button, input:not([type="hidden"]), textarea')]
+        .filter((el) => el.getClientRects().length > 0 && !el.hasAttribute('disabled') && el.tabIndex >= 0);
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+      if (e.shiftKey && (document.activeElement === first || document.activeElement?.hasAttribute('data-modal-heading'))) {
+        e.preventDefault(); last?.focus({ preventScroll: true });
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault(); first?.focus({ preventScroll: true });
+      }
+    }
+  });
+</script>

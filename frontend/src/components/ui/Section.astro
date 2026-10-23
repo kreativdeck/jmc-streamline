@@ -1,0 +1,17 @@
+---
+/** Vollbreiter Seitenabschnitt: zentrierte Spalte mit seitlichem Rand. */
+interface Props {
+  class?: string;
+  /** vertikaler Innenabstand (Standard: mittlerer Sektionsabstand) */
+  pad?: string;
+  /** Abstand zwischen den Kindern (Standard: extra groß) */
+  gap?: string;
+  id?: string;
+}
+
+const { class: className = '', pad = 'py-section-m', gap = 'gap-y-xl', id } = Astro.props;
+---
+
+<section id={id} class:list={['mx-auto flex w-full flex-col items-center px-m', pad, gap, className]}>
+  <slot />
+</section>

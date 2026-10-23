@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://www.jmc-streamline.com/wp-content/plugins/slim-seo/src/Sitemaps/style.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+	<url>
+		<loc>https://www.jmc-streamline.com/de/blog/</loc>
+		<lastmod>2025-03-04T09:53:14+01:00</lastmod>
+		<xhtml:link rel="alternate" hreflang="de-DE" href="https://www.jmc-streamline.com/de/blog/"/>
+		<xhtml:link rel="alternate" hreflang="en-US" href="https://www.jmc-streamline.com/en/blog/"/>
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://www.jmc-streamline.com/de/blog/"/>
+	</url>
+	<url>
+		<loc>https://www.jmc-streamline.com/en/blog/</loc>
+		<lastmod>2025-02-06T09:34:27+00:00</lastmod>
+		<xhtml:link rel="alternate" hreflang="de-DE" href="https://www.jmc-streamline.com/de/blog/"/>
+		<xhtml:link rel="alternate" hreflang="en-US" href="https://www.jmc-streamline.com/en/blog/"/>
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://www.jmc-streamline.com/de/blog/"/>
+	</url>
+	<url>
+		<loc>https://www.jmc-streamline.com/de/newsletter/</loc>
+		<lastmod>2025-03-04T09:55:23+01:00</lastmod>
+		<xhtml:link rel="alternate" hreflang="de-DE" href="https://www.jmc-streamline.com/de/newsletter/"/>
+		<xhtml:link rel="alternate" hreflang="en-US" href="https://www.jmc-streamline.com/en/newsletter/"/>
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://www.jmc-streamline.com/de/newsletter/"/>
+	</url>
+	<url>
+		<loc>https://www.jmc-streamline.com/en/newsletter/</loc>
+		<lastmod>2024-09-01T14:19:08+00:00</lastmod>
+		<xhtml:link rel="alternate" hreflang="de-DE" href="https://www.jmc-streamline.com/de/newsletter/"/>
+		<xhtml:link rel="alternate" hreflang="en-US" href="https://www.jmc-streamline.com/en/newsletter/"/>
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://www.jmc-streamline.com/de/newsletter/"/>
+	</url>
+	<url>
+		<loc>https://www.jmc-streamline.com/de/datenschutzerklaerung/</loc>
+		<lastmod>2025-12-06T10:26:11+01:00</lastmod>
+		<xhtml:link rel="alternate" hreflang="de-DE" href="https://www.jmc-streamline.com/de/datenschutzerklaerung/"/>
+		<xhtml:link rel="alternate" hreflang="en-US" href="https://www.jmc-streamline.com/en/privacy-policy/"/>
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://www.jmc-streamline.com/de/datenschutzerklaerung/"/>
+	</url>
+	<url>
+		<loc>https://www.jmc-streamline.com/en/privacy-policy/</loc>
+		<lastmod>2025-12-06T09:28:49+00:00</lastmod>
+		<xhtml:link rel="alternate" hreflang="de-DE" href="https://www.jmc-streamline.com/de/datenschutzerklaerung/"/>
+		<xhtml:link rel="alternate" hreflang="en-US" href="https://www.jmc-streamline.com/en/privacy-policy/"/>
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://www.jmc-streamline.com/de/datenschutzerklaerung/"/>
+	</url>
+	<url>
+		<loc>https://www.jmc-streamline.com/de/impressum/</loc>
+		<lastmod>2024-09-02T09:44:05+02:00</lastmod>
+		<xhtml:link rel="alternate" hreflang="de-DE" href="https://www.jmc-streamline.com/de/impressum/"/>
+		<xhtml:link rel="alternate" hreflang="en-US" href="https://www.jmc-streamline.com/en/imprint/"/>
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://www.jmc-streamline.com/de/impressum/"/>
+	</url>
+	<url>
+		<loc>https://www.jmc-streamline.com/en/imprint/</loc>
+		<lastmod>2024-09-02T07:45:51+00:00</lastmod>
+		<xhtml:link rel="alternate" hreflang="de-DE" href="https://www.jmc-streamline.com/de/impressum/"/>
+		<xhtml:link rel="alternate" hreflang="en-US" href="https://www.jmc-streamline.com/en/imprint/"/>
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://www.jmc-streamline.com/de/impressum/"/>
+	</url>
+	<url>
+		<loc>https://www.jmc-streamline.com/de/services/</loc>
+		<lastmod>2025-03-04T09:51:46+01:00</lastmod>
+		<xhtml:link rel="alternate" hreflang="de-DE" href="https://www.jmc-streamline.com/de/services/"/>
+		<xhtml:link rel="alternate" hreflang="en-US" href="https://www.jmc-streamline.com/en/services/"/>
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://www.jmc-streamline.com/de/services/"/>
+	</url>
+	<url>
+		<loc>https://www.jmc-streamline.com/en/services/</loc>
+		<lastmod>2024-09-01T14:13:31+00:00</lastmod>
+		<xhtml:link rel="alternate" hreflang="de-DE" href="https://www.jmc-streamline.com/de/services/"/>
+		<xhtml:link rel="alternate" hreflang="en-US" href="https://www.jmc-streamline.com/en/services/"/>
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://www.jmc-streamline.com/de/services/"/>
+	</url>
+	<url>
+		<loc>https://www.jmc-streamline.com/de/kontakt/</loc>
+		<lastmod>2025-03-04T09:56:28+01:00</lastmod>
+		<xhtml:link rel="alternate" hreflang="de-DE" href="https://www.jmc-streamline.com/de/kontakt/"/>
+		<xhtml:link rel="alternate" hreflang="en-US" href="https://www.jmc-streamline.com/en/contact/"/>
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://www.jmc-streamline.com/de/kontakt/"/>
+	</url>
+	<url>
+		<loc>https://www.jmc-streamline.com/en/contact/</loc>
+		<lastmod>2024-09-01T14:21:08+00:00</lastmod>
+		<xhtml:link rel="alternate" hreflang="de-DE" href="https://www.jmc-streamline.com/de/kontakt/"/>
+		<xhtml:link rel="alternate" hreflang="en-US" href="https://www.jmc-streamline.com/en/contact/"/>
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://www.jmc-streamline.com/de/kontakt/"/>
+	</url>
+	<url>
+		<loc>https://www.jmc-streamline.com/de/ueber-mich/</loc>
+		<lastmod>2025-03-04T09:46:43+01:00</lastmod>
+		<xhtml:link rel="alternate" hreflang="de-DE" href="https://www.jmc-streamline.com/de/ueber-mich/"/>
+		<xhtml:link rel="alternate" hreflang="en-US" href="https://www.jmc-streamline.com/en/about-me/"/>
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://www.jmc-streamline.com/de/ueber-mich/"/>
+	</url>
+	<url>
+		<loc>https://www.jmc-streamline.com/en/about-me/</loc>
+		<lastmod>2025-01-12T11:43:44+00:00</lastmod>
+		<xhtml:link rel="alternate" hreflang="de-DE" href="https://www.jmc-streamline.com/de/ueber-mich/"/>
+		<xhtml:link rel="alternate" hreflang="en-US" href="https://www.jmc-streamline.com/en/about-me/"/>
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://www.jmc-streamline.com/de/ueber-mich/"/>
+	</url>
+	<url>
+		<loc>https://www.jmc-streamline.com/de/</loc>
+		<lastmod>2025-03-04T09:44:14+01:00</lastmod>
+		<xhtml:link rel="alternate" hreflang="de-DE" href="https://www.jmc-streamline.com/de/"/>
+		<xhtml:link rel="alternate" hreflang="en-US" href="https://www.jmc-streamline.com/en/"/>
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://www.jmc-streamline.com/de/"/>
+	</url>
+	<url>
+		<loc>https://www.jmc-streamline.com/en/</loc>
+		<lastmod>2025-02-13T14:32:18+00:00</lastmod>
+		<xhtml:link rel="alternate" hreflang="de-DE" href="https://www.jmc-streamline.com/de/"/>
+		<xhtml:link rel="alternate" hreflang="en-US" href="https://www.jmc-streamline.com/en/"/>
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://www.jmc-streamline.com/de/"/>
+	</url>
+</urlset>

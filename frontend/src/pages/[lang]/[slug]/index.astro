@@ -1,0 +1,102 @@
+---
+/**
+ * All inner pages (about, services, contact, blog, category archives,
+ * blog posts and legal pages) are generated from the route inventory.
+ */
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import AboutPage from '../../../components/AboutPage.astro';
+import ServicesPage from '../../../components/ServicesPage.astro';
+import ContactPage from '../../../components/ContactPage.astro';
+import BlogListPage from '../../../components/BlogListPage.astro';
+import PostPage from '../../../components/PostPage.astro';
+import LegalPage from '../../../components/LegalPage.astro';
+import { allRoutes, blogCards } from '../../../data/routes';
+import type { RouteEntry } from '../../../data/routes';
+import { blogIntro } from '../../../data/pages';
+import schema from '../../../data/generated/schema.json';
+
+export function getStaticPaths() {
+  return allRoutes().map((route) => ({
+    params: { lang: route.lang, slug: route.slug },
+    props: { route },
+  }));
+}
+
+const { route } = Astro.props as { route: RouteEntry };
+const path = `/${route.lang}/${route.slug}/`;
+const cards = route.type === 'blog' ? blogCards(route.lang) : route.cards ?? [];
+const ogImage =
+  route.post?.featured?.src?.replace('/media/', '') ??
+  'jmc-streamline-processes-s-l-jasmin-madeleine-a-christensen-matassa.jpg';
+---
+
+<BaseLayout
+  lang={route.lang}
+  title={route.title}
+  description={route.description}
+  ogImage={ogImage}
+  translations={route.translations}
+  currentPath={path}
+  schema={(schema as Record<string, object>)[`${route.lang}:${route.slug}`]}
+>
+  {
+    route.type === 'about' && <AboutPage lang={route.lang} />
+  }
+  {
+    route.type === 'services' && <ServicesPage lang={route.lang} />
+  }
+  {
+    route.type === 'contact' && <ContactPage lang={route.lang} />
+  }
+  {
+    route.type === 'blog' && (
+      <BlogListPage
+        lang={route.lang}
+        variant="blog"
+        heading={blogIntro[route.lang].heading}
+        accent={blogIntro[route.lang].accent}
+        paragraphs={blogIntro[route.lang].paragraphs}
+        cards={cards}
+      />
+    )
+  }
+  {
+    route.type === 'category' && route.categoryIntro && (
+      <BlogListPage
+        lang={route.lang}
+        variant="category"
+        heading={route.categoryIntro.heading}
+        accent={route.categoryIntro.accent}
+        paragraphs={route.categoryIntro.paragraphs}
+        cards={cards}
+      />
+    )
+  }
+  {
+    route.type === 'post' && route.post && (
+      <PostPage
+        post={{
+          lang: route.post.lang,
+          slug: route.post.slug,
+          title: route.post.title,
+          dateDisplay: route.post.dateDisplay,
+          category: route.post.category,
+          categoryHref: route.categoryHref ?? '',
+          featured: route.post.featured,
+          lede: route.post.lede,
+          toc: route.post.toc,
+          body: route.post.body,
+          blogHref: route.blogHref,
+          homeLabel: route.homeLabel,
+          tocHeading: route.post.tocHeading,
+          cta: route.post.cta,
+        }}
+      />
+    )
+  }
+  {
+    route.type === 'legal' && route.legal && (
+      <LegalPage h1={route.legal.h1} columns={route.legal.columns} badge={route.legal.badge} />
+    )
+  }
+</BaseLayout>

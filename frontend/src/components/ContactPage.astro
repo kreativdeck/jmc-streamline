@@ -1,0 +1,117 @@
+---
+/**
+ * Contact page (DE/EN): hero, contact info block and contact form.
+ * Social links share the profile URLs configured for the footer.
+ */
+import type { Lang } from '../data/site';
+import { site, company } from '../data/site';
+import { contact } from '../data/pages';
+import { icons } from '../data/icons';
+import ContactForm from './ContactForm.astro';
+import Section from './ui/Section.astro';
+import Container from './ui/Container.astro';
+import AccentLabel from './ui/AccentLabel.astro';
+
+const infoHeading = 'm-0 text-m font-bold';
+const infoRow = 'flex flex-row items-start justify-start gap-x-s';
+const infoIcon =
+  'order-first flex flex-col items-center justify-center self-center rounded-[50%] p-[0.5em]';
+const socialLink = 'flex no-underline';
+const socialIcon = 'size-[1.5em] fill-primary text-primary';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = site[lang];
+const d = contact[lang];
+---
+
+<Section pad="pt-section-m pb-0">
+  <Container layout="grid" class="grid-cols-2 gap-xl max-tablet:grid-cols-1">
+    <div class="flex w-[50ch] max-w-full flex-col items-start justify-center gap-y-m">
+      <h1>{d.hero.heading}</h1>
+      <AccentLabel as="p">{d.hero.accent}</AccentLabel>
+      <p class="m-0 text-l">{d.hero.lede}</p>
+    </div>
+    <div class="order-first flex w-full flex-col items-start">
+      <figure class="aspect-[5/4] w-full grow overflow-hidden rounded-base">
+        <img class="size-full object-cover" src={d.hero.image.src} alt={d.hero.image.alt} loading="lazy" decoding="async" />
+      </figure>
+    </div>
+  </Container>
+</Section>
+
+<Section class="relative max-narrow:pt-0">
+  <Container layout="grid" class="grid-cols-[repeat(2,1fr)] items-center gap-xl max-tablet:grid-cols-[minmax(0,1fr)]">
+    <address class="flex flex-col justify-center gap-y-m pb-section-m">
+      <h3 class="max-w-[25ch]">{d.info.heading}</h3>
+      <div class="m-0">{d.info.text}</div>
+
+      <div class={infoRow}>
+        <div class="flex flex-col gap-y-xs">
+          <h4 class={infoHeading}>{d.info.phoneLabel}</h4>
+          <p class="m-0 no-underline">
+            <a class="text-primary no-underline" title={company.phoneTitle} href={company.phoneHref}>{company.phone}</a>
+          </p>
+        </div>
+        <div class={infoIcon}>
+          <svg class="size-[1.5em] text-primary-dark" viewBox={icons.phone.viewBox} xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d={icons.phone.d}></path>
+          </svg>
+        </div>
+      </div>
+
+      <div class={infoRow}>
+        <div class="flex flex-col gap-y-xs">
+          <h4 class={infoHeading}>{d.info.emailLabel}</h4>
+          <p class="m-0 no-underline">
+            <a class="text-primary no-underline" title={company.emailTitle} href={company.emailHref}>{company.email}</a>
+          </p>
+        </div>
+        <div class={infoIcon}>
+          <svg class="size-[1.5em] text-primary-dark" viewBox={icons.mail.viewBox} xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d={icons.mail.d}></path>
+          </svg>
+        </div>
+      </div>
+
+      <div class={infoRow}>
+        <div class="flex flex-col gap-y-xs">
+          <h4 class={infoHeading}>{d.info.addressLabel}</h4>
+          <p class="m-0 no-underline">
+            {company.address[0]}<br />
+            {company.address[1]}<br />
+            {company.address[2]}
+          </p>
+        </div>
+        <div class={infoIcon}>
+          <svg class="size-[1.5em] text-primary-dark" viewBox={icons.mapPin.viewBox} xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d={icons.mapPin.d}></path>
+          </svg>
+        </div>
+      </div>
+
+      <h4 class={infoHeading}>{d.info.socialsLabel}</h4>
+      <div class="m-0 flex flex-wrap items-center gap-x-[1em] pl-0">
+        <a href={t.socials[1].href} class={socialLink} target="_blank" rel="noopener noreferrer">
+          <svg class={socialIcon} viewBox={icons.instagramSmall.viewBox} xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d={icons.instagramSmall.d}></path>
+          </svg>
+          <span class="sr-only">{t.socials[1].label}</span>
+        </a>
+        <a href={t.socials[2].href} class={socialLink} target="_blank" rel="noopener noreferrer">
+          <svg class={socialIcon} viewBox={icons.facebookSmall.viewBox} xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d={icons.facebookSmall.d}></path>
+          </svg>
+          <span class="sr-only">{t.socials[2].label}</span>
+        </a>
+      </div>
+    </address>
+
+    <div class="flex w-full flex-col items-start">
+      <ContactForm lang={lang} id={`contact-form-${lang}`} />
+    </div>
+  </Container>
+</Section>

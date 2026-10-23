@@ -1,0 +1,14 @@
+const [, , url, expr] = process.argv;
+const list = await (await fetch('http://127.0.0.1:9222/json/list')).json();
+const target = list.find((t) => t.type === 'page');
+const ws = new WebSocket(target.webSocketDebuggerUrl);
+let id = 0; const pending = new Map();
+const send = (method, params = {}) => new Promise((res) => { const m = ++id; pending.set(m, res); ws.send(JSON.stringify({ id: m, method, params })); });
+ws.onmessage = (e) => { const msg = JSON.parse(e.data); if (msg.id && pending.has(msg.id)) { pending.get(msg.id)(msg.result); pending.delete(msg.id); } };
+await new Promise((r) => (ws.onopen = r));
+await send('Page.enable'); await send('Runtime.enable');
+await send('Page.navigate', { url });
+await new Promise((r) => setTimeout(r, 6000));
+const r = await send('Runtime.evaluate', { expression: expr, returnByValue: true });
+console.log(JSON.stringify(r.result.value ?? r.result, null, 1));
+ws.close();

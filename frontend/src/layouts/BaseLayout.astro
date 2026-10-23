@@ -1,0 +1,142 @@
+---
+import '../styles/global.css';
+import SiteHeader from '../components/SiteHeader.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import type { Lang } from '../data/site';
+import { site } from '../data/site';
+import { siteOrigin } from '../config/site';
+import seo from '../data/generated/seo.json';
+
+interface Props {
+  lang: Lang;
+  title: string;
+  description?: string;
+  ogImage?: string;
+  translations?: { de: string; en: string };
+  currentPath?: string;
+  /** strukturierte Daten (schema.org) dieser Seite */
+  schema?: object;
+}
+
+const {
+  lang,
+  title,
+  description = '',
+  ogImage = '/media/jmc-streamline-processes-s-l-jasmin-madeleine-a-christensen-matassa.jpg',
+  translations,
+  currentPath,
+  schema,
+} = Astro.props;
+const t = site[lang];
+const origin = siteOrigin;
+const canonical = new URL(Astro.url.pathname, origin).href;
+const segments = Astro.url.pathname.split('/').filter(Boolean);
+const seoKey = `${lang}:${segments[1] ?? 'home'}`;
+const originalMeta = (seo as Record<string, {
+  headMeta: { attribute: string; key: string; content: string }[];
+}>)[seoKey]?.headMeta;
+// ogImage ist ein Dateiname oder trägt bereits das Präfix /media/.
+const ogImageFile = ogImage.replace(/^\/?media\//, '');
+const ogImageUrl = `${origin}/media/${ogImageFile}`;
+// hreflang pair (original codes "de"/"en"); x-default only on the home page.
+const alternates = translations
+  ? [
+      { hreflang: 'de', href: new URL(translations.de, origin).href },
+      { hreflang: 'en', href: new URL(translations.en, origin).href },
+      ...(translations.de === '/de/' ? [{ hreflang: 'x-default', href: `${origin}/` }] : []),
+    ]
+  : [];
+---
+
+<!doctype html>
+<html lang={t.htmlLang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    {description && <meta name="description" content={description} />}
+    <link rel="canonical" href={canonical} />
+    {originalMeta ? originalMeta.map((meta) => (
+      meta.attribute === 'property'
+        ? <meta property={meta.key} content={meta.content} />
+        : <meta name={meta.key} content={meta.content} />
+    )) : <>
+      <meta property="og:title" content={title} />
+      {description && <meta property="og:description" content={description} />}
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content={canonical} />
+      <meta property="og:image" content={ogImageUrl} />
+      <meta property="og:locale" content={lang === 'de' ? 'de_DE' : 'en_US'} />
+      <meta property="og:site_name" content="jmc. | Streamline Processes S.L." />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:image" content={ogImageUrl} />
+    </>}
+    <link rel="icon" href="/favicon-32.png" sizes="32x32" />
+    <link rel="icon" href="/favicon-192.png" sizes="192x192" />
+    {alternates.map((alt) => <link rel="alternate" hreflang={alt.hreflang} href={alt.href} />)}
+    {schema && <script type="application/ld+json" is:inline set:html={JSON.stringify(schema)} />}
+  </head>
+  <body class="flex min-h-screen w-full flex-col data-[scroll-lock=true]:overflow-hidden" data-scroll-lock="false">
+    <a
+      class="absolute inset-s-[1rem] top-[1rem] z-[10000] -translate-y-[250%] rounded-base px-[1.5em] py-[0.75em] text-m leading-none text-inherit transition-colors focus:translate-y-0"
+      href="#main-content"
+    >
+      {t.skipToContent}
+    </a>
+    <a
+      class="absolute inset-s-[1rem] top-[1rem] z-[10000] -translate-y-[250%] rounded-base px-[1.5em] py-[0.75em] text-m leading-none text-inherit transition-colors focus:translate-y-0"
+      href="#site-footer"
+    >
+      {t.skipToFooter}
+    </a>
+    <SiteHeader lang={lang} translations={translations} currentPath={currentPath} />
+    <main id="main-content" class="relative z-[1] bg-neutral-ultra-light">
+      <slot />
+    </main>
+    <SiteFooter lang={lang} />
+
+    <script>
+      const header = document.querySelector<HTMLElement>('[data-site-header]');
+      const nav = document.querySelector<HTMLElement>('[data-nav]');
+      const menuToggle = document.querySelector<HTMLElement>('[data-menu-toggle]');
+      const SLIDE_AFTER = 300;
+
+      // Header: Hintergrund nach 300px Scroll, beim Herunterscrollen ausblenden,
+      // beim Hinaufscrollen wieder einblenden.
+      let lastY = window.scrollY;
+      const onScroll = () => {
+        if (!header) return;
+        const y = window.scrollY;
+        header.dataset.scrolled = String(y > SLIDE_AFTER);
+        if (header.dataset.modalOpen === 'true') {
+          header.dataset.hidden = 'false';
+          lastY = y;
+          return;
+        }
+        if (y > lastY && y > SLIDE_AFTER) header.dataset.hidden = 'true';
+        else if (y < lastY) header.dataset.hidden = 'false';
+        lastY = y;
+      };
+      onScroll();
+      window.addEventListener('scroll', onScroll, { passive: true });
+
+      // Overlay-Menü
+      const setMenu = (open: boolean) => {
+        if (!nav) return;
+        nav.dataset.open = String(open);
+        menuToggle?.setAttribute('aria-expanded', String(open));
+        document.body.dataset.scrollLock = String(open);
+      };
+      menuToggle?.addEventListener('click', () => setMenu(nav?.dataset.open !== 'true'));
+      document.querySelector('[data-menu-overlay]')?.addEventListener('click', () => setMenu(false));
+      document.querySelectorAll('[data-menu-panel] a').forEach((link) =>
+        link.addEventListener('click', () => {
+          if (window.matchMedia('(max-width:768px)').matches) setMenu(false);
+        }),
+      );
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') setMenu(false);
+      });
+    </script>
+  </body>
+</html>

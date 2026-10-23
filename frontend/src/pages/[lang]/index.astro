@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import HomePage from '../../components/HomePage.astro';
+import type { Lang } from '../../data/site';
+import { homeTranslations } from '../../data/routes';
+import seo from '../../data/generated/seo.json';
+import schema from '../../data/generated/schema.json';
+
+export function getStaticPaths() {
+  return (['de', 'en'] as Lang[]).map((lang) => ({
+    params: { lang },
+    props: { lang },
+  }));
+}
+
+const { lang } = Astro.props as { lang: Lang };
+const meta = (seo as Record<string, { title: string; description: string }>)[`${lang}:home`];
+---
+
+<BaseLayout
+  lang={lang}
+  title={meta.title}
+  description={meta.description}
+  translations={homeTranslations}
+  schema={(schema as Record<string, object>)[`${lang}:home`]}
+>
+  <HomePage lang={lang} />
+</BaseLayout>

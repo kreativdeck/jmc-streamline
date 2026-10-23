@@ -1,0 +1,332 @@
+{
+ "blog": {
+  "de": [
+   {
+    "href": "/de/stillstand-ist-keine-option/",
+    "title": "Stillstand ist keine Option",
+    "cat": "Allgemein",
+    "day": "03",
+    "month": "Nov.",
+    "image": {
+     "src": "/media/stillstand-ist-keine-option.jpg",
+     "alt": "Stillstand Ist Keine Option"
+    },
+    "footerDate": "",
+    "author": ""
+   },
+   {
+    "href": "/de/warum-leadership-und-sport-das-ultimative-power-duo-sind/",
+    "title": "Warum Leadership und Sport das ultimative Power-Duo sind",
+    "cat": "Allgemein",
+    "day": "24",
+    "month": "März",
+    "image": {
+     "src": "/media/warum-leadership-sport-ultimative-power-duo-sind.jpg",
+     "alt": "Warum Leadership Sport Ultimative Power Duo Sind"
+    },
+    "footerDate": "",
+    "author": ""
+   },
+   {
+    "href": "/de/effiziente-geschaeftsprozesse-fuer-expats-5-smarte-strategien-fuer-den-internationalen-arbeitsalltag/",
+    "title": "Effiziente Geschäftsprozesse für Expats! 5 smarte Strategien für den internationalen",
+    "cat": "Insights",
+    "day": "07",
+    "month": "März",
+    "image": {
+     "src": "/media/5-smarte-strategien-fuer-den-internationalen-arbeitsalltag.jpg",
+     "alt": "5 Smarte Strategien Fuer Den Internationalen Arbeitsalltag"
+    },
+    "footerDate": "",
+    "author": ""
+   },
+   {
+    "href": "/de/warum-illustrationen-der-kreative-weg-zu-klarheit-und-verbindung/",
+    "title": "Warum Illustrationen? Der kreative Weg zu Klarheit und Verbindung",
+    "cat": "Insights",
+    "day": "06",
+    "month": "Feb.",
+    "image": {
+     "src": "/media/weg-zur-klarheit-und-verbindung.jpg",
+     "alt": "Weg Zur Klarheit Und Verbindung"
+    },
+    "footerDate": "",
+    "author": ""
+   },
+   {
+    "href": "/de/effiziente-meetings-in-einer-globalen-geschaeftswelt-kulturelle-unterschiede-verstehen/",
+    "title": "Effiziente Meetings in einer globalen Geschäftswelt: Kulturelle Unterschiede verstehen",
+    "cat": "Leadership",
+    "day": "23",
+    "month": "Jan.",
+    "image": {
+     "src": "/media/effiziente-meetings-in-einer-globalen-geschaeftswelt.jpg",
+     "alt": "Effiziente Meetings In Einer Globalen Geschaeftswelt"
+    },
+    "footerDate": "",
+    "author": ""
+   },
+   {
+    "href": "/de/wie-schlanke-prozesse-unternehmen-und-leben-verandern/",
+    "title": "Wie schlanke Prozesse Unternehmen und Leben verändern",
+    "cat": "Insights",
+    "day": "12",
+    "month": "Jan.",
+    "image": {
+     "src": "/media/wie-schlanke-prozesse-unternehmen-veraendern.jpg",
+     "alt": "Wie Schlanke Prozesse Unternehmen Veraendern"
+    },
+    "footerDate": "",
+    "author": ""
+   }
+  ],
+  "en": [
+   {
+    "href": "/en/standing-still-is-not-an-option/",
+    "title": "Standing still is not an option",
+    "cat": "Generally",
+    "day": "03",
+    "month": "Nov",
+    "image": {
+     "src": "/media/stillstand-ist-keine-option.jpg",
+     "alt": "Stillstand Ist Keine Option"
+    },
+    "footerDate": "",
+    "author": ""
+   },
+   {
+    "href": "/en/why-leadership-and-sports-are-the-ultimate-power-duo/",
+    "title": "Why Leadership and Sports are the Ultimate Power Duo",
+    "cat": "Generally",
+    "day": "24",
+    "month": "Mar",
+    "image": {
+     "src": "/media/why-leadership-sport-ultimative-power-duo.jpg",
+     "alt": "Why Leadership Sport Ultimative Power Duo"
+    },
+    "footerDate": "",
+    "author": ""
+   },
+   {
+    "href": "/en/efficient-business-processes-for-expats-5-smart-strategies-for-international-work/",
+    "title": "Efficient Business Processes for Expats! 5 Smart Strategies for International",
+    "cat": "Insights",
+    "day": "07",
+    "month": "Mar",
+    "image": {
+     "src": "/media/5-smarte-strategien-fuer-den-internationalen-arbeitsalltag.jpg",
+     "alt": "5 Smarte Strategien Fuer Den Internationalen Arbeitsalltag"
+    },
+    "footerDate": "",
+    "author": ""
+   },
+   {
+    "href": "/en/why-illustrations-the-creative-path-to-clarity-and-connection/",
+    "title": "Why Illustrations? The Creative Path to Clarity and Connection",
+    "cat": "Insights",
+    "day": "06",
+    "month": "Feb",
+    "image": {
+     "src": "/media/weg-zur-klarheit-und-verbindung-1.jpg",
+     "alt": "Weg Zur Klarheit Und Verbindung"
+    },
+    "footerDate": "",
+    "author": ""
+   },
+   {
+    "href": "/en/efficient-meetings-in-a-global-business-world-understanding-cultural-differences/",
+    "title": "Efficient Meetings in a Global Business World: Understanding Cultural Differences",
+    "cat": "Leadership",
+    "day": "24",
+    "month": "Jan",
+    "image": {
+     "src": "/media/effiziente-meetings-in-einer-globalen-geschaeftswelt.jpg",
+     "alt": "Effiziente Meetings In Einer Globalen Geschaeftswelt"
+    },
+    "footerDate": "",
+    "author": ""
+   },
+   {
+    "href": "/en/transformation-of-businesses-and-lives-with-lean-processes/",
+    "title": "Transformation of businesses and lives with lean processes",
+    "cat": "Insights",
+    "day": "12",
+    "month": "Jan",
+    "image": {
+     "src": "/media/wie-schlanke-prozesse-unternehmen-veraendern.jpg",
+     "alt": "Wie Schlanke Prozesse Unternehmen Veraendern"
+    },
+    "footerDate": "",
+    "author": ""
+   }
+  ]
+ },
+ "de:allgemein": [
+  {
+   "href": "/de/stillstand-ist-keine-option/",
+   "title": "Stillstand ist keine Option",
+   "cat": "Allgemein",
+   "day": "03",
+   "month": "Nov.",
+   "image": {
+    "src": "/media/stillstand-ist-keine-option.jpg",
+    "alt": "Stillstand Ist Keine Option"
+   },
+   "footerDate": "03.11.2025",
+   "author": "JMC"
+  },
+  {
+   "href": "/de/warum-leadership-und-sport-das-ultimative-power-duo-sind/",
+   "title": "Warum Leadership und Sport das ultimative Power-Duo sind",
+   "cat": "Allgemein",
+   "day": "24",
+   "month": "März",
+   "image": {
+    "src": "/media/warum-leadership-sport-ultimative-power-duo-sind.jpg",
+    "alt": "Warum Leadership Sport Ultimative Power Duo Sind"
+   },
+   "footerDate": "24.03.2025",
+   "author": "JMC"
+  }
+ ],
+ "de:insights": [
+  {
+   "href": "/de/effiziente-geschaeftsprozesse-fuer-expats-5-smarte-strategien-fuer-den-internationalen-arbeitsalltag/",
+   "title": "Effiziente Geschäftsprozesse für Expats! 5 smarte Strategien für den internationalen",
+   "cat": "Insights",
+   "day": "07",
+   "month": "März",
+   "image": {
+    "src": "/media/5-smarte-strategien-fuer-den-internationalen-arbeitsalltag.jpg",
+    "alt": "5 Smarte Strategien Fuer Den Internationalen Arbeitsalltag"
+   },
+   "footerDate": "07.03.2025",
+   "author": "JMC"
+  },
+  {
+   "href": "/de/warum-illustrationen-der-kreative-weg-zu-klarheit-und-verbindung/",
+   "title": "Warum Illustrationen? Der kreative Weg zu Klarheit und Verbindung",
+   "cat": "Insights",
+   "day": "06",
+   "month": "Feb.",
+   "image": {
+    "src": "/media/weg-zur-klarheit-und-verbindung.jpg",
+    "alt": "Weg Zur Klarheit Und Verbindung"
+   },
+   "footerDate": "06.02.2025",
+   "author": "JMC"
+  },
+  {
+   "href": "/de/wie-schlanke-prozesse-unternehmen-und-leben-verandern/",
+   "title": "Wie schlanke Prozesse Unternehmen und Leben verändern",
+   "cat": "Insights",
+   "day": "12",
+   "month": "Jan.",
+   "image": {
+    "src": "/media/wie-schlanke-prozesse-unternehmen-veraendern.jpg",
+    "alt": "Wie Schlanke Prozesse Unternehmen Veraendern"
+   },
+   "footerDate": "12.01.2025",
+   "author": "JMC"
+  }
+ ],
+ "de:leadership": [
+  {
+   "href": "/de/effiziente-meetings-in-einer-globalen-geschaeftswelt-kulturelle-unterschiede-verstehen/",
+   "title": "Effiziente Meetings in einer globalen Geschäftswelt: Kulturelle Unterschiede verstehen",
+   "cat": "Leadership",
+   "day": "23",
+   "month": "Jan.",
+   "image": {
+    "src": "/media/effiziente-meetings-in-einer-globalen-geschaeftswelt.jpg",
+    "alt": "Effiziente Meetings In Einer Globalen Geschaeftswelt"
+   },
+   "footerDate": "23.01.2025",
+   "author": "JMC"
+  }
+ ],
+ "en:generally": [
+  {
+   "href": "/en/standing-still-is-not-an-option/",
+   "title": "Standing still is not an option",
+   "cat": "Generally",
+   "day": "03",
+   "month": "Nov",
+   "image": {
+    "src": "/media/stillstand-ist-keine-option.jpg",
+    "alt": "Stillstand Ist Keine Option"
+   },
+   "footerDate": "03.11.2025",
+   "author": "JMC"
+  },
+  {
+   "href": "/en/why-leadership-and-sports-are-the-ultimate-power-duo/",
+   "title": "Why Leadership and Sports are the Ultimate Power Duo",
+   "cat": "Generally",
+   "day": "24",
+   "month": "Mar",
+   "image": {
+    "src": "/media/why-leadership-sport-ultimative-power-duo.jpg",
+    "alt": "Why Leadership Sport Ultimative Power Duo"
+   },
+   "footerDate": "24.03.2025",
+   "author": "JMC"
+  }
+ ],
+ "en:insights": [
+  {
+   "href": "/en/efficient-business-processes-for-expats-5-smart-strategies-for-international-work/",
+   "title": "Efficient Business Processes for Expats! 5 Smart Strategies for International",
+   "cat": "Insights",
+   "day": "07",
+   "month": "Mar",
+   "image": {
+    "src": "/media/5-smarte-strategien-fuer-den-internationalen-arbeitsalltag.jpg",
+    "alt": "5 Smarte Strategien Fuer Den Internationalen Arbeitsalltag"
+   },
+   "footerDate": "07.03.2025",
+   "author": "JMC"
+  },
+  {
+   "href": "/en/why-illustrations-the-creative-path-to-clarity-and-connection/",
+   "title": "Why Illustrations? The Creative Path to Clarity and Connection",
+   "cat": "Insights",
+   "day": "06",
+   "month": "Feb",
+   "image": {
+    "src": "/media/weg-zur-klarheit-und-verbindung-1.jpg",
+    "alt": "Weg Zur Klarheit Und Verbindung"
+   },
+   "footerDate": "06.02.2025",
+   "author": "JMC"
+  },
+  {
+   "href": "/en/transformation-of-businesses-and-lives-with-lean-processes/",
+   "title": "Transformation of businesses and lives with lean processes",
+   "cat": "Insights",
+   "day": "12",
+   "month": "Jan",
+   "image": {
+    "src": "/media/wie-schlanke-prozesse-unternehmen-veraendern.jpg",
+    "alt": "Wie Schlanke Prozesse Unternehmen Veraendern"
+   },
+   "footerDate": "12.01.2025",
+   "author": "JMC"
+  }
+ ],
+ "en:leadership": [
+  {
+   "href": "/en/efficient-meetings-in-a-global-business-world-understanding-cultural-differences/",
+   "title": "Efficient Meetings in a Global Business World: Understanding Cultural Differences",
+   "cat": "Leadership",
+   "day": "24",
+   "month": "Jan",
+   "image": {
+    "src": "/media/effiziente-meetings-in-einer-globalen-geschaeftswelt.jpg",
+    "alt": "Effiziente Meetings In Einer Globalen Geschaeftswelt"
+   },
+   "footerDate": "24.01.2025",
+   "author": "JMC"
+  }
+ ]
+}

@@ -1,0 +1,22 @@
+{
+  "selectors": {
+    "heroButton": ".k-hero-frontpage .btn",
+    "processButton": ".k-process-section .btn",
+    "ctaPhoneButton": ".k-cta-alpha__buttons .btn--primary",
+    "ctaMailButton": ".k-cta-alpha__buttons .btn--outline",
+    "featureButton": ".k-feature-section-juliet .btn",
+    "footerNavLink": ".k-footer-center__nav-link",
+    "footerCopyright": ".fr-legal-meta-alpha__copyright",
+    "blogCardTitle": ".fr-article-card-foxtrot__title",
+    "blogCardLede": ".fr-article-card-foxtrot__lede",
+    "blogCardDate": ".fr-article-card-foxtrot__date",
+    "grid29Heading": ".grid-29-card__heading",
+    "grid29Card": ".grid-29-card",
+    "accentBadge": ".k-accent-heading",
+    "bodyText": ".intro__subheading",
+    "processStep": ".fr-process-card-charlie__step",
+    "processHeading": ".fr-process-card-charlie__heading",
+    "quoteText": ".k-blockquote__text"
+  },
+  "props": ["background-color","color","border-color","border-width","border-style","border-radius","padding","font-size","font-family","font-weight","letter-spacing","line-height","text-transform","gap","row-gap","width","height","min-height","max-width","aspect-ratio","opacity","box-shadow","text-align"]
+}

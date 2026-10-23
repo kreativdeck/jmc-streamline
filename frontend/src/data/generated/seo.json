@@ -1,0 +1,2724 @@
+{
+  "de:home": {
+    "title": "Geschäftsprozesse in Unternehmen optimieren",
+    "description": "Ich sorge dafür, dass Ihr Unternehmen durch ein optimiertes Büromanagement von Vorteilen wie Kosteneinsparungen, erhöhter Wirtschaftlichkeit profitiert.",
+    "headMeta": [
+      {
+        "attribute": "name",
+        "key": "robots",
+        "content": "max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+      },
+      {
+        "attribute": "property",
+        "key": "og:title",
+        "content": "Geschäftsprozesse in Unternehmen optimieren"
+      },
+      {
+        "attribute": "property",
+        "key": "og:type",
+        "content": "website"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image",
+        "content": "https://www.jmc-streamline.com/media/jmc-streamline-processes-s-l-jasmin-madeleine-a-christensen-matassa.jpg"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:width",
+        "content": "1200"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:height",
+        "content": "630"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:alt",
+        "content": "Jmc Streamline Processes S L Jasmin Madeleine A Christensen Matassa"
+      },
+      {
+        "attribute": "property",
+        "key": "og:description",
+        "content": "Ich sorge dafür, dass Ihr Unternehmen durch ein optimiertes Büromanagement von Vorteilen wie Kosteneinsparungen, erhöhter Wirtschaftlichkeit profitiert."
+      },
+      {
+        "attribute": "property",
+        "key": "og:url",
+        "content": "https://www.jmc-streamline.com/de/"
+      },
+      {
+        "attribute": "property",
+        "key": "og:locale",
+        "content": "de_DE"
+      },
+      {
+        "attribute": "property",
+        "key": "og:site_name",
+        "content": "jmc. | Streamline Processes S.L."
+      },
+      {
+        "attribute": "name",
+        "key": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "attribute": "name",
+        "key": "msapplication-TileImage",
+        "content": "https://www.jmc-streamline.com/media/cropped-favicon-jmc-streamline-processes-192x192.png"
+      }
+    ]
+  },
+  "de:allgemein": {
+    "title": "Allgemein – jmc. | Streamline Processes S.L.",
+    "description": "",
+    "headMeta": [
+      {
+        "attribute": "name",
+        "key": "robots",
+        "content": "max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+      },
+      {
+        "attribute": "property",
+        "key": "og:title",
+        "content": "Allgemein – jmc. | Streamline Processes S.L."
+      },
+      {
+        "attribute": "property",
+        "key": "og:type",
+        "content": "website"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image",
+        "content": "https://www.jmc-streamline.com/media/jmc-streamline-processes-s-l-jasmin-madeleine-a-christensen-matassa.jpg"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:width",
+        "content": "1200"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:height",
+        "content": "630"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:alt",
+        "content": "Jmc Streamline Processes S L Jasmin Madeleine A Christensen Matassa"
+      },
+      {
+        "attribute": "property",
+        "key": "og:url",
+        "content": "https://www.jmc-streamline.com/de/allgemein/"
+      },
+      {
+        "attribute": "property",
+        "key": "og:locale",
+        "content": "de_DE"
+      },
+      {
+        "attribute": "property",
+        "key": "og:site_name",
+        "content": "jmc. | Streamline Processes S.L."
+      },
+      {
+        "attribute": "name",
+        "key": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "attribute": "name",
+        "key": "msapplication-TileImage",
+        "content": "https://www.jmc-streamline.com/media/cropped-favicon-jmc-streamline-processes-192x192.png"
+      }
+    ]
+  },
+  "de:blog": {
+    "title": "Ideen und Einblicke für Arbeit und Leben",
+    "description": "Ich schreibe über das, was mich bewegt. Dabei geht es nicht nur um Prozesse und Strukturen, sondern auch um Kreativität, neue Ideen und kleine Veränderungen.",
+    "headMeta": [
+      {
+        "attribute": "name",
+        "key": "robots",
+        "content": "max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+      },
+      {
+        "attribute": "property",
+        "key": "og:title",
+        "content": "Ideen und Einblicke für Arbeit und Leben"
+      },
+      {
+        "attribute": "property",
+        "key": "og:type",
+        "content": "website"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image",
+        "content": "https://www.jmc-streamline.com/media/stillstand-ist-keine-option.jpg"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:width",
+        "content": "600"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:height",
+        "content": "400"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:alt",
+        "content": "Stillstand Ist Keine Option"
+      },
+      {
+        "attribute": "property",
+        "key": "og:description",
+        "content": "Ich schreibe über das, was mich bewegt. Dabei geht es nicht nur um Prozesse und Strukturen, sondern auch um Kreativität, neue Ideen und kleine Veränderungen."
+      },
+      {
+        "attribute": "property",
+        "key": "og:url",
+        "content": "https://www.jmc-streamline.com/de/blog/"
+      },
+      {
+        "attribute": "property",
+        "key": "og:locale",
+        "content": "de_DE"
+      },
+      {
+        "attribute": "property",
+        "key": "og:site_name",
+        "content": "jmc. | Streamline Processes S.L."
+      },
+      {
+        "attribute": "name",
+        "key": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "attribute": "name",
+        "key": "twitter:image",
+        "content": "https://www.jmc-streamline.com/media/stillstand-ist-keine-option.jpg"
+      },
+      {
+        "attribute": "name",
+        "key": "msapplication-TileImage",
+        "content": "https://www.jmc-streamline.com/media/cropped-favicon-jmc-streamline-processes-192x192.png"
+      }
+    ]
+  },
+  "de:datenschutzerklaerung": {
+    "title": "Datenschutzerklärung – jmc. | Streamline Processes S.L.",
+    "description": "Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen.",
+    "headMeta": [
+      {
+        "attribute": "name",
+        "key": "robots",
+        "content": "max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+      },
+      {
+        "attribute": "property",
+        "key": "og:title",
+        "content": "Datenschutzerklärung – jmc. | Streamline Processes S.L."
+      },
+      {
+        "attribute": "property",
+        "key": "og:type",
+        "content": "article"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image",
+        "content": "https://www.jmc-streamline.com/media/jmc-streamline-processes-s-l-jasmin-madeleine-a-christensen-matassa.jpg"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:width",
+        "content": "1200"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:height",
+        "content": "630"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:alt",
+        "content": "Jmc Streamline Processes S L Jasmin Madeleine A Christensen Matassa"
+      },
+      {
+        "attribute": "property",
+        "key": "og:description",
+        "content": "Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen."
+      },
+      {
+        "attribute": "property",
+        "key": "og:url",
+        "content": "https://www.jmc-streamline.com/de/datenschutzerklaerung/"
+      },
+      {
+        "attribute": "property",
+        "key": "og:locale",
+        "content": "de_DE"
+      },
+      {
+        "attribute": "property",
+        "key": "og:site_name",
+        "content": "jmc. | Streamline Processes S.L."
+      },
+      {
+        "attribute": "property",
+        "key": "article:published_time",
+        "content": "2024-08-27T09:44:45+02:00"
+      },
+      {
+        "attribute": "property",
+        "key": "article:modified_time",
+        "content": "2025-12-06T10:26:11+01:00"
+      },
+      {
+        "attribute": "property",
+        "key": "og:updated_time",
+        "content": "2025-12-06T10:26:11+01:00"
+      },
+      {
+        "attribute": "name",
+        "key": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "attribute": "name",
+        "key": "msapplication-TileImage",
+        "content": "https://www.jmc-streamline.com/media/cropped-favicon-jmc-streamline-processes-192x192.png"
+      }
+    ]
+  },
+  "de:effiziente-geschaeftsprozesse-fuer-expats-5-smarte-strategien-fuer-den-internationalen-arbeitsalltag": {
+    "title": "5 Strategien, die wirklich funktionieren",
+    "description": "Internationale Selbstständigkeit bedeutet nicht nur effiziente Abläufe, sondern auch die Fähigkeit, sich auf neue Situationen einzulassen.",
+    "headMeta": [
+      {
+        "attribute": "name",
+        "key": "robots",
+        "content": "max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+      },
+      {
+        "attribute": "property",
+        "key": "og:title",
+        "content": "5 Strategien, die wirklich funktionieren"
+      },
+      {
+        "attribute": "property",
+        "key": "og:type",
+        "content": "article"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image",
+        "content": "https://www.jmc-streamline.com/media/5-smarte-strategien-fuer-den-internationalen-arbeitsalltag.jpg"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:width",
+        "content": "600"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:height",
+        "content": "400"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:alt",
+        "content": "5 Smarte Strategien Fuer Den Internationalen Arbeitsalltag"
+      },
+      {
+        "attribute": "property",
+        "key": "og:description",
+        "content": "Internationale Selbstständigkeit bedeutet nicht nur effiziente Abläufe, sondern auch die Fähigkeit, sich auf neue Situationen einzulassen."
+      },
+      {
+        "attribute": "property",
+        "key": "og:url",
+        "content": "https://www.jmc-streamline.com/de/effiziente-geschaeftsprozesse-fuer-expats-5-smarte-strategien-fuer-den-internationalen-arbeitsalltag/"
+      },
+      {
+        "attribute": "property",
+        "key": "og:locale",
+        "content": "de_DE"
+      },
+      {
+        "attribute": "property",
+        "key": "og:site_name",
+        "content": "jmc. | Streamline Processes S.L."
+      },
+      {
+        "attribute": "property",
+        "key": "article:published_time",
+        "content": "2025-03-07T05:56:53+01:00"
+      },
+      {
+        "attribute": "property",
+        "key": "article:modified_time",
+        "content": "2025-03-07T06:03:45+01:00"
+      },
+      {
+        "attribute": "property",
+        "key": "og:updated_time",
+        "content": "2025-03-07T06:03:45+01:00"
+      },
+      {
+        "attribute": "property",
+        "key": "article:section",
+        "content": "Insights"
+      },
+      {
+        "attribute": "name",
+        "key": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "attribute": "name",
+        "key": "twitter:image",
+        "content": "https://www.jmc-streamline.com/media/5-smarte-strategien-fuer-den-internationalen-arbeitsalltag.jpg"
+      },
+      {
+        "attribute": "name",
+        "key": "msapplication-TileImage",
+        "content": "https://www.jmc-streamline.com/media/cropped-favicon-jmc-streamline-processes-192x192.png"
+      }
+    ]
+  },
+  "de:effiziente-meetings-in-einer-globalen-geschaeftswelt-kulturelle-unterschiede-verstehen": {
+    "title": "Effiziente Meetings in einer globalen Geschäftswelt",
+    "description": "In einer global vernetzten Geschäftswelt spielt das Verständnis kultureller Unterschiede eine zentrale Rolle für den Erfolg von Meetings",
+    "headMeta": [
+      {
+        "attribute": "name",
+        "key": "robots",
+        "content": "max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+      },
+      {
+        "attribute": "property",
+        "key": "og:title",
+        "content": "Effiziente Meetings in einer globalen Geschäftswelt"
+      },
+      {
+        "attribute": "property",
+        "key": "og:type",
+        "content": "article"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image",
+        "content": "https://www.jmc-streamline.com/media/effiziente-meetings-in-einer-globalen-geschaeftswelt.jpg"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:width",
+        "content": "1024"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:height",
+        "content": "1024"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:alt",
+        "content": "Effiziente Meetings In Einer Globalen Geschaeftswelt"
+      },
+      {
+        "attribute": "property",
+        "key": "og:description",
+        "content": "In einer global vernetzten Geschäftswelt spielt das Verständnis kultureller Unterschiede eine zentrale Rolle für den Erfolg von Meetings"
+      },
+      {
+        "attribute": "property",
+        "key": "og:url",
+        "content": "https://www.jmc-streamline.com/de/effiziente-meetings-in-einer-globalen-geschaeftswelt-kulturelle-unterschiede-verstehen/"
+      },
+      {
+        "attribute": "property",
+        "key": "og:locale",
+        "content": "de_DE"
+      },
+      {
+        "attribute": "property",
+        "key": "og:site_name",
+        "content": "jmc. | Streamline Processes S.L."
+      },
+      {
+        "attribute": "property",
+        "key": "article:published_time",
+        "content": "2025-01-23T16:29:51+01:00"
+      },
+      {
+        "attribute": "property",
+        "key": "article:modified_time",
+        "content": "2025-01-24T08:35:01+01:00"
+      },
+      {
+        "attribute": "property",
+        "key": "og:updated_time",
+        "content": "2025-01-24T08:35:01+01:00"
+      },
+      {
+        "attribute": "property",
+        "key": "article:section",
+        "content": "Leadership"
+      },
+      {
+        "attribute": "name",
+        "key": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "attribute": "name",
+        "key": "twitter:image",
+        "content": "https://www.jmc-streamline.com/media/effiziente-meetings-in-einer-globalen-geschaeftswelt.jpg"
+      },
+      {
+        "attribute": "name",
+        "key": "msapplication-TileImage",
+        "content": "https://www.jmc-streamline.com/media/cropped-favicon-jmc-streamline-processes-192x192.png"
+      }
+    ]
+  },
+  "de:impressum": {
+    "title": "Impressum – jmc. | Streamline Processes S.L.",
+    "description": "Impressum von jmc. | Streamline Processes S.L. in Spanien",
+    "headMeta": [
+      {
+        "attribute": "name",
+        "key": "robots",
+        "content": "max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+      },
+      {
+        "attribute": "property",
+        "key": "og:title",
+        "content": "Impressum – jmc. | Streamline Processes S.L."
+      },
+      {
+        "attribute": "property",
+        "key": "og:type",
+        "content": "article"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image",
+        "content": "https://www.jmc-streamline.com/media/jmc-streamline-processes-s-l-jasmin-madeleine-a-christensen-matassa.jpg"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:width",
+        "content": "1200"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:height",
+        "content": "630"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:alt",
+        "content": "Jmc Streamline Processes S L Jasmin Madeleine A Christensen Matassa"
+      },
+      {
+        "attribute": "property",
+        "key": "og:description",
+        "content": "Impressum von jmc. | Streamline Processes S.L. in Spanien"
+      },
+      {
+        "attribute": "property",
+        "key": "og:url",
+        "content": "https://www.jmc-streamline.com/de/impressum/"
+      },
+      {
+        "attribute": "property",
+        "key": "og:locale",
+        "content": "de_DE"
+      },
+      {
+        "attribute": "property",
+        "key": "og:site_name",
+        "content": "jmc. | Streamline Processes S.L."
+      },
+      {
+        "attribute": "property",
+        "key": "article:published_time",
+        "content": "2024-08-27T09:33:30+02:00"
+      },
+      {
+        "attribute": "property",
+        "key": "article:modified_time",
+        "content": "2024-09-02T09:44:05+02:00"
+      },
+      {
+        "attribute": "property",
+        "key": "og:updated_time",
+        "content": "2024-09-02T09:44:05+02:00"
+      },
+      {
+        "attribute": "name",
+        "key": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "attribute": "name",
+        "key": "msapplication-TileImage",
+        "content": "https://www.jmc-streamline.com/media/cropped-favicon-jmc-streamline-processes-192x192.png"
+      }
+    ]
+  },
+  "de:insights": {
+    "title": "Persönliche Beobachtungen und Erkenntnisse",
+    "description": "Hier geht es weniger um fertige Lösungen, sondern um das Entdecken und Verstehen – um Gedanken, ideen, die mich zum Nachdenken gebracht haben.",
+    "headMeta": [
+      {
+        "attribute": "name",
+        "key": "robots",
+        "content": "max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+      },
+      {
+        "attribute": "property",
+        "key": "og:title",
+        "content": "Persönliche Beobachtungen und Erkenntnisse"
+      },
+      {
+        "attribute": "property",
+        "key": "og:type",
+        "content": "website"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image",
+        "content": "https://www.jmc-streamline.com/media/jmc-streamline-processes-s-l-jasmin-madeleine-a-christensen-matassa.jpg"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:width",
+        "content": "1200"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:height",
+        "content": "630"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:alt",
+        "content": "Jmc Streamline Processes S L Jasmin Madeleine A Christensen Matassa"
+      },
+      {
+        "attribute": "property",
+        "key": "og:description",
+        "content": "Hier geht es weniger um fertige Lösungen, sondern um das Entdecken und Verstehen – um Gedanken, ideen, die mich zum Nachdenken gebracht haben."
+      },
+      {
+        "attribute": "property",
+        "key": "og:url",
+        "content": "https://www.jmc-streamline.com/de/insights/"
+      },
+      {
+        "attribute": "property",
+        "key": "og:locale",
+        "content": "de_DE"
+      },
+      {
+        "attribute": "property",
+        "key": "og:site_name",
+        "content": "jmc. | Streamline Processes S.L."
+      },
+      {
+        "attribute": "name",
+        "key": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "attribute": "name",
+        "key": "msapplication-TileImage",
+        "content": "https://www.jmc-streamline.com/media/cropped-favicon-jmc-streamline-processes-192x192.png"
+      }
+    ]
+  },
+  "de:kontakt": {
+    "title": "Ich freue mich auf Ihre Nachricht!",
+    "description": "Ich stehe Ihnen in drei Sprachen (Deutsch, Englisch, Italienisch) zur Verfügung und freue mich darauf, Ihre Anliegen zu besprechen.",
+    "headMeta": [
+      {
+        "attribute": "name",
+        "key": "robots",
+        "content": "max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+      },
+      {
+        "attribute": "property",
+        "key": "og:title",
+        "content": "Ich freue mich auf Ihre Nachricht!"
+      },
+      {
+        "attribute": "property",
+        "key": "og:type",
+        "content": "article"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image",
+        "content": "https://www.jmc-streamline.com/media/jmc-streamline-processes-s-l-jasmin-madeleine-a-christensen-matassa.jpg"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:width",
+        "content": "1200"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:height",
+        "content": "630"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:alt",
+        "content": "Jmc Streamline Processes S L Jasmin Madeleine A Christensen Matassa"
+      },
+      {
+        "attribute": "property",
+        "key": "og:description",
+        "content": "Ich stehe Ihnen in drei Sprachen (Deutsch, Englisch, Italienisch) zur Verfügung und freue mich darauf, Ihre Anliegen zu besprechen."
+      },
+      {
+        "attribute": "property",
+        "key": "og:url",
+        "content": "https://www.jmc-streamline.com/de/kontakt/"
+      },
+      {
+        "attribute": "property",
+        "key": "og:locale",
+        "content": "de_DE"
+      },
+      {
+        "attribute": "property",
+        "key": "og:site_name",
+        "content": "jmc. | Streamline Processes S.L."
+      },
+      {
+        "attribute": "property",
+        "key": "article:published_time",
+        "content": "2024-06-25T10:13:46+02:00"
+      },
+      {
+        "attribute": "property",
+        "key": "article:modified_time",
+        "content": "2025-03-04T09:56:28+01:00"
+      },
+      {
+        "attribute": "property",
+        "key": "og:updated_time",
+        "content": "2025-03-04T09:56:28+01:00"
+      },
+      {
+        "attribute": "name",
+        "key": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "attribute": "name",
+        "key": "msapplication-TileImage",
+        "content": "https://www.jmc-streamline.com/media/cropped-favicon-jmc-streamline-processes-192x192.png"
+      }
+    ]
+  },
+  "de:leadership": {
+    "title": "Die Entwicklung moderner Führungskompetenzen",
+    "description": "Es geht darum, Führung neu zu denken, flexibel zu bleiben und Innovationen voranzutreiben. Agilität, emotionale Intelligenz",
+    "headMeta": [
+      {
+        "attribute": "name",
+        "key": "robots",
+        "content": "max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+      },
+      {
+        "attribute": "property",
+        "key": "og:title",
+        "content": "Die Entwicklung moderner Führungskompetenzen"
+      },
+      {
+        "attribute": "property",
+        "key": "og:type",
+        "content": "website"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image",
+        "content": "https://www.jmc-streamline.com/media/jmc-streamline-processes-s-l-jasmin-madeleine-a-christensen-matassa.jpg"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:width",
+        "content": "1200"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:height",
+        "content": "630"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:alt",
+        "content": "Jmc Streamline Processes S L Jasmin Madeleine A Christensen Matassa"
+      },
+      {
+        "attribute": "property",
+        "key": "og:description",
+        "content": "Es geht darum, Führung neu zu denken, flexibel zu bleiben und Innovationen voranzutreiben. Agilität, emotionale Intelligenz"
+      },
+      {
+        "attribute": "property",
+        "key": "og:url",
+        "content": "https://www.jmc-streamline.com/de/leadership/"
+      },
+      {
+        "attribute": "property",
+        "key": "og:locale",
+        "content": "de_DE"
+      },
+      {
+        "attribute": "property",
+        "key": "og:site_name",
+        "content": "jmc. | Streamline Processes S.L."
+      },
+      {
+        "attribute": "name",
+        "key": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "attribute": "name",
+        "key": "msapplication-TileImage",
+        "content": "https://www.jmc-streamline.com/media/cropped-favicon-jmc-streamline-processes-192x192.png"
+      }
+    ]
+  },
+  "de:services": {
+    "title": "Ich biete umfassende Office Management Services",
+    "description": "Ich biete effizientes Office Management, einschließlich Remote-Büroorganisation & Kundenmanagement. Ich Events, koordiniere Termine und überwache Projekte.",
+    "headMeta": [
+      {
+        "attribute": "name",
+        "key": "robots",
+        "content": "max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+      },
+      {
+        "attribute": "property",
+        "key": "og:title",
+        "content": "Ich biete umfassende Office Management Services"
+      },
+      {
+        "attribute": "property",
+        "key": "og:type",
+        "content": "article"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image",
+        "content": "https://www.jmc-streamline.com/media/jmc-streamline-processes-s-l-jasmin-madeleine-a-christensen-matassa.jpg"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:width",
+        "content": "1200"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:height",
+        "content": "630"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:alt",
+        "content": "Jmc Streamline Processes S L Jasmin Madeleine A Christensen Matassa"
+      },
+      {
+        "attribute": "property",
+        "key": "og:description",
+        "content": "Ich biete effizientes Office Management, einschließlich Remote-Büroorganisation & Kundenmanagement. Ich Events, koordiniere Termine und überwache Projekte."
+      },
+      {
+        "attribute": "property",
+        "key": "og:url",
+        "content": "https://www.jmc-streamline.com/de/services/"
+      },
+      {
+        "attribute": "property",
+        "key": "og:locale",
+        "content": "de_DE"
+      },
+      {
+        "attribute": "property",
+        "key": "og:site_name",
+        "content": "jmc. | Streamline Processes S.L."
+      },
+      {
+        "attribute": "property",
+        "key": "article:published_time",
+        "content": "2024-06-25T10:13:59+02:00"
+      },
+      {
+        "attribute": "property",
+        "key": "article:modified_time",
+        "content": "2025-03-04T09:51:46+01:00"
+      },
+      {
+        "attribute": "property",
+        "key": "og:updated_time",
+        "content": "2025-03-04T09:51:46+01:00"
+      },
+      {
+        "attribute": "name",
+        "key": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "attribute": "name",
+        "key": "msapplication-TileImage",
+        "content": "https://www.jmc-streamline.com/media/cropped-favicon-jmc-streamline-processes-192x192.png"
+      }
+    ]
+  },
+  "de:stillstand-ist-keine-option": {
+    "title": "Stillstand ist keine Option",
+    "description": "Für mich zählt, aufmerksam zu bleiben, zuzuhören und offen zu sein für das, was sich entwickelt.",
+    "headMeta": [
+      {
+        "attribute": "name",
+        "key": "robots",
+        "content": "max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+      },
+      {
+        "attribute": "property",
+        "key": "og:title",
+        "content": "Stillstand ist keine Option"
+      },
+      {
+        "attribute": "property",
+        "key": "og:type",
+        "content": "article"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image",
+        "content": "https://www.jmc-streamline.com/media/stillstand-ist-keine-option.jpg"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:width",
+        "content": "600"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:height",
+        "content": "400"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:alt",
+        "content": "Stillstand Ist Keine Option"
+      },
+      {
+        "attribute": "property",
+        "key": "og:description",
+        "content": "Für mich zählt, aufmerksam zu bleiben, zuzuhören und offen zu sein für das, was sich entwickelt."
+      },
+      {
+        "attribute": "property",
+        "key": "og:url",
+        "content": "https://www.jmc-streamline.com/de/stillstand-ist-keine-option/"
+      },
+      {
+        "attribute": "property",
+        "key": "og:locale",
+        "content": "de_DE"
+      },
+      {
+        "attribute": "property",
+        "key": "og:site_name",
+        "content": "jmc. | Streamline Processes S.L."
+      },
+      {
+        "attribute": "property",
+        "key": "article:published_time",
+        "content": "2025-11-03T06:12:16+01:00"
+      },
+      {
+        "attribute": "property",
+        "key": "article:modified_time",
+        "content": "2025-11-03T06:12:16+01:00"
+      },
+      {
+        "attribute": "property",
+        "key": "og:updated_time",
+        "content": "2025-11-03T06:12:16+01:00"
+      },
+      {
+        "attribute": "property",
+        "key": "article:section",
+        "content": "Allgemein"
+      },
+      {
+        "attribute": "name",
+        "key": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "attribute": "name",
+        "key": "twitter:image",
+        "content": "https://www.jmc-streamline.com/media/stillstand-ist-keine-option.jpg"
+      },
+      {
+        "attribute": "name",
+        "key": "msapplication-TileImage",
+        "content": "https://www.jmc-streamline.com/media/cropped-favicon-jmc-streamline-processes-192x192.png"
+      }
+    ]
+  },
+  "de:ueber-mich": {
+    "title": "Ich helfe Ihrem Unternehmen zu wachsen.",
+    "description": "Mein Ziel ist es, Netzwerke zu erweitern und kraftvolle, authentische Beziehungen zu schaffen.",
+    "headMeta": [
+      {
+        "attribute": "name",
+        "key": "robots",
+        "content": "max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+      },
+      {
+        "attribute": "property",
+        "key": "og:title",
+        "content": "Ich helfe Ihrem Unternehmen zu wachsen."
+      },
+      {
+        "attribute": "property",
+        "key": "og:type",
+        "content": "article"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image",
+        "content": "https://www.jmc-streamline.com/media/jmc-streamline-processes-s-l-jasmin-madeleine-a-christensen-matassa.jpg"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:width",
+        "content": "1200"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:height",
+        "content": "630"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:alt",
+        "content": "Jmc Streamline Processes S L Jasmin Madeleine A Christensen Matassa"
+      },
+      {
+        "attribute": "property",
+        "key": "og:description",
+        "content": "Mein Ziel ist es, Netzwerke zu erweitern und kraftvolle, authentische Beziehungen zu schaffen."
+      },
+      {
+        "attribute": "property",
+        "key": "og:url",
+        "content": "https://www.jmc-streamline.com/de/ueber-mich/"
+      },
+      {
+        "attribute": "property",
+        "key": "og:locale",
+        "content": "de_DE"
+      },
+      {
+        "attribute": "property",
+        "key": "og:site_name",
+        "content": "jmc. | Streamline Processes S.L."
+      },
+      {
+        "attribute": "property",
+        "key": "article:published_time",
+        "content": "2024-06-25T05:56:37+02:00"
+      },
+      {
+        "attribute": "property",
+        "key": "article:modified_time",
+        "content": "2025-03-04T09:46:43+01:00"
+      },
+      {
+        "attribute": "property",
+        "key": "og:updated_time",
+        "content": "2025-03-04T09:46:43+01:00"
+      },
+      {
+        "attribute": "name",
+        "key": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "attribute": "name",
+        "key": "msapplication-TileImage",
+        "content": "https://www.jmc-streamline.com/media/cropped-favicon-jmc-streamline-processes-192x192.png"
+      }
+    ]
+  },
+  "de:warum-illustrationen-der-kreative-weg-zu-klarheit-und-verbindung": {
+    "title": "Der kreative Weg zu Klarheit und Verbindung",
+    "description": "Manche fragen sich, was Illustrationen mit klaren Prozessen zu tun haben. Genau darauf möchte ich eingehen.",
+    "headMeta": [
+      {
+        "attribute": "name",
+        "key": "robots",
+        "content": "max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+      },
+      {
+        "attribute": "property",
+        "key": "og:title",
+        "content": "Der kreative Weg zu Klarheit und Verbindung"
+      },
+      {
+        "attribute": "property",
+        "key": "og:type",
+        "content": "article"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image",
+        "content": "https://www.jmc-streamline.com/media/weg-zur-klarheit-und-verbindung.jpg"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:width",
+        "content": "1650"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:height",
+        "content": "1100"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:alt",
+        "content": "Weg Zur Klarheit Und Verbindung"
+      },
+      {
+        "attribute": "property",
+        "key": "og:description",
+        "content": "Manche fragen sich, was Illustrationen mit klaren Prozessen zu tun haben. Genau darauf möchte ich eingehen."
+      },
+      {
+        "attribute": "property",
+        "key": "og:url",
+        "content": "https://www.jmc-streamline.com/de/warum-illustrationen-der-kreative-weg-zu-klarheit-und-verbindung/"
+      },
+      {
+        "attribute": "property",
+        "key": "og:locale",
+        "content": "de_DE"
+      },
+      {
+        "attribute": "property",
+        "key": "og:site_name",
+        "content": "jmc. | Streamline Processes S.L."
+      },
+      {
+        "attribute": "property",
+        "key": "article:published_time",
+        "content": "2025-02-06T10:26:53+01:00"
+      },
+      {
+        "attribute": "property",
+        "key": "article:modified_time",
+        "content": "2025-02-06T13:26:08+01:00"
+      },
+      {
+        "attribute": "property",
+        "key": "og:updated_time",
+        "content": "2025-02-06T13:26:08+01:00"
+      },
+      {
+        "attribute": "property",
+        "key": "article:section",
+        "content": "Insights"
+      },
+      {
+        "attribute": "name",
+        "key": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "attribute": "name",
+        "key": "twitter:image",
+        "content": "https://www.jmc-streamline.com/media/weg-zur-klarheit-und-verbindung.jpg"
+      },
+      {
+        "attribute": "name",
+        "key": "msapplication-TileImage",
+        "content": "https://www.jmc-streamline.com/media/cropped-favicon-jmc-streamline-processes-192x192.png"
+      }
+    ]
+  },
+  "de:warum-leadership-und-sport-das-ultimative-power-duo-sind": {
+    "title": "Leadership und Sport das ultimative Power-Duo",
+    "description": "Mit Energie und Klarheit zu führen passiert nicht einfach so, es braucht Disziplin, Bewegung und Durchhaltevermögen.",
+    "headMeta": [
+      {
+        "attribute": "name",
+        "key": "robots",
+        "content": "max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+      },
+      {
+        "attribute": "property",
+        "key": "og:title",
+        "content": "Leadership und Sport das ultimative Power-Duo"
+      },
+      {
+        "attribute": "property",
+        "key": "og:type",
+        "content": "article"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image",
+        "content": "https://www.jmc-streamline.com/media/warum-leadership-sport-ultimative-power-duo-sind.jpg"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:width",
+        "content": "600"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:height",
+        "content": "400"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:alt",
+        "content": "Warum Leadership Sport Ultimative Power Duo Sind"
+      },
+      {
+        "attribute": "property",
+        "key": "og:description",
+        "content": "Mit Energie und Klarheit zu führen passiert nicht einfach so, es braucht Disziplin, Bewegung und Durchhaltevermögen."
+      },
+      {
+        "attribute": "property",
+        "key": "og:url",
+        "content": "https://www.jmc-streamline.com/de/warum-leadership-und-sport-das-ultimative-power-duo-sind/"
+      },
+      {
+        "attribute": "property",
+        "key": "og:locale",
+        "content": "de_DE"
+      },
+      {
+        "attribute": "property",
+        "key": "og:site_name",
+        "content": "jmc. | Streamline Processes S.L."
+      },
+      {
+        "attribute": "property",
+        "key": "article:published_time",
+        "content": "2025-03-24T16:52:37+01:00"
+      },
+      {
+        "attribute": "property",
+        "key": "article:modified_time",
+        "content": "2025-03-25T08:45:09+01:00"
+      },
+      {
+        "attribute": "property",
+        "key": "og:updated_time",
+        "content": "2025-03-25T08:45:09+01:00"
+      },
+      {
+        "attribute": "property",
+        "key": "article:section",
+        "content": "Allgemein"
+      },
+      {
+        "attribute": "name",
+        "key": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "attribute": "name",
+        "key": "twitter:image",
+        "content": "https://www.jmc-streamline.com/media/warum-leadership-sport-ultimative-power-duo-sind.jpg"
+      },
+      {
+        "attribute": "name",
+        "key": "msapplication-TileImage",
+        "content": "https://www.jmc-streamline.com/media/cropped-favicon-jmc-streamline-processes-192x192.png"
+      }
+    ]
+  },
+  "de:wie-schlanke-prozesse-unternehmen-und-leben-verandern": {
+    "title": "Schlanke Prozesse verändern Unternehmen und Leben",
+    "description": "Klare und schlanke Prozesse schaffen Raum für Kreativität, fördern nachhaltigen Erfolg und zeigen, wie Effizienz nicht nur Unternehmen, sondern auch…",
+    "headMeta": [
+      {
+        "attribute": "name",
+        "key": "robots",
+        "content": "max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+      },
+      {
+        "attribute": "property",
+        "key": "og:title",
+        "content": "Schlanke Prozesse verändern Unternehmen und Leben"
+      },
+      {
+        "attribute": "property",
+        "key": "og:type",
+        "content": "article"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image",
+        "content": "https://www.jmc-streamline.com/media/wie-schlanke-prozesse-unternehmen-veraendern.jpg"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:width",
+        "content": "1024"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:height",
+        "content": "1024"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:alt",
+        "content": "Wie Schlanke Prozesse Unternehmen Veraendern"
+      },
+      {
+        "attribute": "property",
+        "key": "og:description",
+        "content": "Klare und schlanke Prozesse schaffen Raum für Kreativität, fördern nachhaltigen Erfolg und zeigen, wie Effizienz nicht nur Unternehmen, sondern auch…"
+      },
+      {
+        "attribute": "property",
+        "key": "og:url",
+        "content": "https://www.jmc-streamline.com/de/wie-schlanke-prozesse-unternehmen-und-leben-verandern/"
+      },
+      {
+        "attribute": "property",
+        "key": "og:locale",
+        "content": "de_DE"
+      },
+      {
+        "attribute": "property",
+        "key": "og:site_name",
+        "content": "jmc. | Streamline Processes S.L."
+      },
+      {
+        "attribute": "property",
+        "key": "article:published_time",
+        "content": "2025-01-12T10:06:17+01:00"
+      },
+      {
+        "attribute": "property",
+        "key": "article:modified_time",
+        "content": "2025-01-12T13:13:59+01:00"
+      },
+      {
+        "attribute": "property",
+        "key": "og:updated_time",
+        "content": "2025-01-12T13:13:59+01:00"
+      },
+      {
+        "attribute": "property",
+        "key": "article:section",
+        "content": "Insights"
+      },
+      {
+        "attribute": "name",
+        "key": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "attribute": "name",
+        "key": "twitter:image",
+        "content": "https://www.jmc-streamline.com/media/wie-schlanke-prozesse-unternehmen-veraendern.jpg"
+      },
+      {
+        "attribute": "name",
+        "key": "msapplication-TileImage",
+        "content": "https://www.jmc-streamline.com/media/cropped-favicon-jmc-streamline-processes-192x192.png"
+      }
+    ]
+  },
+  "en:home": {
+    "title": "Optimise business processes in companies",
+    "description": "I ensure that your company benefits from cost savings and increased efficiency through optimised office management.",
+    "headMeta": [
+      {
+        "attribute": "name",
+        "key": "robots",
+        "content": "max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+      },
+      {
+        "attribute": "property",
+        "key": "og:title",
+        "content": "Optimise business processes in companies"
+      },
+      {
+        "attribute": "property",
+        "key": "og:type",
+        "content": "website"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image",
+        "content": "https://www.jmc-streamline.com/media/jmc-streamline-processes-s-l-jasmin-madeleine-a-christensen-matassa.jpg"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:width",
+        "content": "1200"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:height",
+        "content": "630"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:alt",
+        "content": "Jmc Streamline Processes S L Jasmin Madeleine A Christensen Matassa"
+      },
+      {
+        "attribute": "property",
+        "key": "og:description",
+        "content": "I ensure that your company benefits from cost savings and increased efficiency through optimised office management."
+      },
+      {
+        "attribute": "property",
+        "key": "og:url",
+        "content": "https://www.jmc-streamline.com/en/"
+      },
+      {
+        "attribute": "property",
+        "key": "og:locale",
+        "content": "en_US"
+      },
+      {
+        "attribute": "property",
+        "key": "og:site_name",
+        "content": "jmc. | Streamline Processes S.L."
+      },
+      {
+        "attribute": "name",
+        "key": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "attribute": "name",
+        "key": "msapplication-TileImage",
+        "content": "https://www.jmc-streamline.com/media/cropped-favicon-jmc-streamline-processes-192x192.png"
+      }
+    ]
+  },
+  "en:about-me": {
+    "title": "I help your company to grow.",
+    "description": "My goal is to expand networks and create powerful, authentic relationships.",
+    "headMeta": [
+      {
+        "attribute": "name",
+        "key": "robots",
+        "content": "max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+      },
+      {
+        "attribute": "property",
+        "key": "og:title",
+        "content": "I help your company to grow."
+      },
+      {
+        "attribute": "property",
+        "key": "og:type",
+        "content": "article"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image",
+        "content": "https://www.jmc-streamline.com/media/jmc-streamline-processes-s-l-jasmin-madeleine-a-christensen-matassa.jpg"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:width",
+        "content": "1200"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:height",
+        "content": "630"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:alt",
+        "content": "Jmc Streamline Processes S L Jasmin Madeleine A Christensen Matassa"
+      },
+      {
+        "attribute": "property",
+        "key": "og:description",
+        "content": "My goal is to expand networks and create powerful, authentic relationships."
+      },
+      {
+        "attribute": "property",
+        "key": "og:url",
+        "content": "https://www.jmc-streamline.com/en/about-me/"
+      },
+      {
+        "attribute": "property",
+        "key": "og:locale",
+        "content": "en_US"
+      },
+      {
+        "attribute": "property",
+        "key": "og:site_name",
+        "content": "jmc. | Streamline Processes S.L."
+      },
+      {
+        "attribute": "property",
+        "key": "article:published_time",
+        "content": "2024-09-01T09:16:39+02:00"
+      },
+      {
+        "attribute": "property",
+        "key": "article:modified_time",
+        "content": "2025-01-12T12:43:44+01:00"
+      },
+      {
+        "attribute": "property",
+        "key": "og:updated_time",
+        "content": "2025-01-12T12:43:44+01:00"
+      },
+      {
+        "attribute": "name",
+        "key": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "attribute": "name",
+        "key": "msapplication-TileImage",
+        "content": "https://www.jmc-streamline.com/media/cropped-favicon-jmc-streamline-processes-192x192.png"
+      }
+    ]
+  },
+  "en:blog": {
+    "title": "Ideas and insights for work and life",
+    "description": "I write about what moves me. It's not just about processes and structures, but also about creativity, new ideas and small changes.",
+    "headMeta": [
+      {
+        "attribute": "name",
+        "key": "robots",
+        "content": "max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+      },
+      {
+        "attribute": "property",
+        "key": "og:title",
+        "content": "Ideas and insights for work and life"
+      },
+      {
+        "attribute": "property",
+        "key": "og:type",
+        "content": "website"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image",
+        "content": "https://www.jmc-streamline.com/media/stillstand-ist-keine-option.jpg"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:width",
+        "content": "600"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:height",
+        "content": "400"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:alt",
+        "content": "Stillstand Ist Keine Option"
+      },
+      {
+        "attribute": "property",
+        "key": "og:description",
+        "content": "I write about what moves me. It's not just about processes and structures, but also about creativity, new ideas and small changes."
+      },
+      {
+        "attribute": "property",
+        "key": "og:url",
+        "content": "https://www.jmc-streamline.com/en/blog/"
+      },
+      {
+        "attribute": "property",
+        "key": "og:locale",
+        "content": "en_US"
+      },
+      {
+        "attribute": "property",
+        "key": "og:site_name",
+        "content": "jmc. | Streamline Processes S.L."
+      },
+      {
+        "attribute": "name",
+        "key": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "attribute": "name",
+        "key": "twitter:image",
+        "content": "https://www.jmc-streamline.com/media/stillstand-ist-keine-option.jpg"
+      },
+      {
+        "attribute": "name",
+        "key": "msapplication-TileImage",
+        "content": "https://www.jmc-streamline.com/media/cropped-favicon-jmc-streamline-processes-192x192.png"
+      }
+    ]
+  },
+  "en:contact": {
+    "title": "I look forward to hearing from you!",
+    "description": "I am available in three languages (German, English, Italian) and look forward to discussing your concerns.",
+    "headMeta": [
+      {
+        "attribute": "name",
+        "key": "robots",
+        "content": "max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+      },
+      {
+        "attribute": "property",
+        "key": "og:title",
+        "content": "I look forward to hearing from you!"
+      },
+      {
+        "attribute": "property",
+        "key": "og:type",
+        "content": "article"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image",
+        "content": "https://www.jmc-streamline.com/media/jmc-streamline-processes-s-l-jasmin-madeleine-a-christensen-matassa.jpg"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:width",
+        "content": "1200"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:height",
+        "content": "630"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:alt",
+        "content": "Jmc Streamline Processes S L Jasmin Madeleine A Christensen Matassa"
+      },
+      {
+        "attribute": "property",
+        "key": "og:description",
+        "content": "I am available in three languages (German, English, Italian) and look forward to discussing your concerns."
+      },
+      {
+        "attribute": "property",
+        "key": "og:url",
+        "content": "https://www.jmc-streamline.com/en/contact/"
+      },
+      {
+        "attribute": "property",
+        "key": "og:locale",
+        "content": "en_US"
+      },
+      {
+        "attribute": "property",
+        "key": "og:site_name",
+        "content": "jmc. | Streamline Processes S.L."
+      },
+      {
+        "attribute": "property",
+        "key": "article:published_time",
+        "content": "2024-09-01T09:19:25+02:00"
+      },
+      {
+        "attribute": "property",
+        "key": "article:modified_time",
+        "content": "2024-09-01T16:21:08+02:00"
+      },
+      {
+        "attribute": "property",
+        "key": "og:updated_time",
+        "content": "2024-09-01T16:21:08+02:00"
+      },
+      {
+        "attribute": "name",
+        "key": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "attribute": "name",
+        "key": "msapplication-TileImage",
+        "content": "https://www.jmc-streamline.com/media/cropped-favicon-jmc-streamline-processes-192x192.png"
+      }
+    ]
+  },
+  "en:efficient-business-processes-for-expats-5-smart-strategies-for-international-work": {
+    "title": "5 strategies that really work",
+    "description": "International independence means not only efficient processes, but also the ability to adapt to new situations.",
+    "headMeta": [
+      {
+        "attribute": "name",
+        "key": "robots",
+        "content": "max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+      },
+      {
+        "attribute": "property",
+        "key": "og:title",
+        "content": "5 strategies that really work"
+      },
+      {
+        "attribute": "property",
+        "key": "og:type",
+        "content": "article"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image",
+        "content": "https://www.jmc-streamline.com/media/5-smarte-strategien-fuer-den-internationalen-arbeitsalltag.jpg"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:width",
+        "content": "600"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:height",
+        "content": "400"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:alt",
+        "content": "5 Smarte Strategien Fuer Den Internationalen Arbeitsalltag"
+      },
+      {
+        "attribute": "property",
+        "key": "og:description",
+        "content": "International independence means not only efficient processes, but also the ability to adapt to new situations."
+      },
+      {
+        "attribute": "property",
+        "key": "og:url",
+        "content": "https://www.jmc-streamline.com/en/efficient-business-processes-for-expats-5-smart-strategies-for-international-work/"
+      },
+      {
+        "attribute": "property",
+        "key": "og:locale",
+        "content": "en_US"
+      },
+      {
+        "attribute": "property",
+        "key": "og:site_name",
+        "content": "jmc. | Streamline Processes S.L."
+      },
+      {
+        "attribute": "property",
+        "key": "article:published_time",
+        "content": "2025-03-07T06:10:56+01:00"
+      },
+      {
+        "attribute": "property",
+        "key": "article:modified_time",
+        "content": "2025-03-07T06:12:37+01:00"
+      },
+      {
+        "attribute": "property",
+        "key": "og:updated_time",
+        "content": "2025-03-07T06:12:37+01:00"
+      },
+      {
+        "attribute": "property",
+        "key": "article:section",
+        "content": "Insights"
+      },
+      {
+        "attribute": "name",
+        "key": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "attribute": "name",
+        "key": "twitter:image",
+        "content": "https://www.jmc-streamline.com/media/5-smarte-strategien-fuer-den-internationalen-arbeitsalltag.jpg"
+      },
+      {
+        "attribute": "name",
+        "key": "msapplication-TileImage",
+        "content": "https://www.jmc-streamline.com/media/cropped-favicon-jmc-streamline-processes-192x192.png"
+      }
+    ]
+  },
+  "en:efficient-meetings-in-a-global-business-world-understanding-cultural-differences": {
+    "title": "Effiziente Meetings in einer globalen Geschäftswelt",
+    "description": "In einer global vernetzten Geschäftswelt spielt das Verständnis kultureller Unterschiede eine zentrale Rolle für den Erfolg von Meetings",
+    "headMeta": [
+      {
+        "attribute": "name",
+        "key": "robots",
+        "content": "max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+      },
+      {
+        "attribute": "property",
+        "key": "og:title",
+        "content": "Effiziente Meetings in einer globalen Geschäftswelt"
+      },
+      {
+        "attribute": "property",
+        "key": "og:type",
+        "content": "article"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image",
+        "content": "https://www.jmc-streamline.com/media/effiziente-meetings-in-einer-globalen-geschaeftswelt.jpg"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:width",
+        "content": "1024"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:height",
+        "content": "1024"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:alt",
+        "content": "Effiziente Meetings In Einer Globalen Geschaeftswelt"
+      },
+      {
+        "attribute": "property",
+        "key": "og:description",
+        "content": "In einer global vernetzten Geschäftswelt spielt das Verständnis kultureller Unterschiede eine zentrale Rolle für den Erfolg von Meetings"
+      },
+      {
+        "attribute": "property",
+        "key": "og:url",
+        "content": "https://www.jmc-streamline.com/en/efficient-meetings-in-a-global-business-world-understanding-cultural-differences/"
+      },
+      {
+        "attribute": "property",
+        "key": "og:locale",
+        "content": "en_US"
+      },
+      {
+        "attribute": "property",
+        "key": "og:site_name",
+        "content": "jmc. | Streamline Processes S.L."
+      },
+      {
+        "attribute": "property",
+        "key": "article:published_time",
+        "content": "2025-01-24T08:34:40+01:00"
+      },
+      {
+        "attribute": "property",
+        "key": "article:modified_time",
+        "content": "2025-01-24T08:34:49+01:00"
+      },
+      {
+        "attribute": "property",
+        "key": "og:updated_time",
+        "content": "2025-01-24T08:34:49+01:00"
+      },
+      {
+        "attribute": "property",
+        "key": "article:section",
+        "content": "Leadership"
+      },
+      {
+        "attribute": "name",
+        "key": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "attribute": "name",
+        "key": "twitter:image",
+        "content": "https://www.jmc-streamline.com/media/effiziente-meetings-in-einer-globalen-geschaeftswelt.jpg"
+      },
+      {
+        "attribute": "name",
+        "key": "msapplication-TileImage",
+        "content": "https://www.jmc-streamline.com/media/cropped-favicon-jmc-streamline-processes-192x192.png"
+      }
+    ]
+  },
+  "en:generally": {
+    "title": "Generally – jmc. | Streamline Processes S.L.",
+    "description": "",
+    "headMeta": [
+      {
+        "attribute": "name",
+        "key": "robots",
+        "content": "max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+      },
+      {
+        "attribute": "property",
+        "key": "og:title",
+        "content": "Generally – jmc. | Streamline Processes S.L."
+      },
+      {
+        "attribute": "property",
+        "key": "og:type",
+        "content": "website"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image",
+        "content": "https://www.jmc-streamline.com/media/jmc-streamline-processes-s-l-jasmin-madeleine-a-christensen-matassa.jpg"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:width",
+        "content": "1200"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:height",
+        "content": "630"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:alt",
+        "content": "Jmc Streamline Processes S L Jasmin Madeleine A Christensen Matassa"
+      },
+      {
+        "attribute": "property",
+        "key": "og:url",
+        "content": "https://www.jmc-streamline.com/en/generally/"
+      },
+      {
+        "attribute": "property",
+        "key": "og:locale",
+        "content": "en_US"
+      },
+      {
+        "attribute": "property",
+        "key": "og:site_name",
+        "content": "jmc. | Streamline Processes S.L."
+      },
+      {
+        "attribute": "name",
+        "key": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "attribute": "name",
+        "key": "msapplication-TileImage",
+        "content": "https://www.jmc-streamline.com/media/cropped-favicon-jmc-streamline-processes-192x192.png"
+      }
+    ]
+  },
+  "en:imprint": {
+    "title": "Imprint – jmc. | Streamline Processes S.L.",
+    "description": "Impressum von jmc. | Streamline Processes S.L. in Spanien",
+    "headMeta": [
+      {
+        "attribute": "name",
+        "key": "robots",
+        "content": "max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+      },
+      {
+        "attribute": "property",
+        "key": "og:title",
+        "content": "Imprint – jmc. | Streamline Processes S.L."
+      },
+      {
+        "attribute": "property",
+        "key": "og:type",
+        "content": "article"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image",
+        "content": "https://www.jmc-streamline.com/media/jmc-streamline-processes-s-l-jasmin-madeleine-a-christensen-matassa.jpg"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:width",
+        "content": "1200"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:height",
+        "content": "630"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:alt",
+        "content": "Jmc Streamline Processes S L Jasmin Madeleine A Christensen Matassa"
+      },
+      {
+        "attribute": "property",
+        "key": "og:description",
+        "content": "Impressum von jmc. | Streamline Processes S.L. in Spanien"
+      },
+      {
+        "attribute": "property",
+        "key": "og:url",
+        "content": "https://www.jmc-streamline.com/en/imprint/"
+      },
+      {
+        "attribute": "property",
+        "key": "og:locale",
+        "content": "en_US"
+      },
+      {
+        "attribute": "property",
+        "key": "og:site_name",
+        "content": "jmc. | Streamline Processes S.L."
+      },
+      {
+        "attribute": "property",
+        "key": "article:published_time",
+        "content": "2024-09-01T09:20:04+02:00"
+      },
+      {
+        "attribute": "property",
+        "key": "article:modified_time",
+        "content": "2024-09-02T09:45:51+02:00"
+      },
+      {
+        "attribute": "property",
+        "key": "og:updated_time",
+        "content": "2024-09-02T09:45:51+02:00"
+      },
+      {
+        "attribute": "name",
+        "key": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "attribute": "name",
+        "key": "msapplication-TileImage",
+        "content": "https://www.jmc-streamline.com/media/cropped-favicon-jmc-streamline-processes-192x192.png"
+      }
+    ]
+  },
+  "en:insights": {
+    "title": "Personal observations and findings",
+    "description": "This is less about ready-made solutions and more about discovering and understanding - about thoughts and ideas that have made me think.",
+    "headMeta": [
+      {
+        "attribute": "name",
+        "key": "robots",
+        "content": "max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+      },
+      {
+        "attribute": "property",
+        "key": "og:title",
+        "content": "Personal observations and findings"
+      },
+      {
+        "attribute": "property",
+        "key": "og:type",
+        "content": "website"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image",
+        "content": "https://www.jmc-streamline.com/media/jmc-streamline-processes-s-l-jasmin-madeleine-a-christensen-matassa.jpg"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:width",
+        "content": "1200"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:height",
+        "content": "630"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:alt",
+        "content": "Jmc Streamline Processes S L Jasmin Madeleine A Christensen Matassa"
+      },
+      {
+        "attribute": "property",
+        "key": "og:description",
+        "content": "This is less about ready-made solutions and more about discovering and understanding - about thoughts and ideas that have made me think."
+      },
+      {
+        "attribute": "property",
+        "key": "og:url",
+        "content": "https://www.jmc-streamline.com/en/insights/"
+      },
+      {
+        "attribute": "property",
+        "key": "og:locale",
+        "content": "en_US"
+      },
+      {
+        "attribute": "property",
+        "key": "og:site_name",
+        "content": "jmc. | Streamline Processes S.L."
+      },
+      {
+        "attribute": "name",
+        "key": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "attribute": "name",
+        "key": "msapplication-TileImage",
+        "content": "https://www.jmc-streamline.com/media/cropped-favicon-jmc-streamline-processes-192x192.png"
+      }
+    ]
+  },
+  "en:leadership": {
+    "title": "The development of modern leadership skills",
+    "description": "It's about rethinking leadership, remaining flexible and driving innovation. Agility, emotional intelligence",
+    "headMeta": [
+      {
+        "attribute": "name",
+        "key": "robots",
+        "content": "max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+      },
+      {
+        "attribute": "property",
+        "key": "og:title",
+        "content": "The development of modern leadership skills"
+      },
+      {
+        "attribute": "property",
+        "key": "og:type",
+        "content": "website"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image",
+        "content": "https://www.jmc-streamline.com/media/jmc-streamline-processes-s-l-jasmin-madeleine-a-christensen-matassa.jpg"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:width",
+        "content": "1200"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:height",
+        "content": "630"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:alt",
+        "content": "Jmc Streamline Processes S L Jasmin Madeleine A Christensen Matassa"
+      },
+      {
+        "attribute": "property",
+        "key": "og:description",
+        "content": "It's about rethinking leadership, remaining flexible and driving innovation. Agility, emotional intelligence"
+      },
+      {
+        "attribute": "property",
+        "key": "og:url",
+        "content": "https://www.jmc-streamline.com/en/leadership/"
+      },
+      {
+        "attribute": "property",
+        "key": "og:locale",
+        "content": "en_US"
+      },
+      {
+        "attribute": "property",
+        "key": "og:site_name",
+        "content": "jmc. | Streamline Processes S.L."
+      },
+      {
+        "attribute": "name",
+        "key": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "attribute": "name",
+        "key": "msapplication-TileImage",
+        "content": "https://www.jmc-streamline.com/media/cropped-favicon-jmc-streamline-processes-192x192.png"
+      }
+    ]
+  },
+  "en:privacy-policy": {
+    "title": "Privacy Policy – jmc. | Streamline Processes S.L.",
+    "description": "The following information provides a simple overview of what happens to your personal data when you visit this website.",
+    "headMeta": [
+      {
+        "attribute": "name",
+        "key": "robots",
+        "content": "max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+      },
+      {
+        "attribute": "property",
+        "key": "og:title",
+        "content": "Privacy Policy – jmc. | Streamline Processes S.L."
+      },
+      {
+        "attribute": "property",
+        "key": "og:type",
+        "content": "article"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image",
+        "content": "https://www.jmc-streamline.com/media/jmc-streamline-processes-s-l-jasmin-madeleine-a-christensen-matassa.jpg"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:width",
+        "content": "1200"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:height",
+        "content": "630"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:alt",
+        "content": "Jmc Streamline Processes S L Jasmin Madeleine A Christensen Matassa"
+      },
+      {
+        "attribute": "property",
+        "key": "og:description",
+        "content": "The following information provides a simple overview of what happens to your personal data when you visit this website."
+      },
+      {
+        "attribute": "property",
+        "key": "og:url",
+        "content": "https://www.jmc-streamline.com/en/privacy-policy/"
+      },
+      {
+        "attribute": "property",
+        "key": "og:locale",
+        "content": "en_US"
+      },
+      {
+        "attribute": "property",
+        "key": "og:site_name",
+        "content": "jmc. | Streamline Processes S.L."
+      },
+      {
+        "attribute": "property",
+        "key": "article:published_time",
+        "content": "2024-09-01T09:20:26+02:00"
+      },
+      {
+        "attribute": "property",
+        "key": "article:modified_time",
+        "content": "2025-12-06T10:28:49+01:00"
+      },
+      {
+        "attribute": "property",
+        "key": "og:updated_time",
+        "content": "2025-12-06T10:28:49+01:00"
+      },
+      {
+        "attribute": "name",
+        "key": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "attribute": "name",
+        "key": "msapplication-TileImage",
+        "content": "https://www.jmc-streamline.com/media/cropped-favicon-jmc-streamline-processes-192x192.png"
+      }
+    ]
+  },
+  "en:services": {
+    "title": "I offer comprehensive office management services",
+    "description": "I provide efficient office management, including remote office organisation & client management. I organise events, coordinate appointments and oversee projects.",
+    "headMeta": [
+      {
+        "attribute": "name",
+        "key": "robots",
+        "content": "max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+      },
+      {
+        "attribute": "property",
+        "key": "og:title",
+        "content": "I offer comprehensive office management services"
+      },
+      {
+        "attribute": "property",
+        "key": "og:type",
+        "content": "article"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image",
+        "content": "https://www.jmc-streamline.com/media/jmc-streamline-processes-s-l-jasmin-madeleine-a-christensen-matassa.jpg"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:width",
+        "content": "1200"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:height",
+        "content": "630"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:alt",
+        "content": "Jmc Streamline Processes S L Jasmin Madeleine A Christensen Matassa"
+      },
+      {
+        "attribute": "property",
+        "key": "og:description",
+        "content": "I provide efficient office management, including remote office organisation & client management. I organise events, coordinate appointments and oversee projects."
+      },
+      {
+        "attribute": "property",
+        "key": "og:url",
+        "content": "https://www.jmc-streamline.com/en/services/"
+      },
+      {
+        "attribute": "property",
+        "key": "og:locale",
+        "content": "en_US"
+      },
+      {
+        "attribute": "property",
+        "key": "og:site_name",
+        "content": "jmc. | Streamline Processes S.L."
+      },
+      {
+        "attribute": "property",
+        "key": "article:published_time",
+        "content": "2024-09-01T09:17:01+02:00"
+      },
+      {
+        "attribute": "property",
+        "key": "article:modified_time",
+        "content": "2024-09-01T16:13:31+02:00"
+      },
+      {
+        "attribute": "property",
+        "key": "og:updated_time",
+        "content": "2024-09-01T16:13:31+02:00"
+      },
+      {
+        "attribute": "name",
+        "key": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "attribute": "name",
+        "key": "msapplication-TileImage",
+        "content": "https://www.jmc-streamline.com/media/cropped-favicon-jmc-streamline-processes-192x192.png"
+      }
+    ]
+  },
+  "en:standing-still-is-not-an-option": {
+    "title": "Standing still is not an option",
+    "description": "For me, what matters is to remain attentive, to listen, and to be open to what develops.",
+    "headMeta": [
+      {
+        "attribute": "name",
+        "key": "robots",
+        "content": "max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+      },
+      {
+        "attribute": "property",
+        "key": "og:title",
+        "content": "Standing still is not an option"
+      },
+      {
+        "attribute": "property",
+        "key": "og:type",
+        "content": "article"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image",
+        "content": "https://www.jmc-streamline.com/media/stillstand-ist-keine-option.jpg"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:width",
+        "content": "600"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:height",
+        "content": "400"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:alt",
+        "content": "Stillstand Ist Keine Option"
+      },
+      {
+        "attribute": "property",
+        "key": "og:description",
+        "content": "For me, what matters is to remain attentive, to listen, and to be open to what develops."
+      },
+      {
+        "attribute": "property",
+        "key": "og:url",
+        "content": "https://www.jmc-streamline.com/en/standing-still-is-not-an-option/"
+      },
+      {
+        "attribute": "property",
+        "key": "og:locale",
+        "content": "en_US"
+      },
+      {
+        "attribute": "property",
+        "key": "og:site_name",
+        "content": "jmc. | Streamline Processes S.L."
+      },
+      {
+        "attribute": "property",
+        "key": "article:published_time",
+        "content": "2025-11-03T06:16:41+01:00"
+      },
+      {
+        "attribute": "property",
+        "key": "article:modified_time",
+        "content": "2025-11-03T06:16:42+01:00"
+      },
+      {
+        "attribute": "property",
+        "key": "og:updated_time",
+        "content": "2025-11-03T06:16:42+01:00"
+      },
+      {
+        "attribute": "property",
+        "key": "article:section",
+        "content": "Generally"
+      },
+      {
+        "attribute": "name",
+        "key": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "attribute": "name",
+        "key": "twitter:image",
+        "content": "https://www.jmc-streamline.com/media/stillstand-ist-keine-option.jpg"
+      },
+      {
+        "attribute": "name",
+        "key": "msapplication-TileImage",
+        "content": "https://www.jmc-streamline.com/media/cropped-favicon-jmc-streamline-processes-192x192.png"
+      }
+    ]
+  },
+  "en:transformation-of-businesses-and-lives-with-lean-processes": {
+    "title": "Lean processes change companies and lives",
+    "description": "Clear and lean processes create space for creativity, promote sustainable success and show how efficiency can change not only companies but also...",
+    "headMeta": [
+      {
+        "attribute": "name",
+        "key": "robots",
+        "content": "max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+      },
+      {
+        "attribute": "property",
+        "key": "og:title",
+        "content": "Lean processes change companies and lives"
+      },
+      {
+        "attribute": "property",
+        "key": "og:type",
+        "content": "article"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image",
+        "content": "https://www.jmc-streamline.com/media/wie-schlanke-prozesse-unternehmen-veraendern.jpg"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:width",
+        "content": "1024"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:height",
+        "content": "1024"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:alt",
+        "content": "Wie Schlanke Prozesse Unternehmen Veraendern"
+      },
+      {
+        "attribute": "property",
+        "key": "og:description",
+        "content": "Clear and lean processes create space for creativity, promote sustainable success and show how efficiency can change not only companies but also..."
+      },
+      {
+        "attribute": "property",
+        "key": "og:url",
+        "content": "https://www.jmc-streamline.com/en/transformation-of-businesses-and-lives-with-lean-processes/"
+      },
+      {
+        "attribute": "property",
+        "key": "og:locale",
+        "content": "en_US"
+      },
+      {
+        "attribute": "property",
+        "key": "og:site_name",
+        "content": "jmc. | Streamline Processes S.L."
+      },
+      {
+        "attribute": "property",
+        "key": "article:published_time",
+        "content": "2025-01-12T11:29:06+01:00"
+      },
+      {
+        "attribute": "property",
+        "key": "article:modified_time",
+        "content": "2025-01-12T17:26:31+01:00"
+      },
+      {
+        "attribute": "property",
+        "key": "og:updated_time",
+        "content": "2025-01-12T17:26:31+01:00"
+      },
+      {
+        "attribute": "property",
+        "key": "article:section",
+        "content": "Insights"
+      },
+      {
+        "attribute": "name",
+        "key": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "attribute": "name",
+        "key": "twitter:image",
+        "content": "https://www.jmc-streamline.com/media/wie-schlanke-prozesse-unternehmen-veraendern.jpg"
+      },
+      {
+        "attribute": "name",
+        "key": "msapplication-TileImage",
+        "content": "https://www.jmc-streamline.com/media/cropped-favicon-jmc-streamline-processes-192x192.png"
+      }
+    ]
+  },
+  "en:why-illustrations-the-creative-path-to-clarity-and-connection": {
+    "title": "The creative path to clarity and connection",
+    "description": "Some people wonder what illustrations have to do with clear processes. This is exactly what I would like to address.",
+    "headMeta": [
+      {
+        "attribute": "name",
+        "key": "robots",
+        "content": "max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+      },
+      {
+        "attribute": "property",
+        "key": "og:title",
+        "content": "The creative path to clarity and connection"
+      },
+      {
+        "attribute": "property",
+        "key": "og:type",
+        "content": "article"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image",
+        "content": "https://www.jmc-streamline.com/media/weg-zur-klarheit-und-verbindung-1.jpg"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:width",
+        "content": "1650"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:height",
+        "content": "1100"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:alt",
+        "content": "Weg Zur Klarheit Und Verbindung"
+      },
+      {
+        "attribute": "property",
+        "key": "og:description",
+        "content": "Some people wonder what illustrations have to do with clear processes. This is exactly what I would like to address."
+      },
+      {
+        "attribute": "property",
+        "key": "og:url",
+        "content": "https://www.jmc-streamline.com/en/why-illustrations-the-creative-path-to-clarity-and-connection/"
+      },
+      {
+        "attribute": "property",
+        "key": "og:locale",
+        "content": "en_US"
+      },
+      {
+        "attribute": "property",
+        "key": "og:site_name",
+        "content": "jmc. | Streamline Processes S.L."
+      },
+      {
+        "attribute": "property",
+        "key": "article:published_time",
+        "content": "2025-02-06T10:32:07+01:00"
+      },
+      {
+        "attribute": "property",
+        "key": "article:modified_time",
+        "content": "2025-02-06T13:28:46+01:00"
+      },
+      {
+        "attribute": "property",
+        "key": "og:updated_time",
+        "content": "2025-02-06T13:28:46+01:00"
+      },
+      {
+        "attribute": "property",
+        "key": "article:section",
+        "content": "Insights"
+      },
+      {
+        "attribute": "name",
+        "key": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "attribute": "name",
+        "key": "twitter:image",
+        "content": "https://www.jmc-streamline.com/media/weg-zur-klarheit-und-verbindung-1.jpg"
+      },
+      {
+        "attribute": "name",
+        "key": "msapplication-TileImage",
+        "content": "https://www.jmc-streamline.com/media/cropped-favicon-jmc-streamline-processes-192x192.png"
+      }
+    ]
+  },
+  "en:why-leadership-and-sports-are-the-ultimate-power-duo": {
+    "title": "Leadership and sport the ultimate power duo",
+    "description": "Leading with energy and clarity doesn't just happen, it takes discipline, exercise and perseverance.",
+    "headMeta": [
+      {
+        "attribute": "name",
+        "key": "robots",
+        "content": "max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+      },
+      {
+        "attribute": "property",
+        "key": "og:title",
+        "content": "Leadership and sport the ultimate power duo"
+      },
+      {
+        "attribute": "property",
+        "key": "og:type",
+        "content": "article"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image",
+        "content": "https://www.jmc-streamline.com/media/why-leadership-sport-ultimative-power-duo.jpg"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:width",
+        "content": "600"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:height",
+        "content": "400"
+      },
+      {
+        "attribute": "property",
+        "key": "og:image:alt",
+        "content": "Why Leadership Sport Ultimative Power Duo"
+      },
+      {
+        "attribute": "property",
+        "key": "og:description",
+        "content": "Leading with energy and clarity doesn't just happen, it takes discipline, exercise and perseverance."
+      },
+      {
+        "attribute": "property",
+        "key": "og:url",
+        "content": "https://www.jmc-streamline.com/en/why-leadership-and-sports-are-the-ultimate-power-duo/"
+      },
+      {
+        "attribute": "property",
+        "key": "og:locale",
+        "content": "en_US"
+      },
+      {
+        "attribute": "property",
+        "key": "og:site_name",
+        "content": "jmc. | Streamline Processes S.L."
+      },
+      {
+        "attribute": "property",
+        "key": "article:published_time",
+        "content": "2025-03-24T17:01:21+01:00"
+      },
+      {
+        "attribute": "property",
+        "key": "article:modified_time",
+        "content": "2025-03-25T08:49:12+01:00"
+      },
+      {
+        "attribute": "property",
+        "key": "og:updated_time",
+        "content": "2025-03-25T08:49:12+01:00"
+      },
+      {
+        "attribute": "property",
+        "key": "article:section",
+        "content": "Generally"
+      },
+      {
+        "attribute": "name",
+        "key": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "attribute": "name",
+        "key": "twitter:image",
+        "content": "https://www.jmc-streamline.com/media/why-leadership-sport-ultimative-power-duo.jpg"
+      },
+      {
+        "attribute": "name",
+        "key": "msapplication-TileImage",
+        "content": "https://www.jmc-streamline.com/media/cropped-favicon-jmc-streamline-processes-192x192.png"
+      }
+    ]
+  }
+}

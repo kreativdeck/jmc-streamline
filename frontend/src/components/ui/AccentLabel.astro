@@ -1,0 +1,17 @@
+---
+/** Kleines Label über Überschriften (Großbuchstaben auf hellgrauem Grund). */
+interface Props {
+  as?: 'span' | 'p' | 'div';
+  class?: string;
+}
+const { as: Tag = 'span', class: className = '' } = Astro.props;
+---
+
+<Tag
+  class:list={[
+    'order-first mb-0 inline-block rounded-base bg-primary-ultra-light px-[12px] py-[6px] text-s leading-[1.1] tracking-[0.095em] uppercase',
+    className,
+  ]}
+>
+  <slot />
+</Tag>

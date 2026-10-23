@@ -1,0 +1,13 @@
+User-agent: Twitterbot
+Disallow: *
+Allow: /images
+Allow: /archives
+
+User-Agent: *
+Disallow: /readme.html
+Disallow: /refer/
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php
+Allow: /?display=wide
+Allow: /wp-content/uploads/
+Sitemap: https://www.jmc-streamline.com/sitemap.xml

@@ -1,0 +1,21 @@
+{
+  "counts": {
+    "pages": 32,
+    "matching_titles": 32,
+    "matching_description_states": 32,
+    "matching_schema_pages": 32,
+    "schema_WebSite": 32,
+    "schema_WebPage": 32,
+    "schema_ReadAction": 24,
+    "schema_Organization": 36,
+    "original_without_description": 2,
+    "schema_BreadcrumbList": 30,
+    "schema_CollectionPage": 8,
+    "schema_ImageObject": 12,
+    "schema_BlogPosting": 12,
+    "schema_ContactPage": 2,
+    "schema_AboutPage": 2,
+    "sitemap_urls": 32
+  },
+  "problems": []
+}

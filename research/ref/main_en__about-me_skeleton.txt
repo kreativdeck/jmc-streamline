@@ -1,0 +1,68 @@
+    <main id="brx-content">
+      <section class="brxe-section fr-content-section-mike">
+        <div class="brxe-container fr-intro fr-intro-alpha">
+          <h2 class="brxe-heading fr-intro-alpha__heading">
+            » I help your business to grow.
+          <p class="brxe-text-basic k-accent-heading">
+            » My Focus
+          <p class="brxe-text-basic fr-lede fr-intro-alpha__lede">
+            » Think of me as the key to unlocking your company's full potential.
+        <div class="brxe-container fr-content-section-mike__inner">
+          <div class="brxe-block fr-content-section-mike__inner-left">
+            <div class="brxe-text fr-content-section-mike__text">
+              <p>
+                » Hi! I
+                » m Jasmin-Madeleine A. Christensen-Matassa and I
+                » m delighted to share my journey with you. I was born and raised in Munich and have since called many places home, from the sunny shores of Australia and Italy to the USA, the UK and the vibrant cities of Hamburg and Berlin. My background is as diverse as the cultures I
+                » ve immersed myself in, which has shaped my approach to life and work. I have a global outlook, speak fluent German, English and Italian and am making very good progress in Spanish.
+              <p>
+                <b>
+                  » My career has taken me through various exciting roles.
+              <p>
+                » I
+                » ve managed busy offices, kept the bookkeeping balanced, run marketing campaigns, and coordinated major events. Each position taught me something valuable about how to make things run smoothly and efficiently, whether it
+                » s organizing a team or planning a large event. I
+                » ve also been right at the heart of business operations, working closely with CEOs and other key stakeholders to drive success.
+              <p>
+                » Now, as I settle in Mallorca with my family, I am thrilled to tap into the Mediterranean lifestyle that echoes my family
+                » s roots. This move marks the beginning of a new venture for me—a venture where I aim to bring all my experiences together to provide tailored support that helps businesses thrive.
+          <div class="brxe-block fr-content-section-mike__inner-middle">
+            <div class="brxe-block fr-content-section-mike__media-wrapper">
+              <figure class="brxe-image fr-content-section-mike__media tag">
+                <img src="https://www.jmc-streamline.com/wp-content/uploads/about-me-jasmin-madeleine-a-christensen-matassa.jpg" class="css-filter size-full" alt="About Me Jasmin Madeleine A Christensen Matassa" srcset="https://www.jmc-streamline.com/wp-content/uploads/about-me-jasmin-madeleine-a-christensen-matassa.jpg 600w, https://www.jmc-streamline.com/wp-content/uploads/about-me-jasmin-madeleine-a-christensen-matassa-480x720.jpg 480w">
+            <p class="brxe-text-basic fr-content-section-mike__impact-statement">
+              » I am ready to take on new challenges and to see projects through to a successful conclusion.
+          <div class="brxe-block fr-content-section-mike__inner-right">
+            <div class="brxe-block fr-content-section-mike__callout">
+              <div class="brxe-block fr-content-section-mike__callout-inner">
+                <p class="brxe-text-basic fr-content-section-mike__callout-text">
+                  » Wherever I am, from Munich to Hamburg or Mallorca, I have a plan. That's just who I am.
+      <section class="brxe-section fr-hero-quebec">
+        <div class="brxe-container fr-hero-quebec__inner-top">
+          <div class="brxe-container fr-hero-quebec__header">
+            <h2 class="brxe-heading fr-hero-quebec__heading">
+              » I’m here to make sure your business not only meets but exceeds its goals.
+            <p class="brxe-text-basic fr-hero-quebec__lede fr-lede">
+              » I believe in the power of connecting with others and building strong relationships.
+        <div class="brxe-container fr-hero-quebec__inner-bottom">
+          <div class="brxe-block fr-hero-quebec__content-wrapper">
+            <div class="brxe-block fr-hero-quebec__media-wrapper">
+              <div data-script-id="nejbgp" class="brxe-video">
+                <video class="perfmatters-lazy">
+                  <p>
+                    » Your browser does not support the video tag.
+              <div class="brxe-div fr-hero-quebec__overlay">
+          <div class="brxe-block fr-hero-quebec__sidebar">
+            <div class="brxe-block fr-hero-quebec__cta">
+              <div class="brxe-block fr-hero-quebec__cta-content">
+                <h2 id="brxe-fdfdff" class="brxe-heading fr-hero-quebec__cta-heading">
+                  » Reach out!
+                <div class="brxe-text fr-hero-quebec__cta-text">
+                  <p>
+                    » Thank you for taking the time to learn more about me. I look forward to exchanging ideas and working with you. If you have any questions or concerns, I am always available and happy to provide additional information.
+              <div class="brxe-div fr-icon-link-alpha-wrapper">
+                <a id="brxe-73ec97" class="brxe-text-link fr-icon-link-alpha" href="https://www.jmc-streamline.com/en/contact/">
+                  <span class="icon">
+                  <span class="text">
+                    » Contact
+    <footer id="brx-footer">

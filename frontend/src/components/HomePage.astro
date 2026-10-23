@@ -1,0 +1,281 @@
+---
+/**
+ * Home page (DE/EN): hero with background video, potential grid, contact
+ * band, process section, feature section, blockquote, solutions grid,
+ * blog teaser and CTA.
+ */
+import type { Lang } from '../data/site';
+import { company } from '../data/site';
+import { home } from '../data/pages';
+import { icons } from '../data/icons';
+import homeCards from '../data/generated/home_cards.json';
+import PostCardFoxtrot from './PostCardFoxtrot.astro';
+import Section from './ui/Section.astro';
+import Container from './ui/Container.astro';
+import Button from './ui/Button.astro';
+import AccentLabel from './ui/AccentLabel.astro';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const d = home[lang];
+const cards = (homeCards as Record<string, { href: string; title: string; lede: string; date: string; image?: { src: string; alt: string } }[]>)[lang];
+
+const potentialIcons = [
+  icons.homeCard1,
+  icons.homeCard2,
+  icons.homeCard3,
+  icons.homeCard4,
+  icons.homeCard5,
+];
+// Die englische Fassung führt die Karte zu operativer Exzellenz an dritter Stelle.
+const accentPotentialCards = [0, lang === 'de' ? 4 : 2];
+
+// Platzierung der Karten im versetzten Raster
+const potentialAreas = [
+  '[grid-area:1/1/10/2]',
+  '[grid-area:3/2/12/3]',
+  '[grid-area:5/3/14/-1]',
+  '[grid-area:10/1/20/2]',
+  '[grid-area:12/2/21/3]',
+];
+const featureAreas = ['[grid-area:3/1/7/2]', '[grid-area:1/2/5/3]', '[grid-area:5/2/9/3]'];
+---
+
+<!-- Hero -->
+<Section class="relative isolate min-h-screen justify-center">
+  <div class="pointer-events-none absolute top-0 left-0 z-[-1] h-full w-full overflow-hidden">
+    <video
+      class="absolute top-1/2 left-1/2 h-full w-full max-w-none -translate-x-1/2 -translate-y-1/2 border-0 object-cover"
+      autoplay
+      loop
+      playsinline
+      muted
+    >
+      <source src={d.hero.video} type="video/mp4" />
+    </video>
+  </div>
+  <div class="absolute inset-0 z-[-1] bg-primary/50"></div>
+
+  <Container class="relative z-[1] gap-y-m self-start text-white">
+    <div class="flex max-w-[60ch] flex-col items-start gap-y-m">
+      <h1 class="text-[5rem] leading-[1.1] tracking-[-0.05px] text-white max-narrow:text-h1">{d.hero.heading}</h1>
+      <span class="order-first leading-[1.1] text-white">{d.hero.accent}</span>
+      <p class="max-w-[60ch] text-neutral-ultra-light">{d.hero.lede}</p>
+      <Button variant="ghost" arrow href={d.hero.cta.href}>{d.hero.cta.label}</Button>
+    </div>
+  </Container>
+</Section>
+
+<!-- Potenzial -->
+<Section>
+  <Container class="gap-y-xl">
+    <div class="flex max-w-[90ch] flex-col items-start gap-y-s self-start text-left">
+      <h2>{d.potential.heading}</h2>
+      <p>{d.potential.subheading}</p>
+      <AccentLabel>{d.potential.accent}</AccentLabel>
+    </div>
+    <ul
+      class="m-0 grid w-full list-none grid-cols-3 grid-rows-[repeat(21,minmax(0,1fr))] gap-m p-0 max-small:grid-cols-1 max-small:grid-rows-[auto]"
+    >
+      {
+        d.potential.cards.map((card, i) => (
+          <li
+            class:list={[
+              'flex w-full flex-col items-start gap-y-m border-[0.1rem] border-solid border-neutral-light p-m transition-all duration-500 ease-[ease] hover:relative hover:z-[99] hover:shadow-soft max-small:col-span-1 max-small:row-span-1',
+              potentialAreas[i],
+            ]}
+          >
+            <svg
+              class:list={[
+                'order-first size-[60px]',
+                accentPotentialCards.includes(i) ? 'fill-accent text-accent' : 'fill-primary text-primary',
+              ]}
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox={potentialIcons[i].viewBox}
+              aria-hidden="true"
+            >
+              <path d={potentialIcons[i].d} />
+            </svg>
+            <h3>{card.heading}</h3>
+            <p class="m-0">{card.text}</p>
+          </li>
+        ))
+      }
+    </ul>
+  </Container>
+</Section>
+
+<!-- Kontaktband -->
+<Section class="relative max-narrow:pt-0">
+  <Container
+    layout="none"
+    maxWidth="max-w-[min(90ch,100%)]"
+    class="relative z-[1] flex flex-row items-center justify-center self-center py-xl text-center text-neutral-ultra-light"
+  >
+    <p class="font-heading text-h2 leading-[1.2] font-bold text-white">{d.contactBand.text}</p>
+  </Container>
+  <div class="absolute inset-0">
+    <figure class="absolute inset-0 z-[-1] size-full">
+      <img class="size-full object-cover" src={d.contactBand.image.src} alt={d.contactBand.image.alt} loading="lazy" decoding="async" />
+    </figure>
+    <div class="pointer-events-none absolute inset-0 bg-primary/50"></div>
+  </div>
+</Section>
+
+<!-- Prozess -->
+<Section class="bg-accent-ultra-light">
+  <Container layout="grid" class="grid-cols-[minmax(0,1fr)_minmax(0,2fr)] grid-rows-1 items-stretch gap-m max-phablet:grid-cols-1">
+    <div class="flex flex-col">
+      <div class="sticky top-0 flex flex-col items-start gap-y-m">
+        <h2>{d.process.heading}</h2>
+        <AccentLabel as="p">{d.process.accent}</AccentLabel>
+        <Button arrow href={d.process.cta.href}>{d.process.cta.label}</Button>
+      </div>
+    </div>
+    <ol class="grid grid-cols-2 grid-rows-1 items-stretch gap-m [counter-reset:process-counter_0] max-phablet:grid-cols-1">
+      {
+        d.process.cards.map((card, i) => (
+          <li class="flex flex-col gap-y-s">
+            <div class="flex flex-col items-start gap-y-s">
+              <h3>{card.heading}</h3>
+              <span
+                class:list={[
+                  'order-first flex flex-row after:[counter-increment:process-counter] after:content-[counter(process-counter)]',
+                  i < 9 && "before:content-['0']",
+                ]}
+              />
+            </div>
+            <div class="flex flex-col">
+              <ul class="flex list-[square] flex-col gap-y-xs ps-[1em]">
+                {card.items.map((item) => (
+                  <li>
+                    <div class="m-0">{item}</div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </li>
+        ))
+      }
+    </ol>
+  </Container>
+</Section>
+
+<!-- Merkmale -->
+<Section>
+  <Container
+    layout="grid"
+    class="grid-cols-[minmax(0,3fr)_minmax(0,2fr)] grid-rows-1 items-center gap-[calc(var(--spacing-m)*3)] max-tablet:flex max-tablet:flex-col"
+  >
+    <div class="flex w-full flex-col items-start gap-y-m">
+      <h2>{d.feature.heading}</h2>
+      <AccentLabel as="p">{d.feature.accent}</AccentLabel>
+      <p class="max-w-[60ch]">{d.feature.lede}</p>
+      <Button arrow href={d.feature.cta.href}>{d.feature.cta.label}</Button>
+      <figure class="w-full overflow-hidden rounded-base">
+        <img class="h-auto w-full object-cover object-[35%]" src={d.feature.image.src} alt={d.feature.image.alt} loading="lazy" decoding="async" />
+      </figure>
+    </div>
+    <ul
+      class="m-0 -order-1 grid w-full list-none grid-cols-2 grid-rows-1 gap-xl p-0 max-tablet:order-none max-tablet:flex max-tablet:flex-col max-tablet:gap-y-m"
+    >
+      {
+        d.feature.cards.map((card, i) => (
+          <li
+            class:list={[
+              'flex w-full flex-col items-start gap-y-[calc(var(--spacing-m)/2)] border-t-[1.5px] border-solid border-primary-dark pt-m',
+              featureAreas[i],
+            ]}
+          >
+            <h2 class="text-h4">{card.heading}</h2>
+            <p class="m-0">{card.text}</p>
+          </li>
+        ))
+      }
+    </ul>
+  </Container>
+</Section>
+
+<!-- Zitat -->
+<Section class="bg-primary" pad="py-l">
+  <Container
+    layout="none"
+    maxWidth="max-w-[90ch] max-phablet:max-w-full"
+    class="flex flex-row items-center justify-center gap-xl self-center py-xl text-center"
+  >
+    <blockquote
+      class:list={[
+        'my-[15px] border-l-4 border-solid border-quote-rule pl-[30px] text-left font-heading text-h2 leading-[1.2] text-white',
+        lang === 'en' ? 'font-bold' : 'font-extrabold',
+      ]}
+    >
+      {d.quote}
+    </blockquote>
+  </Container>
+</Section>
+
+<!-- Lösungen -->
+<Section>
+  <Container layout="col" class="items-center gap-y-m text-center">
+    <h2 class="leading-[1.1] max-phablet:text-h1">{d.solutions.heading}</h2>
+    <AccentLabel as="p">{d.solutions.accent}</AccentLabel>
+    <p class="max-w-[60ch]">{d.solutions.lede}</p>
+  </Container>
+  <Container as="ul" layout="grid" class="grid-cols-3 items-stretch gap-xl pl-[40px] max-tablet:grid-cols-2 max-phablet:grid-cols-1 max-phablet:pl-0">
+    {
+      d.solutions.cards.map((card) => (
+        <li class="flex w-full flex-col items-start gap-y-[calc(var(--spacing-m)/2)] border-t-[1.5px] border-solid border-primary-dark pt-m">
+          <h2 class="text-h4">{card.heading}</h2>
+          <div class="flex flex-col">
+            <ul class="m-0 flex list-[square] flex-col gap-y-xs ps-[1em]">
+              {card.items.map((item) => (
+                <li>
+                  <p class="m-0">{item}</p>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </li>
+      ))
+    }
+    <li class="col-end-[span_2] flex w-full flex-col items-start justify-center gap-y-[calc(var(--spacing-m)/2)] self-center pt-m max-phablet:col-end-auto">
+      <Button arrow href={d.solutions.cta.href}>{d.solutions.cta.label}</Button>
+    </li>
+  </Container>
+</Section>
+
+<!-- Blog-Teaser -->
+<Section>
+  <Container class="gap-y-[calc(var(--spacing-m)/2)]">
+    <div class="order-first text-m leading-[1.1]">{d.blog.accent}</div>
+    <h2>{d.blog.heading}</h2>
+  </Container>
+  <Container as="ul" layout="grid" class="m-0 grid-cols-(--columns-cards) grid-rows-1 items-stretch gap-m pl-0">
+    {cards.map((card) => <PostCardFoxtrot card={card} />)}
+  </Container>
+</Section>
+
+<!-- CTA -->
+<Section class="bg-accent-ultra-light">
+  <Container layout="grid" class="grid-cols-[minmax(0,2fr)_minmax(0,3fr)] items-start gap-xl max-phablet:grid-cols-1">
+    <div class="flex w-full flex-col items-start">
+      <figure class="w-full overflow-hidden rounded-base">
+        <img class="h-auto w-full object-cover object-[35%]" src={d.cta.image.src} alt={d.cta.image.alt} loading="lazy" decoding="async" />
+      </figure>
+    </div>
+    <div class="flex flex-col items-center justify-center gap-y-m self-center max-phablet:items-start max-phablet:self-start">
+      <Container layout="col" class="items-center gap-y-m text-center">
+        <h2 class="w-[25ch] max-w-full text-h1 leading-[1.1]">{d.cta.heading}</h2>
+        <AccentLabel as="p">{d.cta.accent}</AccentLabel>
+        <p class="max-w-[60ch]">{d.cta.lede}</p>
+      </Container>
+      <div class="flex flex-row flex-wrap items-center justify-center gap-m max-phablet:flex-col max-phablet:items-start">
+        <Button as="span" href={d.cta.phone.href} title={company.phoneTitle} linkClass="text-neutral-ultra-light no-underline">{d.cta.phone.label}</Button>
+        <Button as="span" variant="outline" href={d.cta.email.href} title={company.emailTitle} linkClass="text-inherit no-underline group-hover/button:text-white">{d.cta.email.label}</Button>
+      </div>
+    </div>
+  </Container>
+</Section>

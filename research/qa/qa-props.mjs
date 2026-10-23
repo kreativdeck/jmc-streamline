@@ -1,0 +1,24 @@
+const [, , url, sel] = process.argv;
+const list = await (await fetch('http://127.0.0.1:9222/json/list')).json();
+const target = list.find((t) => t.type === 'page' && t.url.startsWith('http'));
+const ws = new WebSocket(target.webSocketDebuggerUrl);
+let id = 0; const pending = new Map();
+const send = (method, params = {}) => new Promise((res) => { const m = ++id; pending.set(m, res); ws.send(JSON.stringify({ id: m, method, params })); });
+ws.onmessage = (e) => { const msg = JSON.parse(e.data); if (msg.id && pending.has(msg.id)) { pending.get(msg.id)(msg.result); pending.delete(msg.id); } };
+await new Promise((r) => (ws.onopen = r));
+await send('Page.enable'); await send('Runtime.enable');
+await send('Page.navigate', { url });
+await new Promise((r) => setTimeout(r, 6000));
+const script = `(() => {
+  const el = document.querySelector(${JSON.stringify(sel)});
+  if (!el) return null;
+  const cs = getComputedStyle(el);
+  const vars = ['--primary','--primary-ultra-light','--radius','--text-m','--root-font-size','--btn-background','--btn-text-color','--btn-border-color','--btn-border-width','--btn-font-size','--bricks-color-primary','--bricks-text-dark'];
+  const out = { className: el.className, tag: el.tagName, vars: {}, sheets: [] };
+  for (const v of vars) out.vars[v] = cs.getPropertyValue(v).trim();
+  for (const s of document.styleSheets) out.sheets.push(s.href || 'inline');
+  return out;
+})()`;
+const r = await send('Runtime.evaluate', { expression: script, returnByValue: true });
+console.log(JSON.stringify(r.result.value, null, 1));
+ws.close();

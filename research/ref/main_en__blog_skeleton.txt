@@ -1,0 +1,133 @@
+    <main id="brx-content">
+      <section id="brxe-1524c4" class="brxe-section fr-article-section-echo">
+        <div class="brxe-container fr-intro-bravo">
+          <h1 class="brxe-heading fr-intro-bravo__heading">
+            » Ideas and insights for work and life
+          <div class="brxe-text-basic fr-accent-heading">
+            » Blog
+        <div class="brxe-container fr-content-section-golf__content-wrapper">
+          <div class="brxe-text fr-content-section-golf__text">
+            <p>
+              » Welcome to the jmc. blog!! Here I share thoughts and experiences that accompany me on my journey. It
+              » s about topics that are important to me and that can make life
+              » both professionally and privately
+              » a little clearer and a little easier.
+            <p>
+              » I am writing about what drives me. It
+              » s not just about processes and structures, it
+              » s also about creativity, new ideas and small shifts that often make a big difference. Much of this comes from my day-to-day life
+              » from moments when I stop for a moment, question something or discover a new direction.
+            <p>
+              » Whether it
+              » s streamlined processes, fresh approaches or personal insights
+              » my blog posts are there to provide inspiration and open up new perspectives. I don
+              » t want to provide a ready-made plan, rather a place where ideas can blossom. Sometimes it
+              » s a small thought, sometimes a bigger idea
+              » everything I share on this blog is something that accompanies me on my journey.
+            <p>
+              » Pick up what speaks to you and let yourself be inspired. Perhaps you will find a timely thought or an idea that will help you to transform your view of something.
+        <ul id="brxe-e76689" class="brxe-container list--none fr-article-grid-echo">
+          <li class="brxe-2bbf9b brxe-div fr-article-card-echo focus-parent">
+            <div class="brxe-222191 brxe-div fr-article-card-echo__body">
+              <div class="brxe-043733 brxe-div fr-article-card-echo__meta">
+                <div class="brxe-60eb65 brxe-text-basic fr-article-card-echo__cat">
+                  » Generally
+                <div class="brxe-e3e040 brxe-div fr-article-card-echo__date-wrapper">
+                  <span class="brxe-b75453 brxe-text-basic fr-article-card-echo__day">
+                    » 03
+                  <span class="brxe-fc9475 brxe-text-basic fr-article-card-echo__month">
+                    » Nov
+              <h3 class="brxe-aa6de4 brxe-heading fr-article-card-echo__heading clickable-parent">
+                <a href="https://www.jmc-streamline.com/en/standing-still-is-not-an-option/">
+                  » Standing still is not an option
+            <div class="brxe-421600 brxe-div fr-article-card-echo__image-wrapper">
+              <figure class="brxe-76602f brxe-image fr-article-card-echo__image tag">
+                <img src="https://www.jmc-streamline.com/wp-content/uploads/stillstand-ist-keine-option.jpg" class="css-filter size-large" alt="Stillstand Ist Keine Option" srcset="https://www.jmc-streamline.com/wp-content/uploads/stillstand-ist-keine-option.jpg 600w, https://www.jmc-streamline.com/wp-content/uploads/stillstand-ist-keine-option-480x320.jpg 480w">
+              <div class="brxe-1d0333 brxe-div fr-article-card-echo__image-overlay">
+          <li class="brxe-2bbf9b brxe-div fr-article-card-echo focus-parent">
+            <div class="brxe-222191 brxe-div fr-article-card-echo__body">
+              <div class="brxe-043733 brxe-div fr-article-card-echo__meta">
+                <div class="brxe-60eb65 brxe-text-basic fr-article-card-echo__cat">
+                  » Generally
+                <div class="brxe-e3e040 brxe-div fr-article-card-echo__date-wrapper">
+                  <span class="brxe-b75453 brxe-text-basic fr-article-card-echo__day">
+                    » 24
+                  <span class="brxe-fc9475 brxe-text-basic fr-article-card-echo__month">
+                    » Mar
+              <h3 class="brxe-aa6de4 brxe-heading fr-article-card-echo__heading clickable-parent">
+                <a href="https://www.jmc-streamline.com/en/why-leadership-and-sports-are-the-ultimate-power-duo/">
+                  » Why Leadership and Sports are the Ultimate Power Duo
+            <div class="brxe-421600 brxe-div fr-article-card-echo__image-wrapper">
+              <figure class="brxe-76602f brxe-image fr-article-card-echo__image tag">
+                <img src="https://www.jmc-streamline.com/wp-content/uploads/why-leadership-sport-ultimative-power-duo.jpg" class="css-filter size-large" alt="Why Leadership Sport Ultimative Power Duo" srcset="https://www.jmc-streamline.com/wp-content/uploads/why-leadership-sport-ultimative-power-duo.jpg 600w, https://www.jmc-streamline.com/wp-content/uploads/why-leadership-sport-ultimative-power-duo-480x320.jpg 480w">
+              <div class="brxe-1d0333 brxe-div fr-article-card-echo__image-overlay">
+          <li class="brxe-2bbf9b brxe-div fr-article-card-echo focus-parent">
+            <div class="brxe-222191 brxe-div fr-article-card-echo__body">
+              <div class="brxe-043733 brxe-div fr-article-card-echo__meta">
+                <div class="brxe-60eb65 brxe-text-basic fr-article-card-echo__cat">
+                  » Insights
+                <div class="brxe-e3e040 brxe-div fr-article-card-echo__date-wrapper">
+                  <span class="brxe-b75453 brxe-text-basic fr-article-card-echo__day">
+                    » 07
+                  <span class="brxe-fc9475 brxe-text-basic fr-article-card-echo__month">
+                    » Mar
+              <h3 class="brxe-aa6de4 brxe-heading fr-article-card-echo__heading clickable-parent">
+                <a href="https://www.jmc-streamline.com/en/efficient-business-processes-for-expats-5-smart-strategies-for-international-work/">
+                  » Efficient Business Processes for Expats! 5 Smart Strategies for International
+            <div class="brxe-421600 brxe-div fr-article-card-echo__image-wrapper">
+              <figure class="brxe-76602f brxe-image fr-article-card-echo__image tag">
+                <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='600'%20height='400'%20viewBox='0%200%20600%20400'%3E%3C/svg%3E" class="css-filter size-large perfmatters-lazy" alt="5 Smarte Strategien Fuer Den Internationalen Arbeitsalltag">
+              <div class="brxe-1d0333 brxe-div fr-article-card-echo__image-overlay">
+          <li class="brxe-2bbf9b brxe-div fr-article-card-echo focus-parent">
+            <div class="brxe-222191 brxe-div fr-article-card-echo__body">
+              <div class="brxe-043733 brxe-div fr-article-card-echo__meta">
+                <div class="brxe-60eb65 brxe-text-basic fr-article-card-echo__cat">
+                  » Insights
+                <div class="brxe-e3e040 brxe-div fr-article-card-echo__date-wrapper">
+                  <span class="brxe-b75453 brxe-text-basic fr-article-card-echo__day">
+                    » 06
+                  <span class="brxe-fc9475 brxe-text-basic fr-article-card-echo__month">
+                    » Feb
+              <h3 class="brxe-aa6de4 brxe-heading fr-article-card-echo__heading clickable-parent">
+                <a href="https://www.jmc-streamline.com/en/why-illustrations-the-creative-path-to-clarity-and-connection/">
+                  » Why Illustrations? The Creative Path to Clarity and Connection
+            <div class="brxe-421600 brxe-div fr-article-card-echo__image-wrapper">
+              <figure class="brxe-76602f brxe-image fr-article-card-echo__image tag">
+                <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='1650'%20height='1100'%20viewBox='0%200%201650%201100'%3E%3C/svg%3E" class="css-filter size-large perfmatters-lazy" alt="Weg Zur Klarheit Und Verbindung">
+              <div class="brxe-1d0333 brxe-div fr-article-card-echo__image-overlay">
+          <li class="brxe-2bbf9b brxe-div fr-article-card-echo focus-parent">
+            <div class="brxe-222191 brxe-div fr-article-card-echo__body">
+              <div class="brxe-043733 brxe-div fr-article-card-echo__meta">
+                <div class="brxe-60eb65 brxe-text-basic fr-article-card-echo__cat">
+                  » Leadership
+                <div class="brxe-e3e040 brxe-div fr-article-card-echo__date-wrapper">
+                  <span class="brxe-b75453 brxe-text-basic fr-article-card-echo__day">
+                    » 24
+                  <span class="brxe-fc9475 brxe-text-basic fr-article-card-echo__month">
+                    » Jan
+              <h3 class="brxe-aa6de4 brxe-heading fr-article-card-echo__heading clickable-parent">
+                <a href="https://www.jmc-streamline.com/en/efficient-meetings-in-a-global-business-world-understanding-cultural-differences/">
+                  » Efficient Meetings in a Global Business World: Understanding Cultural Differences
+            <div class="brxe-421600 brxe-div fr-article-card-echo__image-wrapper">
+              <figure class="brxe-76602f brxe-image fr-article-card-echo__image tag">
+                <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='1024'%20height='1024'%20viewBox='0%200%201024%201024'%3E%3C/svg%3E" class="css-filter size-large perfmatters-lazy" alt="Effiziente Meetings In Einer Globalen Geschaeftswelt">
+              <div class="brxe-1d0333 brxe-div fr-article-card-echo__image-overlay">
+          <li class="brxe-2bbf9b brxe-div fr-article-card-echo focus-parent">
+            <div class="brxe-222191 brxe-div fr-article-card-echo__body">
+              <div class="brxe-043733 brxe-div fr-article-card-echo__meta">
+                <div class="brxe-60eb65 brxe-text-basic fr-article-card-echo__cat">
+                  » Insights
+                <div class="brxe-e3e040 brxe-div fr-article-card-echo__date-wrapper">
+                  <span class="brxe-b75453 brxe-text-basic fr-article-card-echo__day">
+                    » 12
+                  <span class="brxe-fc9475 brxe-text-basic fr-article-card-echo__month">
+                    » Jan
+              <h3 class="brxe-aa6de4 brxe-heading fr-article-card-echo__heading clickable-parent">
+                <a href="https://www.jmc-streamline.com/en/transformation-of-businesses-and-lives-with-lean-processes/">
+                  » Transformation of businesses and lives with lean processes
+            <div class="brxe-421600 brxe-div fr-article-card-echo__image-wrapper">
+              <figure class="brxe-76602f brxe-image fr-article-card-echo__image tag">
+                <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='1024'%20height='1024'%20viewBox='0%200%201024%201024'%3E%3C/svg%3E" class="css-filter size-large perfmatters-lazy" alt="Wie Schlanke Prozesse Unternehmen Veraendern">
+              <div class="brxe-1d0333 brxe-div fr-article-card-echo__image-overlay">
+          <li class="brx-query-trail">
+    <footer id="brx-footer">

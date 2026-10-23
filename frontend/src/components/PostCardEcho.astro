@@ -1,0 +1,63 @@
+---
+/**
+ * Blog-Karte. Auf der Blogseite ohne, auf den Kategorieseiten mit
+ * Datums-/Autorenzeile.
+ */
+export interface CardData {
+  href: string;
+  title: string;
+  cat: string;
+  day: string;
+  month: string;
+  image: { src: string; alt: string } | null;
+  footerDate?: string;
+  author?: string;
+}
+
+interface Props {
+  card: CardData;
+  withFooter?: boolean;
+}
+
+const { card, withFooter = false } = Astro.props;
+---
+
+<li
+  class="relative isolate mt-0 flex aspect-[4/3] w-full flex-col overflow-hidden rounded-base transition-all duration-300 ease-in-out hover:-translate-y-[0.5em]"
+>
+  <div
+    class="absolute inset-0 z-[1] flex w-full flex-col items-start justify-end gap-y-s p-m text-neutral-ultra-light"
+  >
+    <div class="mb-auto flex w-full items-start justify-between gap-x-m">
+      <div class="rounded-base bg-primary-dark px-[1em] py-[0.5em] leading-none">{card.cat}</div>
+      <div class="flex flex-col items-center justify-center leading-none">
+        <span class="font-heading text-xxl font-bold">{card.day}</span>
+        <span class="uppercase">{card.month}</span>
+      </div>
+    </div>
+    <h3 class:list={['w-4/5 pr-xl text-neutral-ultra-light', withFooter ? 'text-h2' : 'text-h4']}>
+      <a
+        class="text-neutral-ultra-light no-underline after:absolute after:inset-0 after:z-[1] after:cursor-pointer after:content-['']"
+        href={card.href}>{card.title}</a
+      >
+    </h3>
+    {
+      withFooter && (card.footerDate || card.author) && (
+        <footer class="flex gap-s">
+          <p class="m-0 flex gap-s">
+            {card.footerDate && <time>{card.footerDate}</time>}
+            {card.author && <span>{card.author}</span>}
+          </p>
+        </footer>
+      )
+    }
+  </div>
+  <div class="z-[-1] flex w-full grow flex-col">
+    <figure class="flex max-h-[80vh] w-full grow overflow-hidden max-phablet:max-h-[45rem]">
+      {card.image && <img class="h-auto w-full object-cover" src={card.image.src} alt={card.image.alt} loading="lazy" decoding="async" />}
+    </figure>
+    <div
+      class="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(26,26,26,0.3),rgba(26,26,26,0.6))]"
+    ></div>
+  </div>
+</li>

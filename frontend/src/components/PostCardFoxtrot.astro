@@ -1,0 +1,47 @@
+---
+/**
+ * Startseiten-Artikelkarte: Das Textfeld gleitet beim Hover ein
+ * (auf Touch-Geräten ist es immer sichtbar).
+ */
+export interface HomeCardData {
+  href: string;
+  title: string;
+  lede: string;
+  date: string;
+  image?: { src: string; alt: string };
+}
+
+interface Props {
+  card: HomeCardData;
+}
+
+const { card } = Astro.props;
+---
+
+<li class="group/card relative isolate flex aspect-[4/3] overflow-hidden">
+  <div
+    class="absolute top-0 left-px z-[1] flex h-full min-w-[70%] -translate-x-[1em] flex-col justify-end gap-y-s bg-[linear-gradient(270deg,rgba(255,0,0,0),rgba(26,26,26,0.8))] pt-m pr-xl pb-m pl-m text-neutral-light opacity-0 transition-all duration-200 group-hover/card:translate-x-0 group-hover/card:opacity-100 [@media(hover:none)]:translate-x-0 [@media(hover:none)]:opacity-100"
+  >
+    <h3 class="pr-xl text-neutral-ultra-light">
+      <a
+        class="text-neutral-ultra-light no-underline after:absolute after:inset-0 after:z-[1] after:cursor-pointer after:content-['']"
+        href={card.href}>{card.title}</a
+      >
+    </h3>
+    <p class="m-0 pr-l">{card.lede}</p>
+    <time class="text-neutral-light">{card.date}</time>
+  </div>
+  <div class="h-full">
+    {
+      card.image && (
+        <img
+          class="h-full min-h-[25em] w-full object-cover"
+          src={card.image.src}
+          alt={card.image.alt}
+          loading="lazy"
+          decoding="async"
+        />
+      )
+    }
+  </div>
+</li>

@@ -1,0 +1,131 @@
+---
+/**
+ * Services page (DE/EN).
+ */
+import type { Lang } from '../data/site';
+import { site, company } from '../data/site';
+import { services } from '../data/pages';
+import { icons } from '../data/icons';
+import ContactModal from './ContactModal.astro';
+import Section from './ui/Section.astro';
+import Container from './ui/Container.astro';
+import Button from './ui/Button.astro';
+import AccentLabel from './ui/AccentLabel.astro';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = site[lang];
+const d = services[lang];
+
+const grid32Icons = [icons.grid32Card1, icons.grid32Card2, icons.grid32Card3, icons.grid32Card4];
+const limaIcons = [icons.limaCard1, icons.limaCard2, icons.limaCard3, icons.limaCard4];
+---
+
+<Section>
+  <Container layout="grid" class="grid-cols-2 items-start gap-m max-tablet:grid-cols-1">
+    <div class="flex w-[50ch] max-w-full flex-col items-start justify-center gap-y-m">
+      <h1>{d.hero.heading}</h1>
+      <AccentLabel as="div">{d.hero.accent}</AccentLabel>
+      <p class="m-0 text-l">{d.hero.lede}</p>
+      <Button
+        as="button"
+        type="button"
+        layout="flex gap-xs cursor-pointer transition-[opacity,background-color,scale,filter] duration-150 ease-linear"
+        data-contact-open
+        aria-label={t.modal.triggerAria}
+        aria-expanded="false"
+      >
+        <span>{d.hero.trigger}</span>
+      </Button>
+    </div>
+    <div class="order-first flex w-full flex-col items-start">
+      <figure class="aspect-[5/4] w-full grow overflow-hidden rounded-base">
+        <img class="size-full object-cover" src={d.hero.image.src} alt={d.hero.image.alt} loading="lazy" decoding="async" />
+      </figure>
+    </div>
+  </Container>
+</Section>
+
+<Section class="relative isolate overflow-hidden max-phablet:pb-0">
+  <div
+    aria-hidden="true"
+    class="pointer-events-none absolute inset-0 z-0 hidden bg-white [clip-path:polygon(0_0,69%_0,100%_100%,0%_100%)] min-[767px]:block"
+  ></div>
+  <Container class="relative z-[1] gap-y-xl">
+    <div class="relative z-[2] flex w-full flex-col items-start gap-y-s self-start text-left">
+      <div class="flex flex-col items-start gap-y-xs">
+        <h2>{d.grid.heading}</h2>
+        <AccentLabel>{d.grid.accent}</AccentLabel>
+      </div>
+      <p>{d.grid.subheading}</p>
+    </div>
+    <ul class="relative z-[3] m-0 grid w-full grid-cols-2 gap-m p-0 max-phablet:grid-cols-1">
+      {
+        d.grid.cards.map((card, i) => (
+          <li class="relative flex w-full flex-col items-start gap-y-m border-[0.1rem] border-solid border-neutral-light bg-white p-l transition-all duration-[600ms] ease-[ease] focus-within:-translate-y-xs focus-within:shadow-lifted hover:-translate-y-xs hover:shadow-lifted">
+            <svg
+              class:list={[
+                'order-first size-[60px]',
+                i === 0 || i === 3 ? 'fill-accent text-accent' : 'fill-primary text-primary',
+              ]}
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox={grid32Icons[i].viewBox}
+              aria-hidden="true"
+            >
+              <path d={grid32Icons[i].d} />
+            </svg>
+            <div class="flex w-full flex-col items-start gap-y-m">
+              <h3>
+                <a class="after:absolute after:inset-0 after:z-[1] after:cursor-pointer after:content-['']" href="#">
+                  {card.heading}
+                </a>
+              </h3>
+              <p class="m-0" set:html={card.textHtml} />
+            </div>
+          </li>
+        ))
+      }
+    </ul>
+  </Container>
+</Section>
+
+<Section>
+  <Container layout="none" class="flex flex-row items-center gap-m max-tablet:flex-col max-tablet:items-start">
+    <div class="flex w-full grow flex-col items-start gap-y-m">
+      <h2>{d.features.heading}</h2>
+      <p class="max-w-[60ch]">{d.features.lede}</p>
+    </div>
+    <div class="flex w-full flex-col items-end justify-center max-tablet:items-start">
+      <Button as="span" variant="outline" href={d.features.mail.href} title={company.emailTitle} linkClass="text-inherit no-underline group-hover/button:text-white">
+        {d.features.mail.label}
+      </Button>
+    </div>
+  </Container>
+  <Container as="ul" layout="grid" class="list-none grid-cols-4 grid-rows-1 items-stretch gap-m max-tablet:grid-cols-2 max-phablet:grid-cols-1">
+    {
+      d.features.cards.map((card, i) => (
+        <li class="flex w-full flex-col items-start gap-y-s rounded-card">
+          <div class="flex w-full flex-col items-start gap-y-s">
+            <div class="block">
+              <svg
+                class="order-first size-[1.4775em] fill-accent text-primary-dark"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox={limaIcons[i].viewBox}
+                aria-hidden="true"
+              >
+                <path d={limaIcons[i].d} />
+              </svg>
+            </div>
+            <h3>{card.heading}</h3>
+            <div class="m-0">{card.text}</div>
+          </div>
+        </li>
+      ))
+    }
+  </Container>
+</Section>
+
+<ContactModal lang={lang} image={d.modal.image} />

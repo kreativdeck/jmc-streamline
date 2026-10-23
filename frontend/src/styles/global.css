@@ -1,0 +1,274 @@
+@import "tailwindcss";
+
+/* ------------------------------------------------------------------
+   Design tokens. Alle Gestaltung der Seite entsteht aus Tailwind-
+   Utilities, die auf diese Werte zugreifen. 1rem = 10px (html 62.5 %).
+   ------------------------------------------------------------------ */
+@theme {
+  --color-*: initial;
+  --font-*: initial;
+  --text-*: initial;
+  --radius-*: initial;
+  --shadow-*: initial;
+  --container-*: initial;
+  --breakpoint-*: initial;
+
+  --default-transition-duration: 300ms;
+  --default-transition-timing-function: ease-in-out;
+
+  /* Farben */
+  --color-white: #fff;
+  --color-black: #000;
+  --color-primary: #1a1a1a;
+  --color-primary-hover: #1c1c1c;
+  --color-primary-dark: #404040;
+  --color-primary-ultra-light: #f2f2f2;
+  --color-neutral-light: #d9d9d9;
+  --color-neutral-ultra-light: #fafafa;
+  --color-accent: #f2e6d9;
+  --color-accent-ultra-light: #fbf7f4;
+  --color-heading: #141516;
+  --color-quote-rule: #dddedf;
+  --color-link: #205493;
+  --color-error: #b3261e;
+
+  /* Schriften */
+  --font-body: "Nunito", ui-sans-serif, system-ui, sans-serif;
+  --font-heading: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  /* Schriftgrößen (fluid) */
+  --text-xs: 1.1rem;
+  --text-s: 1.2rem;
+  --text-m: clamp(1.6rem, calc(0.1912045889vw + 1.5388145315rem), 1.8rem);
+  --text-l: clamp(1.92rem, calc(0.7456978967vw + 1.681376673rem), 2.7rem);
+  --text-xxl: clamp(2.7648rem, calc(3.1646271511vw + 1.7521193117rem), 6.075rem);
+  --text-h1: clamp(2.7648rem, calc(1.4327604843vw + 2.306316645rem), 4.2634674666rem);
+  --text-h2: clamp(2.304rem, calc(0.8550671128vw + 2.0303785239rem), 3.1984002rem);
+  --text-h3: clamp(1.92rem, calc(0.4583173996vw + 1.7733384321rem), 2.3994rem);
+  --text-h4: clamp(1.6rem, calc(0.1912045889vw + 1.5388145315rem), 1.8rem);
+
+  /* Abstände (Basis 1 Einheit = 4px, dazu fluide Stufen) */
+  --spacing: 0.4rem;
+  --spacing-xs: clamp(1.3506752532rem, calc(-0.0165792733vw + 1.3559806207rem), 1.3333333333rem);
+  --spacing-s: clamp(1.8004501125rem, calc(0.190774271vw + 1.7394023458rem), 2rem);
+  --spacing-m: clamp(2.4rem, calc(0.5736137667vw + 2.2164435946rem), 3rem);
+  --spacing-l: clamp(3.1992rem, calc(1.2435946463vw + 2.8012497132rem), 4.5rem);
+  --spacing-xl: clamp(4.2645336rem, calc(2.3761629063vw + 3.50416147rem), 6.75rem);
+  --spacing-xxl: clamp(5.6846232888rem, calc(4.2451020184vw + 4.3261906429rem), 10.125rem);
+  --spacing-section-xs: clamp(4.0520257596rem, calc(1.2249594395vw + 3.660038739rem), 5.3333333333rem);
+  --spacing-section-m: clamp(7.2rem, calc(4.5889101338vw + 5.7315487572rem), 12rem);
+  --spacing-section-l: clamp(9.5976rem, calc(8.0328871893vw + 7.0270760994rem), 18rem);
+  --spacing-header: calc(var(--spacing-xs) * 2 + 70px);
+
+  /* Breiten */
+  --container-content: 136.6rem;
+  --container-mid: calc(136.6rem * 0.6);
+  --container-wide: calc(136.6rem * 0.8);
+
+  /* Breakpoints (Desktop-first, wie die Originalseite) */
+  --breakpoint-tablet: 992px;
+  --breakpoint-phablet: 768px;
+  --breakpoint-small: 601px;
+  --breakpoint-narrow: 479px;
+  --breakpoint-wide: 1200px;
+
+  /* Radien + Schatten */
+  --radius-base: 5px;
+  --radius-card: 2.2222222222px;
+  --shadow-header: 0 5px 50px -25px rgba(0, 0, 0, 0.19);
+  --shadow-soft: 0 2.7px 3.6px -5px rgba(26, 26, 26, 0.04), 0 7.5px 10px -5px rgba(26, 26, 26, 0.06),
+    0 18px 24.1px -5px rgba(26, 26, 26, 0.08), 0 60px 80px -5px rgba(26, 26, 26, 0.1);
+  --shadow-lifted: 2.8px 2.8px 2.2px rgba(26, 26, 26, 0.02), 0 6.7px 5.3px -5px rgba(26, 26, 26, 0.04),
+    0 12.5px 10px -5px rgba(26, 26, 26, 0.06), 0 22.3px 17.9px -5px rgba(26, 26, 26, 0.08),
+    0 41.8px 33.4px -5px rgba(26, 26, 26, 0.1), 0 80px 80px -5px rgba(26, 26, 26, 0.105);
+
+  /* automatische Kartenspalten (Blog-Raster) */
+  --columns-cards: repeat(
+    auto-fit,
+    minmax(min(100%, max(calc((136.6rem - 2 * var(--spacing-m)) / 3 * 0.7), (100% - 2 * var(--spacing-m)) / 3)), 1fr)
+  );
+
+  /* Animationen */
+  --animate-nudge: nudge 0.35s ease-out;
+  @keyframes nudge {
+    0%,
+    100% {
+      translate: 0 0;
+    }
+    50% {
+      translate: 0.25em 0;
+    }
+  }
+}
+
+/* ------------------------------------------------------------------
+   Schriften (selbst gehostet)
+   ------------------------------------------------------------------ */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: block;
+  src: url("/fonts/Inter-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329,
+    U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: block;
+  src: url("/fonts/Inter-latin-ext.woff2") format("woff2");
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF,
+    U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 200 900;
+  font-display: block;
+  src: url("/fonts/Nunito-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329,
+    U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 200 900;
+  font-display: block;
+  src: url("/fonts/Nunito-latin-ext.woff2") format("woff2");
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF,
+    U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "Nunito";
+  font-style: italic;
+  font-weight: 200 900;
+  font-display: block;
+  src: url("/fonts/Nunito-italic-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329,
+    U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Nunito";
+  font-style: italic;
+  font-weight: 200 900;
+  font-display: block;
+  src: url("/fonts/Nunito-italic-latin-ext.woff2") format("woff2");
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF,
+    U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* ------------------------------------------------------------------
+   Basis: nur echte Element-Regeln (Typografie)
+   ------------------------------------------------------------------ */
+@layer base {
+  html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    height: 100%;
+    color-scheme: light;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: var(--color-white);
+    color: var(--color-primary-dark);
+    font-family: var(--font-body);
+    font-size: var(--text-m);
+    line-height: calc(6px + 2ex);
+    overflow-wrap: break-word;
+    text-wrap: pretty;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Zeilenhöhe richtet sich nach der Schriftgröße des jeweiligen Elements */
+  p,
+  li {
+    line-height: calc(6px + 2ex);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+    color: var(--color-heading);
+    font-family: var(--font-heading);
+    font-weight: 700;
+    line-height: calc(4px + 2ex);
+    text-wrap: pretty;
+  }
+  h1 {
+    font-size: var(--text-h1);
+    line-height: 1.2;
+    max-width: 100%;
+  }
+  h2 {
+    font-size: var(--text-h2);
+    line-height: 1.2;
+  }
+  h3 {
+    font-size: var(--text-h3);
+    line-height: 1.2;
+  }
+  h4 {
+    font-size: var(--text-h4);
+  }
+  h5 {
+    font-size: var(--text-s);
+    line-height: 1.2;
+  }
+  h6 {
+    font-size: var(--text-xs);
+    line-height: 1.2;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  a {
+    color: var(--color-primary);
+    text-decoration: inherit;
+    transition-property: background-color, color, border-color;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+    cursor: pointer;
+  }
+
+  img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+  }
+
+  figure {
+    margin: 0;
+    width: 100%;
+  }
+
+  ul,
+  ol {
+    margin: 0;
+  }
+
+  address {
+    font-style: normal;
+  }
+
+  :focus-visible {
+    outline-style: solid;
+    outline-color: var(--color-primary-dark);
+    outline-width: 0.2rem;
+    outline-offset: 0.25em;
+  }
+
+  ::placeholder {
+    color: var(--color-neutral-light);
+  }
+}

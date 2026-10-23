@@ -1,0 +1,1 @@
+ html {font-size: var(--root-font-size)} body {font-family: "Nunito"; font-weight: 400} h1, h2, h3, h4, h5, h6 {font-family: "Inter"; font-weight: 800} .brxe-container {width: var(--content-width)} .woocommerce main.site-main {width: var(--content-width)} #brx-content.wordpress {width: var(--content-width)}

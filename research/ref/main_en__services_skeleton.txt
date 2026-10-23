@@ -1,0 +1,152 @@
+    <main id="brx-content">
+      <section class="brxe-section hero-victor">
+        <div class="brxe-container hero-victor__main-row">
+          <div class="brxe-block hero-victor__content-wrapper">
+            <h1 class="brxe-heading hero-victor__heading">
+              » Operational excellence
+            <div class="brxe-text-basic k-accent-heading">
+              » Services
+            <p class="brxe-text-basic hero-victor__lede">
+              » I provide professional office management, including remote work organization and client management. I also organize events, coordinate schedules and monitor projects. My financial responsibilities include invoicing, bookkeeping and cash flow management.
+            <button id="brxe-xczphf" data-script-id="xczphf" class="brxe-fr-trigger contact-trigger btn--primary fr-button-trigger" aria-label="Kontakt aufnehmen jmc. | Streamline Processes S.L." aria-expanded="false">
+              <span class="fr-button-trigger__text">
+                » Consulting
+          <div class="brxe-block hero-victor__media-wrapper">
+            <figure class="brxe-image hero-victor__media tag">
+              <img src="https://www.jmc-streamline.com/wp-content/uploads/operative-exzellenz.jpg" class="css-filter size-full" alt="Operative Exzellenz" srcset="https://www.jmc-streamline.com/wp-content/uploads/operative-exzellenz.jpg 668w, https://www.jmc-streamline.com/wp-content/uploads/operative-exzellenz-480x384.jpg 480w, https://www.jmc-streamline.com/wp-content/uploads/operative-exzellenz-640x512.jpg 640w">
+      <section class="brxe-section grid-32">
+        <div class="brxe-container grid-32__container">
+          <div id="brxe-hvnben" class="brxe-div intro intro--left">
+            <div id="brxe-lpftql" class="brxe-div intro__head">
+              <h2 class="brxe-heading intro__heading">
+                » This is how I master your challenges
+              <span class="brxe-text-basic k-accent-heading">
+                » The Way
+            <p class="brxe-text-basic intro__subheading">
+              » My services include full office management services, including remote working, client relationship management and organizing office logistics. In project and event management, I plan and coordinate events, travel and meeting schedules, and monitor project timelines. I also provide financial and administrative support, including invoicing, bookkeeping and cash flow management.
+          <ul class="brxe-block grid-32-card-ul">
+            <li class="brxe-block grid-32-card">
+              <div class="brxe-block grid-32-card__content">
+                <h3 class="brxe-heading grid-32-card__heading">
+                  <a href="#">
+                    » Business Operations Consulting
+                <p class="brxe-text-basic grid-32-card__text">
+                  » I focus on streamlining internal processes to increase organizational efficiency and effectiveness. This involves a thorough analysis and adaptation of existing processes to remove bottlenecks and maximize performance. At the same time, I review the organizational structure to ensure that it meets the needs of the business and leads to better operating results.
+                  <br>
+                  <br>
+                  <strong>
+                    » My aim is to improve the overall performance of your business and achieve sustainable success.
+            <li class="brxe-block grid-32-card">
+              <div class="brxe-block grid-32-card__content">
+                <h3 class="brxe-heading grid-32-card__heading">
+                  <a href="#">
+                    » Office Management Services
+                <p class="brxe-text-basic grid-32-card__text">
+                  » I offer comprehensive office management services that are specifically tailored to remote practice administration. I take over the complete handling of client relations to ensure professional and efficient communication. Additionally, I take care of the management of office logistics, including the organization and coordination of all internal workflows.
+                  <br>
+                  <br>
+                  <strong>
+                    » My aim is to ensure smooth and effective organizational structures so that you can concentrate on your core business..
+            <li class="brxe-block grid-32-card">
+              <div class="brxe-block grid-32-card__content">
+                <h3 class="brxe-heading grid-32-card__heading">
+                  <a href="#">
+                    » Project
+                    » &
+                    » Event Management
+                <p class="brxe-text-basic grid-32-card__text">
+                  » In the field of project
+                  » &
+                  » event management, I take on the comprehensive planning and realization of internal and external events as well as networking events to ensure their smooth running. I take care of the coordination of all travel and meeting appointments to ensure that everything runs according to plan. Furthermore, I manage detailed timelines and deliverables for projects to guarantee that all tasks are completed on time and in the most efficient manner.
+                  <br>
+                  <br>
+                  <strong>
+                    » My aim is to execute both your events and projects successfully and maintain a seamless level of overall management.
+            <li class="brxe-block grid-32-card">
+              <div class="brxe-block grid-32-card__content">
+                <h3 class="brxe-heading grid-32-card__heading">
+                  <a href="#">
+                    » Financial
+                    » &
+                    » Administrative Support
+                <p class="brxe-text-basic grid-32-card__text">
+                  » Within financial
+                  » &
+                  » administrative support, I create and manage invoices and process payments to ensure a fluent financial flow. I maintain bookkeeping and provide preparatory accounting services to keep financial records accurate and up to date. Additionally, I handle cash flow management to monitor the financial health of the business and plan for future developments.
+                  <br>
+                  <br>
+                  <strong>
+                    » My aim is to establish a solid financial base and make administrative processes run in an orderly and cost-effective way.
+      <section class="brxe-section fr-feature-section-lima">
+        <div class="brxe-container fr-intro-charlie">
+          <div class="brxe-block fr-intro-charlie__content-wrapper">
+            <h2 class="brxe-heading fr-intro-charlie__heading">
+              » As a business, are you optimally positioned to master your most significant challenges?
+            <p class="brxe-text-basic fr-lede fr-intro-charlie__lede">
+              » How we tackle your pain points together - through customized solutions in the areas of resource management, scaling, market positioning and more with efficiency, reliability and growth.
+          <div class="brxe-block fr-intro-charlie__sidebar">
+            <span class="brxe-button btn--primary btn--outline bricks-button">
+              <a title="Nehmen Sie gern Kontakt zu uns auf" href="mailto:contact@jmc-streamline.com">
+                » contact@jmc-streamline.com
+        <ul class="brxe-container fr-feature-grid-lima list--none">
+          <li class="brxe-block fr-feature-card-lima">
+            <div class="brxe-block fr-feature-card-lima__header">
+              <div class="brxe-div fr-feature-card-lima__media-wrapper">
+              <h3 class="brxe-heading fr-feature-card-lima__heading">
+                » Real Estate
+                » &
+                » Property Management
+              <div class="brxe-text-basic">
+                » Property management involves managing relationships with tenants and clients, coordinating maintenance and monitoring operating costs.
+          <li class="brxe-block fr-feature-card-lima">
+            <div class="brxe-block fr-feature-card-lima__header">
+              <div class="brxe-div fr-feature-card-lima__media-wrapper">
+              <h3 class="brxe-heading fr-feature-card-lima__heading">
+                » SMEs
+            <div id="brxe-7af1db" class="brxe-block fr-feature-card-lima__body">
+              <div class="brxe-text-basic">
+                » For small and medium-sized enterprises (SMEs), essential aspects of business management include managing resources, controlling costs, overcoming scaling challenges and integrating new technologies.
+          <li class="brxe-block fr-feature-card-lima">
+            <div class="brxe-block fr-feature-card-lima__header">
+              <div class="brxe-div fr-feature-card-lima__media-wrapper">
+              <h3 class="brxe-heading fr-feature-card-lima__heading">
+                » Consulting Firms
+            <div id="brxe-932db7" class="brxe-block fr-feature-card-lima__body">
+              <div class="brxe-text-basic">
+                » In consulting, key challenges include managing client projects, diversifying expertise, ensuring operational efficiency and adapting to the market.
+          <li class="brxe-block fr-feature-card-lima">
+            <div class="brxe-block fr-feature-card-lima__header">
+              <div class="brxe-div fr-feature-card-lima__media-wrapper">
+              <h3 class="brxe-heading fr-feature-card-lima__heading">
+                » Start-ups
+            <div id="brxe-aqvruc" class="brxe-block fr-feature-card-lima__body">
+              <div class="brxe-text-basic">
+                » For start-ups, rapid scaling, effective brand and market positioning, careful cash flow management and closing skills gaps are essential for success.
+      <div id="brxe-prwkao" data-script-id="prwkao" class="brxe-fr-modal fr-modal fr-modal--hide">
+        <div class="fr-modal__overlay">
+        <div class="fr-modal__body modal-wrapper">
+          <div class="brxe-block fr-cta-modal-alpha">
+            <div class="brxe-block fr-cta-modal-alpha__main">
+              <div class="brxe-block fr-cta-modal-alpha__header">
+                <p class="brxe-text-basic k-heading-formular-modal">
+                  » Let's talk - I'm here for you!
+                <p id="brxe-2f01fd" class="brxe-text-basic fr-cta-modal-alpha__lede fr-lede">
+                  » You can contact me at any time by phone or via the contact form if you have any questions or need professional help.
+              <div class="brxe-block fr-cta-modal-alpha__form-wrapper">
+                <div id="brxe-kenphj" class="brxe-xwsforms form--light k-formular_dsgvo">
+                  <form class="wsf-form wsf-form-canvas" id="ws-form-1" data-id="6">
+            <div class="brxe-block fr-cta-modal-alpha__sidebar">
+              <figure class="brxe-image fr-cta-modal-alpha__bg-image tag">
+                <img src="https://www.jmc-streamline.com/wp-content/uploads/contact-jmc-streamline-processes-s-l.jpg" class="css-filter size-full" alt="Contact Jmc Streamline Processes S L" srcset="https://www.jmc-streamline.com/wp-content/uploads/contact-jmc-streamline-processes-s-l.jpg 900w, https://www.jmc-streamline.com/wp-content/uploads/contact-jmc-streamline-processes-s-l-768x1024.jpg 768w, https://www.jmc-streamline.com/wp-content/uploads/contact-jmc-streamline-processes-s-l-480x640.jpg 480w, https://www.jmc-streamline.com/wp-content/uploads/contact-jmc-streamline-processes-s-l-640x853.jpg 640w, https://www.jmc-streamline.com/wp-content/uploads/contact-jmc-streamline-processes-s-l-720x960.jpg 720w">
+              <div class="brxe-block fr-cta-modal-alpha__sidebar-content">
+                <a id="brxe-ebf999" class="brxe-logo fr-cta-modal-alpha__logo" href="https://www.jmc-streamline.com/en">
+                  <img src="https://www.jmc-streamline.com/wp-content/uploads/business-operations-management-jasmin-christensen-matassa.svg" class="bricks-site-logo css-filter" alt="site_title">
+                <p class="brxe-text-basic fr-cta-modal-alpha__sidebar-text">
+                  » I am available in three languages (German, English, Italian) and look forward to your enquiries. Please let me know how I can help you specifically.
+                <div class="brxe-block fr-cta-modal-alpha__call-wrapper">
+                  <span class="brxe-text-basic fr-cta-modal-alpha__phone-label">
+                    » Phone
+                  <p id="brxe-2a5e45" class="brxe-text-basic fr-cta-modal-alpha__phone-number">
+                    <a title="Rufen Sie uns gerne für weitere Fragen an" href="tel:+34699313750">
+                      » +34 699 313750
+    <footer id="brx-footer">

@@ -1,0 +1,4 @@
+[class*="masonry"]:is([class*="gap--"],[class*="row-gap--"],[class*="content-gap"],[class*="container-gap"],[class*="grid-gap"],[class*="fr-content-gap"],[class*="fr-container-gap"],[class*="fr-grid-gap"]) > * {margin-block-end:var(--row-gap);}
+.fr-content-gap,.content-gap {--row-gap:var(--content-gap);--col-gap:var(--content-gap);gap:var(--content-gap);}
+.fr-lede,p.fr-lede {max-width:60ch;}
+.fr-lede,p.fr-lede {max-width:60ch;}

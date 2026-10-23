@@ -1,0 +1,28 @@
+---
+/**
+ * Inhaltsbreite (136,6rem, nie breiter als der Abschnitt).
+ * layout: stack = Spalte, linksbündig · col = Spalte ohne Ausrichtung ·
+ *         grid = Raster ohne Ausrichtung · none = nur Breite
+ */
+interface Props {
+  class?: string;
+  layout?: 'stack' | 'col' | 'grid' | 'none';
+  as?: 'div' | 'ul' | 'ol' | 'address';
+  /** Standard: nie breiter als der Abschnitt */
+  maxWidth?: string;
+  /** Standard: Inhaltsbreite */
+  width?: string;
+}
+
+const { class: className = '', layout = 'stack', as: Tag = 'div', maxWidth = 'max-w-full', width = 'w-content' } = Astro.props;
+const layouts = {
+  stack: 'flex flex-col items-start',
+  col: 'flex flex-col',
+  grid: 'grid',
+  none: '',
+};
+---
+
+<Tag class:list={['mx-auto', width, maxWidth, layouts[layout], className]}>
+  <slot />
+</Tag>

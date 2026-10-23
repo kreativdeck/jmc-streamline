@@ -1,0 +1,60 @@
+    <main id="brx-content">
+      <section id="brxe-d01f1d" class="brxe-section k-hero-kontakt">
+        <div class="brxe-container k-hero-kontakt__main-row">
+          <div class="brxe-block k-hero-kontakt__content-wrapper">
+            <h1 class="brxe-heading k-hero-kontakt__heading">
+              » Reach out - I am happy to support you!
+            <p class="brxe-text-basic k-accent-heading">
+              » Contact
+            <p class="brxe-text-basic k-hero-kontakt__lede">
+              » I am at your side with comprehensive advice and support. If you have any questions or need professional help, you can contact me at any time by phone or via the contact form.
+          <div class="brxe-block k-hero-kontakt__media-wrapper">
+            <figure class="brxe-image k-hero-kontakt__media tag">
+              <img src="https://www.jmc-streamline.com/wp-content/uploads/contact-telephone-talk.jpg" class="css-filter size-full" alt="Contact Telephone Talk" srcset="https://www.jmc-streamline.com/wp-content/uploads/contact-telephone-talk.jpg 600w, https://www.jmc-streamline.com/wp-content/uploads/contact-telephone-talk-480x480.jpg 480w">
+      <section class="brxe-section k-contact-section">
+        <div class="brxe-container k-contact-section__inner">
+          <address class="brxe-div k-kontakt-grid__info-wrapper">
+            <h3 class="brxe-heading k-contact__info__heading">
+              » Looking forward hearing from you!
+            <div class="brxe-text-basic">
+              » Please feel free to contact me in three languages (German, English, Italian) and discuss any concerns you may have. Don't hesitate to let me know how I can help you in a targeted manner.
+            <div class="brxe-div k-contact-info">
+              <div class="brxe-div k-contact-info__content-wrapper">
+                <h4 class="brxe-heading k-contact-info__heading">
+                  » Phone
+                <p class="brxe-text-basic k-contact-info__details">
+                  <a title="Rufen Sie uns gerne für weitere Fragen an" href="tel:+34699313750">
+                    » +34 699 313750
+              <div class="brxe-div k-contact-info__icon-wrapper">
+            <div class="brxe-div k-contact-info">
+              <div class="brxe-div k-contact-info__content-wrapper">
+                <h4 class="brxe-heading k-contact-info__heading">
+                  » E-mail
+                <p class="brxe-text-basic k-contact-info__details">
+                  <a title="Nehmen Sie gern Kontakt zu uns auf" href="mailto:contact@jmc-streamline.com">
+                    » contact@jmc-streamline.com
+              <div class="brxe-div k-contact-info__icon-wrapper">
+            <div class="brxe-div k-contact-info">
+              <div class="brxe-div k-contact-info__content-wrapper">
+                <h4 class="brxe-heading k-contact-info__heading">
+                  » Address
+                <p class="brxe-text-basic k-contact-info__details">
+                  » jmc. | Streamline Processes S.L.
+                  <br>
+                  » Carrer dels Apuntadors, 4
+                  <br>
+                  » ES - 07012 Palma
+              <div class="brxe-div k-contact-info__icon-wrapper">
+            <h4 class="brxe-heading k-contact-info__heading">
+              » Socials
+            <div class="brxe-div fr-social-alpha">
+              <a href="#" class="brxe-div fr-social-alpha__icon-wrapper">
+                <span class="brxe-text-basic hidden-accessible">
+                  » Auf Instagram folgen
+              <a href="#" class="brxe-div fr-social-alpha__icon-wrapper">
+                <span class="brxe-text-basic hidden-accessible">
+                  » Auf Facebook folgen
+          <div class="brxe-block fr-form-alpha__wrapper">
+            <div id="brxe-esjddb" class="brxe-xwsforms form--light k-formular_dsgvo">
+              <form class="wsf-form wsf-form-canvas" id="ws-form-1" data-id="6">
+    <footer id="brx-footer">

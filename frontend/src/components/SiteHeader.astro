@@ -1,0 +1,147 @@
+---
+import type { Lang } from '../data/site';
+import { site, logos } from '../data/site';
+
+interface Props {
+  lang: Lang;
+  /** URLs of the current page in both languages (language switcher). */
+  translations?: { de: string; en: string };
+  /** Path used to highlight the current menu item. */
+  currentPath?: string;
+}
+
+const { lang, translations, currentPath = Astro.url.pathname } = Astro.props;
+const t = site[lang];
+const isHome = currentPath === t.homeUrl;
+// Startseite: Overlay-Header (weißes Logo über dem Hero), alle anderen Seiten:
+// Standard-Header (dunkles Logo, sticky im Seitenfluss).
+
+const langLinks: { code: Lang; label: string; htmlLang: string; href: string }[] = [
+  {
+    code: 'de',
+    label: 'DE',
+    htmlLang: 'de-DE',
+    href: translations ? translations.de : '/de/',
+  },
+  {
+    code: 'en',
+    label: 'EN',
+    htmlLang: 'en-US',
+    href: translations ? translations.en : '/en/',
+  },
+];
+---
+
+<header
+  id="site-header"
+  data-site-header
+  data-scrolled="false"
+  data-hidden="false"
+  class="group/header sticky inset-x-0 top-0 z-[998] flex w-full p-0 shadow-none transition-[background-color,translate] duration-[0.2s,0.4s] data-[hidden=true]:-translate-y-[101%] data-[modal-open=true]:translate-y-0 data-[modal-open=true]:transition-none"
+>
+  <div
+    data-header-variant={isHome ? 'overlay' : 'standard'}
+    class:list={[
+      'flex w-full flex-col items-center px-[50px] py-xs shadow-header transition-colors duration-200 group-data-[scrolled=true]/header:bg-white group-data-[modal-open=true]/header:bg-white max-phablet:px-m',
+      isHome && 'fixed inset-x-0 top-0 z-[999] shadow-none',
+    ]}
+  >
+    <div class="flex w-full flex-row items-center justify-between leading-[0]">
+      <a
+        class="block leading-[0]"
+        href={t.homeUrl}
+        title="Startseite Link"
+        aria-label="home"
+        aria-current={isHome ? 'page' : undefined}
+      >
+        <img
+          class:list={[
+            'h-[70px] w-auto transition-all duration-[600ms] ease-[ease]',
+            isHome && 'group-data-[scrolled=true]/header:h-10 group-data-[scrolled=true]/header:invert',
+          ]}
+          src={isHome ? logos.light : logos.dark}
+          alt={t.logoAlt}
+          width="470"
+          height="296"
+        />
+      </a>
+
+      <div class="flex items-center">
+        <div data-nav data-open="false" class="group/nav">
+          <button
+            data-menu-toggle
+            type="button"
+            class:list={[
+              'relative block h-4 w-5 min-w-3 cursor-pointer border-0 bg-transparent p-0 mr-[30px] transition-colors',
+              'before:absolute before:inset-0 before:z-[1] before:content-[""]',
+              'group-data-[open=true]/nav:z-[1000]',
+              isHome ? 'text-white' : 'text-heading',
+              'group-data-[scrolled=true]/header:text-heading!',
+              'group-data-[open=true]/nav:max-phablet:text-black!',
+            ]}
+            aria-haspopup="true"
+            aria-label={t.openMenu}
+            aria-expanded="false"
+          >
+            <span
+              class="absolute top-0 right-0 block h-[2px] w-5 min-w-3 bg-current transition-colors group-data-[open=true]/nav:top-1/2 group-data-[open=true]/nav:rotate-45"
+            ></span>
+            <span
+              class="absolute top-[7px] right-0 block h-[2px] w-5 min-w-3 bg-current transition-colors group-data-[open=true]/nav:opacity-0"
+            ></span>
+            <span
+              class="absolute top-[14px] right-0 block h-[2px] w-5 min-w-3 bg-current transition-colors group-data-[open=true]/nav:top-1/2 group-data-[open=true]/nav:-rotate-45"
+            ></span>
+          </button>
+          <nav
+            data-menu-panel
+            class="invisible fixed bottom-0 left-0 z-[999] flex h-screen w-full -translate-x-full flex-col items-start justify-center overflow-hidden rounded-tr-base bg-primary/80 text-left text-white transition-[background-color,opacity,translate,visibility] duration-200 group-data-[open=true]/nav:visible group-data-[open=true]/nav:translate-x-0 group-data-[open=true]/nav:opacity-100 max-phablet:mt-header max-phablet:pb-header"
+            aria-label={t.menuAria}
+          >
+            <ul class="m-0 list-none overflow-y-scroll p-0 [scrollbar-width:none]">
+              {
+                t.nav.map((item) => (
+                  <li>
+                    <a
+                      class="block w-auto px-[30px] font-heading text-[2rem] leading-[60px] font-light tracking-[0.2em] text-white uppercase no-underline"
+                      href={item.href}
+                      aria-current={currentPath === item.href ? 'page' : undefined}
+                    >
+                      {item.label}
+                    </a>
+                  </li>
+                ))
+              }
+            </ul>
+          </nav>
+          <div
+            data-menu-overlay
+            class="invisible fixed inset-0 z-[-1] bg-primary/80 opacity-0 transition-all duration-200 group-data-[open=true]/nav:visible group-data-[open=true]/nav:z-[998] group-data-[open=true]/nav:opacity-100"
+          ></div>
+        </div>
+
+        <ul class="m-0 flex list-none gap-[10px] p-0">
+          {
+            langLinks.map((l) => (
+              <li>
+                <a
+                  class:list={[
+                    'flex items-center gap-[10px] leading-[1.3333] hover:text-accent group-data-[scrolled=true]/header:text-primary!',
+                    isHome ? 'text-white' : 'text-primary',
+                    l.code === lang ? 'font-bold' : 'font-light',
+                  ]}
+                  lang={l.htmlLang}
+                  hreflang={l.htmlLang}
+                  href={l.href}
+                  aria-current={l.code === lang ? 'true' : undefined}
+                >
+                  {l.label}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>

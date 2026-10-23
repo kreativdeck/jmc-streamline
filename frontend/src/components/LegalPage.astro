@@ -1,0 +1,61 @@
+---
+/**
+ * Rechtliche Seiten (Impressum / Datenschutz) – Originalinhalt in Spalten.
+ */
+import type { LegalBadge } from '../data/routes';
+import Section from './ui/Section.astro';
+import Container from './ui/Container.astro';
+
+interface Props {
+  h1: string;
+  columns: string[];
+  grid?: boolean;
+  badge?: LegalBadge;
+}
+
+const { h1, columns, grid = columns.length > 1, badge } = Astro.props;
+
+// Formatierung des Rechtstextes (Überschriften, Absätze, Listen, Links)
+const richText = [
+  '[&_:is(h2,h3,h4,h5,h6)]:mt-[1.5em]',
+  '[&_:is(h2,h3,h4,h5,h6)]:mb-0',
+  '[&_:is(h2,h3):first-child]:mt-0',
+  '[&_p]:mt-[1em]',
+  '[&_p]:mb-0',
+  '[&_a]:text-primary',
+  '[&_a]:underline',
+  '[&_a]:underline-offset-[0.25em]',
+  '[&_img]:my-[1em]',
+  '[&_img]:h-auto',
+  '[&_img]:max-w-full',
+  '[&_:is(ul,ol)]:my-[1em]',
+  '[&_:is(ul,ol)]:list-disc',
+  '[&_:is(ul,ol)]:ps-[1em]',
+  '[&_li]:mt-[0.5em]',
+].join(' ');
+const badgeClasses = 'h-[70px] w-[200px]';
+---
+
+<Section>
+  <Container class="gap-y-m">
+    <h1>{h1}</h1>
+    <div
+      class:list={[
+        'w-full gap-m',
+        grid ? 'grid grid-cols-2 items-start max-phablet:grid-cols-1' : 'flex flex-col',
+      ]}
+    >
+      {columns.map((html) => <div class={richText} set:html={html} />)}
+      {
+        badge && badge.placement === 'columns' && (
+          <img class={badgeClasses} src={badge.src} alt={badge.alt} title={badge.title} width="1000" height="348" decoding="async" />
+        )
+      }
+    </div>
+    {
+      badge && badge.placement === 'container' && (
+        <img class={badgeClasses} src={badge.src} alt={badge.alt} title={badge.title} width="1000" height="348" decoding="async" />
+      )
+    }
+  </Container>
+</Section>

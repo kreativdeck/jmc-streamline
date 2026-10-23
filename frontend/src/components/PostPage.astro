@@ -1,0 +1,192 @@
+---
+/**
+ * Blogartikel (DE/EN): links eine mitlaufende Titelspalte (Akzentfläche),
+ * rechts die Artikelspalte.
+ */
+import type { Lang } from '../data/site';
+import { site } from '../data/site';
+import Container from './ui/Container.astro';
+import Button from './ui/Button.astro';
+
+// Formatierung des Artikeltextes (Zierinitiale, Abstände, Listen, Zitate, Bilder)
+const articleText = [
+  '[&>p:first-of-type::first-letter]:float-left',
+  '[&>p:first-of-type::first-letter]:me-[0.5ex]',
+  '[&>p:first-of-type::first-letter]:text-[300%]',
+  '[&>p:first-of-type::first-letter]:leading-[0.95]',
+  '[&>p:first-of-type::first-letter]:font-bold',
+  '[&>p:first-of-type::first-letter]:text-primary',
+  '[&>*+*]:mt-[1em]',
+  '[&>*+:is(h2,h3,h4)]:mt-[1.5em]',
+  '[&>*+figure]:my-[1em]',
+  '[&_h2[id^=toc-]]:scroll-mt-[50px]',
+  '[&_img]:h-auto',
+  '[&_img]:max-w-full',
+  '[&_figure_img]:aspect-video',
+  '[&_figure_img]:object-cover',
+  '[&_a]:underline',
+  '[&_blockquote]:my-[15px]',
+  '[&_blockquote]:border-l-4',
+  '[&_blockquote]:border-neutral-light',
+  '[&_blockquote]:pl-[30px]',
+  '[&_blockquote]:font-heading',
+  '[&_blockquote]:text-h4',
+  '[&_blockquote]:leading-[calc(4px+2ex)]',
+  '[&_:is(ul,ol)]:my-[1em]',
+  '[&_:is(ul,ol)]:list-disc',
+  '[&_:is(ul,ol)]:ps-[1em]',
+  '[&_ol]:list-decimal',
+  '[&_li]:mt-[0.5em]',
+  '[&_em]:italic',
+].join(' ');
+
+export interface PostView {
+  lang: Lang;
+  slug: string;
+  title: string;
+  dateDisplay: string;
+  category: { slug: string; name: string };
+  categoryHref: string;
+  featured: { src: string; alt: string } | null;
+  lede: string;
+  toc: { level: number; text: string }[];
+  body: string;
+  blogHref: string;
+  homeLabel?: string;
+  tocHeading: string;
+  cta: { heading: string; lede: string; label: string; href: string };
+}
+
+interface Props {
+  post: PostView;
+}
+
+const { post } = Astro.props;
+const t = site[post.lang];
+
+// Inhaltsverzeichnis: listet nur die h2-Überschriften (ohne Nummerierung);
+// die Anker-IDs (toc-1, toc-2, …) werden beim Bauen gesetzt.
+let anchorIndex = 0;
+const bodyHtml = post.body.replace(/<h2([^>]*)>/g, (_m, attrs) => {
+  anchorIndex += 1;
+  return `<h2${attrs} id="toc-${anchorIndex}">`;
+});
+const tocNodes = post.toc
+  .filter((entry) => entry.level === 2)
+  .map((entry, i) => ({ ...entry, id: `toc-${i + 1}` }));
+
+/**
+ * Lesezeit je Artikel in Minuten (Werte der Originalseite, 1:1 übernommen).
+ */
+const readingMinutes: Record<string, number> = {
+  'de/effiziente-geschaeftspro': 5,
+  'de/effiziente-meetings-in-e': 5,
+  'de/stillstand-ist-keine-opt': 4,
+  'de/warum-illustrationen-der': 4,
+  'de/warum-leadership-und-spo': 7,
+  'de/wie-schlanke-prozesse-un': 7,
+  'en/efficient-business-proce': 5,
+  'en/efficient-meetings-in-a-': 4,
+  'en/standing-still-is-not-an': 4,
+  'en/transformation-of-busine': 7,
+  'en/why-illustrations-the-cr': 4,
+  'en/why-leadership-and-sport': 6,
+};
+const minutes = readingMinutes[`${post.lang}/${post.slug.slice(0, 24)}`];
+---
+
+<section>
+  <Container layout="grid" width="w-full" maxWidth="max-w-none" class="grid-cols-2 grid-rows-1 items-stretch gap-0 max-tablet:grid-cols-1">
+    <div class="flex flex-col bg-white bg-linear-to-b from-accent-ultra-light to-white pl-m max-tablet:sticky max-tablet:top-0 max-tablet:pl-0">
+      <div
+        class="sticky top-0 flex max-h-dvh min-h-dvh max-w-[calc(var(--container-content)/2)] flex-col justify-start gap-y-m self-end overflow-x-hidden overflow-y-scroll pt-section-m pr-xxl pb-section-m [scrollbar-color:rgba(64,64,64,0.2)_rgba(64,64,64,0.1)] [scrollbar-width:thin] max-tablet:h-auto max-tablet:max-h-[calc(100dvh-var(--spacing-section-m)*2)] max-tablet:min-h-min max-tablet:max-w-full max-tablet:px-m"
+      >
+        <div class="mt-auto flex w-full flex-col items-start gap-y-m">
+          <h1 class="text-balance">{post.title}</h1>
+          <p class="-order-1 m-0 text-m leading-[1.1]">{post.dateDisplay}</p>
+          <div>
+            {minutes ? `${t.readingTime.prefix}${minutes}${t.readingTime.suffix}` : ''}
+          </div>
+          <div class="-order-2 w-full text-[1.3rem]">
+            <nav class="flex flex-wrap items-center gap-[0.5em]" aria-label="Breadcrumbs">
+              <a href={t.homeUrl}>{post.homeLabel ?? t.blogHomeLabel}</a>
+              <span class="text-primary-dark" aria-hidden="true">&raquo;</span>
+              <a href={post.categoryHref}>{post.category.name}</a>
+              <span class="text-primary-dark" aria-hidden="true">&raquo;</span>
+              <span aria-current="page">{post.title}</span>
+            </nav>
+          </div>
+        </div>
+
+        {
+          post.featured && (
+            <figure class="aspect-video w-full shrink-0 overflow-hidden rounded-base">
+              <img class="size-full object-cover" src={post.featured.src} alt={post.featured.alt} loading="lazy" decoding="async" />
+            </figure>
+          )
+        }
+
+        <div>{post.lede}</div>
+
+        {
+          tocNodes.length > 0 && (
+            <div class="flex flex-col gap-y-[calc(var(--spacing-m)/2)]">
+              <p class="m-0 text-xs tracking-[0.15em] uppercase">{post.tocHeading}</p>
+              <nav class="w-full" aria-label={post.tocHeading}>
+                <ol class="m-0 flex list-none flex-col p-0">
+                  {tocNodes.map((node) => (
+                    <li>
+                      <a class="block w-full py-[0.25em] text-primary no-underline" href={`#${node.id}`}>
+                        {node.text}
+                      </a>
+                    </li>
+                  ))}
+                </ol>
+              </nav>
+            </div>
+          )
+        }
+
+        <div class="mt-auto flex w-full flex-col items-start">
+          <a class="font-medium text-primary underline underline-offset-[0.25em]" href={post.blogHref}>{t.allPostsLabel}</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative flex min-h-full flex-col bg-white pt-section-l pr-m pb-section-l pl-xxl max-tablet:z-[2] max-tablet:px-m max-tablet:py-section-m">
+      <article>
+        <div class:list={['mb-[5vh] w-full', articleText]} set:html={bodyHtml} />
+
+        <div class="mt-0 mb-[40px] grid max-w-[16em] grid-cols-[auto_minmax(0,1fr)] items-center gap-xs">
+          <div>
+            <figure class="size-[50px] overflow-hidden rounded-[50%]">
+              <img
+                class="size-full object-cover"
+                src="/media/jmc-jasmin.jpg"
+                alt="Jmc Jasmin"
+                width="500"
+                height="500"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+          </div>
+          <div class="flex flex-col gap-y-0 leading-none">
+            <p class="m-0 font-semibold">Jasmin-Madeleine</p>
+            <p class="m-0 text-s text-primary/60">jmc. | Streamline Processes S.L.</p>
+          </div>
+        </div>
+
+        <div class="w-full">
+          <div class="flex w-full flex-col items-center gap-y-m text-center max-phablet:items-start max-phablet:text-left">
+            <h2 class="max-w-[25ch] text-primary">{post.cta.heading}</h2>
+            <p class="max-w-[60ch]">{post.cta.lede}</p>
+            <div class="flex w-full flex-row flex-wrap items-center justify-center gap-m max-phablet:flex-col">
+              <Button href={post.cta.href}>{post.cta.label}</Button>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </Container>
+</section>

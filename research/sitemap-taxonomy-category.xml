@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://www.jmc-streamline.com/wp-content/plugins/slim-seo/src/Sitemaps/style.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+	<url>
+		<loc>https://www.jmc-streamline.com/de/allgemein/</loc>
+		<xhtml:link rel="alternate" hreflang="de-DE" href="https://www.jmc-streamline.com/de/allgemein/"/>
+		<xhtml:link rel="alternate" hreflang="en-US" href="https://www.jmc-streamline.com/en/generally/"/>
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://www.jmc-streamline.com/de/allgemein/"/>
+	</url>
+	<url>
+		<loc>https://www.jmc-streamline.com/en/generally/</loc>
+		<xhtml:link rel="alternate" hreflang="de-DE" href="https://www.jmc-streamline.com/de/allgemein/"/>
+		<xhtml:link rel="alternate" hreflang="en-US" href="https://www.jmc-streamline.com/en/generally/"/>
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://www.jmc-streamline.com/de/allgemein/"/>
+	</url>
+	<url>
+		<loc>https://www.jmc-streamline.com/de/insights/</loc>
+		<xhtml:link rel="alternate" hreflang="de-DE" href="https://www.jmc-streamline.com/de/insights/"/>
+		<xhtml:link rel="alternate" hreflang="en-US" href="https://www.jmc-streamline.com/en/insights/"/>
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://www.jmc-streamline.com/de/insights/"/>
+	</url>
+	<url>
+		<loc>https://www.jmc-streamline.com/en/insights/</loc>
+		<xhtml:link rel="alternate" hreflang="de-DE" href="https://www.jmc-streamline.com/de/insights/"/>
+		<xhtml:link rel="alternate" hreflang="en-US" href="https://www.jmc-streamline.com/en/insights/"/>
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://www.jmc-streamline.com/de/insights/"/>
+	</url>
+	<url>
+		<loc>https://www.jmc-streamline.com/de/leadership/</loc>
+		<xhtml:link rel="alternate" hreflang="de-DE" href="https://www.jmc-streamline.com/de/leadership/"/>
+		<xhtml:link rel="alternate" hreflang="en-US" href="https://www.jmc-streamline.com/en/leadership/"/>
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://www.jmc-streamline.com/de/leadership/"/>
+	</url>
+	<url>
+		<loc>https://www.jmc-streamline.com/en/leadership/</loc>
+		<xhtml:link rel="alternate" hreflang="de-DE" href="https://www.jmc-streamline.com/de/leadership/"/>
+		<xhtml:link rel="alternate" hreflang="en-US" href="https://www.jmc-streamline.com/en/leadership/"/>
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://www.jmc-streamline.com/de/leadership/"/>
+	</url>
+</urlset>

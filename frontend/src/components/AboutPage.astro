@@ -1,0 +1,108 @@
+---
+/**
+ * Über mich (DE/EN): Einleitung, dreispaltiger Textbereich, Video + Kontakt-Hinweis.
+ */
+import type { Lang } from '../data/site';
+import { about } from '../data/pages';
+import { arrowIcon } from '../data/icons';
+import Section from './ui/Section.astro';
+import Container from './ui/Container.astro';
+import AccentLabel from './ui/AccentLabel.astro';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const d = about[lang];
+
+// Initiale des ersten Absatzes als Zierbuchstabe
+const dropCap = [
+  '[&_p:first-child::first-letter]:float-left',
+  '[&_p:first-child::first-letter]:me-[0.15em]',
+  '[&_p:first-child::first-letter]:text-[500%]',
+  '[&_p:first-child::first-letter]:leading-[0.8]',
+].join(' ');
+---
+
+<Section gap="gap-y-[calc(var(--spacing-xl)*3)]" class="overflow-hidden">
+  <Container layout="col" class="items-center gap-y-m text-center max-phablet:items-start max-phablet:text-left">
+    <h2 class="m-0 w-[15ch] leading-[1.1] max-phablet:text-h1">{d.intro.heading}</h2>
+    <AccentLabel as="p">{d.intro.accent}</AccentLabel>
+    <p class="max-w-[60ch]">{d.intro.lede}</p>
+  </Container>
+
+  <Container
+    layout="grid"
+    width="w-wide"
+    class="relative grid-cols-12 items-start gap-[calc(var(--spacing-m)*2)] before:absolute before:inset-s-1/2 before:top-[calc(var(--spacing-xl)*-1.5)] before:flex before:h-[2px] before:w-screen before:-translate-x-1/2 before:bg-black/10 before:content-[''] max-tablet:gap-m"
+  >
+    <div class="col-[1/6] row-start-1 flex w-full flex-col items-start max-tablet:col-[1/-1]">
+      <div class:list={['[&_p]:m-0 [&_p+p]:mt-[1em]', dropCap]} set:html={d.bodyHtml} />
+    </div>
+    <div
+      class="col-[6/11] row-start-1 flex w-full flex-col items-start justify-between gap-y-m max-tablet:col-[1/10] max-tablet:row-start-2 max-phablet:col-[1/-1]"
+    >
+      <div class="-mt-[calc(var(--spacing-xl)*2)] flex w-full grow flex-col items-start max-tablet:mt-0">
+        <figure class="w-full grow overflow-hidden rounded-base">
+          <img class="h-auto w-full object-cover" src={d.image.src} alt={d.image.alt} loading="lazy" decoding="async" />
+        </figure>
+      </div>
+      <p class="m-0 text-l italic">{d.impact}</p>
+    </div>
+    <div
+      class="z-[1] col-[10/-1] row-start-1 flex w-full flex-col items-start max-tablet:col-[6/-1] max-tablet:row-start-2 max-tablet:pt-section-m max-phablet:col-[1/-1] max-phablet:row-start-3 max-phablet:pt-0"
+    >
+      <div class="flex w-full flex-col items-end gap-y-[calc(var(--spacing-m)/2)]">
+        <div class="flex w-full flex-col items-start rounded-base bg-accent p-m">
+          <p class="m-0">{d.callout}</p>
+        </div>
+      </div>
+    </div>
+  </Container>
+</Section>
+
+<Section gap="gap-y-m" class="max-phablet:pt-0">
+  <Container layout="grid" class="grid-cols-[minmax(0,3fr)_minmax(0,1fr)] items-stretch gap-m max-tablet:grid-cols-1">
+    <Container layout="stack" class="gap-y-m">
+      <h2 class="text-balance">{d.videoSection.heading}</h2>
+      <p class="w-[30ch] max-w-full max-narrow:w-auto">{d.videoSection.lede}</p>
+    </Container>
+  </Container>
+  <Container layout="grid" class="grid-cols-[minmax(0,3fr)_minmax(0,1fr)] items-stretch gap-m max-tablet:grid-cols-1">
+    <div class="flex w-full flex-col items-start gap-y-m">
+      <div class="relative isolate flex w-full flex-col items-start">
+        <div class="relative flex w-full items-center justify-center overflow-hidden rounded-base pt-[56.25%]">
+          <video class="absolute top-0 h-full w-full border-0 object-cover" controls preload="metadata">
+            <source src={d.videoSection.video} type="video/mp4" />
+            <p>{d.videoSection.videoFallback}</p>
+          </video>
+        </div>
+        <div class="absolute inset-0 z-[-1] bg-[linear-gradient(transparent,rgba(0,0,0,0.6))]"></div>
+      </div>
+    </div>
+    <div class="flex w-full flex-col items-start justify-center">
+      <div class="flex w-full flex-col items-start gap-y-[calc(var(--spacing-m)/2)]">
+        <div class="mb-[1em] flex w-full flex-col items-start gap-y-[calc(var(--spacing-m)/2)]">
+          <h2>{d.videoSection.ctaHeading}</h2>
+          <div class="[&_p]:m-0">
+            <p>{d.videoSection.ctaText}</p>
+          </div>
+        </div>
+        <div class="flex">
+          <a
+            class="group/link inline-flex flex-row-reverse items-center gap-[0.25em] font-medium text-black underline underline-offset-[0.25em]"
+            href={d.videoSection.cta.href}
+          >
+            <span class="inline-flex transition-[translate] duration-300 group-hover/link:translate-x-[0.25em]">
+              <svg class="size-[1em] fill-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"
+                ><path d={arrowIcon}></path></svg
+              >
+            </span>
+            <span>{d.videoSection.cta.label}</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </Container>
+</Section>

@@ -1,0 +1,3056 @@
+{
+ "de:home": {
+  "@context": "https://schema.org",
+  "@graph": [
+   {
+    "@type": "WebSite",
+    "@id": "https://www.jmc-streamline.com/#website",
+    "url": "https://www.jmc-streamline.com/",
+    "name": "jmc. | Streamline Processes S.L.",
+    "inLanguage": "de",
+    "publisher": {
+     "@id": "https://www.jmc-streamline.com/#organization"
+    }
+   },
+   {
+    "@type": "WebPage",
+    "@id": "https://www.jmc-streamline.com/de/#webpage",
+    "url": "https://www.jmc-streamline.com/de/",
+    "inLanguage": "de-DE",
+    "name": "Geschäftsprozesse in Unternehmen optimieren",
+    "description": "Ich sorge dafür, dass Ihr Unternehmen durch ein optimiertes Büromanagement von Vorteilen wie Kosteneinsparungen, erhöhter Wirtschaftlichkeit profitiert.",
+    "datePublished": "2024-05-02T16:38:56+02:00",
+    "dateModified": "2025-03-04T09:44:14+01:00",
+    "isPartOf": {
+     "@id": "https://www.jmc-streamline.com/#website"
+    },
+    "potentialAction": {
+     "@id": "https://www.jmc-streamline.com/de/#readaction"
+    },
+    "about": {
+     "@id": "https://www.jmc-streamline.com/#organization"
+    }
+   },
+   {
+    "@type": "ReadAction",
+    "@id": "https://www.jmc-streamline.com/de/#readaction",
+    "target": "https://www.jmc-streamline.com/de/"
+   },
+   {
+    "@type": "Organization",
+    "@id": "https://www.jmc-streamline.com/#organization",
+    "url": "https://www.jmc-streamline.com/",
+    "name": "jmc. | Streamline Processes S.L.",
+    "address": {
+     "@type": "PostalAddress",
+     "streetAddress": "Carrer dels Apuntadors, 4",
+     "addressLocality": "Palma",
+     "addressRegion": "Illes Balears",
+     "addressCountry": "ES",
+     "postalCode": "ES - 07012"
+    },
+    "email": "contact@jmc-streamline.com",
+    "logo": "https://www.jmc-streamline.com/media/cropped-favicon-jmc-streamline-processes-192x192.png",
+    "slogan": "Kosten senken. Effizienz steigern. Servicequalität verbessern.",
+    "telephone": "+34 699 313750"
+   }
+  ]
+ },
+ "de:allgemein": {
+  "@context": "https://schema.org",
+  "@graph": [
+   {
+    "@type": "WebSite",
+    "@id": "https://www.jmc-streamline.com/#website",
+    "url": "https://www.jmc-streamline.com/",
+    "name": "jmc. | Streamline Processes S.L.",
+    "inLanguage": "de",
+    "publisher": {
+     "@id": "https://www.jmc-streamline.com/#organization"
+    }
+   },
+   {
+    "@type": "BreadcrumbList",
+    "name": "Breadcrumbs",
+    "@id": "https://www.jmc-streamline.com/de/allgemein/#breadcrumblist",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.jmc-streamline.com/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.jmc-streamline.com/de/blog/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Allgemein"
+     }
+    ]
+   },
+   {
+    "@type": "CollectionPage",
+    "@id": "https://www.jmc-streamline.com/de/allgemein/#webpage",
+    "url": "https://www.jmc-streamline.com/de/allgemein/",
+    "inLanguage": "de",
+    "name": "Allgemein – jmc. | Streamline Processes S.L.",
+    "isPartOf": {
+     "@id": "https://www.jmc-streamline.com/#website"
+    },
+    "breadcrumb": {
+     "@id": "https://www.jmc-streamline.com/de/allgemein/#breadcrumblist"
+    }
+   },
+   {
+    "@type": "Organization",
+    "@id": "https://www.jmc-streamline.com/#organization",
+    "url": "https://www.jmc-streamline.com/",
+    "name": "jmc. | Streamline Processes S.L.",
+    "address": {
+     "@type": "PostalAddress",
+     "streetAddress": "Carrer dels Apuntadors, 4",
+     "addressLocality": "Palma",
+     "addressRegion": "Illes Balears",
+     "addressCountry": "ES",
+     "postalCode": "ES - 07012"
+    },
+    "email": "contact@jmc-streamline.com",
+    "logo": "https://www.jmc-streamline.com/media/cropped-favicon-jmc-streamline-processes-192x192.png",
+    "slogan": "Kosten senken. Effizienz steigern. Servicequalität verbessern.",
+    "telephone": "+34 699 313750"
+   },
+   {
+    "@type": "WebPage",
+    "name": "Allgemein – jmc. | Streamline Processes S.L.",
+    "inLanguage": "de-DE",
+    "isPartOf": {
+     "@id": "https://www.jmc-streamline.com/#website"
+    },
+    "url": "https://www.jmc-streamline.com/de/allgemein/",
+    "@id": "https://www.jmc-streamline.com/de/allgemein/#webpage"
+   }
+  ]
+ },
+ "de:blog": {
+  "@context": "https://schema.org",
+  "@graph": [
+   {
+    "@type": "WebSite",
+    "@id": "https://www.jmc-streamline.com/#website",
+    "url": "https://www.jmc-streamline.com/",
+    "name": "jmc. | Streamline Processes S.L.",
+    "inLanguage": "de",
+    "publisher": {
+     "@id": "https://www.jmc-streamline.com/#organization"
+    }
+   },
+   {
+    "@type": "BreadcrumbList",
+    "name": "Breadcrumbs",
+    "@id": "https://www.jmc-streamline.com/de/blog/#breadcrumblist",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.jmc-streamline.com/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog"
+     }
+    ]
+   },
+   {
+    "@type": "CollectionPage",
+    "@id": "https://www.jmc-streamline.com/de/blog/#webpage",
+    "url": "https://www.jmc-streamline.com/de/blog/",
+    "inLanguage": "de",
+    "name": "Ideen und Einblicke für Arbeit und Leben",
+    "description": "Ich schreibe über das, was mich bewegt. Dabei geht es nicht nur um Prozesse und Strukturen, sondern auch um Kreativität, neue Ideen und kleine Veränderungen.",
+    "isPartOf": {
+     "@id": "https://www.jmc-streamline.com/#website"
+    },
+    "breadcrumb": {
+     "@id": "https://www.jmc-streamline.com/de/blog/#breadcrumblist"
+    }
+   },
+   {
+    "@type": "Organization",
+    "@id": "https://www.jmc-streamline.com/#organization",
+    "url": "https://www.jmc-streamline.com/",
+    "name": "jmc. | Streamline Processes S.L.",
+    "address": {
+     "@type": "PostalAddress",
+     "streetAddress": "Carrer dels Apuntadors, 4",
+     "addressLocality": "Palma",
+     "addressRegion": "Illes Balears",
+     "addressCountry": "ES",
+     "postalCode": "ES - 07012"
+    },
+    "email": "contact@jmc-streamline.com",
+    "logo": "https://www.jmc-streamline.com/media/cropped-favicon-jmc-streamline-processes-192x192.png",
+    "slogan": "Kosten senken. Effizienz steigern. Servicequalität verbessern.",
+    "telephone": "+34 699 313750"
+   },
+   {
+    "@type": "WebPage",
+    "name": "Ideen und Einblicke für Arbeit und Leben",
+    "inLanguage": "de-DE",
+    "isPartOf": {
+     "@id": "https://www.jmc-streamline.com/#website"
+    },
+    "url": "https://www.jmc-streamline.com/de/blog/",
+    "@id": "https://www.jmc-streamline.com/de/blog/#webpage"
+   }
+  ]
+ },
+ "de:datenschutzerklaerung": {
+  "@context": "https://schema.org",
+  "@graph": [
+   {
+    "@type": "WebSite",
+    "@id": "https://www.jmc-streamline.com/#website",
+    "url": "https://www.jmc-streamline.com/",
+    "name": "jmc. | Streamline Processes S.L.",
+    "inLanguage": "de",
+    "publisher": {
+     "@id": "https://www.jmc-streamline.com/#organization"
+    }
+   },
+   {
+    "@type": "BreadcrumbList",
+    "name": "Breadcrumbs",
+    "@id": "https://www.jmc-streamline.com/de/datenschutzerklaerung/#breadcrumblist",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.jmc-streamline.com/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Datenschutzerklärung"
+     }
+    ]
+   },
+   {
+    "@type": "WebPage",
+    "@id": "https://www.jmc-streamline.com/de/datenschutzerklaerung/#webpage",
+    "url": "https://www.jmc-streamline.com/de/datenschutzerklaerung/",
+    "inLanguage": "de-DE",
+    "name": "Datenschutzerklärung – jmc. | Streamline Processes S.L.",
+    "description": "Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen.",
+    "datePublished": "2024-08-27T09:44:45+02:00",
+    "dateModified": "2025-12-06T10:26:11+01:00",
+    "isPartOf": {
+     "@id": "https://www.jmc-streamline.com/#website"
+    },
+    "breadcrumb": {
+     "@id": "https://www.jmc-streamline.com/de/datenschutzerklaerung/#breadcrumblist"
+    },
+    "potentialAction": {
+     "@id": "https://www.jmc-streamline.com/de/datenschutzerklaerung/#readaction"
+    }
+   },
+   {
+    "@type": "ReadAction",
+    "@id": "https://www.jmc-streamline.com/de/datenschutzerklaerung/#readaction",
+    "target": "https://www.jmc-streamline.com/de/datenschutzerklaerung/"
+   },
+   {
+    "@type": "Organization",
+    "@id": "https://www.jmc-streamline.com/#organization",
+    "url": "https://www.jmc-streamline.com/",
+    "name": "jmc. | Streamline Processes S.L.",
+    "address": {
+     "@type": "PostalAddress",
+     "streetAddress": "Carrer dels Apuntadors, 4",
+     "addressLocality": "Palma",
+     "addressRegion": "Illes Balears",
+     "addressCountry": "ES",
+     "postalCode": "ES - 07012"
+    },
+    "email": "contact@jmc-streamline.com",
+    "logo": "https://www.jmc-streamline.com/media/cropped-favicon-jmc-streamline-processes-192x192.png",
+    "slogan": "Kosten senken. Effizienz steigern. Servicequalität verbessern.",
+    "telephone": "+34 699 313750"
+   }
+  ]
+ },
+ "de:effiziente-geschaeftsprozesse-fuer-expats-5-smarte-strategien-fuer-den-internationalen-arbeitsalltag": {
+  "@context": "https://schema.org",
+  "@graph": [
+   {
+    "@type": "WebSite",
+    "@id": "https://www.jmc-streamline.com/#website",
+    "url": "https://www.jmc-streamline.com/",
+    "name": "jmc. | Streamline Processes S.L.",
+    "inLanguage": "de",
+    "publisher": {
+     "@id": "https://www.jmc-streamline.com/#organization"
+    }
+   },
+   {
+    "@type": "BreadcrumbList",
+    "name": "Breadcrumbs",
+    "@id": "https://www.jmc-streamline.com/de/effiziente-geschaeftsprozesse-fuer-expats-5-smarte-strategien-fuer-den-internationalen-arbeitsalltag/#breadcrumblist",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.jmc-streamline.com/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Insights",
+      "item": "https://www.jmc-streamline.com/de/insights/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Effiziente Geschäftsprozesse für Expats! 5 smarte Strategien für den internationalen Arbeitsalltag"
+     }
+    ]
+   },
+   {
+    "@type": "WebPage",
+    "@id": "https://www.jmc-streamline.com/de/effiziente-geschaeftsprozesse-fuer-expats-5-smarte-strategien-fuer-den-internationalen-arbeitsalltag/#webpage",
+    "url": "https://www.jmc-streamline.com/de/effiziente-geschaeftsprozesse-fuer-expats-5-smarte-strategien-fuer-den-internationalen-arbeitsalltag/",
+    "inLanguage": "de-DE",
+    "name": "5 Strategien, die wirklich funktionieren",
+    "description": "Internationale Selbstständigkeit bedeutet nicht nur effiziente Abläufe, sondern auch die Fähigkeit, sich auf neue Situationen einzulassen.",
+    "datePublished": "2025-03-07T05:56:53+01:00",
+    "dateModified": "2025-03-07T06:03:45+01:00",
+    "isPartOf": {
+     "@id": "https://www.jmc-streamline.com/#website"
+    },
+    "breadcrumb": {
+     "@id": "https://www.jmc-streamline.com/de/effiziente-geschaeftsprozesse-fuer-expats-5-smarte-strategien-fuer-den-internationalen-arbeitsalltag/#breadcrumblist"
+    },
+    "potentialAction": {
+     "@id": "https://www.jmc-streamline.com/de/effiziente-geschaeftsprozesse-fuer-expats-5-smarte-strategien-fuer-den-internationalen-arbeitsalltag/#readaction"
+    },
+    "primaryImageOfPage": {
+     "@id": "https://www.jmc-streamline.com/de/effiziente-geschaeftsprozesse-fuer-expats-5-smarte-strategien-fuer-den-internationalen-arbeitsalltag/#thumbnail"
+    },
+    "image": {
+     "@id": "https://www.jmc-streamline.com/de/effiziente-geschaeftsprozesse-fuer-expats-5-smarte-strategien-fuer-den-internationalen-arbeitsalltag/#thumbnail"
+    }
+   },
+   {
+    "@type": "ReadAction",
+    "@id": "https://www.jmc-streamline.com/de/effiziente-geschaeftsprozesse-fuer-expats-5-smarte-strategien-fuer-den-internationalen-arbeitsalltag/#readaction",
+    "target": "https://www.jmc-streamline.com/de/effiziente-geschaeftsprozesse-fuer-expats-5-smarte-strategien-fuer-den-internationalen-arbeitsalltag/"
+   },
+   {
+    "@type": "Organization",
+    "@id": "https://www.jmc-streamline.com/#organization",
+    "url": "https://www.jmc-streamline.com/",
+    "name": "jmc. | Streamline Processes S.L.",
+    "address": {
+     "@type": "PostalAddress",
+     "streetAddress": "Carrer dels Apuntadors, 4",
+     "addressLocality": "Palma",
+     "addressRegion": "Illes Balears",
+     "addressCountry": "ES",
+     "postalCode": "ES - 07012"
+    },
+    "email": "contact@jmc-streamline.com",
+    "logo": "https://www.jmc-streamline.com/media/cropped-favicon-jmc-streamline-processes-192x192.png",
+    "slogan": "Kosten senken. Effizienz steigern. Servicequalität verbessern.",
+    "telephone": "+34 699 313750"
+   },
+   {
+    "@type": "ImageObject",
+    "@id": "https://www.jmc-streamline.com/de/effiziente-geschaeftsprozesse-fuer-expats-5-smarte-strategien-fuer-den-internationalen-arbeitsalltag/#thumbnail",
+    "url": "https://www.jmc-streamline.com/media/5-smarte-strategien-fuer-den-internationalen-arbeitsalltag.jpg",
+    "contentUrl": "https://www.jmc-streamline.com/media/5-smarte-strategien-fuer-den-internationalen-arbeitsalltag.jpg",
+    "width": 600,
+    "height": 400
+   },
+   {
+    "@type": "BlogPosting",
+    "@id": "https://www.jmc-streamline.com/de/effiziente-geschaeftsprozesse-fuer-expats-5-smarte-strategien-fuer-den-internationalen-arbeitsalltag/#article",
+    "url": "https://www.jmc-streamline.com/de/effiziente-geschaeftsprozesse-fuer-expats-5-smarte-strategien-fuer-den-internationalen-arbeitsalltag/",
+    "headline": "Effiziente Geschäftsprozesse für Expats! 5 smarte Strategien für den internationalen Arbeitsalltag",
+    "datePublished": "2025-03-07T05:56:53+01:00",
+    "dateModified": "2025-03-07T06:03:45+01:00",
+    "wordCount": 754,
+    "articleSection": [
+     "Insights"
+    ],
+    "isPartOf": {
+     "@id": "https://www.jmc-streamline.com/de/effiziente-geschaeftsprozesse-fuer-expats-5-smarte-strategien-fuer-den-internationalen-arbeitsalltag/#webpage"
+    },
+    "mainEntityOfPage": {
+     "@id": "https://www.jmc-streamline.com/de/effiziente-geschaeftsprozesse-fuer-expats-5-smarte-strategien-fuer-den-internationalen-arbeitsalltag/#webpage"
+    },
+    "image": {
+     "@id": "https://www.jmc-streamline.com/de/effiziente-geschaeftsprozesse-fuer-expats-5-smarte-strategien-fuer-den-internationalen-arbeitsalltag/#thumbnail"
+    },
+    "publisher": {
+     "@id": "https://www.jmc-streamline.com/#organization"
+    }
+   }
+  ]
+ },
+ "de:effiziente-meetings-in-einer-globalen-geschaeftswelt-kulturelle-unterschiede-verstehen": {
+  "@context": "https://schema.org",
+  "@graph": [
+   {
+    "@type": "WebSite",
+    "@id": "https://www.jmc-streamline.com/#website",
+    "url": "https://www.jmc-streamline.com/",
+    "name": "jmc. | Streamline Processes S.L.",
+    "inLanguage": "de",
+    "publisher": {
+     "@id": "https://www.jmc-streamline.com/#organization"
+    }
+   },
+   {
+    "@type": "BreadcrumbList",
+    "name": "Breadcrumbs",
+    "@id": "https://www.jmc-streamline.com/de/effiziente-meetings-in-einer-globalen-geschaeftswelt-kulturelle-unterschiede-verstehen/#breadcrumblist",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.jmc-streamline.com/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Leadership",
+      "item": "https://www.jmc-streamline.com/de/leadership/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Effiziente Meetings in einer globalen Geschäftswelt: Kulturelle Unterschiede verstehen"
+     }
+    ]
+   },
+   {
+    "@type": "WebPage",
+    "@id": "https://www.jmc-streamline.com/de/effiziente-meetings-in-einer-globalen-geschaeftswelt-kulturelle-unterschiede-verstehen/#webpage",
+    "url": "https://www.jmc-streamline.com/de/effiziente-meetings-in-einer-globalen-geschaeftswelt-kulturelle-unterschiede-verstehen/",
+    "inLanguage": "de-DE",
+    "name": "Effiziente Meetings in einer globalen Geschäftswelt",
+    "description": "In einer global vernetzten Geschäftswelt spielt das Verständnis kultureller Unterschiede eine zentrale Rolle für den Erfolg von Meetings",
+    "datePublished": "2025-01-23T16:29:51+01:00",
+    "dateModified": "2025-01-24T08:35:01+01:00",
+    "isPartOf": {
+     "@id": "https://www.jmc-streamline.com/#website"
+    },
+    "breadcrumb": {
+     "@id": "https://www.jmc-streamline.com/de/effiziente-meetings-in-einer-globalen-geschaeftswelt-kulturelle-unterschiede-verstehen/#breadcrumblist"
+    },
+    "potentialAction": {
+     "@id": "https://www.jmc-streamline.com/de/effiziente-meetings-in-einer-globalen-geschaeftswelt-kulturelle-unterschiede-verstehen/#readaction"
+    },
+    "primaryImageOfPage": {
+     "@id": "https://www.jmc-streamline.com/de/effiziente-meetings-in-einer-globalen-geschaeftswelt-kulturelle-unterschiede-verstehen/#thumbnail"
+    },
+    "image": {
+     "@id": "https://www.jmc-streamline.com/de/effiziente-meetings-in-einer-globalen-geschaeftswelt-kulturelle-unterschiede-verstehen/#thumbnail"
+    }
+   },
+   {
+    "@type": "ReadAction",
+    "@id": "https://www.jmc-streamline.com/de/effiziente-meetings-in-einer-globalen-geschaeftswelt-kulturelle-unterschiede-verstehen/#readaction",
+    "target": "https://www.jmc-streamline.com/de/effiziente-meetings-in-einer-globalen-geschaeftswelt-kulturelle-unterschiede-verstehen/"
+   },
+   {
+    "@type": "Organization",
+    "@id": "https://www.jmc-streamline.com/#organization",
+    "url": "https://www.jmc-streamline.com/",
+    "name": "jmc. | Streamline Processes S.L.",
+    "address": {
+     "@type": "PostalAddress",
+     "streetAddress": "Carrer dels Apuntadors, 4",
+     "addressLocality": "Palma",
+     "addressRegion": "Illes Balears",
+     "addressCountry": "ES",
+     "postalCode": "ES - 07012"
+    },
+    "email": "contact@jmc-streamline.com",
+    "logo": "https://www.jmc-streamline.com/media/cropped-favicon-jmc-streamline-processes-192x192.png",
+    "slogan": "Kosten senken. Effizienz steigern. Servicequalität verbessern.",
+    "telephone": "+34 699 313750"
+   },
+   {
+    "@type": "ImageObject",
+    "@id": "https://www.jmc-streamline.com/de/effiziente-meetings-in-einer-globalen-geschaeftswelt-kulturelle-unterschiede-verstehen/#thumbnail",
+    "url": "https://www.jmc-streamline.com/media/effiziente-meetings-in-einer-globalen-geschaeftswelt.jpg",
+    "contentUrl": "https://www.jmc-streamline.com/media/effiziente-meetings-in-einer-globalen-geschaeftswelt.jpg",
+    "width": 1024,
+    "height": 1024
+   },
+   {
+    "@type": "BlogPosting",
+    "@id": "https://www.jmc-streamline.com/de/effiziente-meetings-in-einer-globalen-geschaeftswelt-kulturelle-unterschiede-verstehen/#article",
+    "url": "https://www.jmc-streamline.com/de/effiziente-meetings-in-einer-globalen-geschaeftswelt-kulturelle-unterschiede-verstehen/",
+    "headline": "Effiziente Meetings in einer globalen Geschäftswelt: Kulturelle Unterschiede verstehen",
+    "datePublished": "2025-01-23T16:29:51+01:00",
+    "dateModified": "2025-01-24T08:35:01+01:00",
+    "wordCount": 647,
+    "articleSection": [
+     "Leadership"
+    ],
+    "isPartOf": {
+     "@id": "https://www.jmc-streamline.com/de/effiziente-meetings-in-einer-globalen-geschaeftswelt-kulturelle-unterschiede-verstehen/#webpage"
+    },
+    "mainEntityOfPage": {
+     "@id": "https://www.jmc-streamline.com/de/effiziente-meetings-in-einer-globalen-geschaeftswelt-kulturelle-unterschiede-verstehen/#webpage"
+    },
+    "image": {
+     "@id": "https://www.jmc-streamline.com/de/effiziente-meetings-in-einer-globalen-geschaeftswelt-kulturelle-unterschiede-verstehen/#thumbnail"
+    },
+    "publisher": {
+     "@id": "https://www.jmc-streamline.com/#organization"
+    }
+   }
+  ]
+ },
+ "de:impressum": {
+  "@context": "https://schema.org",
+  "@graph": [
+   {
+    "@type": "WebSite",
+    "@id": "https://www.jmc-streamline.com/#website",
+    "url": "https://www.jmc-streamline.com/",
+    "name": "jmc. | Streamline Processes S.L.",
+    "inLanguage": "de",
+    "publisher": {
+     "@id": "https://www.jmc-streamline.com/#organization"
+    }
+   },
+   {
+    "@type": "BreadcrumbList",
+    "name": "Breadcrumbs",
+    "@id": "https://www.jmc-streamline.com/de/impressum/#breadcrumblist",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.jmc-streamline.com/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Impressum"
+     }
+    ]
+   },
+   {
+    "@type": "WebPage",
+    "@id": "https://www.jmc-streamline.com/de/impressum/#webpage",
+    "url": "https://www.jmc-streamline.com/de/impressum/",
+    "inLanguage": "de-DE",
+    "name": "Impressum – jmc. | Streamline Processes S.L.",
+    "description": "Impressum von jmc. | Streamline Processes S.L. in Spanien",
+    "datePublished": "2024-08-27T09:33:30+02:00",
+    "dateModified": "2024-09-02T09:44:05+02:00",
+    "isPartOf": {
+     "@id": "https://www.jmc-streamline.com/#website"
+    },
+    "breadcrumb": {
+     "@id": "https://www.jmc-streamline.com/de/impressum/#breadcrumblist"
+    },
+    "potentialAction": {
+     "@id": "https://www.jmc-streamline.com/de/impressum/#readaction"
+    }
+   },
+   {
+    "@type": "ReadAction",
+    "@id": "https://www.jmc-streamline.com/de/impressum/#readaction",
+    "target": "https://www.jmc-streamline.com/de/impressum/"
+   },
+   {
+    "@type": "Organization",
+    "@id": "https://www.jmc-streamline.com/#organization",
+    "url": "https://www.jmc-streamline.com/",
+    "name": "jmc. | Streamline Processes S.L.",
+    "address": {
+     "@type": "PostalAddress",
+     "streetAddress": "Carrer dels Apuntadors, 4",
+     "addressLocality": "Palma",
+     "addressRegion": "Illes Balears",
+     "addressCountry": "ES",
+     "postalCode": "ES - 07012"
+    },
+    "email": "contact@jmc-streamline.com",
+    "logo": "https://www.jmc-streamline.com/media/cropped-favicon-jmc-streamline-processes-192x192.png",
+    "slogan": "Kosten senken. Effizienz steigern. Servicequalität verbessern.",
+    "telephone": "+34 699 313750"
+   }
+  ]
+ },
+ "de:insights": {
+  "@context": "https://schema.org",
+  "@graph": [
+   {
+    "@type": "WebSite",
+    "@id": "https://www.jmc-streamline.com/#website",
+    "url": "https://www.jmc-streamline.com/",
+    "name": "jmc. | Streamline Processes S.L.",
+    "inLanguage": "de",
+    "publisher": {
+     "@id": "https://www.jmc-streamline.com/#organization"
+    }
+   },
+   {
+    "@type": "BreadcrumbList",
+    "name": "Breadcrumbs",
+    "@id": "https://www.jmc-streamline.com/de/insights/#breadcrumblist",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.jmc-streamline.com/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.jmc-streamline.com/de/blog/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Insights"
+     }
+    ]
+   },
+   {
+    "@type": "CollectionPage",
+    "@id": "https://www.jmc-streamline.com/de/insights/#webpage",
+    "url": "https://www.jmc-streamline.com/de/insights/",
+    "inLanguage": "de",
+    "name": "Persönliche Beobachtungen und Erkenntnisse",
+    "description": "Hier geht es weniger um fertige Lösungen, sondern um das Entdecken und Verstehen – um Gedanken, ideen, die mich zum Nachdenken gebracht haben.",
+    "isPartOf": {
+     "@id": "https://www.jmc-streamline.com/#website"
+    },
+    "breadcrumb": {
+     "@id": "https://www.jmc-streamline.com/de/insights/#breadcrumblist"
+    }
+   },
+   {
+    "@type": "Organization",
+    "@id": "https://www.jmc-streamline.com/#organization",
+    "url": "https://www.jmc-streamline.com/",
+    "name": "jmc. | Streamline Processes S.L.",
+    "address": {
+     "@type": "PostalAddress",
+     "streetAddress": "Carrer dels Apuntadors, 4",
+     "addressLocality": "Palma",
+     "addressRegion": "Illes Balears",
+     "addressCountry": "ES",
+     "postalCode": "ES - 07012"
+    },
+    "email": "contact@jmc-streamline.com",
+    "logo": "https://www.jmc-streamline.com/media/cropped-favicon-jmc-streamline-processes-192x192.png",
+    "slogan": "Kosten senken. Effizienz steigern. Servicequalität verbessern.",
+    "telephone": "+34 699 313750"
+   },
+   {
+    "@type": "WebPage",
+    "name": "Persönliche Beobachtungen und Erkenntnisse",
+    "inLanguage": "de-DE",
+    "isPartOf": {
+     "@id": "https://www.jmc-streamline.com/#website"
+    },
+    "url": "https://www.jmc-streamline.com/de/insights/",
+    "@id": "https://www.jmc-streamline.com/de/insights/#webpage"
+   }
+  ]
+ },
+ "de:kontakt": {
+  "@context": "https://schema.org",
+  "@graph": [
+   {
+    "@type": "WebSite",
+    "@id": "https://www.jmc-streamline.com/#website",
+    "url": "https://www.jmc-streamline.com/",
+    "name": "jmc. | Streamline Processes S.L.",
+    "inLanguage": "de",
+    "publisher": {
+     "@id": "https://www.jmc-streamline.com/#organization"
+    }
+   },
+   {
+    "@type": "BreadcrumbList",
+    "name": "Breadcrumbs",
+    "@id": "https://www.jmc-streamline.com/de/kontakt/#breadcrumblist",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.jmc-streamline.com/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Kontakt"
+     }
+    ]
+   },
+   {
+    "@type": "WebPage",
+    "@id": "https://www.jmc-streamline.com/de/kontakt/#webpage",
+    "url": "https://www.jmc-streamline.com/de/kontakt/",
+    "inLanguage": "de",
+    "name": "Ich freue mich auf Ihre Nachricht!",
+    "description": "Ich stehe Ihnen in drei Sprachen (Deutsch, Englisch, Italienisch) zur Verfügung und freue mich darauf, Ihre Anliegen zu besprechen.",
+    "datePublished": "2024-06-25T10:13:46+02:00",
+    "dateModified": "2025-03-04T09:56:28+01:00",
+    "isPartOf": {
+     "@id": "https://www.jmc-streamline.com/#website"
+    },
+    "breadcrumb": {
+     "@id": "https://www.jmc-streamline.com/de/kontakt/#breadcrumblist"
+    },
+    "potentialAction": {
+     "@id": "https://www.jmc-streamline.com/de/kontakt/#readaction"
+    }
+   },
+   {
+    "@type": "ReadAction",
+    "@id": "https://www.jmc-streamline.com/de/kontakt/#readaction",
+    "target": "https://www.jmc-streamline.com/de/kontakt/"
+   },
+   {
+    "@type": "Organization",
+    "@id": "https://www.jmc-streamline.com/#organization",
+    "url": "https://www.jmc-streamline.com/",
+    "name": "jmc. | Streamline Processes S.L.",
+    "address": {
+     "@type": "PostalAddress",
+     "streetAddress": "Carrer dels Apuntadors, 4",
+     "addressLocality": "Palma",
+     "addressRegion": "Illes Balears",
+     "addressCountry": "ES",
+     "postalCode": "ES - 07012"
+    },
+    "email": "contact@jmc-streamline.com",
+    "logo": "https://www.jmc-streamline.com/media/cropped-favicon-jmc-streamline-processes-192x192.png",
+    "slogan": "Kosten senken. Effizienz steigern. Servicequalität verbessern.",
+    "telephone": "+34 699 313750"
+   },
+   {
+    "@type": "ContactPage",
+    "name": "Ich freue mich auf Ihre Nachricht!",
+    "description": "Ich stehe Ihnen in drei Sprachen (Deutsch, Englisch, Italienisch) zur Verfügung und freue mich darauf, Ihre Anliegen zu besprechen.",
+    "inLanguage": "de-DE",
+    "isPartOf": {
+     "@id": "https://www.jmc-streamline.com/#website"
+    },
+    "publisher": {
+     "@id": "https://www.jmc-streamline.com/#organization"
+    },
+    "url": "https://www.jmc-streamline.com/de/kontakt/",
+    "@id": "https://www.jmc-streamline.com/de/kontakt/#webpage"
+   },
+   {
+    "@type": "Organization",
+    "@id": "https://www.jmc-streamline.com/#organization",
+    "name": "jmc. | Streamline Processes S.L.",
+    "address": {
+     "@type": "PostalAddress",
+     "streetAddress": "Carrer dels Apuntadors, 4",
+     "addressLocality": "Palma",
+     "addressRegion": "Illes Balears",
+     "addressCountry": "ES",
+     "postalCode": "ES - 07012"
+    },
+    "email": "contact@jmc-streamline.com",
+    "logo": "https://www.jmc-streamline.com/media/cropped-favicon-jmc-streamline-processes-192x192.png",
+    "slogan": "Kosten senken. Effizienz steigern. Servicequalität verbessern.",
+    "telephone": "+34 699 313750",
+    "url": "https://www.jmc-streamline.com/"
+   }
+  ]
+ },
+ "de:leadership": {
+  "@context": "https://schema.org",
+  "@graph": [
+   {
+    "@type": "WebSite",
+    "@id": "https://www.jmc-streamline.com/#website",
+    "url": "https://www.jmc-streamline.com/",
+    "name": "jmc. | Streamline Processes S.L.",
+    "inLanguage": "de",
+    "publisher": {
+     "@id": "https://www.jmc-streamline.com/#organization"
+    }
+   },
+   {
+    "@type": "BreadcrumbList",
+    "name": "Breadcrumbs",
+    "@id": "https://www.jmc-streamline.com/de/leadership/#breadcrumblist",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.jmc-streamline.com/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.jmc-streamline.com/de/blog/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Leadership"
+     }
+    ]
+   },
+   {
+    "@type": "CollectionPage",
+    "@id": "https://www.jmc-streamline.com/de/leadership/#webpage",
+    "url": "https://www.jmc-streamline.com/de/leadership/",
+    "inLanguage": "de",
+    "name": "Die Entwicklung moderner Führungskompetenzen",
+    "description": "Es geht darum, Führung neu zu denken, flexibel zu bleiben und Innovationen voranzutreiben. Agilität, emotionale Intelligenz",
+    "isPartOf": {
+     "@id": "https://www.jmc-streamline.com/#website"
+    },
+    "breadcrumb": {
+     "@id": "https://www.jmc-streamline.com/de/leadership/#breadcrumblist"
+    }
+   },
+   {
+    "@type": "Organization",
+    "@id": "https://www.jmc-streamline.com/#organization",
+    "url": "https://www.jmc-streamline.com/",
+    "name": "jmc. | Streamline Processes S.L.",
+    "address": {
+     "@type": "PostalAddress",
+     "streetAddress": "Carrer dels Apuntadors, 4",
+     "addressLocality": "Palma",
+     "addressRegion": "Illes Balears",
+     "addressCountry": "ES",
+     "postalCode": "ES - 07012"
+    },
+    "email": "contact@jmc-streamline.com",
+    "logo": "https://www.jmc-streamline.com/media/cropped-favicon-jmc-streamline-processes-192x192.png",
+    "slogan": "Kosten senken. Effizienz steigern. Servicequalität verbessern.",
+    "telephone": "+34 699 313750"
+   },
+   {
+    "@type": "WebPage",
+    "name": "Die Entwicklung moderner Führungskompetenzen",
+    "inLanguage": "de-DE",
+    "isPartOf": {
+     "@id": "https://www.jmc-streamline.com/#website"
+    },
+    "url": "https://www.jmc-streamline.com/de/leadership/",
+    "@id": "https://www.jmc-streamline.com/de/leadership/#webpage"
+   }
+  ]
+ },
+ "de:services": {
+  "@context": "https://schema.org",
+  "@graph": [
+   {
+    "@type": "WebSite",
+    "@id": "https://www.jmc-streamline.com/#website",
+    "url": "https://www.jmc-streamline.com/",
+    "name": "jmc. | Streamline Processes S.L.",
+    "inLanguage": "de",
+    "publisher": {
+     "@id": "https://www.jmc-streamline.com/#organization"
+    }
+   },
+   {
+    "@type": "BreadcrumbList",
+    "name": "Breadcrumbs",
+    "@id": "https://www.jmc-streamline.com/de/services/#breadcrumblist",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.jmc-streamline.com/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Services"
+     }
+    ]
+   },
+   {
+    "@type": "WebPage",
+    "@id": "https://www.jmc-streamline.com/de/services/#webpage",
+    "url": "https://www.jmc-streamline.com/de/services/",
+    "inLanguage": "de-DE",
+    "name": "Ich biete umfassende Office Management Services",
+    "description": "Ich biete effizientes Office Management, einschließlich Remote-Büroorganisation & Kundenmanagement. Ich Events, koordiniere Termine und überwache Projekte.",
+    "datePublished": "2024-06-25T10:13:59+02:00",
+    "dateModified": "2025-03-04T09:51:46+01:00",
+    "isPartOf": {
+     "@id": "https://www.jmc-streamline.com/#website"
+    },
+    "breadcrumb": {
+     "@id": "https://www.jmc-streamline.com/de/services/#breadcrumblist"
+    },
+    "potentialAction": {
+     "@id": "https://www.jmc-streamline.com/de/services/#readaction"
+    }
+   },
+   {
+    "@type": "ReadAction",
+    "@id": "https://www.jmc-streamline.com/de/services/#readaction",
+    "target": "https://www.jmc-streamline.com/de/services/"
+   },
+   {
+    "@type": "Organization",
+    "@id": "https://www.jmc-streamline.com/#organization",
+    "url": "https://www.jmc-streamline.com/",
+    "name": "jmc. | Streamline Processes S.L.",
+    "address": {
+     "@type": "PostalAddress",
+     "streetAddress": "Carrer dels Apuntadors, 4",
+     "addressLocality": "Palma",
+     "addressRegion": "Illes Balears",
+     "addressCountry": "ES",
+     "postalCode": "ES - 07012"
+    },
+    "email": "contact@jmc-streamline.com",
+    "logo": "https://www.jmc-streamline.com/media/cropped-favicon-jmc-streamline-processes-192x192.png",
+    "slogan": "Kosten senken. Effizienz steigern. Servicequalität verbessern.",
+    "telephone": "+34 699 313750"
+   }
+  ]
+ },
+ "de:stillstand-ist-keine-option": {
+  "@context": "https://schema.org",
+  "@graph": [
+   {
+    "@type": "WebSite",
+    "@id": "https://www.jmc-streamline.com/#website",
+    "url": "https://www.jmc-streamline.com/",
+    "name": "jmc. | Streamline Processes S.L.",
+    "inLanguage": "de",
+    "publisher": {
+     "@id": "https://www.jmc-streamline.com/#organization"
+    }
+   },
+   {
+    "@type": "BreadcrumbList",
+    "name": "Breadcrumbs",
+    "@id": "https://www.jmc-streamline.com/de/stillstand-ist-keine-option/#breadcrumblist",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.jmc-streamline.com/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Allgemein",
+      "item": "https://www.jmc-streamline.com/de/allgemein/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Stillstand ist keine Option"
+     }
+    ]
+   },
+   {
+    "@type": "WebPage",
+    "@id": "https://www.jmc-streamline.com/de/stillstand-ist-keine-option/#webpage",
+    "url": "https://www.jmc-streamline.com/de/stillstand-ist-keine-option/",
+    "inLanguage": "de-DE",
+    "name": "Stillstand ist keine Option",
+    "description": "Für mich zählt, aufmerksam zu bleiben, zuzuhören und offen zu sein für das, was sich entwickelt.",
+    "datePublished": "2025-11-03T06:12:16+01:00",
+    "dateModified": "2025-11-03T06:12:16+01:00",
+    "isPartOf": {
+     "@id": "https://www.jmc-streamline.com/#website"
+    },
+    "breadcrumb": {
+     "@id": "https://www.jmc-streamline.com/de/stillstand-ist-keine-option/#breadcrumblist"
+    },
+    "potentialAction": {
+     "@id": "https://www.jmc-streamline.com/de/stillstand-ist-keine-option/#readaction"
+    },
+    "primaryImageOfPage": {
+     "@id": "https://www.jmc-streamline.com/de/stillstand-ist-keine-option/#thumbnail"
+    },
+    "image": {
+     "@id": "https://www.jmc-streamline.com/de/stillstand-ist-keine-option/#thumbnail"
+    }
+   },
+   {
+    "@type": "ReadAction",
+    "@id": "https://www.jmc-streamline.com/de/stillstand-ist-keine-option/#readaction",
+    "target": "https://www.jmc-streamline.com/de/stillstand-ist-keine-option/"
+   },
+   {
+    "@type": "Organization",
+    "@id": "https://www.jmc-streamline.com/#organization",
+    "url": "https://www.jmc-streamline.com/",
+    "name": "jmc. | Streamline Processes S.L.",
+    "address": {
+     "@type": "PostalAddress",
+     "streetAddress": "Carrer dels Apuntadors, 4",
+     "addressLocality": "Palma",
+     "addressRegion": "Illes Balears",
+     "addressCountry": "ES",
+     "postalCode": "ES - 07012"
+    },
+    "email": "contact@jmc-streamline.com",
+    "logo": "https://www.jmc-streamline.com/media/cropped-favicon-jmc-streamline-processes-192x192.png",
+    "slogan": "Kosten senken. Effizienz steigern. Servicequalität verbessern.",
+    "telephone": "+34 699 313750"
+   },
+   {
+    "@type": "ImageObject",
+    "@id": "https://www.jmc-streamline.com/de/stillstand-ist-keine-option/#thumbnail",
+    "url": "https://www.jmc-streamline.com/media/stillstand-ist-keine-option.jpg",
+    "contentUrl": "https://www.jmc-streamline.com/media/stillstand-ist-keine-option.jpg",
+    "width": 600,
+    "height": 400
+   },
+   {
+    "@type": "BlogPosting",
+    "@id": "https://www.jmc-streamline.com/de/stillstand-ist-keine-option/#article",
+    "url": "https://www.jmc-streamline.com/de/stillstand-ist-keine-option/",
+    "headline": "Stillstand ist keine Option",
+    "datePublished": "2025-11-03T06:12:16+01:00",
+    "dateModified": "2025-11-03T06:12:16+01:00",
+    "wordCount": 548,
+    "articleSection": [
+     "Allgemein"
+    ],
+    "isPartOf": {
+     "@id": "https://www.jmc-streamline.com/de/stillstand-ist-keine-option/#webpage"
+    },
+    "mainEntityOfPage": {
+     "@id": "https://www.jmc-streamline.com/de/stillstand-ist-keine-option/#webpage"
+    },
+    "image": {
+     "@id": "https://www.jmc-streamline.com/de/stillstand-ist-keine-option/#thumbnail"
+    },
+    "publisher": {
+     "@id": "https://www.jmc-streamline.com/#organization"
+    }
+   }
+  ]
+ },
+ "de:ueber-mich": {
+  "@context": "https://schema.org",
+  "@graph": [
+   {
+    "@type": "WebSite",
+    "@id": "https://www.jmc-streamline.com/#website",
+    "url": "https://www.jmc-streamline.com/",
+    "name": "jmc. | Streamline Processes S.L.",
+    "inLanguage": "de",
+    "publisher": {
+     "@id": "https://www.jmc-streamline.com/#organization"
+    }
+   },
+   {
+    "@type": "BreadcrumbList",
+    "name": "Breadcrumbs",
+    "@id": "https://www.jmc-streamline.com/de/ueber-mich/#breadcrumblist",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.jmc-streamline.com/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Über mich"
+     }
+    ]
+   },
+   {
+    "@type": "WebPage",
+    "@id": "https://www.jmc-streamline.com/de/ueber-mich/#webpage",
+    "url": "https://www.jmc-streamline.com/de/ueber-mich/",
+    "inLanguage": "de",
+    "name": "Ich helfe Ihrem Unternehmen zu wachsen.",
+    "description": "Mein Ziel ist es, Netzwerke zu erweitern und kraftvolle, authentische Beziehungen zu schaffen.",
+    "datePublished": "2024-06-25T05:56:37+02:00",
+    "dateModified": "2025-03-04T09:46:43+01:00",
+    "isPartOf": {
+     "@id": "https://www.jmc-streamline.com/#website"
+    },
+    "breadcrumb": {
+     "@id": "https://www.jmc-streamline.com/de/ueber-mich/#breadcrumblist"
+    },
+    "potentialAction": {
+     "@id": "https://www.jmc-streamline.com/de/ueber-mich/#readaction"
+    }
+   },
+   {
+    "@type": "ReadAction",
+    "@id": "https://www.jmc-streamline.com/de/ueber-mich/#readaction",
+    "target": "https://www.jmc-streamline.com/de/ueber-mich/"
+   },
+   {
+    "@type": "Organization",
+    "@id": "https://www.jmc-streamline.com/#organization",
+    "url": "https://www.jmc-streamline.com/",
+    "name": "jmc. | Streamline Processes S.L.",
+    "address": {
+     "@type": "PostalAddress",
+     "streetAddress": "Carrer dels Apuntadors, 4",
+     "addressLocality": "Palma",
+     "addressRegion": "Illes Balears",
+     "addressCountry": "ES",
+     "postalCode": "ES - 07012"
+    },
+    "email": "contact@jmc-streamline.com",
+    "logo": "https://www.jmc-streamline.com/media/cropped-favicon-jmc-streamline-processes-192x192.png",
+    "slogan": "Kosten senken. Effizienz steigern. Servicequalität verbessern.",
+    "telephone": "+34 699 313750"
+   },
+   {
+    "@type": "AboutPage",
+    "name": "Ich helfe Ihrem Unternehmen zu wachsen.",
+    "description": "Mein Ziel ist es, Netzwerke zu erweitern und kraftvolle, authentische Beziehungen zu schaffen.",
+    "inLanguage": "de-DE",
+    "isPartOf": {
+     "@id": "https://www.jmc-streamline.com/#website"
+    },
+    "publisher": {
+     "@id": "https://www.jmc-streamline.com/#organization"
+    },
+    "url": "https://www.jmc-streamline.com/de/ueber-mich/",
+    "@id": "https://www.jmc-streamline.com/de/ueber-mich/#webpage"
+   },
+   {
+    "@type": "Organization",
+    "@id": "https://www.jmc-streamline.com/#organization",
+    "name": "jmc. | Streamline Processes S.L.",
+    "address": {
+     "@type": "PostalAddress",
+     "streetAddress": "Carrer dels Apuntadors, 4",
+     "addressLocality": "Palma",
+     "addressRegion": "Illes Balears",
+     "addressCountry": "ES",
+     "postalCode": "ES - 07012"
+    },
+    "email": "contact@jmc-streamline.com",
+    "logo": "https://www.jmc-streamline.com/media/cropped-favicon-jmc-streamline-processes-192x192.png",
+    "slogan": "Kosten senken. Effizienz steigern. Servicequalität verbessern.",
+    "telephone": "+34 699 313750",
+    "url": "https://www.jmc-streamline.com/"
+   }
+  ]
+ },
+ "de:warum-illustrationen-der-kreative-weg-zu-klarheit-und-verbindung": {
+  "@context": "https://schema.org",
+  "@graph": [
+   {
+    "@type": "WebSite",
+    "@id": "https://www.jmc-streamline.com/#website",
+    "url": "https://www.jmc-streamline.com/",
+    "name": "jmc. | Streamline Processes S.L.",
+    "inLanguage": "de",
+    "publisher": {
+     "@id": "https://www.jmc-streamline.com/#organization"
+    }
+   },
+   {
+    "@type": "BreadcrumbList",
+    "name": "Breadcrumbs",
+    "@id": "https://www.jmc-streamline.com/de/warum-illustrationen-der-kreative-weg-zu-klarheit-und-verbindung/#breadcrumblist",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.jmc-streamline.com/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Insights",
+      "item": "https://www.jmc-streamline.com/de/insights/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Warum Illustrationen? Der kreative Weg zu Klarheit und Verbindung"
+     }
+    ]
+   },
+   {
+    "@type": "WebPage",
+    "@id": "https://www.jmc-streamline.com/de/warum-illustrationen-der-kreative-weg-zu-klarheit-und-verbindung/#webpage",
+    "url": "https://www.jmc-streamline.com/de/warum-illustrationen-der-kreative-weg-zu-klarheit-und-verbindung/",
+    "inLanguage": "de-DE",
+    "name": "Der kreative Weg zu Klarheit und Verbindung",
+    "description": "Manche fragen sich, was Illustrationen mit klaren Prozessen zu tun haben. Genau darauf möchte ich eingehen.",
+    "datePublished": "2025-02-06T10:26:53+01:00",
+    "dateModified": "2025-02-06T13:26:08+01:00",
+    "isPartOf": {
+     "@id": "https://www.jmc-streamline.com/#website"
+    },
+    "breadcrumb": {
+     "@id": "https://www.jmc-streamline.com/de/warum-illustrationen-der-kreative-weg-zu-klarheit-und-verbindung/#breadcrumblist"
+    },
+    "potentialAction": {
+     "@id": "https://www.jmc-streamline.com/de/warum-illustrationen-der-kreative-weg-zu-klarheit-und-verbindung/#readaction"
+    },
+    "primaryImageOfPage": {
+     "@id": "https://www.jmc-streamline.com/de/warum-illustrationen-der-kreative-weg-zu-klarheit-und-verbindung/#thumbnail"
+    },
+    "image": {
+     "@id": "https://www.jmc-streamline.com/de/warum-illustrationen-der-kreative-weg-zu-klarheit-und-verbindung/#thumbnail"
+    }
+   },
+   {
+    "@type": "ReadAction",
+    "@id": "https://www.jmc-streamline.com/de/warum-illustrationen-der-kreative-weg-zu-klarheit-und-verbindung/#readaction",
+    "target": "https://www.jmc-streamline.com/de/warum-illustrationen-der-kreative-weg-zu-klarheit-und-verbindung/"
+   },
+   {
+    "@type": "Organization",
+    "@id": "https://www.jmc-streamline.com/#organization",
+    "url": "https://www.jmc-streamline.com/",
+    "name": "jmc. | Streamline Processes S.L.",
+    "address": {
+     "@type": "PostalAddress",
+     "streetAddress": "Carrer dels Apuntadors, 4",
+     "addressLocality": "Palma",
+     "addressRegion": "Illes Balears",
+     "addressCountry": "ES",
+     "postalCode": "ES - 07012"
+    },
+    "email": "contact@jmc-streamline.com",
+    "logo": "https://www.jmc-streamline.com/media/cropped-favicon-jmc-streamline-processes-192x192.png",
+    "slogan": "Kosten senken. Effizienz steigern. Servicequalität verbessern.",
+    "telephone": "+34 699 313750"
+   },
+   {
+    "@type": "ImageObject",
+    "@id": "https://www.jmc-streamline.com/de/warum-illustrationen-der-kreative-weg-zu-klarheit-und-verbindung/#thumbnail",
+    "url": "https://www.jmc-streamline.com/media/weg-zur-klarheit-und-verbindung.jpg",
+    "contentUrl": "https://www.jmc-streamline.com/media/weg-zur-klarheit-und-verbindung.jpg",
+    "width": 1650,
+    "height": 1100
+   },
+   {
+    "@type": "BlogPosting",
+    "@id": "https://www.jmc-streamline.com/de/warum-illustrationen-der-kreative-weg-zu-klarheit-und-verbindung/#article",
+    "url": "https://www.jmc-streamline.com/de/warum-illustrationen-der-kreative-weg-zu-klarheit-und-verbindung/",
+    "headline": "Warum Illustrationen? Der kreative Weg zu Klarheit und Verbindung",
+    "datePublished": "2025-02-06T10:26:53+01:00",
+    "dateModified": "2025-02-06T13:26:08+01:00",
+    "wordCount": 585,
+    "articleSection": [
+     "Insights"
+    ],
+    "isPartOf": {
+     "@id": "https://www.jmc-streamline.com/de/warum-illustrationen-der-kreative-weg-zu-klarheit-und-verbindung/#webpage"
+    },
+    "mainEntityOfPage": {
+     "@id": "https://www.jmc-streamline.com/de/warum-illustrationen-der-kreative-weg-zu-klarheit-und-verbindung/#webpage"
+    },
+    "image": {
+     "@id": "https://www.jmc-streamline.com/de/warum-illustrationen-der-kreative-weg-zu-klarheit-und-verbindung/#thumbnail"
+    },
+    "publisher": {
+     "@id": "https://www.jmc-streamline.com/#organization"
+    }
+   }
+  ]
+ },
+ "de:warum-leadership-und-sport-das-ultimative-power-duo-sind": {
+  "@context": "https://schema.org",
+  "@graph": [
+   {
+    "@type": "WebSite",
+    "@id": "https://www.jmc-streamline.com/#website",
+    "url": "https://www.jmc-streamline.com/",
+    "name": "jmc. | Streamline Processes S.L.",
+    "inLanguage": "de",
+    "publisher": {
+     "@id": "https://www.jmc-streamline.com/#organization"
+    }
+   },
+   {
+    "@type": "BreadcrumbList",
+    "name": "Breadcrumbs",
+    "@id": "https://www.jmc-streamline.com/de/warum-leadership-und-sport-das-ultimative-power-duo-sind/#breadcrumblist",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.jmc-streamline.com/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Allgemein",
+      "item": "https://www.jmc-streamline.com/de/allgemein/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Warum Leadership und Sport das ultimative Power-Duo sind"
+     }
+    ]
+   },
+   {
+    "@type": "WebPage",
+    "@id": "https://www.jmc-streamline.com/de/warum-leadership-und-sport-das-ultimative-power-duo-sind/#webpage",
+    "url": "https://www.jmc-streamline.com/de/warum-leadership-und-sport-das-ultimative-power-duo-sind/",
+    "inLanguage": "de-DE",
+    "name": "Leadership und Sport das ultimative Power-Duo",
+    "description": "Mit Energie und Klarheit zu führen passiert nicht einfach so, es braucht Disziplin, Bewegung und Durchhaltevermögen.",
+    "datePublished": "2025-03-24T16:52:37+01:00",
+    "dateModified": "2025-03-25T08:45:09+01:00",
+    "isPartOf": {
+     "@id": "https://www.jmc-streamline.com/#website"
+    },
+    "breadcrumb": {
+     "@id": "https://www.jmc-streamline.com/de/warum-leadership-und-sport-das-ultimative-power-duo-sind/#breadcrumblist"
+    },
+    "potentialAction": {
+     "@id": "https://www.jmc-streamline.com/de/warum-leadership-und-sport-das-ultimative-power-duo-sind/#readaction"
+    },
+    "primaryImageOfPage": {
+     "@id": "https://www.jmc-streamline.com/de/warum-leadership-und-sport-das-ultimative-power-duo-sind/#thumbnail"
+    },
+    "image": {
+     "@id": "https://www.jmc-streamline.com/de/warum-leadership-und-sport-das-ultimative-power-duo-sind/#thumbnail"
+    }
+   },
+   {
+    "@type": "ReadAction",
+    "@id": "https://www.jmc-streamline.com/de/warum-leadership-und-sport-das-ultimative-power-duo-sind/#readaction",
+    "target": "https://www.jmc-streamline.com/de/warum-leadership-und-sport-das-ultimative-power-duo-sind/"
+   },
+   {
+    "@type": "Organization",
+    "@id": "https://www.jmc-streamline.com/#organization",
+    "url": "https://www.jmc-streamline.com/",
+    "name": "jmc. | Streamline Processes S.L.",
+    "address": {
+     "@type": "PostalAddress",
+     "streetAddress": "Carrer dels Apuntadors, 4",
+     "addressLocality": "Palma",
+     "addressRegion": "Illes Balears",
+     "addressCountry": "ES",
+     "postalCode": "ES - 07012"
+    },
+    "email": "contact@jmc-streamline.com",
+    "logo": "https://www.jmc-streamline.com/media/cropped-favicon-jmc-streamline-processes-192x192.png",
+    "slogan": "Kosten senken. Effizienz steigern. Servicequalität verbessern.",
+    "telephone": "+34 699 313750"
+   },
+   {
+    "@type": "ImageObject",
+    "@id": "https://www.jmc-streamline.com/de/warum-leadership-und-sport-das-ultimative-power-duo-sind/#thumbnail",
+    "url": "https://www.jmc-streamline.com/media/warum-leadership-sport-ultimative-power-duo-sind.jpg",
+    "contentUrl": "https://www.jmc-streamline.com/media/warum-leadership-sport-ultimative-power-duo-sind.jpg",
+    "width": 600,
+    "height": 400
+   },
+   {
+    "@type": "BlogPosting",
+    "@id": "https://www.jmc-streamline.com/de/warum-leadership-und-sport-das-ultimative-power-duo-sind/#article",
+    "url": "https://www.jmc-streamline.com/de/warum-leadership-und-sport-das-ultimative-power-duo-sind/",
+    "headline": "Warum Leadership und Sport das ultimative Power-Duo sind",
+    "datePublished": "2025-03-24T16:52:37+01:00",
+    "dateModified": "2025-03-25T08:45:09+01:00",
+    "wordCount": 1090,
+    "articleSection": [
+     "Allgemein"
+    ],
+    "isPartOf": {
+     "@id": "https://www.jmc-streamline.com/de/warum-leadership-und-sport-das-ultimative-power-duo-sind/#webpage"
+    },
+    "mainEntityOfPage": {
+     "@id": "https://www.jmc-streamline.com/de/warum-leadership-und-sport-das-ultimative-power-duo-sind/#webpage"
+    },
+    "image": {
+     "@id": "https://www.jmc-streamline.com/de/warum-leadership-und-sport-das-ultimative-power-duo-sind/#thumbnail"
+    },
+    "publisher": {
+     "@id": "https://www.jmc-streamline.com/#organization"
+    }
+   }
+  ]
+ },
+ "de:wie-schlanke-prozesse-unternehmen-und-leben-verandern": {
+  "@context": "https://schema.org",
+  "@graph": [
+   {
+    "@type": "WebSite",
+    "@id": "https://www.jmc-streamline.com/#website",
+    "url": "https://www.jmc-streamline.com/",
+    "name": "jmc. | Streamline Processes S.L.",
+    "inLanguage": "de",
+    "publisher": {
+     "@id": "https://www.jmc-streamline.com/#organization"
+    }
+   },
+   {
+    "@type": "BreadcrumbList",
+    "name": "Breadcrumbs",
+    "@id": "https://www.jmc-streamline.com/de/wie-schlanke-prozesse-unternehmen-und-leben-verandern/#breadcrumblist",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.jmc-streamline.com/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Insights",
+      "item": "https://www.jmc-streamline.com/de/insights/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Wie schlanke Prozesse Unternehmen und Leben verändern"
+     }
+    ]
+   },
+   {
+    "@type": "WebPage",
+    "@id": "https://www.jmc-streamline.com/de/wie-schlanke-prozesse-unternehmen-und-leben-verandern/#webpage",
+    "url": "https://www.jmc-streamline.com/de/wie-schlanke-prozesse-unternehmen-und-leben-verandern/",
+    "inLanguage": "de-DE",
+    "name": "Schlanke Prozesse verändern Unternehmen und Leben",
+    "description": "Klare und schlanke Prozesse schaffen Raum für Kreativität, fördern nachhaltigen Erfolg und zeigen, wie Effizienz nicht nur Unternehmen, sondern auch…",
+    "datePublished": "2025-01-12T10:06:17+01:00",
+    "dateModified": "2025-01-12T13:13:59+01:00",
+    "isPartOf": {
+     "@id": "https://www.jmc-streamline.com/#website"
+    },
+    "breadcrumb": {
+     "@id": "https://www.jmc-streamline.com/de/wie-schlanke-prozesse-unternehmen-und-leben-verandern/#breadcrumblist"
+    },
+    "potentialAction": {
+     "@id": "https://www.jmc-streamline.com/de/wie-schlanke-prozesse-unternehmen-und-leben-verandern/#readaction"
+    },
+    "primaryImageOfPage": {
+     "@id": "https://www.jmc-streamline.com/de/wie-schlanke-prozesse-unternehmen-und-leben-verandern/#thumbnail"
+    },
+    "image": {
+     "@id": "https://www.jmc-streamline.com/de/wie-schlanke-prozesse-unternehmen-und-leben-verandern/#thumbnail"
+    }
+   },
+   {
+    "@type": "ReadAction",
+    "@id": "https://www.jmc-streamline.com/de/wie-schlanke-prozesse-unternehmen-und-leben-verandern/#readaction",
+    "target": "https://www.jmc-streamline.com/de/wie-schlanke-prozesse-unternehmen-und-leben-verandern/"
+   },
+   {
+    "@type": "Organization",
+    "@id": "https://www.jmc-streamline.com/#organization",
+    "url": "https://www.jmc-streamline.com/",
+    "name": "jmc. | Streamline Processes S.L.",
+    "address": {
+     "@type": "PostalAddress",
+     "streetAddress": "Carrer dels Apuntadors, 4",
+     "addressLocality": "Palma",
+     "addressRegion": "Illes Balears",
+     "addressCountry": "ES",
+     "postalCode": "ES - 07012"
+    },
+    "email": "contact@jmc-streamline.com",
+    "logo": "https://www.jmc-streamline.com/media/cropped-favicon-jmc-streamline-processes-192x192.png",
+    "slogan": "Kosten senken. Effizienz steigern. Servicequalität verbessern.",
+    "telephone": "+34 699 313750"
+   },
+   {
+    "@type": "ImageObject",
+    "@id": "https://www.jmc-streamline.com/de/wie-schlanke-prozesse-unternehmen-und-leben-verandern/#thumbnail",
+    "url": "https://www.jmc-streamline.com/media/wie-schlanke-prozesse-unternehmen-veraendern.jpg",
+    "contentUrl": "https://www.jmc-streamline.com/media/wie-schlanke-prozesse-unternehmen-veraendern.jpg",
+    "width": 1024,
+    "height": 1024
+   },
+   {
+    "@type": "BlogPosting",
+    "@id": "https://www.jmc-streamline.com/de/wie-schlanke-prozesse-unternehmen-und-leben-verandern/#article",
+    "url": "https://www.jmc-streamline.com/de/wie-schlanke-prozesse-unternehmen-und-leben-verandern/",
+    "headline": "Wie schlanke Prozesse Unternehmen und Leben verändern",
+    "datePublished": "2025-01-12T10:06:17+01:00",
+    "dateModified": "2025-01-12T13:13:59+01:00",
+    "wordCount": 1194,
+    "articleSection": [
+     "Insights"
+    ],
+    "isPartOf": {
+     "@id": "https://www.jmc-streamline.com/de/wie-schlanke-prozesse-unternehmen-und-leben-verandern/#webpage"
+    },
+    "mainEntityOfPage": {
+     "@id": "https://www.jmc-streamline.com/de/wie-schlanke-prozesse-unternehmen-und-leben-verandern/#webpage"
+    },
+    "image": {
+     "@id": "https://www.jmc-streamline.com/de/wie-schlanke-prozesse-unternehmen-und-leben-verandern/#thumbnail"
+    },
+    "publisher": {
+     "@id": "https://www.jmc-streamline.com/#organization"
+    }
+   }
+  ]
+ },
+ "en:home": {
+  "@context": "https://schema.org",
+  "@graph": [
+   {
+    "@type": "WebSite",
+    "@id": "https://www.jmc-streamline.com/#website",
+    "url": "https://www.jmc-streamline.com/",
+    "name": "jmc. | Streamline Processes S.L.",
+    "inLanguage": "en-US",
+    "publisher": {
+     "@id": "https://www.jmc-streamline.com/#organization"
+    }
+   },
+   {
+    "@type": "WebPage",
+    "@id": "https://www.jmc-streamline.com/en/#webpage",
+    "url": "https://www.jmc-streamline.com/en/",
+    "inLanguage": "en-US",
+    "name": "Optimise business processes in companies",
+    "description": "I ensure that your company benefits from cost savings and increased efficiency through optimised office management.",
+    "datePublished": "2024-09-01T09:19:09+02:00",
+    "dateModified": "2025-02-13T15:32:18+01:00",
+    "isPartOf": {
+     "@id": "https://www.jmc-streamline.com/#website"
+    },
+    "potentialAction": {
+     "@id": "https://www.jmc-streamline.com/en/#readaction"
+    },
+    "about": {
+     "@id": "https://www.jmc-streamline.com/#organization"
+    }
+   },
+   {
+    "@type": "ReadAction",
+    "@id": "https://www.jmc-streamline.com/en/#readaction",
+    "target": "https://www.jmc-streamline.com/en/"
+   },
+   {
+    "@type": "Organization",
+    "@id": "https://www.jmc-streamline.com/#organization",
+    "url": "https://www.jmc-streamline.com/",
+    "name": "jmc. | Streamline Processes S.L.",
+    "address": {
+     "@type": "PostalAddress",
+     "streetAddress": "Carrer dels Apuntadors, 4",
+     "addressLocality": "Palma",
+     "addressRegion": "Illes Balears",
+     "addressCountry": "ES",
+     "postalCode": "ES - 07012"
+    },
+    "email": "contact@jmc-streamline.com",
+    "logo": "https://www.jmc-streamline.com/media/cropped-favicon-jmc-streamline-processes-192x192.png",
+    "slogan": "Reduce costs. Increase efficiency. Improve service quality.",
+    "telephone": "+34 699 313750"
+   }
+  ]
+ },
+ "en:about-me": {
+  "@context": "https://schema.org",
+  "@graph": [
+   {
+    "@type": "WebSite",
+    "@id": "https://www.jmc-streamline.com/#website",
+    "url": "https://www.jmc-streamline.com/",
+    "name": "jmc. | Streamline Processes S.L.",
+    "inLanguage": "en-US",
+    "publisher": {
+     "@id": "https://www.jmc-streamline.com/#organization"
+    }
+   },
+   {
+    "@type": "BreadcrumbList",
+    "name": "Breadcrumbs",
+    "@id": "https://www.jmc-streamline.com/en/about-me/#breadcrumblist",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.jmc-streamline.com/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "About me"
+     }
+    ]
+   },
+   {
+    "@type": "WebPage",
+    "@id": "https://www.jmc-streamline.com/en/about-me/#webpage",
+    "url": "https://www.jmc-streamline.com/en/about-me/",
+    "inLanguage": "en-US",
+    "name": "I help your company to grow.",
+    "description": "My goal is to expand networks and create powerful, authentic relationships.",
+    "datePublished": "2024-09-01T09:16:39+02:00",
+    "dateModified": "2025-01-12T12:43:44+01:00",
+    "isPartOf": {
+     "@id": "https://www.jmc-streamline.com/#website"
+    },
+    "breadcrumb": {
+     "@id": "https://www.jmc-streamline.com/en/about-me/#breadcrumblist"
+    },
+    "potentialAction": {
+     "@id": "https://www.jmc-streamline.com/en/about-me/#readaction"
+    }
+   },
+   {
+    "@type": "ReadAction",
+    "@id": "https://www.jmc-streamline.com/en/about-me/#readaction",
+    "target": "https://www.jmc-streamline.com/en/about-me/"
+   },
+   {
+    "@type": "Organization",
+    "@id": "https://www.jmc-streamline.com/#organization",
+    "url": "https://www.jmc-streamline.com/",
+    "name": "jmc. | Streamline Processes S.L.",
+    "address": {
+     "@type": "PostalAddress",
+     "streetAddress": "Carrer dels Apuntadors, 4",
+     "addressLocality": "Palma",
+     "addressRegion": "Illes Balears",
+     "addressCountry": "ES",
+     "postalCode": "ES - 07012"
+    },
+    "email": "contact@jmc-streamline.com",
+    "logo": "https://www.jmc-streamline.com/media/cropped-favicon-jmc-streamline-processes-192x192.png",
+    "slogan": "Reduce costs. Increase efficiency. Improve service quality.",
+    "telephone": "+34 699 313750"
+   },
+   {
+    "@type": "AboutPage",
+    "name": "I help your company to grow.",
+    "description": "My goal is to expand networks and create powerful, authentic relationships.",
+    "inLanguage": "en-US",
+    "isPartOf": {
+     "@id": "https://www.jmc-streamline.com/#website"
+    },
+    "publisher": {
+     "@id": "https://www.jmc-streamline.com/#organization"
+    },
+    "url": "https://www.jmc-streamline.com/en/about-me/",
+    "@id": "https://www.jmc-streamline.com/en/about-me/#webpage"
+   },
+   {
+    "@type": "Organization",
+    "@id": "https://www.jmc-streamline.com/#organization",
+    "name": "jmc. | Streamline Processes S.L.",
+    "address": {
+     "@type": "PostalAddress",
+     "streetAddress": "Carrer dels Apuntadors, 4",
+     "addressLocality": "Palma",
+     "addressRegion": "Illes Balears",
+     "addressCountry": "ES",
+     "postalCode": "ES - 07012"
+    },
+    "email": "contact@jmc-streamline.com",
+    "logo": "https://www.jmc-streamline.com/media/cropped-favicon-jmc-streamline-processes-192x192.png",
+    "slogan": "Reduce costs. Increase efficiency. Improve service quality.",
+    "telephone": "+34 699 313750",
+    "url": "https://www.jmc-streamline.com/"
+   }
+  ]
+ },
+ "en:blog": {
+  "@context": "https://schema.org",
+  "@graph": [
+   {
+    "@type": "WebSite",
+    "@id": "https://www.jmc-streamline.com/#website",
+    "url": "https://www.jmc-streamline.com/",
+    "name": "jmc. | Streamline Processes S.L.",
+    "inLanguage": "en-US",
+    "publisher": {
+     "@id": "https://www.jmc-streamline.com/#organization"
+    }
+   },
+   {
+    "@type": "BreadcrumbList",
+    "name": "Breadcrumbs",
+    "@id": "https://www.jmc-streamline.com/en/blog/#breadcrumblist",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.jmc-streamline.com/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog"
+     }
+    ]
+   },
+   {
+    "@type": "CollectionPage",
+    "@id": "https://www.jmc-streamline.com/en/blog/#webpage",
+    "url": "https://www.jmc-streamline.com/en/blog/",
+    "inLanguage": "en-US",
+    "name": "Ideas and insights for work and life",
+    "description": "I write about what moves me. It's not just about processes and structures, but also about creativity, new ideas and small changes.",
+    "isPartOf": {
+     "@id": "https://www.jmc-streamline.com/#website"
+    },
+    "breadcrumb": {
+     "@id": "https://www.jmc-streamline.com/en/blog/#breadcrumblist"
+    }
+   },
+   {
+    "@type": "Organization",
+    "@id": "https://www.jmc-streamline.com/#organization",
+    "url": "https://www.jmc-streamline.com/",
+    "name": "jmc. | Streamline Processes S.L.",
+    "address": {
+     "@type": "PostalAddress",
+     "streetAddress": "Carrer dels Apuntadors, 4",
+     "addressLocality": "Palma",
+     "addressRegion": "Illes Balears",
+     "addressCountry": "ES",
+     "postalCode": "ES - 07012"
+    },
+    "email": "contact@jmc-streamline.com",
+    "logo": "https://www.jmc-streamline.com/media/cropped-favicon-jmc-streamline-processes-192x192.png",
+    "slogan": "Reduce costs. Increase efficiency. Improve service quality.",
+    "telephone": "+34 699 313750"
+   },
+   {
+    "@type": "WebPage",
+    "name": "Ideas and insights for work and life",
+    "inLanguage": "en-US",
+    "isPartOf": {
+     "@id": "https://www.jmc-streamline.com/#website"
+    },
+    "url": "https://www.jmc-streamline.com/en/blog/",
+    "@id": "https://www.jmc-streamline.com/en/blog/#webpage"
+   }
+  ]
+ },
+ "en:contact": {
+  "@context": "https://schema.org",
+  "@graph": [
+   {
+    "@type": "WebSite",
+    "@id": "https://www.jmc-streamline.com/#website",
+    "url": "https://www.jmc-streamline.com/",
+    "name": "jmc. | Streamline Processes S.L.",
+    "inLanguage": "en-US",
+    "publisher": {
+     "@id": "https://www.jmc-streamline.com/#organization"
+    }
+   },
+   {
+    "@type": "BreadcrumbList",
+    "name": "Breadcrumbs",
+    "@id": "https://www.jmc-streamline.com/en/contact/#breadcrumblist",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.jmc-streamline.com/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Contact"
+     }
+    ]
+   },
+   {
+    "@type": "WebPage",
+    "@id": "https://www.jmc-streamline.com/en/contact/#webpage",
+    "url": "https://www.jmc-streamline.com/en/contact/",
+    "inLanguage": "en-US",
+    "name": "I look forward to hearing from you!",
+    "description": "I am available in three languages (German, English, Italian) and look forward to discussing your concerns.",
+    "datePublished": "2024-09-01T09:19:25+02:00",
+    "dateModified": "2024-09-01T16:21:08+02:00",
+    "isPartOf": {
+     "@id": "https://www.jmc-streamline.com/#website"
+    },
+    "breadcrumb": {
+     "@id": "https://www.jmc-streamline.com/en/contact/#breadcrumblist"
+    },
+    "potentialAction": {
+     "@id": "https://www.jmc-streamline.com/en/contact/#readaction"
+    }
+   },
+   {
+    "@type": "ReadAction",
+    "@id": "https://www.jmc-streamline.com/en/contact/#readaction",
+    "target": "https://www.jmc-streamline.com/en/contact/"
+   },
+   {
+    "@type": "Organization",
+    "@id": "https://www.jmc-streamline.com/#organization",
+    "url": "https://www.jmc-streamline.com/",
+    "name": "jmc. | Streamline Processes S.L.",
+    "address": {
+     "@type": "PostalAddress",
+     "streetAddress": "Carrer dels Apuntadors, 4",
+     "addressLocality": "Palma",
+     "addressRegion": "Illes Balears",
+     "addressCountry": "ES",
+     "postalCode": "ES - 07012"
+    },
+    "email": "contact@jmc-streamline.com",
+    "logo": "https://www.jmc-streamline.com/media/cropped-favicon-jmc-streamline-processes-192x192.png",
+    "slogan": "Reduce costs. Increase efficiency. Improve service quality.",
+    "telephone": "+34 699 313750"
+   },
+   {
+    "@type": "ContactPage",
+    "name": "I look forward to hearing from you!",
+    "description": "I am available in three languages (German, English, Italian) and look forward to discussing your concerns.",
+    "inLanguage": "en-US",
+    "isPartOf": {
+     "@id": "https://www.jmc-streamline.com/#website"
+    },
+    "publisher": {
+     "@id": "https://www.jmc-streamline.com/#organization"
+    },
+    "url": "https://www.jmc-streamline.com/en/contact/",
+    "@id": "https://www.jmc-streamline.com/en/contact/#webpage"
+   },
+   {
+    "@type": "Organization",
+    "@id": "https://www.jmc-streamline.com/#organization",
+    "name": "jmc. | Streamline Processes S.L.",
+    "address": {
+     "@type": "PostalAddress",
+     "streetAddress": "Carrer dels Apuntadors, 4",
+     "addressLocality": "Palma",
+     "addressRegion": "Illes Balears",
+     "addressCountry": "ES",
+     "postalCode": "ES - 07012"
+    },
+    "email": "contact@jmc-streamline.com",
+    "logo": "https://www.jmc-streamline.com/media/cropped-favicon-jmc-streamline-processes-192x192.png",
+    "slogan": "Reduce costs. Increase efficiency. Improve service quality.",
+    "telephone": "+34 699 313750",
+    "url": "https://www.jmc-streamline.com/"
+   }
+  ]
+ },
+ "en:efficient-business-processes-for-expats-5-smart-strategies-for-international-work": {
+  "@context": "https://schema.org",
+  "@graph": [
+   {
+    "@type": "WebSite",
+    "@id": "https://www.jmc-streamline.com/#website",
+    "url": "https://www.jmc-streamline.com/",
+    "name": "jmc. | Streamline Processes S.L.",
+    "inLanguage": "en-US",
+    "publisher": {
+     "@id": "https://www.jmc-streamline.com/#organization"
+    }
+   },
+   {
+    "@type": "BreadcrumbList",
+    "name": "Breadcrumbs",
+    "@id": "https://www.jmc-streamline.com/en/efficient-business-processes-for-expats-5-smart-strategies-for-international-work/#breadcrumblist",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.jmc-streamline.com/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Insights",
+      "item": "https://www.jmc-streamline.com/en/insights/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Efficient Business Processes for Expats! 5 Smart Strategies for International Work"
+     }
+    ]
+   },
+   {
+    "@type": "WebPage",
+    "@id": "https://www.jmc-streamline.com/en/efficient-business-processes-for-expats-5-smart-strategies-for-international-work/#webpage",
+    "url": "https://www.jmc-streamline.com/en/efficient-business-processes-for-expats-5-smart-strategies-for-international-work/",
+    "inLanguage": "en-US",
+    "name": "5 strategies that really work",
+    "description": "International independence means not only efficient processes, but also the ability to adapt to new situations.",
+    "datePublished": "2025-03-07T06:10:56+01:00",
+    "dateModified": "2025-03-07T06:12:37+01:00",
+    "isPartOf": {
+     "@id": "https://www.jmc-streamline.com/#website"
+    },
+    "breadcrumb": {
+     "@id": "https://www.jmc-streamline.com/en/efficient-business-processes-for-expats-5-smart-strategies-for-international-work/#breadcrumblist"
+    },
+    "potentialAction": {
+     "@id": "https://www.jmc-streamline.com/en/efficient-business-processes-for-expats-5-smart-strategies-for-international-work/#readaction"
+    },
+    "primaryImageOfPage": {
+     "@id": "https://www.jmc-streamline.com/en/efficient-business-processes-for-expats-5-smart-strategies-for-international-work/#thumbnail"
+    },
+    "image": {
+     "@id": "https://www.jmc-streamline.com/en/efficient-business-processes-for-expats-5-smart-strategies-for-international-work/#thumbnail"
+    }
+   },
+   {
+    "@type": "ReadAction",
+    "@id": "https://www.jmc-streamline.com/en/efficient-business-processes-for-expats-5-smart-strategies-for-international-work/#readaction",
+    "target": "https://www.jmc-streamline.com/en/efficient-business-processes-for-expats-5-smart-strategies-for-international-work/"
+   },
+   {
+    "@type": "Organization",
+    "@id": "https://www.jmc-streamline.com/#organization",
+    "url": "https://www.jmc-streamline.com/",
+    "name": "jmc. | Streamline Processes S.L.",
+    "address": {
+     "@type": "PostalAddress",
+     "streetAddress": "Carrer dels Apuntadors, 4",
+     "addressLocality": "Palma",
+     "addressRegion": "Illes Balears",
+     "addressCountry": "ES",
+     "postalCode": "ES - 07012"
+    },
+    "email": "contact@jmc-streamline.com",
+    "logo": "https://www.jmc-streamline.com/media/cropped-favicon-jmc-streamline-processes-192x192.png",
+    "slogan": "Reduce costs. Increase efficiency. Improve service quality.",
+    "telephone": "+34 699 313750"
+   },
+   {
+    "@type": "ImageObject",
+    "@id": "https://www.jmc-streamline.com/en/efficient-business-processes-for-expats-5-smart-strategies-for-international-work/#thumbnail",
+    "url": "https://www.jmc-streamline.com/media/5-smarte-strategien-fuer-den-internationalen-arbeitsalltag.jpg",
+    "contentUrl": "https://www.jmc-streamline.com/media/5-smarte-strategien-fuer-den-internationalen-arbeitsalltag.jpg",
+    "width": 600,
+    "height": 400
+   },
+   {
+    "@type": "BlogPosting",
+    "@id": "https://www.jmc-streamline.com/en/efficient-business-processes-for-expats-5-smart-strategies-for-international-work/#article",
+    "url": "https://www.jmc-streamline.com/en/efficient-business-processes-for-expats-5-smart-strategies-for-international-work/",
+    "headline": "Efficient Business Processes for Expats! 5 Smart Strategies for International Work",
+    "datePublished": "2025-03-07T06:10:56+01:00",
+    "dateModified": "2025-03-07T06:12:37+01:00",
+    "wordCount": 667,
+    "articleSection": [
+     "Insights"
+    ],
+    "isPartOf": {
+     "@id": "https://www.jmc-streamline.com/en/efficient-business-processes-for-expats-5-smart-strategies-for-international-work/#webpage"
+    },
+    "mainEntityOfPage": {
+     "@id": "https://www.jmc-streamline.com/en/efficient-business-processes-for-expats-5-smart-strategies-for-international-work/#webpage"
+    },
+    "image": {
+     "@id": "https://www.jmc-streamline.com/en/efficient-business-processes-for-expats-5-smart-strategies-for-international-work/#thumbnail"
+    },
+    "publisher": {
+     "@id": "https://www.jmc-streamline.com/#organization"
+    }
+   }
+  ]
+ },
+ "en:efficient-meetings-in-a-global-business-world-understanding-cultural-differences": {
+  "@context": "https://schema.org",
+  "@graph": [
+   {
+    "@type": "WebSite",
+    "@id": "https://www.jmc-streamline.com/#website",
+    "url": "https://www.jmc-streamline.com/",
+    "name": "jmc. | Streamline Processes S.L.",
+    "inLanguage": "en-US",
+    "publisher": {
+     "@id": "https://www.jmc-streamline.com/#organization"
+    }
+   },
+   {
+    "@type": "BreadcrumbList",
+    "name": "Breadcrumbs",
+    "@id": "https://www.jmc-streamline.com/en/efficient-meetings-in-a-global-business-world-understanding-cultural-differences/#breadcrumblist",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.jmc-streamline.com/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Leadership",
+      "item": "https://www.jmc-streamline.com/en/leadership/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Efficient Meetings in a Global Business World: Understanding Cultural Differences"
+     }
+    ]
+   },
+   {
+    "@type": "WebPage",
+    "@id": "https://www.jmc-streamline.com/en/efficient-meetings-in-a-global-business-world-understanding-cultural-differences/#webpage",
+    "url": "https://www.jmc-streamline.com/en/efficient-meetings-in-a-global-business-world-understanding-cultural-differences/",
+    "inLanguage": "en-US",
+    "name": "Effiziente Meetings in einer globalen Geschäftswelt",
+    "description": "In einer global vernetzten Geschäftswelt spielt das Verständnis kultureller Unterschiede eine zentrale Rolle für den Erfolg von Meetings",
+    "datePublished": "2025-01-24T08:34:40+01:00",
+    "dateModified": "2025-01-24T08:34:49+01:00",
+    "isPartOf": {
+     "@id": "https://www.jmc-streamline.com/#website"
+    },
+    "breadcrumb": {
+     "@id": "https://www.jmc-streamline.com/en/efficient-meetings-in-a-global-business-world-understanding-cultural-differences/#breadcrumblist"
+    },
+    "potentialAction": {
+     "@id": "https://www.jmc-streamline.com/en/efficient-meetings-in-a-global-business-world-understanding-cultural-differences/#readaction"
+    },
+    "primaryImageOfPage": {
+     "@id": "https://www.jmc-streamline.com/en/efficient-meetings-in-a-global-business-world-understanding-cultural-differences/#thumbnail"
+    },
+    "image": {
+     "@id": "https://www.jmc-streamline.com/en/efficient-meetings-in-a-global-business-world-understanding-cultural-differences/#thumbnail"
+    }
+   },
+   {
+    "@type": "ReadAction",
+    "@id": "https://www.jmc-streamline.com/en/efficient-meetings-in-a-global-business-world-understanding-cultural-differences/#readaction",
+    "target": "https://www.jmc-streamline.com/en/efficient-meetings-in-a-global-business-world-understanding-cultural-differences/"
+   },
+   {
+    "@type": "Organization",
+    "@id": "https://www.jmc-streamline.com/#organization",
+    "url": "https://www.jmc-streamline.com/",
+    "name": "jmc. | Streamline Processes S.L.",
+    "address": {
+     "@type": "PostalAddress",
+     "streetAddress": "Carrer dels Apuntadors, 4",
+     "addressLocality": "Palma",
+     "addressRegion": "Illes Balears",
+     "addressCountry": "ES",
+     "postalCode": "ES - 07012"
+    },
+    "email": "contact@jmc-streamline.com",
+    "logo": "https://www.jmc-streamline.com/media/cropped-favicon-jmc-streamline-processes-192x192.png",
+    "slogan": "Reduce costs. Increase efficiency. Improve service quality.",
+    "telephone": "+34 699 313750"
+   },
+   {
+    "@type": "ImageObject",
+    "@id": "https://www.jmc-streamline.com/en/efficient-meetings-in-a-global-business-world-understanding-cultural-differences/#thumbnail",
+    "url": "https://www.jmc-streamline.com/media/effiziente-meetings-in-einer-globalen-geschaeftswelt.jpg",
+    "contentUrl": "https://www.jmc-streamline.com/media/effiziente-meetings-in-einer-globalen-geschaeftswelt.jpg",
+    "width": 1024,
+    "height": 1024
+   },
+   {
+    "@type": "BlogPosting",
+    "@id": "https://www.jmc-streamline.com/en/efficient-meetings-in-a-global-business-world-understanding-cultural-differences/#article",
+    "url": "https://www.jmc-streamline.com/en/efficient-meetings-in-a-global-business-world-understanding-cultural-differences/",
+    "headline": "Efficient Meetings in a Global Business World: Understanding Cultural Differences",
+    "datePublished": "2025-01-24T08:34:40+01:00",
+    "dateModified": "2025-01-24T08:34:49+01:00",
+    "wordCount": 593,
+    "articleSection": [
+     "Leadership"
+    ],
+    "isPartOf": {
+     "@id": "https://www.jmc-streamline.com/en/efficient-meetings-in-a-global-business-world-understanding-cultural-differences/#webpage"
+    },
+    "mainEntityOfPage": {
+     "@id": "https://www.jmc-streamline.com/en/efficient-meetings-in-a-global-business-world-understanding-cultural-differences/#webpage"
+    },
+    "image": {
+     "@id": "https://www.jmc-streamline.com/en/efficient-meetings-in-a-global-business-world-understanding-cultural-differences/#thumbnail"
+    },
+    "publisher": {
+     "@id": "https://www.jmc-streamline.com/#organization"
+    }
+   }
+  ]
+ },
+ "en:generally": {
+  "@context": "https://schema.org",
+  "@graph": [
+   {
+    "@type": "WebSite",
+    "@id": "https://www.jmc-streamline.com/#website",
+    "url": "https://www.jmc-streamline.com/",
+    "name": "jmc. | Streamline Processes S.L.",
+    "inLanguage": "en-US",
+    "publisher": {
+     "@id": "https://www.jmc-streamline.com/#organization"
+    }
+   },
+   {
+    "@type": "BreadcrumbList",
+    "name": "Breadcrumbs",
+    "@id": "https://www.jmc-streamline.com/en/generally/#breadcrumblist",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.jmc-streamline.com/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.jmc-streamline.com/en/blog/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Generally"
+     }
+    ]
+   },
+   {
+    "@type": "CollectionPage",
+    "@id": "https://www.jmc-streamline.com/en/generally/#webpage",
+    "url": "https://www.jmc-streamline.com/en/generally/",
+    "inLanguage": "en-US",
+    "name": "Generally – jmc. | Streamline Processes S.L.",
+    "isPartOf": {
+     "@id": "https://www.jmc-streamline.com/#website"
+    },
+    "breadcrumb": {
+     "@id": "https://www.jmc-streamline.com/en/generally/#breadcrumblist"
+    }
+   },
+   {
+    "@type": "Organization",
+    "@id": "https://www.jmc-streamline.com/#organization",
+    "url": "https://www.jmc-streamline.com/",
+    "name": "jmc. | Streamline Processes S.L.",
+    "address": {
+     "@type": "PostalAddress",
+     "streetAddress": "Carrer dels Apuntadors, 4",
+     "addressLocality": "Palma",
+     "addressRegion": "Illes Balears",
+     "addressCountry": "ES",
+     "postalCode": "ES - 07012"
+    },
+    "email": "contact@jmc-streamline.com",
+    "logo": "https://www.jmc-streamline.com/media/cropped-favicon-jmc-streamline-processes-192x192.png",
+    "slogan": "Reduce costs. Increase efficiency. Improve service quality.",
+    "telephone": "+34 699 313750"
+   },
+   {
+    "@type": "WebPage",
+    "name": "Generally – jmc. | Streamline Processes S.L.",
+    "inLanguage": "en-US",
+    "isPartOf": {
+     "@id": "https://www.jmc-streamline.com/#website"
+    },
+    "url": "https://www.jmc-streamline.com/en/generally/",
+    "@id": "https://www.jmc-streamline.com/en/generally/#webpage"
+   }
+  ]
+ },
+ "en:imprint": {
+  "@context": "https://schema.org",
+  "@graph": [
+   {
+    "@type": "WebSite",
+    "@id": "https://www.jmc-streamline.com/#website",
+    "url": "https://www.jmc-streamline.com/",
+    "name": "jmc. | Streamline Processes S.L.",
+    "inLanguage": "en-US",
+    "publisher": {
+     "@id": "https://www.jmc-streamline.com/#organization"
+    }
+   },
+   {
+    "@type": "BreadcrumbList",
+    "name": "Breadcrumbs",
+    "@id": "https://www.jmc-streamline.com/en/imprint/#breadcrumblist",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.jmc-streamline.com/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Imprint"
+     }
+    ]
+   },
+   {
+    "@type": "WebPage",
+    "@id": "https://www.jmc-streamline.com/en/imprint/#webpage",
+    "url": "https://www.jmc-streamline.com/en/imprint/",
+    "inLanguage": "en-US",
+    "name": "Imprint – jmc. | Streamline Processes S.L.",
+    "description": "Impressum von jmc. | Streamline Processes S.L. in Spanien",
+    "datePublished": "2024-09-01T09:20:04+02:00",
+    "dateModified": "2024-09-02T09:45:51+02:00",
+    "isPartOf": {
+     "@id": "https://www.jmc-streamline.com/#website"
+    },
+    "breadcrumb": {
+     "@id": "https://www.jmc-streamline.com/en/imprint/#breadcrumblist"
+    },
+    "potentialAction": {
+     "@id": "https://www.jmc-streamline.com/en/imprint/#readaction"
+    }
+   },
+   {
+    "@type": "ReadAction",
+    "@id": "https://www.jmc-streamline.com/en/imprint/#readaction",
+    "target": "https://www.jmc-streamline.com/en/imprint/"
+   },
+   {
+    "@type": "Organization",
+    "@id": "https://www.jmc-streamline.com/#organization",
+    "url": "https://www.jmc-streamline.com/",
+    "name": "jmc. | Streamline Processes S.L.",
+    "address": {
+     "@type": "PostalAddress",
+     "streetAddress": "Carrer dels Apuntadors, 4",
+     "addressLocality": "Palma",
+     "addressRegion": "Illes Balears",
+     "addressCountry": "ES",
+     "postalCode": "ES - 07012"
+    },
+    "email": "contact@jmc-streamline.com",
+    "logo": "https://www.jmc-streamline.com/media/cropped-favicon-jmc-streamline-processes-192x192.png",
+    "slogan": "Reduce costs. Increase efficiency. Improve service quality.",
+    "telephone": "+34 699 313750"
+   }
+  ]
+ },
+ "en:insights": {
+  "@context": "https://schema.org",
+  "@graph": [
+   {
+    "@type": "WebSite",
+    "@id": "https://www.jmc-streamline.com/#website",
+    "url": "https://www.jmc-streamline.com/",
+    "name": "jmc. | Streamline Processes S.L.",
+    "inLanguage": "en-US",
+    "publisher": {
+     "@id": "https://www.jmc-streamline.com/#organization"
+    }
+   },
+   {
+    "@type": "BreadcrumbList",
+    "name": "Breadcrumbs",
+    "@id": "https://www.jmc-streamline.com/en/insights/#breadcrumblist",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.jmc-streamline.com/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.jmc-streamline.com/en/blog/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Insights"
+     }
+    ]
+   },
+   {
+    "@type": "CollectionPage",
+    "@id": "https://www.jmc-streamline.com/en/insights/#webpage",
+    "url": "https://www.jmc-streamline.com/en/insights/",
+    "inLanguage": "en-US",
+    "name": "Personal observations and findings",
+    "description": "This is less about ready-made solutions and more about discovering and understanding - about thoughts and ideas that have made me think.",
+    "isPartOf": {
+     "@id": "https://www.jmc-streamline.com/#website"
+    },
+    "breadcrumb": {
+     "@id": "https://www.jmc-streamline.com/en/insights/#breadcrumblist"
+    }
+   },
+   {
+    "@type": "Organization",
+    "@id": "https://www.jmc-streamline.com/#organization",
+    "url": "https://www.jmc-streamline.com/",
+    "name": "jmc. | Streamline Processes S.L.",
+    "address": {
+     "@type": "PostalAddress",
+     "streetAddress": "Carrer dels Apuntadors, 4",
+     "addressLocality": "Palma",
+     "addressRegion": "Illes Balears",
+     "addressCountry": "ES",
+     "postalCode": "ES - 07012"
+    },
+    "email": "contact@jmc-streamline.com",
+    "logo": "https://www.jmc-streamline.com/media/cropped-favicon-jmc-streamline-processes-192x192.png",
+    "slogan": "Reduce costs. Increase efficiency. Improve service quality.",
+    "telephone": "+34 699 313750"
+   },
+   {
+    "@type": "WebPage",
+    "name": "Personal observations and findings",
+    "inLanguage": "en-US",
+    "isPartOf": {
+     "@id": "https://www.jmc-streamline.com/#website"
+    },
+    "url": "https://www.jmc-streamline.com/en/insights/",
+    "@id": "https://www.jmc-streamline.com/en/insights/#webpage"
+   }
+  ]
+ },
+ "en:leadership": {
+  "@context": "https://schema.org",
+  "@graph": [
+   {
+    "@type": "WebSite",
+    "@id": "https://www.jmc-streamline.com/#website",
+    "url": "https://www.jmc-streamline.com/",
+    "name": "jmc. | Streamline Processes S.L.",
+    "inLanguage": "en-US",
+    "publisher": {
+     "@id": "https://www.jmc-streamline.com/#organization"
+    }
+   },
+   {
+    "@type": "BreadcrumbList",
+    "name": "Breadcrumbs",
+    "@id": "https://www.jmc-streamline.com/en/leadership/#breadcrumblist",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.jmc-streamline.com/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.jmc-streamline.com/en/blog/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Leadership"
+     }
+    ]
+   },
+   {
+    "@type": "CollectionPage",
+    "@id": "https://www.jmc-streamline.com/en/leadership/#webpage",
+    "url": "https://www.jmc-streamline.com/en/leadership/",
+    "inLanguage": "en-US",
+    "name": "The development of modern leadership skills",
+    "description": "It's about rethinking leadership, remaining flexible and driving innovation. Agility, emotional intelligence",
+    "isPartOf": {
+     "@id": "https://www.jmc-streamline.com/#website"
+    },
+    "breadcrumb": {
+     "@id": "https://www.jmc-streamline.com/en/leadership/#breadcrumblist"
+    }
+   },
+   {
+    "@type": "Organization",
+    "@id": "https://www.jmc-streamline.com/#organization",
+    "url": "https://www.jmc-streamline.com/",
+    "name": "jmc. | Streamline Processes S.L.",
+    "address": {
+     "@type": "PostalAddress",
+     "streetAddress": "Carrer dels Apuntadors, 4",
+     "addressLocality": "Palma",
+     "addressRegion": "Illes Balears",
+     "addressCountry": "ES",
+     "postalCode": "ES - 07012"
+    },
+    "email": "contact@jmc-streamline.com",
+    "logo": "https://www.jmc-streamline.com/media/cropped-favicon-jmc-streamline-processes-192x192.png",
+    "slogan": "Reduce costs. Increase efficiency. Improve service quality.",
+    "telephone": "+34 699 313750"
+   },
+   {
+    "@type": "WebPage",
+    "name": "The development of modern leadership skills",
+    "inLanguage": "en-US",
+    "isPartOf": {
+     "@id": "https://www.jmc-streamline.com/#website"
+    },
+    "url": "https://www.jmc-streamline.com/en/leadership/",
+    "@id": "https://www.jmc-streamline.com/en/leadership/#webpage"
+   }
+  ]
+ },
+ "en:privacy-policy": {
+  "@context": "https://schema.org",
+  "@graph": [
+   {
+    "@type": "WebSite",
+    "@id": "https://www.jmc-streamline.com/#website",
+    "url": "https://www.jmc-streamline.com/",
+    "name": "jmc. | Streamline Processes S.L.",
+    "inLanguage": "en-US",
+    "publisher": {
+     "@id": "https://www.jmc-streamline.com/#organization"
+    }
+   },
+   {
+    "@type": "BreadcrumbList",
+    "name": "Breadcrumbs",
+    "@id": "https://www.jmc-streamline.com/en/privacy-policy/#breadcrumblist",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.jmc-streamline.com/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Privacy Policy"
+     }
+    ]
+   },
+   {
+    "@type": "WebPage",
+    "@id": "https://www.jmc-streamline.com/en/privacy-policy/#webpage",
+    "url": "https://www.jmc-streamline.com/en/privacy-policy/",
+    "inLanguage": "en-US",
+    "name": "Privacy Policy – jmc. | Streamline Processes S.L.",
+    "description": "The following information provides a simple overview of what happens to your personal data when you visit this website.",
+    "datePublished": "2024-09-01T09:20:26+02:00",
+    "dateModified": "2025-12-06T10:28:49+01:00",
+    "isPartOf": {
+     "@id": "https://www.jmc-streamline.com/#website"
+    },
+    "breadcrumb": {
+     "@id": "https://www.jmc-streamline.com/en/privacy-policy/#breadcrumblist"
+    },
+    "potentialAction": {
+     "@id": "https://www.jmc-streamline.com/en/privacy-policy/#readaction"
+    }
+   },
+   {
+    "@type": "ReadAction",
+    "@id": "https://www.jmc-streamline.com/en/privacy-policy/#readaction",
+    "target": "https://www.jmc-streamline.com/en/privacy-policy/"
+   },
+   {
+    "@type": "Organization",
+    "@id": "https://www.jmc-streamline.com/#organization",
+    "url": "https://www.jmc-streamline.com/",
+    "name": "jmc. | Streamline Processes S.L.",
+    "address": {
+     "@type": "PostalAddress",
+     "streetAddress": "Carrer dels Apuntadors, 4",
+     "addressLocality": "Palma",
+     "addressRegion": "Illes Balears",
+     "addressCountry": "ES",
+     "postalCode": "ES - 07012"
+    },
+    "email": "contact@jmc-streamline.com",
+    "logo": "https://www.jmc-streamline.com/media/cropped-favicon-jmc-streamline-processes-192x192.png",
+    "slogan": "Reduce costs. Increase efficiency. Improve service quality.",
+    "telephone": "+34 699 313750"
+   }
+  ]
+ },
+ "en:services": {
+  "@context": "https://schema.org",
+  "@graph": [
+   {
+    "@type": "WebSite",
+    "@id": "https://www.jmc-streamline.com/#website",
+    "url": "https://www.jmc-streamline.com/",
+    "name": "jmc. | Streamline Processes S.L.",
+    "inLanguage": "en-US",
+    "publisher": {
+     "@id": "https://www.jmc-streamline.com/#organization"
+    }
+   },
+   {
+    "@type": "BreadcrumbList",
+    "name": "Breadcrumbs",
+    "@id": "https://www.jmc-streamline.com/en/services/#breadcrumblist",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.jmc-streamline.com/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Services"
+     }
+    ]
+   },
+   {
+    "@type": "WebPage",
+    "@id": "https://www.jmc-streamline.com/en/services/#webpage",
+    "url": "https://www.jmc-streamline.com/en/services/",
+    "inLanguage": "en-US",
+    "name": "I offer comprehensive office management services",
+    "description": "I provide efficient office management, including remote office organisation & client management. I organise events, coordinate appointments and oversee projects.",
+    "datePublished": "2024-09-01T09:17:01+02:00",
+    "dateModified": "2024-09-01T16:13:31+02:00",
+    "isPartOf": {
+     "@id": "https://www.jmc-streamline.com/#website"
+    },
+    "breadcrumb": {
+     "@id": "https://www.jmc-streamline.com/en/services/#breadcrumblist"
+    },
+    "potentialAction": {
+     "@id": "https://www.jmc-streamline.com/en/services/#readaction"
+    }
+   },
+   {
+    "@type": "ReadAction",
+    "@id": "https://www.jmc-streamline.com/en/services/#readaction",
+    "target": "https://www.jmc-streamline.com/en/services/"
+   },
+   {
+    "@type": "Organization",
+    "@id": "https://www.jmc-streamline.com/#organization",
+    "url": "https://www.jmc-streamline.com/",
+    "name": "jmc. | Streamline Processes S.L.",
+    "address": {
+     "@type": "PostalAddress",
+     "streetAddress": "Carrer dels Apuntadors, 4",
+     "addressLocality": "Palma",
+     "addressRegion": "Illes Balears",
+     "addressCountry": "ES",
+     "postalCode": "ES - 07012"
+    },
+    "email": "contact@jmc-streamline.com",
+    "logo": "https://www.jmc-streamline.com/media/cropped-favicon-jmc-streamline-processes-192x192.png",
+    "slogan": "Reduce costs. Increase efficiency. Improve service quality.",
+    "telephone": "+34 699 313750"
+   }
+  ]
+ },
+ "en:standing-still-is-not-an-option": {
+  "@context": "https://schema.org",
+  "@graph": [
+   {
+    "@type": "WebSite",
+    "@id": "https://www.jmc-streamline.com/#website",
+    "url": "https://www.jmc-streamline.com/",
+    "name": "jmc. | Streamline Processes S.L.",
+    "inLanguage": "en-US",
+    "publisher": {
+     "@id": "https://www.jmc-streamline.com/#organization"
+    }
+   },
+   {
+    "@type": "BreadcrumbList",
+    "name": "Breadcrumbs",
+    "@id": "https://www.jmc-streamline.com/en/standing-still-is-not-an-option/#breadcrumblist",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.jmc-streamline.com/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Generally",
+      "item": "https://www.jmc-streamline.com/en/generally/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Standing still is not an option"
+     }
+    ]
+   },
+   {
+    "@type": "WebPage",
+    "@id": "https://www.jmc-streamline.com/en/standing-still-is-not-an-option/#webpage",
+    "url": "https://www.jmc-streamline.com/en/standing-still-is-not-an-option/",
+    "inLanguage": "en-US",
+    "name": "Standing still is not an option",
+    "description": "For me, what matters is to remain attentive, to listen, and to be open to what develops.",
+    "datePublished": "2025-11-03T06:16:41+01:00",
+    "dateModified": "2025-11-03T06:16:42+01:00",
+    "isPartOf": {
+     "@id": "https://www.jmc-streamline.com/#website"
+    },
+    "breadcrumb": {
+     "@id": "https://www.jmc-streamline.com/en/standing-still-is-not-an-option/#breadcrumblist"
+    },
+    "potentialAction": {
+     "@id": "https://www.jmc-streamline.com/en/standing-still-is-not-an-option/#readaction"
+    },
+    "primaryImageOfPage": {
+     "@id": "https://www.jmc-streamline.com/en/standing-still-is-not-an-option/#thumbnail"
+    },
+    "image": {
+     "@id": "https://www.jmc-streamline.com/en/standing-still-is-not-an-option/#thumbnail"
+    }
+   },
+   {
+    "@type": "ReadAction",
+    "@id": "https://www.jmc-streamline.com/en/standing-still-is-not-an-option/#readaction",
+    "target": "https://www.jmc-streamline.com/en/standing-still-is-not-an-option/"
+   },
+   {
+    "@type": "Organization",
+    "@id": "https://www.jmc-streamline.com/#organization",
+    "url": "https://www.jmc-streamline.com/",
+    "name": "jmc. | Streamline Processes S.L.",
+    "address": {
+     "@type": "PostalAddress",
+     "streetAddress": "Carrer dels Apuntadors, 4",
+     "addressLocality": "Palma",
+     "addressRegion": "Illes Balears",
+     "addressCountry": "ES",
+     "postalCode": "ES - 07012"
+    },
+    "email": "contact@jmc-streamline.com",
+    "logo": "https://www.jmc-streamline.com/media/cropped-favicon-jmc-streamline-processes-192x192.png",
+    "slogan": "Reduce costs. Increase efficiency. Improve service quality.",
+    "telephone": "+34 699 313750"
+   },
+   {
+    "@type": "ImageObject",
+    "@id": "https://www.jmc-streamline.com/en/standing-still-is-not-an-option/#thumbnail",
+    "url": "https://www.jmc-streamline.com/media/stillstand-ist-keine-option.jpg",
+    "contentUrl": "https://www.jmc-streamline.com/media/stillstand-ist-keine-option.jpg",
+    "width": 600,
+    "height": 400
+   },
+   {
+    "@type": "BlogPosting",
+    "@id": "https://www.jmc-streamline.com/en/standing-still-is-not-an-option/#article",
+    "url": "https://www.jmc-streamline.com/en/standing-still-is-not-an-option/",
+    "headline": "Standing still is not an option",
+    "datePublished": "2025-11-03T06:16:41+01:00",
+    "dateModified": "2025-11-03T06:16:42+01:00",
+    "wordCount": 518,
+    "articleSection": [
+     "Generally"
+    ],
+    "isPartOf": {
+     "@id": "https://www.jmc-streamline.com/en/standing-still-is-not-an-option/#webpage"
+    },
+    "mainEntityOfPage": {
+     "@id": "https://www.jmc-streamline.com/en/standing-still-is-not-an-option/#webpage"
+    },
+    "image": {
+     "@id": "https://www.jmc-streamline.com/en/standing-still-is-not-an-option/#thumbnail"
+    },
+    "publisher": {
+     "@id": "https://www.jmc-streamline.com/#organization"
+    }
+   }
+  ]
+ },
+ "en:transformation-of-businesses-and-lives-with-lean-processes": {
+  "@context": "https://schema.org",
+  "@graph": [
+   {
+    "@type": "WebSite",
+    "@id": "https://www.jmc-streamline.com/#website",
+    "url": "https://www.jmc-streamline.com/",
+    "name": "jmc. | Streamline Processes S.L.",
+    "inLanguage": "en-US",
+    "publisher": {
+     "@id": "https://www.jmc-streamline.com/#organization"
+    }
+   },
+   {
+    "@type": "BreadcrumbList",
+    "name": "Breadcrumbs",
+    "@id": "https://www.jmc-streamline.com/en/transformation-of-businesses-and-lives-with-lean-processes/#breadcrumblist",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.jmc-streamline.com/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Insights",
+      "item": "https://www.jmc-streamline.com/en/insights/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Transformation of businesses and lives with lean processes"
+     }
+    ]
+   },
+   {
+    "@type": "WebPage",
+    "@id": "https://www.jmc-streamline.com/en/transformation-of-businesses-and-lives-with-lean-processes/#webpage",
+    "url": "https://www.jmc-streamline.com/en/transformation-of-businesses-and-lives-with-lean-processes/",
+    "inLanguage": "en-US",
+    "name": "Lean processes change companies and lives",
+    "description": "Clear and lean processes create space for creativity, promote sustainable success and show how efficiency can change not only companies but also...",
+    "datePublished": "2025-01-12T11:29:06+01:00",
+    "dateModified": "2025-01-12T17:26:31+01:00",
+    "isPartOf": {
+     "@id": "https://www.jmc-streamline.com/#website"
+    },
+    "breadcrumb": {
+     "@id": "https://www.jmc-streamline.com/en/transformation-of-businesses-and-lives-with-lean-processes/#breadcrumblist"
+    },
+    "potentialAction": {
+     "@id": "https://www.jmc-streamline.com/en/transformation-of-businesses-and-lives-with-lean-processes/#readaction"
+    },
+    "primaryImageOfPage": {
+     "@id": "https://www.jmc-streamline.com/en/transformation-of-businesses-and-lives-with-lean-processes/#thumbnail"
+    },
+    "image": {
+     "@id": "https://www.jmc-streamline.com/en/transformation-of-businesses-and-lives-with-lean-processes/#thumbnail"
+    }
+   },
+   {
+    "@type": "ReadAction",
+    "@id": "https://www.jmc-streamline.com/en/transformation-of-businesses-and-lives-with-lean-processes/#readaction",
+    "target": "https://www.jmc-streamline.com/en/transformation-of-businesses-and-lives-with-lean-processes/"
+   },
+   {
+    "@type": "Organization",
+    "@id": "https://www.jmc-streamline.com/#organization",
+    "url": "https://www.jmc-streamline.com/",
+    "name": "jmc. | Streamline Processes S.L.",
+    "address": {
+     "@type": "PostalAddress",
+     "streetAddress": "Carrer dels Apuntadors, 4",
+     "addressLocality": "Palma",
+     "addressRegion": "Illes Balears",
+     "addressCountry": "ES",
+     "postalCode": "ES - 07012"
+    },
+    "email": "contact@jmc-streamline.com",
+    "logo": "https://www.jmc-streamline.com/media/cropped-favicon-jmc-streamline-processes-192x192.png",
+    "slogan": "Reduce costs. Increase efficiency. Improve service quality.",
+    "telephone": "+34 699 313750"
+   },
+   {
+    "@type": "ImageObject",
+    "@id": "https://www.jmc-streamline.com/en/transformation-of-businesses-and-lives-with-lean-processes/#thumbnail",
+    "url": "https://www.jmc-streamline.com/media/wie-schlanke-prozesse-unternehmen-veraendern.jpg",
+    "contentUrl": "https://www.jmc-streamline.com/media/wie-schlanke-prozesse-unternehmen-veraendern.jpg",
+    "width": 1024,
+    "height": 1024
+   },
+   {
+    "@type": "BlogPosting",
+    "@id": "https://www.jmc-streamline.com/en/transformation-of-businesses-and-lives-with-lean-processes/#article",
+    "url": "https://www.jmc-streamline.com/en/transformation-of-businesses-and-lives-with-lean-processes/",
+    "headline": "Transformation of businesses and lives with lean processes",
+    "datePublished": "2025-01-12T11:29:06+01:00",
+    "dateModified": "2025-01-12T17:26:31+01:00",
+    "wordCount": 1029,
+    "articleSection": [
+     "Insights"
+    ],
+    "isPartOf": {
+     "@id": "https://www.jmc-streamline.com/en/transformation-of-businesses-and-lives-with-lean-processes/#webpage"
+    },
+    "mainEntityOfPage": {
+     "@id": "https://www.jmc-streamline.com/en/transformation-of-businesses-and-lives-with-lean-processes/#webpage"
+    },
+    "image": {
+     "@id": "https://www.jmc-streamline.com/en/transformation-of-businesses-and-lives-with-lean-processes/#thumbnail"
+    },
+    "publisher": {
+     "@id": "https://www.jmc-streamline.com/#organization"
+    }
+   }
+  ]
+ },
+ "en:why-illustrations-the-creative-path-to-clarity-and-connection": {
+  "@context": "https://schema.org",
+  "@graph": [
+   {
+    "@type": "WebSite",
+    "@id": "https://www.jmc-streamline.com/#website",
+    "url": "https://www.jmc-streamline.com/",
+    "name": "jmc. | Streamline Processes S.L.",
+    "inLanguage": "en-US",
+    "publisher": {
+     "@id": "https://www.jmc-streamline.com/#organization"
+    }
+   },
+   {
+    "@type": "BreadcrumbList",
+    "name": "Breadcrumbs",
+    "@id": "https://www.jmc-streamline.com/en/why-illustrations-the-creative-path-to-clarity-and-connection/#breadcrumblist",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.jmc-streamline.com/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Insights",
+      "item": "https://www.jmc-streamline.com/en/insights/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Why Illustrations? The Creative Path to Clarity and Connection"
+     }
+    ]
+   },
+   {
+    "@type": "WebPage",
+    "@id": "https://www.jmc-streamline.com/en/why-illustrations-the-creative-path-to-clarity-and-connection/#webpage",
+    "url": "https://www.jmc-streamline.com/en/why-illustrations-the-creative-path-to-clarity-and-connection/",
+    "inLanguage": "en-US",
+    "name": "The creative path to clarity and connection",
+    "description": "Some people wonder what illustrations have to do with clear processes. This is exactly what I would like to address.",
+    "datePublished": "2025-02-06T10:32:07+01:00",
+    "dateModified": "2025-02-06T13:28:46+01:00",
+    "isPartOf": {
+     "@id": "https://www.jmc-streamline.com/#website"
+    },
+    "breadcrumb": {
+     "@id": "https://www.jmc-streamline.com/en/why-illustrations-the-creative-path-to-clarity-and-connection/#breadcrumblist"
+    },
+    "potentialAction": {
+     "@id": "https://www.jmc-streamline.com/en/why-illustrations-the-creative-path-to-clarity-and-connection/#readaction"
+    },
+    "primaryImageOfPage": {
+     "@id": "https://www.jmc-streamline.com/en/why-illustrations-the-creative-path-to-clarity-and-connection/#thumbnail"
+    },
+    "image": {
+     "@id": "https://www.jmc-streamline.com/en/why-illustrations-the-creative-path-to-clarity-and-connection/#thumbnail"
+    }
+   },
+   {
+    "@type": "ReadAction",
+    "@id": "https://www.jmc-streamline.com/en/why-illustrations-the-creative-path-to-clarity-and-connection/#readaction",
+    "target": "https://www.jmc-streamline.com/en/why-illustrations-the-creative-path-to-clarity-and-connection/"
+   },
+   {
+    "@type": "Organization",
+    "@id": "https://www.jmc-streamline.com/#organization",
+    "url": "https://www.jmc-streamline.com/",
+    "name": "jmc. | Streamline Processes S.L.",
+    "address": {
+     "@type": "PostalAddress",
+     "streetAddress": "Carrer dels Apuntadors, 4",
+     "addressLocality": "Palma",
+     "addressRegion": "Illes Balears",
+     "addressCountry": "ES",
+     "postalCode": "ES - 07012"
+    },
+    "email": "contact@jmc-streamline.com",
+    "logo": "https://www.jmc-streamline.com/media/cropped-favicon-jmc-streamline-processes-192x192.png",
+    "slogan": "Reduce costs. Increase efficiency. Improve service quality.",
+    "telephone": "+34 699 313750"
+   },
+   {
+    "@type": "ImageObject",
+    "@id": "https://www.jmc-streamline.com/en/why-illustrations-the-creative-path-to-clarity-and-connection/#thumbnail",
+    "url": "https://www.jmc-streamline.com/media/weg-zur-klarheit-und-verbindung-1.jpg",
+    "contentUrl": "https://www.jmc-streamline.com/media/weg-zur-klarheit-und-verbindung-1.jpg",
+    "width": 1650,
+    "height": 1100
+   },
+   {
+    "@type": "BlogPosting",
+    "@id": "https://www.jmc-streamline.com/en/why-illustrations-the-creative-path-to-clarity-and-connection/#article",
+    "url": "https://www.jmc-streamline.com/en/why-illustrations-the-creative-path-to-clarity-and-connection/",
+    "headline": "Why Illustrations? The Creative Path to Clarity and Connection",
+    "datePublished": "2025-02-06T10:32:07+01:00",
+    "dateModified": "2025-02-06T13:28:46+01:00",
+    "wordCount": 552,
+    "articleSection": [
+     "Insights"
+    ],
+    "isPartOf": {
+     "@id": "https://www.jmc-streamline.com/en/why-illustrations-the-creative-path-to-clarity-and-connection/#webpage"
+    },
+    "mainEntityOfPage": {
+     "@id": "https://www.jmc-streamline.com/en/why-illustrations-the-creative-path-to-clarity-and-connection/#webpage"
+    },
+    "image": {
+     "@id": "https://www.jmc-streamline.com/en/why-illustrations-the-creative-path-to-clarity-and-connection/#thumbnail"
+    },
+    "publisher": {
+     "@id": "https://www.jmc-streamline.com/#organization"
+    }
+   }
+  ]
+ },
+ "en:why-leadership-and-sports-are-the-ultimate-power-duo": {
+  "@context": "https://schema.org",
+  "@graph": [
+   {
+    "@type": "WebSite",
+    "@id": "https://www.jmc-streamline.com/#website",
+    "url": "https://www.jmc-streamline.com/",
+    "name": "jmc. | Streamline Processes S.L.",
+    "inLanguage": "en-US",
+    "publisher": {
+     "@id": "https://www.jmc-streamline.com/#organization"
+    }
+   },
+   {
+    "@type": "BreadcrumbList",
+    "name": "Breadcrumbs",
+    "@id": "https://www.jmc-streamline.com/en/why-leadership-and-sports-are-the-ultimate-power-duo/#breadcrumblist",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.jmc-streamline.com/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Generally",
+      "item": "https://www.jmc-streamline.com/en/generally/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Why Leadership and Sports are the Ultimate Power Duo"
+     }
+    ]
+   },
+   {
+    "@type": "WebPage",
+    "@id": "https://www.jmc-streamline.com/en/why-leadership-and-sports-are-the-ultimate-power-duo/#webpage",
+    "url": "https://www.jmc-streamline.com/en/why-leadership-and-sports-are-the-ultimate-power-duo/",
+    "inLanguage": "en-US",
+    "name": "Leadership and sport the ultimate power duo",
+    "description": "Leading with energy and clarity doesn't just happen, it takes discipline, exercise and perseverance.",
+    "datePublished": "2025-03-24T17:01:21+01:00",
+    "dateModified": "2025-03-25T08:49:12+01:00",
+    "isPartOf": {
+     "@id": "https://www.jmc-streamline.com/#website"
+    },
+    "breadcrumb": {
+     "@id": "https://www.jmc-streamline.com/en/why-leadership-and-sports-are-the-ultimate-power-duo/#breadcrumblist"
+    },
+    "potentialAction": {
+     "@id": "https://www.jmc-streamline.com/en/why-leadership-and-sports-are-the-ultimate-power-duo/#readaction"
+    },
+    "primaryImageOfPage": {
+     "@id": "https://www.jmc-streamline.com/en/why-leadership-and-sports-are-the-ultimate-power-duo/#thumbnail"
+    },
+    "image": {
+     "@id": "https://www.jmc-streamline.com/en/why-leadership-and-sports-are-the-ultimate-power-duo/#thumbnail"
+    }
+   },
+   {
+    "@type": "ReadAction",
+    "@id": "https://www.jmc-streamline.com/en/why-leadership-and-sports-are-the-ultimate-power-duo/#readaction",
+    "target": "https://www.jmc-streamline.com/en/why-leadership-and-sports-are-the-ultimate-power-duo/"
+   },
+   {
+    "@type": "Organization",
+    "@id": "https://www.jmc-streamline.com/#organization",
+    "url": "https://www.jmc-streamline.com/",
+    "name": "jmc. | Streamline Processes S.L.",
+    "address": {
+     "@type": "PostalAddress",
+     "streetAddress": "Carrer dels Apuntadors, 4",
+     "addressLocality": "Palma",
+     "addressRegion": "Illes Balears",
+     "addressCountry": "ES",
+     "postalCode": "ES - 07012"
+    },
+    "email": "contact@jmc-streamline.com",
+    "logo": "https://www.jmc-streamline.com/media/cropped-favicon-jmc-streamline-processes-192x192.png",
+    "slogan": "Reduce costs. Increase efficiency. Improve service quality.",
+    "telephone": "+34 699 313750"
+   },
+   {
+    "@type": "ImageObject",
+    "@id": "https://www.jmc-streamline.com/en/why-leadership-and-sports-are-the-ultimate-power-duo/#thumbnail",
+    "url": "https://www.jmc-streamline.com/media/why-leadership-sport-ultimative-power-duo.jpg",
+    "contentUrl": "https://www.jmc-streamline.com/media/why-leadership-sport-ultimative-power-duo.jpg",
+    "width": 600,
+    "height": 400
+   },
+   {
+    "@type": "BlogPosting",
+    "@id": "https://www.jmc-streamline.com/en/why-leadership-and-sports-are-the-ultimate-power-duo/#article",
+    "url": "https://www.jmc-streamline.com/en/why-leadership-and-sports-are-the-ultimate-power-duo/",
+    "headline": "Why Leadership and Sports are the Ultimate Power Duo",
+    "datePublished": "2025-03-24T17:01:21+01:00",
+    "dateModified": "2025-03-25T08:49:12+01:00",
+    "wordCount": 967,
+    "articleSection": [
+     "Generally"
+    ],
+    "isPartOf": {
+     "@id": "https://www.jmc-streamline.com/en/why-leadership-and-sports-are-the-ultimate-power-duo/#webpage"
+    },
+    "mainEntityOfPage": {
+     "@id": "https://www.jmc-streamline.com/en/why-leadership-and-sports-are-the-ultimate-power-duo/#webpage"
+    },
+    "image": {
+     "@id": "https://www.jmc-streamline.com/en/why-leadership-and-sports-are-the-ultimate-power-duo/#thumbnail"
+    },
+    "publisher": {
+     "@id": "https://www.jmc-streamline.com/#organization"
+    }
+   }
+  ]
+ }
+}

@@ -1,0 +1,37 @@
+{
+ "props": [
+  "background-color",
+  "color",
+  "border-width",
+  "border-style",
+  "border-color",
+  "border-radius",
+  "padding",
+  "font-size",
+  "font-family",
+  "font-weight",
+  "line-height",
+  "width",
+  "height",
+  "min-height",
+  "text-align",
+  "resize",
+  "display"
+ ],
+ "selectors": {
+  "nameInput": "input.wsf-field[type=\"text\"]",
+  "emailInput": "input.wsf-field[type=\"email\"]",
+  "textarea": "textarea.wsf-field",
+  "submit": "button.wsf-button-primary, button.wsf-submit-button",
+  "note": ".k-formular_dsgvo, .k-formular_dsgvo-note",
+  "grid": ".wsf-grid"
+ },
+ "localSelectors": {
+  "nameInput": "form[data-contact-form] input[type=\"text\"]",
+  "emailInput": "form[data-contact-form] input[type=\"email\"]",
+  "textarea": "form[data-contact-form] textarea",
+  "submit": "form[data-contact-form] button[type=submit]",
+  "note": "form[data-contact-form] u",
+  "grid": "form[data-contact-form] > div"
+ }
+}

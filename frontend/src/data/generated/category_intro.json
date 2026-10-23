@@ -1,0 +1,52 @@
+{
+ "de:allgemein": {
+  "heading": "",
+  "accent": "Allgemein",
+  "paragraphs": []
+ },
+ "de:insights": {
+  "heading": "Einblicke, die inspirieren",
+  "accent": "Insights",
+  "paragraphs": [
+   "In der Kategorie „Insights“ teile ich persönliche Beobachtungen und Erkenntnisse, die mich im Laufe der Zeit begleitet haben. Hier geht es weniger um fertige Lösungen, sondern um das Entdecken und Verstehen – um Gedanken, die mich inspiriert haben, und Ideen, die mich zum Nachdenken gebracht haben.",
+   "Oft entstehen diese Einblicke aus alltäglichen Momenten oder beruflichen Erfahrungen, die den Blick auf Dinge verändern. Sie sind ein Versuch, Zusammenhänge klarer zu machen und manchmal auch die richtigen Fragen zu stellen. Es geht um den Mut, etwas Neues auszuprobieren, und darum, die Balance zwischen Struktur und Kreativität zu finden.",
+   "Ich sehe „Insights“ als eine Art Sammelstelle: für Gedanken, die weiterführen, für Inspiration, die vielleicht genau im richtigen Moment kommt, oder für Ideen, die helfen, einen Schritt zurückzutreten und anders auf die Dinge zu schauen.",
+   "Diese Kategorie soll dazu einladen, zu entdecken, nachzudenken und sich inspirieren zu lassen. Vielleicht finden Sie hier etwas, das Ihren Weg ein kleines Stück bereichert – oder einfach einen Moment der Klarheit schenkt."
+  ]
+ },
+ "de:leadership": {
+  "heading": "Leadership neu gedacht",
+  "accent": "Leadership",
+  "paragraphs": [
+   "In der Kategorie „Leadership“ dreht sich alles um die Entwicklung moderner Führungskompetenzen, die in einer dynamischen und globalisierten Welt unverzichtbar sind. Es geht darum, Führung neu zu denken, flexibel zu bleiben und Innovationen voranzutreiben.",
+   "Agilität, emotionale Intelligenz und die Förderung von Vielfalt stehen dabei im Fokus. Eine agile Führungskultur schafft Raum für Kreativität und Zusammenarbeit, während Empathie und soziale Kompetenz entscheidend für Motivation und Mitarbeiterbindung sind. Gleichzeitig eröffnet die Vielfalt in Teams neue Perspektiven und stärkt den Erfolg von Organisationen.",
+   "Die digitale Transformation fordert von Führungskräften, sich ständig weiterzubilden und Technologien sinnvoll einzusetzen. Resilienz spielt hierbei eine zentrale Rolle, sie hilft, in unsicheren Zeiten Stabilität zu bewahren und gleichzeitig offen für Veränderungen zu bleiben.",
+   "„Leadership“ ist eine Einladung, die eigene Führungsrolle bewusst zu reflektieren, neue Ansätze auszuprobieren und kontinuierlich zu lernen. Diese Kategorie inspiriert dazu, die Balance zwischen Struktur und Innovation zu finden und als Führungskraft den nächsten Schritt zu gehen."
+  ]
+ },
+ "en:generally": {
+  "heading": "Generally",
+  "accent": "Insights",
+  "paragraphs": []
+ },
+ "en:insights": {
+  "heading": "Insights",
+  "accent": "Insights",
+  "paragraphs": [
+   "In the “Insights” category, I am sharing personal reflections and insights that have accompanied me over time. This is less about ready-made solutions and more about discovery and understanding – thoughts that have inspired me and ideas that have got me thinking.",
+   "These insightful pieces often come from day-to-day situations or professional experiences that change the way I perceive things. They are an attempt to make connections clearer and sometimes to ask the right questions. It’s about having the courage to try something new and finding the balance between structure and creativity.",
+   "I see “Insights” as a kind of collection point: for thoughts that take you further, for inspiration that perhaps comes at just the right moment, or for ideas that help you to take a step back and look at things differently.",
+   "This category is intended to invite you to discover, reflect and be inspired. Perhaps you will find something here that will enrich your path a little – or simply give you a moment of real clarity."
+  ]
+ },
+ "en:leadership": {
+  "heading": "Leadership",
+  "accent": "Insights",
+  "paragraphs": [
+   "In the “Leadership” category, the focus is on developing modern leadership skills that are essential in a dynamic and globalized world. It’s about rethinking leadership, staying flexible, and driving innovation.",
+   "Agility, emotional intelligence, and fostering diversity are at the heart of this. An agile leadership culture creates space for creativity and collaboration, while empathy and social skills are crucial for motivation and employee retention. At the same time, diversity within teams opens up new perspectives and strengthens organizational success.",
+   "The digital transformation challenges leaders to constantly learn and leverage technology effectively. Resilience plays a key role here, helping to maintain stability during uncertain times while staying open to change.",
+   "“Leadership” is an invitation to consciously reflect on your role as a leader, explore new approaches, and continuously grow. This category aims to inspire a balance between structure and innovation, helping leaders take the next step forward."
+  ]
+ }
+}

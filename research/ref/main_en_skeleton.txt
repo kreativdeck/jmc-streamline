@@ -1,0 +1,311 @@
+    <main id="brx-content">
+      <section id="brxe-db8925" class="brxe-section k-hero-frontpage has-bg-video">
+        <div class="bricks-background-video-wrapper bricks-lazy-video">
+          <video>
+        <div id="brxe-d01600" class="brxe-container k-hero-frontpage__content-wrapper">
+          <div id="brxe-cultgk" class="brxe-block">
+            <h1 id="brxe-58da8a" class="brxe-heading k-hero-frontpage__heading">
+              » Optimise your business processes
+            <span id="brxe-pmwlmx" class="brxe-text-basic intro__accent-heading">
+              » Reduce costs. Increase efficiency. Improve service quality.
+            <p class="brxe-text-basic fr-lede k-hero-frontpage__lede">
+              » From day-to-day office management to strategic project delivery and financial oversight, every aspect of your business is designed for efficiency and growth.
+            <a id="brxe-zcacuh" class="brxe-button fr-icon-button-alpha btn--outline bricks-button bricks-background-primary" href="https://www.jmc-streamline.com/en/services/">
+              » Services
+        <div class="brxe-div fr-background-alpha">
+          <div class="brxe-div fr-background-alpha__overlay">
+      <section class="brxe-section grid-29">
+        <div class="brxe-container grid-29-container">
+          <div id="brxe-ifpzuc" class="brxe-div intro intro--left">
+            <h2 class="brxe-heading intro__heading">
+              » Unlock the full potential of your business with my operational excellence.
+            <p class="brxe-text-basic intro__subheading">
+              » Using my expertise in fields ranging from daily administrative management to strategic project realization and financial monitoring, I will ensure that you achieve measurable benefits such as cost savings, increased profitability and improved service quality.
+            <span class="brxe-text-basic k-accent-heading">
+              » Efficiency through excellence
+          <ul class="brxe-block grid-29-list list--none">
+            <li class="brxe-block grid-29-card">
+              <h3 class="brxe-heading grid-29-card__heading">
+                » Empowering your Business to flourish
+              <p class="brxe-text-basic grid-29-card__text">
+                » Powerful strategies for sustainable growth.
+            <li class="brxe-block grid-29-card">
+              <h3 class="brxe-heading grid-29-card__heading">
+                » Mastering Efficiency, Empowering Growth
+              <p class="brxe-text-basic grid-29-card__text">
+                » Unlock optimization potential to achieve market leadership.
+            <li class="brxe-block grid-29-card">
+              <h3 class="brxe-heading grid-29-card__heading">
+                » Excellence in Operations, Excellence in Outcomes
+              <p class="brxe-text-basic grid-29-card__text">
+                » Operational peak performance is followed by excellent results.
+            <li class="brxe-block grid-29-card">
+              <h3 class="brxe-heading grid-29-card__heading">
+                » Streamline, Organize, Achieve
+              <p class="brxe-text-basic grid-29-card__text">
+                » Structured approach for maximum performance.
+            <li class="brxe-block grid-29-card">
+              <h3 class="brxe-heading grid-29-card__heading">
+                » Streamlining Success across your Operations
+              <p class="brxe-text-basic grid-29-card__text">
+                » Efficient processes for measurable results.
+      <section class="brxe-section k-contact-section">
+        <div id="brxe-373b23" class="brxe-container k-contact-section__content-wrapper">
+          <p class="brxe-text-basic k-heading-p">
+            » If you’re ready to transform your operations and see real improvements in efficiency and quality, let’s start a conversation.
+        <div class="brxe-block k-contact-section__media-wrapper">
+          <figure class="brxe-image k-contact-section__media tag">
+            <img src="https://www.jmc-streamline.com/wp-content/uploads/telephone-workflows-more-efficient-organisation.jpg" class="css-filter size-full" alt="Telephone Workflows More Efficient Organisation" srcset="https://www.jmc-streamline.com/wp-content/uploads/telephone-workflows-more-efficient-organisation.jpg 1920w, https://www.jmc-streamline.com/wp-content/uploads/telephone-workflows-more-efficient-organisation-768x432.jpg 768w, https://www.jmc-streamline.com/wp-content/uploads/telephone-workflows-more-efficient-organisation-1536x864.jpg 1536w, https://www.jmc-streamline.com/wp-content/uploads/telephone-workflows-more-efficient-organisation-480x270.jpg 480w, https://www.jmc-streamline.com/wp-content/uploads/telephone-workflows-more-efficient-organisation-640x360.jpg 640w, https://www.jmc-streamline.com/wp-content/uploads/telephone-workflows-more-efficient-organisation-720x405.jpg 720w, https://www.jmc-streamline.com/wp-content/uploads/telephone-workflows-more-efficient-organisation-960x540.jpg 960w, https://www.jmc-streamline.com/wp-content/uploads/telephone-workflows-more-efficient-organisation-1168x657.jpg 1168w, https://www.jmc-streamline.com/wp-content/uploads/telephone-workflows-more-efficient-organisation-1440x810.jpg 1440w">
+          <div class="brxe-div k-contact-section__overlay">
+      <section class="brxe-section k-process-section">
+        <div class="brxe-container k-process-section__inner">
+          <div class="brxe-div fr-process-grid-charlie__sidebar">
+            <div class="brxe-div k-process-section__sticky-wrapper">
+              <h2 class="brxe-heading">
+                » My skill in streamlining processes and designing promising business procedures.
+              <p class="brxe-text-basic k-accent-heading">
+                » Efficiency
+              <a id="brxe-1d78d8" class="brxe-button btn--primary fr-icon-button-alpha bricks-button bricks-background-primary" href="https://www.jmc-streamline.com/en/services/">
+                » Services
+          <ol class="brxe-div fr-process-grid-charlie list--none">
+            <li class="brxe-div fr-process-card-charlie">
+              <div class="brxe-div fr-process-card-charlie__header">
+                <h3 class="brxe-heading fr-process-card-charlie__heading">
+                  » Business Operations Consulting
+                <span class="brxe-div fr-process-card-charlie__step">
+              <div class="brxe-div fr-process-card-charlie__body">
+                <ul id="brxe-iqhmzn" class="brxe-div">
+                  <li class="brxe-div">
+                    <div class="brxe-text-basic fr-process-card-charlie__text">
+                      » Streamlining internal processes for improved performance
+                  <li class="brxe-div">
+                    <div class="brxe-text-basic fr-process-card-charlie__text">
+                      » Optimize organizational structure for better operating results
+            <li class="brxe-div fr-process-card-charlie">
+              <div class="brxe-div fr-process-card-charlie__header">
+                <h3 class="brxe-heading fr-process-card-charlie__heading">
+                  » Office Management Services
+                <span class="brxe-div fr-process-card-charlie__step">
+              <div class="brxe-div fr-process-card-charlie__body">
+                <ul id="brxe-ahjlia" class="brxe-div">
+                  <li class="brxe-div">
+                    <div class="brxe-text-basic fr-process-card-charlie__text">
+                      » Providing remote office management solutions
+                  <li class="brxe-div">
+                    <div class="brxe-text-basic fr-process-card-charlie__text">
+                      » Handling client relationships
+                  <li class="brxe-div">
+                    <div class="brxe-text-basic fr-process-card-charlie__text">
+                      » Management of office logistics
+            <li class="brxe-div fr-process-card-charlie">
+              <div class="brxe-div fr-process-card-charlie__header">
+                <h3 class="brxe-heading fr-process-card-charlie__heading">
+                  » Project
+                  » &
+                  » Event Management
+                <span class="brxe-div fr-process-card-charlie__step">
+              <div class="brxe-div fr-process-card-charlie__body">
+                <ul id="brxe-hqblvr" class="brxe-div">
+                  <li class="brxe-div">
+                    <div class="brxe-text-basic fr-process-card-charlie__text">
+                      » Planning and realisation of internal and external events/networking
+                  <li class="brxe-div">
+                    <div class="brxe-text-basic fr-process-card-charlie__text">
+                      » Coordination of travel and meeting schedules
+                  <li class="brxe-div">
+                    <div class="brxe-text-basic fr-process-card-charlie__text">
+                      » Management of timetables and results for projects
+            <li class="brxe-div fr-process-card-charlie">
+              <div class="brxe-div fr-process-card-charlie__header">
+                <h3 class="brxe-heading fr-process-card-charlie__heading">
+                  » Financial
+                  » &
+                  » Administrative Support
+                <span class="brxe-div fr-process-card-charlie__step">
+              <div class="brxe-div fr-process-card-charlie__body">
+                <ul id="brxe-yjkdih" class="brxe-div">
+                  <li class="brxe-div">
+                    <div class="brxe-text-basic fr-process-card-charlie__text">
+                      » Invoicing and payment management
+                  <li class="brxe-div">
+                    <div class="brxe-text-basic fr-process-card-charlie__text">
+                      » Bookkeeping and interim accounting services
+                  <li class="brxe-div">
+                    <div class="brxe-text-basic fr-process-card-charlie__text">
+                      » Cash flow management
+      <section class="brxe-section k-feature-section-juliet">
+        <div class="brxe-container k-feature-section-juliet__grid">
+          <div class="brxe-block k-feature-section-juliet__content-wrapper">
+            <h2 class="brxe-heading k-feature-section-juliet__heading">
+              » How can I bring your business to the next level?
+            <p class="brxe-text-basic k-accent-heading">
+              » Your partner for growth and success
+            <p class="brxe-text-basic fr-lede k-feature-section-juliet__lede">
+              » I help your company to grow. I am the key to unlocking your company's full potential. From daily management activities to strategic project execution, from networking events to financial oversight.
+            <a id="brxe-lqwtqp" class="brxe-button btn--primary fr-icon-button-alpha bricks-button bricks-background-primary" href="https://www.jmc-streamline.com/en/contact/">
+              » Contact
+            <figure id="brxe-fvfhgh" class="brxe-image feature-39-card__image tag">
+              <img src="https://www.jmc-streamline.com/wp-content/uploads/talk-help-your-company-grow.jpg" class="css-filter size-full" alt="Talk Help Your Company Grow" srcset="https://www.jmc-streamline.com/wp-content/uploads/talk-help-your-company-grow.jpg 900w, https://www.jmc-streamline.com/wp-content/uploads/talk-help-your-company-grow-768x768.jpg 768w, https://www.jmc-streamline.com/wp-content/uploads/talk-help-your-company-grow-480x480.jpg 480w, https://www.jmc-streamline.com/wp-content/uploads/talk-help-your-company-grow-640x640.jpg 640w, https://www.jmc-streamline.com/wp-content/uploads/talk-help-your-company-grow-720x720.jpg 720w">
+          <ul id="brxe-8df62a" class="brxe-block list--none k-feature-section-juliet__cards">
+            <li class="brxe-block hero-victor__feature">
+              <h2 class="brxe-heading hero-victor__feature-heading">
+                » Efficiency
+              <p class="brxe-text-basic hero-victor__feature-description">
+                » Ability to streamline processes and optimize business processes with a focus on results
+            <li class="brxe-block hero-victor__feature">
+              <h2 class="brxe-heading hero-victor__feature-heading">
+                » Reliability
+              <p class="brxe-text-basic hero-victor__feature-description">
+                » Reliable service delivery, accurate financial management and thorough project management.
+            <li class="brxe-block hero-victor__feature">
+              <h2 class="brxe-heading hero-victor__feature-heading">
+                » Growth
+              <p class="brxe-text-basic hero-victor__feature-description">
+                » Empowering businesses to grow through better organization, financial health and strategic operations.
+      <section id="brxe-yvqwhj" class="brxe-section k-blockquote">
+        <div id="brxe-vgzjmv" class="brxe-container k-blockquote__container">
+          <blockquote id="brxe-rxtjiu" class="brxe-text-basic k-blockquote__text">
+            » My aim is to ensure that all elements - from logistics to customer interaction - are in perfect harmony.
+      <section class="brxe-section fr-feature-section-foxtrot">
+        <div class="brxe-container fr-content-gap k-intro-alpha">
+          <h2 id="brxe-5129ff" class="brxe-heading k-intro-alpha__heading">
+            » Customized solutions
+          <p class="brxe-text-basic k-accent-heading">
+            » Your success is my goal
+          <p class="brxe-text-basic fr-lede k-intro-alpha__lede">
+            » I provide individualized advice and tailor-made strategies to achieve the best possible results for your company and to solve your challenges.
+        <ul class="brxe-container fr-feature-grid-foxtrot">
+          <li class="brxe-block hero-victor__feature">
+            <h2 class="brxe-heading hero-victor__feature-heading">
+              » Real Estate
+              » &
+              » Property Management
+            <div class="brxe-div fr-process-card-charlie__body">
+              <ul id="brxe-ujbtla" class="brxe-div">
+                <li class="brxe-div">
+                  <p class="brxe-text-basic fr-process-card-charlie__text">
+                    » Tenant and customer relations
+                <li class="brxe-div">
+                  <p class="brxe-text-basic fr-process-card-charlie__text">
+                    » Coordination of maintenance
+                <li class="brxe-div">
+                  <p class="brxe-text-basic fr-process-card-charlie__text">
+                    » Operating costs
+          <li class="brxe-block hero-victor__feature">
+            <h2 class="brxe-heading hero-victor__feature-heading">
+              » SMEs
+            <div class="brxe-div fr-process-card-charlie__body">
+              <ul id="brxe-eaoida" class="brxe-div">
+                <li class="brxe-div">
+                  <p class="brxe-text-basic fr-process-card-charlie__text">
+                    » Management of resources
+                <li class="brxe-div">
+                  <p class="brxe-text-basic fr-process-card-charlie__text">
+                    » Cost control
+                <li class="brxe-div">
+                  <p class="brxe-text-basic fr-process-card-charlie__text">
+                    » Challenges of scaling
+                <li class="brxe-div">
+                  <p class="brxe-text-basic fr-process-card-charlie__text">
+                    » Technology integration
+          <li class="brxe-block hero-victor__feature">
+            <h2 class="brxe-heading hero-victor__feature-heading">
+              » Consulting Firms
+            <div class="brxe-div fr-process-card-charlie__body">
+              <ul id="brxe-qkfedh" class="brxe-div">
+                <li class="brxe-div">
+                  <p class="brxe-text-basic fr-process-card-charlie__text">
+                    » Clients Project management
+                <li class="brxe-div">
+                  <p class="brxe-text-basic fr-process-card-charlie__text">
+                    » Expertise Diversification
+                <li class="brxe-div">
+                  <p class="brxe-text-basic fr-process-card-charlie__text">
+                    » Operational capability
+                <li class="brxe-div">
+                  <p class="brxe-text-basic fr-process-card-charlie__text">
+                    » Market adaptation
+          <li class="brxe-block hero-victor__feature">
+            <h2 class="brxe-heading hero-victor__feature-heading">
+              » Start-ups
+            <div class="brxe-div fr-process-card-charlie__body">
+              <ul id="brxe-bamaqn" class="brxe-div">
+                <li class="brxe-div">
+                  <p class="brxe-text-basic fr-process-card-charlie__text">
+                    » High-speed scaling
+                <li class="brxe-div">
+                  <p class="brxe-text-basic fr-process-card-charlie__text">
+                    » Brand and market positioning
+                <li class="brxe-div">
+                  <p class="brxe-text-basic fr-process-card-charlie__text">
+                    » Cash flow management
+                <li class="brxe-div">
+                  <p class="brxe-text-basic fr-process-card-charlie__text">
+                    » Expertise gaps
+          <li id="brxe-ysiqbj" class="brxe-block hero-victor__feature col-span--2 col-span--m-1">
+            <a id="brxe-ogykyt" class="brxe-button btn--primary fr-icon-button-alpha bricks-button bricks-background-primary" href="https://www.jmc-streamline.com/en/services/">
+              » Services
+      <section class="brxe-section fr-article-section-foxtrot">
+        <div class="brxe-container fr-intro-bravo">
+          <div class="brxe-text-basic fr-accent-heading">
+            » Blog
+          <h2 class="brxe-heading">
+            » So glad you found jmc's blog! Here I would like to share my thoughts and experiences that inspire me on my personal journey
+        <ul class="brxe-container fr-article-grid-foxtrot">
+          <li class="brxe-onuvtj brxe-div fr-article-card-foxtrot">
+            <div class="brxe-iifull brxe-div fr-article-card-foxtrot__body">
+              <h3 class="brxe-ehshew brxe-heading fr-article-card-foxtrot__title clickable-parent">
+                <a href="https://www.jmc-streamline.com/en/standing-still-is-not-an-option/">
+                  » Standing still is not an option
+              <p class="brxe-qgmakd brxe-text-basic fr-article-card-foxtrot__lede">
+                » Mallorca taught me the importance of
+              <time class="brxe-faddck brxe-text-basic fr-article-card-foxtrot__date">
+                » 03.11.2025
+            <div class="brxe-ywbdxp brxe-div fr-article-card-delta__image-wrapper">
+              <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='600'%20height='400'%20viewBox='0%200%20600%20400'%3E%3C/svg%3E" class="brxe-tpynwz brxe-image fr-article-card-delta__image css-filter size-large perfmatters-lazy" alt="Stillstand Ist Keine Option">
+          <li class="brxe-onuvtj brxe-div fr-article-card-foxtrot">
+            <div class="brxe-iifull brxe-div fr-article-card-foxtrot__body">
+              <h3 class="brxe-ehshew brxe-heading fr-article-card-foxtrot__title clickable-parent">
+                <a href="https://www.jmc-streamline.com/en/why-leadership-and-sports-are-the-ultimate-power-duo/">
+                  » Why Leadership and Sports are the Ultimate Power Duo
+              <p class="brxe-qgmakd brxe-text-basic fr-article-card-foxtrot__lede">
+                » Leading with energy and clarity doesn’t
+              <time class="brxe-faddck brxe-text-basic fr-article-card-foxtrot__date">
+                » 24.03.2025
+            <div class="brxe-ywbdxp brxe-div fr-article-card-delta__image-wrapper">
+              <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='600'%20height='400'%20viewBox='0%200%20600%20400'%3E%3C/svg%3E" class="brxe-tpynwz brxe-image fr-article-card-delta__image css-filter size-large perfmatters-lazy" alt="Why Leadership Sport Ultimative Power Duo">
+          <li class="brxe-onuvtj brxe-div fr-article-card-foxtrot">
+            <div class="brxe-iifull brxe-div fr-article-card-foxtrot__body">
+              <h3 class="brxe-ehshew brxe-heading fr-article-card-foxtrot__title clickable-parent">
+                <a href="https://www.jmc-streamline.com/en/efficient-business-processes-for-expats-5-smart-strategies-for-international-work/">
+                  » Efficient Business Processes for Expats! 5 Smart Strategies for International
+              <p class="brxe-qgmakd brxe-text-basic fr-article-card-foxtrot__lede">
+                » How can you design your processes
+              <time class="brxe-faddck brxe-text-basic fr-article-card-foxtrot__date">
+                » 07.03.2025
+            <div class="brxe-ywbdxp brxe-div fr-article-card-delta__image-wrapper">
+              <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='600'%20height='400'%20viewBox='0%200%20600%20400'%3E%3C/svg%3E" class="brxe-tpynwz brxe-image fr-article-card-delta__image css-filter size-large perfmatters-lazy" alt="5 Smarte Strategien Fuer Den Internationalen Arbeitsalltag">
+          <li class="brx-query-trail">
+        <script>
+          » // Access settings in Bricks > Settings > Builder Access // Allow Code Execution for Administrator role // Execute the code below in this field // Note: Only one Accessibility Code is needed for each card type. // If you have imported more than one Article Section Foxtrot, remove any extra accessibility code. // First, select all the card elements on the page const deltaCards = document.querySelectorAll('.fr-article-card-foxtrot'); // Check if hover is supported on the user's device const isHoverSupported = window.matchMedia("(hover: hover)").matches; // Add event listeners or directly set styles based on device capabilities deltaCards.forEach(card => { // Find specific elements inside each card const link = card.querySelector('.fr-article-card-foxtrot__title a'); const bodyCard = card.querySelector('.fr-article-card-foxtrot__body'); // If hover is supported, add focus and blur event listeners if (isHoverSupported) { link.addEventListener('focus', () => { // When the link is focused, make the body visible bodyCard.classList.add('fr-article-card-foxtrot--visible'); }); link.addEventListener('blur', () => { // When focus is lost, hide the body again bodyCard.classList.remove('fr-article-card-foxtrot--visible'); }); } else { // If hover is not supported, always keep the body visible bodyCard.classList.add('fr-article-card-foxtrot--visible'); } });
+      <section class="brxe-section k-cta-alpha">
+        <div id="brxe-c940f4" class="brxe-container brx-grid k-cta-alpha__inner">
+          <div class="brxe-block">
+            <figure id="brxe-mtfurx" class="brxe-image feature-39-card__image tag">
+              <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='600'%20height='600'%20viewBox='0%200%20600%20600'%3E%3C/svg%3E" class="css-filter size-full perfmatters-lazy" alt="Contact Telephone Talk">
+          <div id="brxe-qarfux" class="brxe-block">
+            <div class="brxe-container fr-content-gap k-intro-alpha">
+              <h2 id="brxe-hwgdrp" class="brxe-heading k-intro-alpha__heading">
+                » Your success is just a click away!
+              <p class="brxe-text-basic k-accent-heading">
+                » Success Awaits!
+              <p class="brxe-text-basic fr-lede k-intro-alpha__lede">
+                » Don't hesitate - get started today with a targeted efficiency boost for your success.
+              <div class="brxe-div k-cta-alpha__buttons">
+                <span class="brxe-button btn--primary link--neutral-ultra-light bricks-button">
+                  <a title="Rufen Sie uns gerne für weitere Fragen an" href="tel:+34699313750">
+                    » +34 699 313750
+                <span class="brxe-button btn--primary btn--outline bricks-button">
+                  <a title="Nehmen Sie gern Kontakt zu uns auf" href="mailto:contact@jmc-streamline.com">
+                    » contact@jmc-streamline.com
+    <footer id="brx-footer">
