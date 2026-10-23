@@ -288,7 +288,7 @@ reproduzierbaren Prüfskripte sind `research/qa/check-links.mjs` und
   Fehler/Warnungen/Hinweise, Build und SEO-Abgleich erfolgreich. Keine Mail
   bei diesen Prüfungen abgesendet.
 
-## 12. Veröffentlichung auf Linevast vorbereitet
+## 12. Veröffentlichung auf Linevast
 
 - Quellcode auf GitHub unter `kreativdeck/jmc-streamline`, Branch `main`.
 - Explizites FTPS mit Zertifikatsprüfung und verschlüsseltem Datenkanal geprüft.
@@ -306,7 +306,17 @@ reproduzierbaren Prüfskripte sind `research/qa/check-links.mjs` und
 - Astro-Prüfung: keine Fehler, Warnungen oder Hinweise. 33 HTML-Seiten gebaut;
   543 interne Links, 270 Dateiverweise und 32 Sprachpaare geprüft. SEO-Abgleich
   aller 32 Sprachseiten einschließlich Schema ohne Abweichungen bestanden.
-- **Noch offen:** In `public_html` waren beim Sicherungsversuch keine
-  WordPress-Dateien mehr sichtbar. Datenbankexport daher nicht möglich;
-  Speicherort bzw. vorhandenes Backup mit dem Nutzer klären. Produktionsrelease
-  liegt separat bereit und ist noch nicht auf die Hauptdomain umgeschaltet.
+- Nutzer übernimmt ausdrücklich die WordPress-Sicherung. Es wurde kein eigener
+  WordPress-Datenbankexport durchgeführt. Die fehlenden WordPress-Dateien
+  blockieren die Veröffentlichung daher nicht mehr.
+- Produktionsrelease am 23.10.2026 direkt als `public_html` aktiviert.
+  Vorheriger Inhalt (Vorschauordner) liegt außerhalb des öffentlichen Webroots.
+  Temporärer Prüfendpunkt und dessen Schlüssel entfernt.
+- 99 Release-Dateien vor dem Wechsel per FTPS auf Größe geprüft. Anschließend
+  97 öffentliche Dateien auf der Hauptdomain geprüft, ohne Fehler. HTML, CSS,
+  Sitemap und robots.txt stimmen per SHA-256 mit dem Release überein.
+  Deutsche und englische Seiten über www und die auf www weiterleitende Domain
+  erreichbar. Produktions-API liefert wie erwartet 405/403/400 bei GET,
+  fremdem Origin bzw. ungültigen Nutzdaten.
+- **Noch offen:** echter Zustellungstest von Admin-Mail und Autoresponder;
+  bei den technischen Prüfungen wurden keine echten Nachrichten versendet.

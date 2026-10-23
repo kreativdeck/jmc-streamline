@@ -51,8 +51,9 @@ Zustellgarantie. Es gibt keine Warteschlange oder Speicherung der Anfrage.
 
 Auf Linevast am 23.10.2026 geprüft: PHP 8.2.34, sieben Tests mit simuliertem
 Versand, erfolgreiche SMTP-Anmeldung mit aktiver Zertifikatsprüfung.
-Es wurden dabei keine echten Nachrichten versendet. Tatsächliche Zustellung
-und die endgültige Route auf der Hauptdomain bleiben bis zum Umschalten offen.
+Es wurden dabei keine echten Nachrichten versendet. Die endgültige Route
+`https://www.jmc-streamline.com/api/contact` ist aktiv und geprüft. Ein echter
+Zustellungstest von Admin-Mail und Bestätigung steht noch aus.
 Siehe [Deployment-Anleitung](../deployment/README.md).
 
 ## Alternativ: Node.js auf einem eigenen Server

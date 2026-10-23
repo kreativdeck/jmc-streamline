@@ -126,12 +126,16 @@ def backup():
     print(json.dumps(result))
 
 def promote():
-    if not state.get('database_backup'): raise RuntimeError('Verified database backup required')
+    if not state.get('database_backup') and not state.get('backup_managed_by_user'):
+        raise RuntimeError('Verified backup or explicit user-managed backup required')
     if not (PRIVATE / 'release-manifest.json').exists(): raise RuntimeError('Release required')
+    if state.get('promoted'): raise RuntimeError('Release already promoted')
     ftp = connect()
     # Remove the temporary operations endpoint before archiving WordPress.
-    ftp.delete('/public_html/' + state['operations'])
-    ftp.delete('/.jmc-private/operations.key')
+    for path in ['/public_html/' + state['operations'], '/.jmc-private/operations.key']:
+        try: ftp.delete(path)
+        except ftplib.error_perm as error:
+            if not str(error).startswith('550'): raise
     ftp.rename('/public_html', '/' + state['backup'])
     try: ftp.rename('/' + state['release'], '/public_html')
     except Exception:
@@ -140,7 +144,7 @@ def promote():
     ftp.quit()
     state['promoted'] = True
     STATE.write_text(json.dumps(state, indent=2))
-    print('New release active; WordPress files and database backup preserved outside public_html.')
+    print('New release active; previous public_html preserved outside the web root.')
 
 def cleanup():
     ftp = connect()

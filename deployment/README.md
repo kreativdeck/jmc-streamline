@@ -37,7 +37,9 @@ Das letzte Argument ist die jeweilige Aktion:
 4. `backup`: vorhandene WordPress-Datenbank serverseitig exportieren, privat
    herunterladen und SHA-256 vergleichen. Benötigt eine vorhandene Installation
    einschließlich `wp-load.php` und `wp-config.php`.
-5. `promote`: erst nach geprüftem Backup ausführen. Temporären Prüfendpunkt
+5. `promote`: nach geprüftem Backup oder ausdrücklicher Übernahme der Sicherung
+   durch den Nutzer (`backup_managed_by_user` im privaten Deployment-Zustand).
+   Temporären Prüfendpunkt
    entfernen, bisheriges `public_html` privat archivieren, Release umbenennen.
    Bei einem Fehler beim Umbenennen wird das ursprüngliche Verzeichnis wiederhergestellt.
 
@@ -45,7 +47,14 @@ Die Aktionen ersetzen keine abschließende Browser- und HTTP-Prüfung. Vor dem
 Umschalten alle Seiten, Assets, Sprachwechsel und Formularroute kontrollieren.
 Ein Datenbankexport ist keine vollständige Sicherung von WordPress; die alten
 Dateien müssen ebenfalls erhalten bleiben. Wurden sie bereits entfernt, erst
-die vorhandene Sicherung klären. Das Skript umgeht diese Voraussetzung nicht.
+   die Zuständigkeit für die Sicherung klären. Eine vom Nutzer übernommene
+   Sicherung wird nicht als vom Skript durchgeführtes Backup ausgegeben.
+
+Am 23.10.2026 auf ausdrückliche Nutzeranweisung veröffentlicht; die Sicherung
+der alten WordPress-Installation übernimmt der Nutzer. Die neue Version liegt
+direkt in `public_html`, der frühere Vorschauordner außerhalb des Webroots.
+97 öffentliche Dateien auf der Hauptdomain erfolgreich geprüft, einschließlich
+Übereinstimmung der HTML-, CSS-, Sitemap- und robots.txt-Inhalte mit dem Release.
 
 ## Rückkehr zur vorherigen Version
 
