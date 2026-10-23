@@ -1,10 +1,11 @@
 Options -Indexes
 DirectoryIndex index.html
 
-# Sitemaps: browsers (Accept contains text/html) get the readable static HTML
-# twin of the XML file, without redirect, so the URL stays *.xml and no browser
-# XSLT is needed. Crawlers and other clients (Accept: application/xml or */*)
-# keep receiving the plain standards-compliant XML. Vary tells caches that the
+# Sitemaps (@astrojs/sitemap: sitemap-index.xml and sitemap-0.xml, ...):
+# browsers (Accept contains text/html) get the readable static HTML twin of the
+# XML file, without redirect, so the URL stays *.xml and no browser XSLT is
+# needed. Crawlers and other clients (Accept: application/xml or */*) keep
+# receiving the plain standards-compliant XML. Vary tells caches that the
 # response depends on Accept.
 #
 # The HTML twins get their Content-Type forced explicitly. LiteSpeed otherwise
@@ -12,23 +13,27 @@ DirectoryIndex index.html
 # body as application/xml. no-cache makes browsers and proxies revalidate, so
 # older responses with a wrong type or view are not reused.
 <IfModule mod_mime.c>
-  <FilesMatch "^sitemap(-post-type-page|-post-type-post|-taxonomy-category)?\.html$">
+  <FilesMatch "^sitemap-(index|[0-9]+)\.html$">
     ForceType text/html
   </FilesMatch>
 </IfModule>
 
 <IfModule mod_headers.c>
-  <FilesMatch "^sitemap(-post-type-page|-post-type-post|-taxonomy-category)?\.(xml|html)$">
+  <FilesMatch "^sitemap-(index|[0-9]+)\.(xml|html)$">
     Header append Vary Accept
     Header set Cache-Control "no-cache"
   </FilesMatch>
-  <FilesMatch "^sitemap(-post-type-page|-post-type-post|-taxonomy-category)?\.html$">
+  <FilesMatch "^sitemap-(index|[0-9]+)\.html$">
     Header always set Content-Type "text/html; charset=utf-8"
   </FilesMatch>
 </IfModule>
 
 RewriteEngine On
+
+# The former entry point /sitemap.xml now points to the sitemap index.
+RewriteRule ^sitemap\.xml$ /sitemap-index.xml [R=301,L]
+
 RewriteCond %{HTTP:Accept} text/html [NC]
-RewriteRule ^(sitemap|sitemap-post-type-page|sitemap-post-type-post|sitemap-taxonomy-category)\.xml$ $1.html [L]
+RewriteRule ^(sitemap-(?:index|[0-9]+))\.xml$ $1.html [L]
 
 RewriteRule ^api/contact/?$ api/contact.php [L]

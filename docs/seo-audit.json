@@ -15,10 +15,12 @@
     "schema_BlogPosting": 12,
     "schema_ContactPage": 2,
     "schema_AboutPage": 2,
-    "sitemap_children": 3,
+    "sitemap_children": 1,
     "sitemap_urls": 32,
-    "sitemap_html_views": 4,
-    "sitemap_html_rows": 35
+    "sitemap_html_views": 2,
+    "sitemap_html_rows": 33,
+    "sitemap_urls_de": 16,
+    "sitemap_urls_en": 16
   },
   "problems": []
 }

@@ -68,16 +68,20 @@ Eine vollständige Abdeckung und die durchgeführten Prüfungen stehen in
   `data-*`-Attribute und ARIA-Zustände.
 - `frontend/src/data/generated/seo.json` und `schema.json`: originale
   SEO-/Social-Metadaten und strukturierte Daten je Sprachseite.
-- `frontend/src/pages/sitemap*.xml.ts`, `sitemap*.html.ts`, `sitemap.xsl.ts`,
-  `frontend/src/data/sitemaps.ts` und `robots.txt.ts`: beim statischen Build
-  erzeugter Sitemap-Index mit drei Untersitemaps (zusammen alle 32 Sprachseiten)
-  und robots.txt. Zu jeder der vier XML-Dateien entsteht eine HTML-Zwillings-
-  ansicht (`sitemap*.html`, `noindex`) mit gleichem Inhalt und Aussehen; die
+- `frontend/astro.config.mjs` und `frontend/src/pages/robots.txt.ts`: Sitemap mit
+  der offiziellen Astro-Integration `@astrojs/sitemap` (Standardnamen
+  `sitemap-index.xml` und `sitemap-0.xml`, `site` ist die Produktionsdomain). Die
+  Konfiguration lässt nur die 32 Sprachseiten aus `routes.ts` zu (Weiterleitung
+  `/` bleibt draußen) und setzt die hreflang-Paare mit den unterschiedlichen
+  DE/EN-Slugs per `serialize`. Es gibt keinen eigenen XML-Generator.
+- `frontend/integrations/sitemap-html-views.mjs`: Build-Schritt nach der Sitemap-
+  Integration. Er erzeugt aus den tatsächlich geschriebenen XML-Dateien je eine
+  HTML-Ansicht (`sitemap-index.html`, `sitemap-0.html`, `noindex`) mit der
+  Überschrift „XML Sitemap“ und einer schlichten Tabelle, ohne XSLT. Die
   `.htaccess` in `backend/php/public/` liefert sie per Content Negotiation
-  (`Accept: text/html`, ohne Redirect, `Vary: Accept`) an Browser aus, alle
-  anderen Clients erhalten weiter das XML. `sitemap.xsl` bleibt als Fallback
-  für den direkten XML-Aufruf, nutzt dasselbe CSS und wird ebenfalls aus
-  `sitemaps.ts` erzeugt.
+  (`Accept: text/html`, ohne Redirect, `Vary: Accept`) an Browser aus; alle
+  anderen Clients erhalten das unveränderte XML. `/sitemap.xml` leitet per 301
+  auf `/sitemap-index.xml`.
 - `frontend/public/media`, `frontend/public/fonts`, `frontend/public/videos`:
   lokale Bilder, Logos, Schriften und Videos (aus `02_Assets` bzw. der Originalseite).
 - `research/`: Recherche-Material (Original-HTML/CSS, Inventar, QA-Skripte).

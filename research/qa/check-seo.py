@@ -95,67 +95,98 @@ def media_urls(value):
         yield value
 
 
-SITEMAP_CHILDREN = {
-    "sitemap-post-type-page.xml": 14,
-    "sitemap-post-type-post.xml": 12,
-    "sitemap-taxonomy-category.xml": 6,
-}
+SITEMAP_NS = "{http://www.sitemaps.org/schemas/sitemap/0.9}"
+SITEMAP_INDEX = "sitemap-index.xml"
+# Files of the former hand-written sitemaps; they must no longer be built.
+LEGACY_SITEMAP_FILES = [
+    "sitemap.xml", "sitemap.html", "sitemap.xsl",
+    "sitemap-post-type-page.xml", "sitemap-post-type-page.html",
+    "sitemap-post-type-post.xml", "sitemap-post-type-post.html",
+    "sitemap-taxonomy-category.xml", "sitemap-taxonomy-category.html",
+]
 
 
 def check_sitemaps(originals, counts, problems):
-    """sitemap.xml is an index of three child sitemaps that together list every language route once."""
+    """@astrojs/sitemap output: an index with one child that lists every language route once, with hreflang pairs."""
     dist = FRONTEND / "dist"
-    index_path = dist / "sitemap.xml"
+    for name in LEGACY_SITEMAP_FILES:
+        if (dist / name).exists():
+            problems.append(f"{name}: legacy sitemap file still built")
+    index_path = dist / SITEMAP_INDEX
     if not index_path.exists():
-        problems.append("sitemap.xml missing")
+        problems.append(f"{SITEMAP_INDEX} missing")
         return
-    index = ET.fromstring(index_path.read_text())
-    if index.tag != "{http://www.sitemaps.org/schemas/sitemap/0.9}sitemapindex":
-        problems.append("sitemap.xml: not a sitemapindex")
+    index_text = index_path.read_text()
+    index = ET.fromstring(index_text)
+    if index.tag != SITEMAP_NS + "sitemapindex":
+        problems.append(f"{SITEMAP_INDEX}: not a sitemapindex")
         return
     children = [node.text for node in index.findall("{*}sitemap/{*}loc")]
-    if children != [f"{ORIGIN}/{name}" for name in SITEMAP_CHILDREN]:
-        problems.append(f"sitemap.xml: unexpected child sitemaps {children!r}")
+    if children != [f"{ORIGIN}/sitemap-0.xml"]:
+        problems.append(f"{SITEMAP_INDEX}: unexpected child sitemaps {children!r}")
     counts["sitemap_children"] = len(children)
+    present = sorted(path.name for path in dist.glob("sitemap*.xml"))
+    if present != ["sitemap-0.xml", SITEMAP_INDEX]:
+        problems.append(f"unexpected sitemap files in dist: {present!r}")
+
     urls = []
-    for name, expected in SITEMAP_CHILDREN.items():
+    entries_by_loc = {}
+    for child in children:
+        name = child.rsplit("/", 1)[-1]
         path = dist / name
         if not path.exists():
             problems.append(f"{name} missing")
             continue
         text = path.read_text()
-        if '<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>' not in text:
-            problems.append(f"{name}: stylesheet instruction missing")
-        child = ET.fromstring(text)
-        entries = child.findall("{*}url")
-        if len(entries) != expected:
-            problems.append(f"{name}: {len(entries)} URLs, expected {expected}")
-        for entry in entries:
-            loc = entry.findtext("{*}loc")
-            alternates = {link.get("hreflang"): link.get("href") for link in entry.findall("{*}link")}
-            if loc not in alternates.values() or set(alternates) != {"de", "en"}:
-                problems.append(f"{name}: hreflang alternates incomplete for {loc}")
+        if "xml-stylesheet" in text:
+            problems.append(f"{name}: must not reference a stylesheet")
+        for entry in ET.fromstring(text).findall(SITEMAP_NS + "url"):
+            loc = entry.findtext(SITEMAP_NS + "loc")
+            alternates = {link.get("hreflang"): link.get("href") for link in entry.findall("{*}link")
+                          if link.get("rel") == "alternate"}
             urls.append(loc)
-    if len(urls) != len(set(urls)) or set(urls) != {ORIGIN + route for route in originals}:
-        problems.append("sitemap.xml: language routes differ")
+            entries_by_loc[loc] = alternates
     counts["sitemap_urls"] = len(set(urls))
-    if not (dist / "sitemap.xsl").exists():
-        problems.append("sitemap.xsl missing")
-    check_sitemap_html(dist, children, problems, counts)
+    expected = {ORIGIN + route for route in originals}
+    if len(urls) != len(set(urls)) or set(urls) != expected:
+        problems.append(f"sitemap: language routes differ (extra {sorted(set(urls) - expected)!r}, "
+                        f"missing {sorted(expected - set(urls))!r})")
+    for lang in ("de", "en"):
+        counts[f"sitemap_urls_{lang}"] = sum(1 for url in set(urls) if url.startswith(f"{ORIGIN}/{lang}/"))
+    for loc, alternates in entries_by_loc.items():
+        own = loc.split("/")[3]
+        partner_lang = "en" if own == "de" else "de"
+        if set(alternates) != {"de", "en"} or alternates.get(own) != loc:
+            problems.append(f"sitemap: hreflang self/partner alternates incomplete for {loc}")
+            continue
+        partner = alternates[partner_lang]
+        if not partner.startswith(f"{ORIGIN}/{partner_lang}/") or partner not in entries_by_loc:
+            problems.append(f"sitemap: {loc} points to unknown {partner_lang} alternate {partner}")
+        elif entries_by_loc[partner].get(own) != loc:
+            problems.append(f"sitemap: hreflang pair {loc} <-> {partner} is not reciprocal")
+        route = urlparse(loc).path
+        if not (dist / route.lstrip("/") / "index.html").exists():
+            problems.append(f"sitemap: {loc} has no built page")
+    check_sitemap_html(dist, [SITEMAP_INDEX, "sitemap-0.xml"], problems, counts)
 
 
-def check_sitemap_html(dist, children, problems, counts):
-    """Each XML sitemap has a static HTML twin for browsers (no XSLT): same rows, noindex, clickable links."""
+def check_sitemap_html(dist, xml_files, problems, counts):
+    """Each XML sitemap has a static HTML twin for browsers (no XSLT) that mirrors the generated XML."""
     htaccess = (ROOT / "backend/php/public/.htaccess").read_text()
-    if "text/html" not in htaccess or "Vary Accept" not in htaccess:
-        problems.append(".htaccess: sitemap content negotiation (Accept text/html, Vary Accept) missing")
-    views = {"sitemap.html": len(SITEMAP_CHILDREN), **{n.replace(".xml", ".html"): c for n, c in SITEMAP_CHILDREN.items()}}
-    xml_urls = {}
-    for name in ["sitemap.xml", *SITEMAP_CHILDREN]:
-        root = ET.fromstring((dist / name).read_text())
-        xml_urls[name.replace(".xml", ".html")] = [node.text for node in root.findall("{*}*/{*}loc")]
+    for needle, label in (
+        ("Header append Vary Accept", "Vary: Accept"),
+        ("ForceType text/html", "ForceType text/html"),
+        ('Header always set Content-Type "text/html; charset=utf-8"', "forced HTML Content-Type"),
+        ("^sitemap\\.xml$ /sitemap-index.xml [R=301,L]", "301 from /sitemap.xml to the index"),
+        ("RewriteRule ^api/contact/?$ api/contact.php [L]", "contact rewrite"),
+    ):
+        if needle not in htaccess:
+            problems.append(f".htaccess: {label} missing")
+    if not re.search(r"RewriteCond %\{HTTP:Accept\} text/html", htaccess):
+        problems.append(".htaccess: Accept text/html rewrite missing")
     rows_total = 0
-    for name, expected in views.items():
+    for xml_name in xml_files:
+        name = xml_name.replace(".xml", ".html")
         path = dist / name
         if not path.exists():
             problems.append(f"{name} missing")
@@ -165,15 +196,19 @@ def check_sitemap_html(dist, children, problems, counts):
             problems.append(f"{name}: must not rely on XSLT")
         if '<meta name="robots" content="noindex, follow">' not in text:
             problems.append(f"{name}: noindex missing")
+        if "<h1>XML Sitemap</h1>" not in text:
+            problems.append(f"{name}: heading missing")
+        xml_root = ET.fromstring((dist / xml_name).read_text())
+        xml_locs = [node.text for node in xml_root.findall("{*}*/{*}loc")]
         links = re.findall(r'<tr><td><a href="([^"]+)">([^<]+)</a></td></tr>', text)
-        if len(links) != expected or [text_ for _, text_ in links] != xml_urls[name]:
-            problems.append(f"{name}: rows differ from the XML sitemap")
+        if [label for _, label in links] != xml_locs:
+            problems.append(f"{name}: rows differ from {xml_name}")
         if any(ORIGIN + href != label for href, label in links):
             problems.append(f"{name}: link target differs from label")
-        if (name == "sitemap.html") != ("/sitemap.xml" not in text):
-            problems.append(f"{name}: index link back/forward wrong")
+        if (xml_name == SITEMAP_INDEX) != ("/" + SITEMAP_INDEX not in text):
+            problems.append(f"{name}: link back to the index wrong")
         rows_total += len(links)
-    counts["sitemap_html_views"] = len(views)
+    counts["sitemap_html_views"] = len(xml_files)
     counts["sitemap_html_rows"] = rows_total
 
 
@@ -240,7 +275,7 @@ def main():
             problems.append(f"{route}: canonical/hreflang differ")
     check_sitemaps(originals, counts, problems)
     robots_path = FRONTEND / "dist/robots.txt"
-    if not robots_path.exists() or f"Sitemap: {ORIGIN}/sitemap.xml" not in robots_path.read_text():
+    if not robots_path.exists() or f"Sitemap: {ORIGIN}/{SITEMAP_INDEX}" not in robots_path.read_text():
         problems.append("robots.txt missing or sitemap not declared")
     print(json.dumps({"counts": counts, "problems": problems}, ensure_ascii=False, indent=2))
     sys.exit(bool(problems))

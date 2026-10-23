@@ -106,8 +106,8 @@ reproduzierbaren Prüfskripte sind `research/qa/check-links.mjs` und
    im Nachbau sind die dort angezeigten Minuten je Beitrag fest hinterlegt.
 6. **Nicht geprüft:** Barrierefreiheits-Audit und Performance-Messung (nicht Teil
    des Auftrags „originalgetreu“). Titel, Beschreibungen und hreflang-Angaben der
-   Seiten sind aus dem Original übernommen. `sitemap.xml` und `robots.txt`
-   werden inzwischen statisch erzeugt; Details siehe Abschnitt 7.
+   Seiten sind aus dem Original übernommen. Sitemap und `robots.txt`
+   werden inzwischen beim Build erzeugt; Details siehe Abschnitt 16.
 7. Die Social-Links auf beiden Kontaktseiten wurden auf Kundenwunsch vom
    ursprünglichen Platzhalter `#` auf die Instagram- und Facebook-Profile aus
    der zentralen Footer-Konfiguration korrigiert. Sie öffnen ein neues Tab.
@@ -170,7 +170,7 @@ reproduzierbaren Prüfskripte sind `research/qa/check-links.mjs` und
 - Schema- und Metadaten-Bilder wurden auf lokale Existenz geprüft. JSON ist
   syntaktisch gültig. Dies ist ein Quell-/Buildabgleich, kein Nachweis einer
   Freigabe durch Google oder eines externen Rich-Results-Tests.
-- `/sitemap.xml` (Index, siehe Abschnitt 14) verweist auf Untersitemaps mit allen
+- `/sitemap-index.xml` (Index, siehe Abschnitt 16) verweist auf `sitemap-0.xml` mit allen
   32 Sprachseiten und ihren Sprachpartnern, keine Newsletter-Seiten. `/robots.txt` erlaubt Crawling und nennt diese Sitemap.
   Die Domain bleibt wie im Original `https://www.jmc-streamline.com`.
 - Reproduzierbar vom Projektstamm: `python3 research/qa/check-seo.py`.
@@ -334,7 +334,11 @@ reproduzierbaren Prüfskripte sind `research/qa/check-links.mjs` und
   geprüft: weißes X, über dem Overlay anklickbar, Klick und Escape schließen.
   Auch nach Scrollen bleibt das geöffnete X weiß und sichtbar.
 
-## 14. Sitemap-Index mit lesbarer Browseransicht
+## 14. Sitemap-Index mit lesbarer Browseransicht (überholt durch Abschnitt 16)
+
+> Historisch: Dieser Stand mit drei WordPress-ähnlichen Untersitemaps und eigenem
+> XML-Generator wurde durch Abschnitt 16 ersetzt. Die genannten Dateien und Pfade
+> existieren nicht mehr.
 
 - `/sitemap.xml` ist jetzt ein `sitemapindex` mit drei Untersitemaps:
   `/sitemap-post-type-page.xml` (beide Startseiten und feste Seiten, 14 URLs),
@@ -398,3 +402,52 @@ reproduzierbaren Prüfskripte sind `research/qa/check-links.mjs` und
 - Build geprüft: alle 33 Website-HTML-Dateien enthalten genau einen solchen
   Head-Kommentar und keinen sichtbaren Signaturtext. Alle übrigen HTML-Inhalte
   sind gegenüber dem vorherigen Live-Stand unverändert. Veröffentlicht.
+
+## 16. Sitemap mit der offiziellen Astro-Integration
+
+- Vorgabe des Auftraggebers: Sitemap so, wie Astro sie original erzeugt, nur mit
+  Überschrift. `@astrojs/sitemap` 3.7.4 (aktuelle Version, passend zu Astro 7.4.1)
+  schreibt beim Build `sitemap-index.xml` und `sitemap-0.xml`; `site` in
+  `frontend/astro.config.mjs` ist `https://www.jmc-streamline.com`. Kein eigener
+  XML-Generator, keine Gruppierung nach WordPress-Typen mehr.
+- `filter` lässt nur die 32 kanonischen Sprachseiten (16 DE, 16 EN) aus dem
+  Routeninventar zu; die Weiterleitung `/` erscheint nicht. `serialize` ergänzt
+  je URL die hreflang-Alternativen DE/EN inklusive Selbstverweis aus
+  `translations`, weil das i18n-Matching der Integration unterschiedliche Slugs
+  nicht paaren kann. `robots.txt` nennt `sitemap-index.xml`.
+- Lesbare Ansicht: `frontend/integrations/sitemap-html-views.mjs` erzeugt nach der
+  Sitemap-Integration aus den tatsächlich geschriebenen XML-Dateien
+  `sitemap-index.html` und `sitemap-0.html` (Überschrift „XML Sitemap“, schlichte
+  Tabelle, `noindex, follow`, kein XSLT, kein roter Warnbalken). Es gibt keine
+  zweite URL-Liste. `.htaccess`: Accept `text/html` rewritet intern auf die
+  HTML-Datei, sonst XML; `ForceType text/html` und der erzwungene
+  `Content-Type`-Header für die HTML-Dateien (LiteSpeed), `Vary: Accept`,
+  `no-cache` und die `/api/contact`-Regel bleiben. `/sitemap.xml` leitet per 301 auf
+  `/sitemap-index.xml`.
+- Entfernt: `frontend/src/data/sitemaps.ts`, `frontend/src/pages/sitemap.xml.ts`,
+  `sitemap.html.ts`, `sitemap.xsl.ts`, `sitemap-post-type-page.{xml,html}.ts`,
+  `sitemap-post-type-post.{xml,html}.ts`, `sitemap-taxonomy-category.{xml,html}.ts`.
+  Auf dem Server wurden beim Deploy die alten Dateien `sitemap.xml`,
+  `sitemap.html`, `sitemap.xsl`, `sitemap-post-type-page.*`,
+  `sitemap-post-type-post.*` und `sitemap-taxonomy-category.*` gelöscht.
+- `research/qa/check-seo.py` prüft: Index mit einem Kind, 32 eindeutige URLs
+  (DE 16, EN 16) gleich dem Routeninventar, hreflang mit Selbstverweis und
+  gegenseitigem Partner, jede URL als gebaute Seite vorhanden, keine
+  Utility-URLs, keine Stylesheet-Verweise, keine Alt-Dateien im Build, HTML-
+  Ansichten identisch zum XML (33 Zeilen), robots.txt und `.htaccess`-Regeln.
+- Geprüft: `npm run check` (0 Fehler), `npm run build` (33 Seiten, Sitemap und
+  2 HTML-Ansichten), `python3 research/qa/check-seo.py` ohne Probleme; alle 33
+  HTML-Seiten tragen weiter genau eine Quelltextsignatur. Mit lokalem Apache
+  2.4 und der echten `.htaccess`: Browser-Accept liefert für Index und
+  `sitemap-0.xml` `text/html` mit `Vary: Accept`, `application/xml` und `*/*`
+  das XML, `/sitemap.xml` antwortet mit 301 auf `/sitemap-index.xml`, die
+  `/api/contact`-Regel greift weiter.
+- Veröffentlicht und auf Linevast/LiteSpeed geprüft: Index und Unterdatei
+  liefern bei Browser-Accept `text/html; charset=utf-8`, bei `application/xml`
+  und `*/*` das unveränderte Astro-XML, jeweils mit `Vary: Accept`.
+  `/sitemap.xml` leitet zum neuen Index weiter; die acht anderen alten Pfade
+  antworten mit 404. Beide Browseransichten sind bei 390 und 1440 px ohne
+  Überlauf oder Warnbalken lesbar; der Link vom Index zur Unterdatei funktioniert.
+  Alle 32 Live-Seiten und das Stylesheet entsprechen dem geprüften Build.
+  Hinweis wie zuvor: Ein Client mit ausdrücklichem `Accept: text/html` erhält
+  die `noindex`-Ansicht statt des XML.
