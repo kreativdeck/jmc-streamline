@@ -287,3 +287,26 @@ reproduzierbaren Prüfskripte sind `research/qa/check-links.mjs` und
   640×900 kontrolliert. Keine Inline-Stile im Modal. Astro/TypeScript ohne
   Fehler/Warnungen/Hinweise, Build und SEO-Abgleich erfolgreich. Keine Mail
   bei diesen Prüfungen abgesendet.
+
+## 12. Veröffentlichung auf Linevast vorbereitet
+
+- Quellcode auf GitHub unter `kreativdeck/jmc-streamline`, Branch `main`.
+- Explizites FTPS mit Zertifikatsprüfung und verschlüsseltem Datenkanal geprüft.
+- PHP 8.2.34 auf dem Zielhosting geprüft. Produktionsformular auf PHP mit
+  PHPMailer 7.1.1 adaptiert; kein Node-Prozess beim Webhoster erforderlich.
+- Private Anwendung und SMTP-Konfiguration liegen außerhalb von `public_html`.
+  Lokale `.env`-Dateien und `.deploy/` sind von Git ausgeschlossen.
+- Sieben PHP-Prüfungen auf Linevast mit simuliertem Versand bestanden, darunter
+  DE/EN, Eingabevalidierung, Wiederholungsschutz, Teilfehler und Limits.
+  SMTP-Anmeldung auf Linevast erfolgreich; keine echten Testmails versendet.
+- Separate Vorschau hochgeladen. 97 öffentliche Dateien per HTTP erfolgreich
+  geprüft. Formular weist GET mit 405, fremde Origins mit 403 und ungültige
+  Nutzdaten mit 400 zurück. Services-Modal im Browser geöffnet; weißes X und
+  Darstellung unterhalb des Headers geprüft.
+- Astro-Prüfung: keine Fehler, Warnungen oder Hinweise. 33 HTML-Seiten gebaut;
+  543 interne Links, 270 Dateiverweise und 32 Sprachpaare geprüft. SEO-Abgleich
+  aller 32 Sprachseiten einschließlich Schema ohne Abweichungen bestanden.
+- **Noch offen:** In `public_html` waren beim Sicherungsversuch keine
+  WordPress-Dateien mehr sichtbar. Datenbankexport daher nicht möglich;
+  Speicherort bzw. vorhandenes Backup mit dem Nutzer klären. Produktionsrelease
+  liegt separat bereit und ist noch nicht auf die Hauptdomain umgeschaltet.
