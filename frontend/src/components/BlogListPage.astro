@@ -36,10 +36,7 @@ const { variant, heading, accent, paragraphs, cards } = Astro.props;
   <Container
     as="ul"
     layout="grid"
-    class:list={[
-      'm-0 grid-rows-1 items-stretch pl-0',
-      variant === 'category' ? 'grid-cols-1 gap-0' : 'grid-cols-(--columns-cards) gap-m',
-    ]}
+    class="m-0 grid-cols-(--columns-cards) grid-rows-1 items-stretch gap-m pl-0"
   >
     {cards.map((card) => <PostCardEcho card={card} withFooter={variant === 'category'} />)}
   </Container>

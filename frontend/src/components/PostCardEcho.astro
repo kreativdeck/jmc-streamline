@@ -35,7 +35,7 @@ const { card, withFooter = false } = Astro.props;
         <span class="uppercase">{card.month}</span>
       </div>
     </div>
-    <h3 class:list={['w-4/5 pr-xl text-neutral-ultra-light', withFooter ? 'text-h2' : 'text-h4']}>
+    <h3 class="w-4/5 break-words pr-xl text-h4 text-neutral-ultra-light">
       <a
         class="text-neutral-ultra-light no-underline after:absolute after:inset-0 after:z-[1] after:cursor-pointer after:content-['']"
         href={card.href}>{card.title}</a
@@ -43,8 +43,8 @@ const { card, withFooter = false } = Astro.props;
     </h3>
     {
       withFooter && (card.footerDate || card.author) && (
-        <footer class="flex gap-s">
-          <p class="m-0 flex gap-s">
+        <footer class="flex flex-wrap gap-s">
+          <p class="m-0 flex flex-wrap gap-x-s">
             {card.footerDate && <time>{card.footerDate}</time>}
             {card.author && <span>{card.author}</span>}
           </p>

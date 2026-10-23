@@ -135,8 +135,9 @@ reproduzierbaren Prüfskripte sind `research/qa/check-links.mjs` und
 - Header: Unterseiten nutzen wie im Original den „Standard“-Header (dunkles Logo,
   sticky im Seitenfluss, blendet beim Herunterscrollen aus); die Startseite den
   „Overlay“-Header mit hellem Logo.
-- Kategorie-Archive: eine Karte je Zeile ohne Zwischenabstand, leerer Intro-Block
-  bei „Allgemein/Generally“.
+- Kategorie-Archive: gleiches responsives Kartengrid wie die Blogübersicht
+  (`grid-cols-(--columns-cards)`, `gap-m`), leerer Intro-Block bei
+  „Allgemein/Generally“.
 - Beiträge: Titelbild sichtbar, Inhaltsverzeichnis nur H2 und ohne Nummerierung,
   Lesezeit, Absatzabstände, Autoren-Box.
 - Rechtstexte: eRecht24-Siegel ergänzt, Überschriften-Abstände.
@@ -194,8 +195,8 @@ reproduzierbaren Prüfskripte sind `research/qa/check-links.mjs` und
   Copyright `© 2025 - {aktuelles Jahr} jmc.`. Ein Clientskript aktualisiert das
   Jahr auch bei einem älteren statischen Build. Jahreswechsel auf 2027 im
   Browser simuliert und erfolgreich geprüft.
-- Blogübersicht: Kartentitel verwenden `text-h4` (`--text-h4`). Kategoriearchive
-  behalten ihre bisherige Titelgröße.
+- Blogübersicht: Kartentitel verwenden `text-h4` (`--text-h4`), ebenso die
+  Kategoriearchive (Grid wie Blog, Karten zusätzlich mit Datums-/Autorenzeile).
 - Blogartikel: linke Fläche als Tailwind-Verlauf von `accent-ultra-light` oben
   zu Weiß unten, ohne harte Farbkante zur Fußzeile.
 - Prüfung: Astro/TypeScript und Build erfolgreich; Desktop bei 1280 px und
