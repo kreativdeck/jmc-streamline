@@ -1,12 +1,14 @@
 ---
 // Root redirects to the German homepage (the original serves the German
 // version as the default language).
+import SourceSignature from '../components/SourceSignature.astro';
 ---
 
 <!doctype html>
 <html lang="de">
   <head>
     <meta charset="UTF-8" />
+    <SourceSignature />
     <meta name="robots" content="noindex" />
     <meta http-equiv="refresh" content="0; url=/de/" />
     <title>jmc. | Streamline Processes S.L.</title>

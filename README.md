@@ -68,8 +68,16 @@ Eine vollständige Abdeckung und die durchgeführten Prüfungen stehen in
   `data-*`-Attribute und ARIA-Zustände.
 - `frontend/src/data/generated/seo.json` und `schema.json`: originale
   SEO-/Social-Metadaten und strukturierte Daten je Sprachseite.
-- `frontend/src/pages/sitemap.xml.ts` und `robots.txt.ts`: beim statischen Build
-  erzeugte Sitemap mit allen 32 Sprachseiten und robots.txt.
+- `frontend/src/pages/sitemap*.xml.ts`, `sitemap*.html.ts`, `sitemap.xsl.ts`,
+  `frontend/src/data/sitemaps.ts` und `robots.txt.ts`: beim statischen Build
+  erzeugter Sitemap-Index mit drei Untersitemaps (zusammen alle 32 Sprachseiten)
+  und robots.txt. Zu jeder der vier XML-Dateien entsteht eine HTML-Zwillings-
+  ansicht (`sitemap*.html`, `noindex`) mit gleichem Inhalt und Aussehen; die
+  `.htaccess` in `backend/php/public/` liefert sie per Content Negotiation
+  (`Accept: text/html`, ohne Redirect, `Vary: Accept`) an Browser aus, alle
+  anderen Clients erhalten weiter das XML. `sitemap.xsl` bleibt als Fallback
+  für den direkten XML-Aufruf, nutzt dasselbe CSS und wird ebenfalls aus
+  `sitemaps.ts` erzeugt.
 - `frontend/public/media`, `frontend/public/fonts`, `frontend/public/videos`:
   lokale Bilder, Logos, Schriften und Videos (aus `02_Assets` bzw. der Originalseite).
 - `research/`: Recherche-Material (Original-HTML/CSS, Inventar, QA-Skripte).

@@ -2,6 +2,7 @@
 import '../styles/global.css';
 import SiteHeader from '../components/SiteHeader.astro';
 import SiteFooter from '../components/SiteFooter.astro';
+import SourceSignature from '../components/SourceSignature.astro';
 import type { Lang } from '../data/site';
 import { site } from '../data/site';
 import { siteOrigin } from '../config/site';
@@ -52,6 +53,7 @@ const alternates = translations
 <html lang={t.htmlLang}>
   <head>
     <meta charset="UTF-8" />
+    <SourceSignature />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     {description && <meta name="description" content={description} />}

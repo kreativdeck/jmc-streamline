@@ -169,8 +169,8 @@ reproduzierbaren Prüfskripte sind `research/qa/check-links.mjs` und
 - Schema- und Metadaten-Bilder wurden auf lokale Existenz geprüft. JSON ist
   syntaktisch gültig. Dies ist ein Quell-/Buildabgleich, kein Nachweis einer
   Freigabe durch Google oder eines externen Rich-Results-Tests.
-- `/sitemap.xml` enthält alle 32 Sprachseiten und ihre Sprachpartner, keine
-  Newsletter-Seiten. `/robots.txt` erlaubt Crawling und nennt diese Sitemap.
+- `/sitemap.xml` (Index, siehe Abschnitt 14) verweist auf Untersitemaps mit allen
+  32 Sprachseiten und ihren Sprachpartnern, keine Newsletter-Seiten. `/robots.txt` erlaubt Crawling und nennt diese Sitemap.
   Die Domain bleibt wie im Original `https://www.jmc-streamline.com`.
 - Reproduzierbar vom Projektstamm: `python3 research/qa/check-seo.py`.
   `--sync` importiert die originalen Head-Metadaten in `seo.json`; danach ist ein
@@ -332,3 +332,68 @@ reproduzierbaren Prüfskripte sind `research/qa/check-links.mjs` und
   Probleme. Lokal bei 390 px auf DE-Startseite und EN-Services im Browser
   geprüft: weißes X, über dem Overlay anklickbar, Klick und Escape schließen.
   Auch nach Scrollen bleibt das geöffnete X weiß und sichtbar.
+
+## 14. Sitemap-Index mit lesbarer Browseransicht
+
+- `/sitemap.xml` ist jetzt ein `sitemapindex` mit drei Untersitemaps:
+  `/sitemap-post-type-page.xml` (beide Startseiten und feste Seiten, 14 URLs),
+  `/sitemap-post-type-post.xml` (12 Beiträge) und
+  `/sitemap-taxonomy-category.xml` (6 Kategorien). Alle werden beim Build aus
+  `allRoutes()`/`homeTranslations` erzeugt (`frontend/src/data/sitemaps.ts`);
+  beide Sprachen und die `xhtml:link`-hreflang-Alternativen bleiben erhalten.
+  Keine `lastmod`-Angaben, `robots.txt` und Seiten unverändert.
+- Browseransicht ohne XSLT: Chrome zeigt bei XSLT-Seiten eine eigene rote
+  Warnung zur geplanten Entfernung von XSLT, die die Vorlage verunstaltet. Daher
+  erzeugt der Build zu den vier XML-Dateien vier statische HTML-Ansichten
+  (`/sitemap.html`, `/sitemap-post-type-page.html`, `/sitemap-post-type-post.html`,
+  `/sitemap-taxonomy-category.html`) aus derselben Datenquelle
+  (`renderSitemapIndexHtml`/`renderSitemapHtml` in `frontend/src/data/sitemaps.ts`):
+  zentrierte Tabelle (max. 800 px), anklickbare Kind-Sitemaps bzw. URLs,
+  Rücklink zu `/sitemap.xml`, Anzahl, `robots`-Meta `noindex, follow`, Inhalte
+  kontextgerecht escaped. Das CSS (`sitemapCss`) ist mit dem XSL geteilt.
+- `backend/php/public/.htaccess` schreibt (vor der `/api`-Regel) nur für diese
+  vier XML-Pfade und nur bei `Accept` mit `text/html` intern auf die HTML-Datei
+  um (kein Redirect, URL bleibt `.xml`). Bei `application/xml`, `*/*` oder ohne
+  Accept bleibt es das unveränderte XML. `Vary: Accept` ist für die betroffenen
+  Pfade gesetzt (nur wenn `mod_headers` vorhanden ist), damit Caches die
+  Formate nicht vertauschen. Keine User-Agent-Erkennung, kein PHP/Node nötig.
+- `sitemap.xsl` wird jetzt von `frontend/src/pages/sitemap.xsl.ts` aus
+  `sitemaps.ts` erzeugt (gleicher Pfad, gleiche Darstellung) und dient nur noch
+  als Fallback, falls jemand die XML-Datei ohne `Accept: text/html` öffnet.
+- `research/qa/check-seo.py` prüft nun Index, drei Untersitemaps (14/12/6),
+  Stylesheet-Verweis, vollständige hreflang-Paare und dass die Vereinigung
+  genau die 32 Sprachrouten ohne Doppelungen ergibt. Zusätzlich: die vier
+  HTML-Ansichten (kein XSLT, `noindex`, Zeilen und Links identisch zum XML,
+  35 Zeilen) und die Content-Negotiation-Regeln in der `.htaccess`. Ergebnis in
+  `docs/seo-audit.json`. Die HTML-Ansichten sind keine Sprachseiten; Link- und
+  Sprachpaar-Prüfung betrachten nur `index.html` und bleiben unverändert.
+- Geprüft: Astro-Check und Build ohne Fehler; XML-, XSL- und HTML-Dateien
+  geparst, 3 Untersitemaps, 32 eindeutige URLs (DE 16, EN 16); SEO-Abgleich,
+  Link-Prüfung (543 Links) und Sprachpaare (32/32) ohne Abweichungen. Mit einem
+  lokalen Apache 2.4 (mod_rewrite, mod_headers, die echte `.htaccess`) geprüft:
+  Browser-Accept (`text/html,…,*/*;q=0.8`) liefert für alle vier Pfade
+  `text/html` mit `Vary: Accept` ohne Redirect; `application/xml`, `*/*` und
+  fehlender Accept liefern das unveränderte XML; `/api/contact` wird weiter
+  umgeschrieben. Chrome 156 zeigt die Ansicht ohne Warnbanner; bei 390 px kein
+  horizontaler Überlauf.
+- Live veröffentlicht und geprüft: alle vier Pfade liefern bei Browser-Accept
+  lesbares HTML ohne XSLT-Warnbanner, bei XML-Accept unverändert gültiges XML.
+  Auf Linevast/LiteSpeed setzen `ForceType` und ein expliziter Content-Type-Header
+  für die vier HTML-Dateien den richtigen Medientyp; `Cache-Control: no-cache`
+  erzwingt Revalidierung. Desktop (1440 px) und alle vier Ansichten in einem
+  frischen Chrome bei 390 px geprüft: kein Banner, keine Parserfehler, kein
+  horizontaler Überlauf. Wiederholte HTTP-Prüfungen für HTML/XML/Standard-Accept
+  und HTTP/1.1 sowie HTTP/2 mit identity/gzip/br ebenfalls erfolgreich.
+  Hinweis: Ein Crawler, der ausdrücklich `Accept: text/html`
+  sendet, würde die `noindex`-HTML-Ansicht statt des XML erhalten; üblicherweise
+  senden Sitemap-Abrufe `*/*` oder XML-Typen.
+
+## 15. KREATIVDECK-Quelltextsignatur
+
+- `frontend/src/data/source-signature.ts` enthält den ASCII-Schriftzug und die
+  beiden Textzeilen „Konzeption, Design & Entwicklung“ und „www.kreativdeck.de“.
+  `SourceSignature.astro` bindet sie als reinen HTML-Kommentar zentral im Head
+  von `BaseLayout.astro` sowie im Root-Redirect ein, jeweils nach dem Charset.
+- Build geprüft: alle 33 Website-HTML-Dateien enthalten genau einen solchen
+  Head-Kommentar und keinen sichtbaren Signaturtext. Alle übrigen HTML-Inhalte
+  sind gegenüber dem vorherigen Live-Stand unverändert. Veröffentlicht.
