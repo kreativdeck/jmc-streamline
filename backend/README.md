@@ -29,7 +29,33 @@ Das Formular zeigt eine entsprechende Meldung und behält die Eingaben.
 - SMTP `mail.jmc-streamline.com:465`, TLS ab Verbindungsbeginn (`secure: true`),
   Zertifikatsprüfung aktiv. Siehe [Nodemailer-SMTP-Dokumentation](https://nodemailer.com/smtp).
 
-## Livebetrieb
+## Livebetrieb auf Linevast
+
+Die Produktion verwendet `php/public/api/contact.php`, erreichbar über
+`/api/contact` durch die mitgelieferte `.htaccess`. PHP 8.2 mit OpenSSL und
+mbstring reicht aus. PHPMailer 7.1.1 ist mit Lizenz, Herkunft und SHA-256-
+Prüfsummen unter `php/vendor/PHPMailer/` fest eingebunden.
+
+Nur `php/public/` wird öffentlich ausgeliefert. Anwendung, SMTP-Konfiguration
+und Zustellzustand liegen im Domainverzeichnis unter `.jmc-private/`, außerhalb
+von `public_html`. Das Passwort wird aus der ignorierten lokalen `.env`
+übertragen und weder ins Frontend noch nach GitHub geschrieben.
+
+Die PHP-Version erhält dieselben Sprachtexte, Empfänger, Validierungsregeln,
+Limits und Teilerfolgsbehandlung wie die lokale Node-Version. Zustellmarker und
+IP-Limits werden mit Dateisperren für zehn Minuten gespeichert; die Dateien
+enthalten ausschließlich HMACs, Zähler und Statuswerte, keine Nachrichten.
+Ein Absturz nach SMTP-Annahme und vor dem Speichern des Markers kann weiterhin
+zu einer wiederholten Nachricht führen; SMTP bietet keine transaktionale
+Zustellgarantie. Es gibt keine Warteschlange oder Speicherung der Anfrage.
+
+Auf Linevast am 23.10.2026 geprüft: PHP 8.2.34, sieben Tests mit simuliertem
+Versand, erfolgreiche SMTP-Anmeldung mit aktiver Zertifikatsprüfung.
+Es wurden dabei keine echten Nachrichten versendet. Tatsächliche Zustellung
+und die endgültige Route auf der Hauptdomain bleiben bis zum Umschalten offen.
+Siehe [Deployment-Anleitung](../deployment/README.md).
+
+## Alternativ: Node.js auf einem eigenen Server
 
 Der Anbietername ist nicht erforderlich. Technische Voraussetzung dieser
 Implementierung ist ein Node.js-24-Prozess mit ausgehendem SMTP-Zugang. Die

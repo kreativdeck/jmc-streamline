@@ -2,8 +2,9 @@
 
 Originalgetreuer Nachbau der öffentlichen Website
 <https://www.jmc-streamline.com/de/> und `/en/` mit Astro, Tailwind CSS und
-TypeScript. Die Seiten werden statisch erzeugt; das Kontaktformular verwendet
-einen separaten Node.js-SMTP-Endpunkt. CMS, Datenbank und Docker sind nicht nötig.
+TypeScript. Die Seiten werden statisch erzeugt. Auf Linevast versendet das
+Kontaktformular über PHP und SMTP; lokal steht ein Node.js-Endpunkt zur Verfügung.
+CMS, Datenbank und Docker sind für die neue Website nicht nötig.
 
 Der Newsletter-Bereich der Originalseite (Seiten, An-/Abmeldebestätigungen,
 Menüpunkt) wurde auf Kundenwunsch bewusst **nicht** übernommen.
@@ -76,7 +77,7 @@ Eine vollständige Abdeckung und die durchgeführten Prüfungen stehen in
 - `docs/rebuild-audit.md`: Abdeckung, Prüfungen und offene Punkte.
 - `AGENTS.md`: gemeinsamer KI-Projektkontext; `CLAUDE.md` importiert ihn.
 
-## Offen: Kontaktformular
+## Kontaktformular und Veröffentlichung
 
 Das Formular sendet an `/api/contact`. In `backend/` liegt der zugehörige
 Node.js-SMTP-Dienst: Admin-Mail und Autoresponder jeweils auf Deutsch oder
@@ -89,10 +90,13 @@ Ohne SMTP-Passwort meldet das Formular ausdrücklich, dass nichts gesendet wurde
 `npm test` im Backend prüft den Versand mit simuliertem Mailtransport.
 
 SMTP-Zugang lokal konfiguriert und Anmeldung am 23.10.2026 erfolgreich geprüft.
-**Offen:** tatsächliche Zustellung prüfen und beim Livehosting `/api/contact`
-mit dem Node-Dienst verbinden.
+Für Linevast liegt der gleichwertige PHP-Endpunkt unter `backend/php/`.
+PHP 8.2.34 und die SMTP-Anmeldung wurden auf dem Zielhosting geprüft.
+Sieben Prüfungen mit simuliertem Versand sind dort bestanden. Eine tatsächliche
+Zustellungsprüfung steht noch aus; dabei werden echte E-Mails verschickt.
 Anleitung und Grenzen: [backend/README.md](backend/README.md).
 
-Git ist lokal initialisiert; es gibt noch keinen Commit und kein
-Remote-Repository. Das Projekt ist unabhängig vom Website-Starter und erhält
-keine automatischen Updates.
+Das Projekt liegt auf [GitHub](https://github.com/kreativdeck/jmc-streamline).
+GitHub verwaltet den Quellcode; die Website wird auf Linevast ausgeliefert.
+Deployment und Sicherung: [deployment/README.md](deployment/README.md).
+Das Projekt ist unabhängig vom Website-Starter und erhält keine automatischen Updates.
