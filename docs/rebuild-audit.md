@@ -320,3 +320,15 @@ reproduzierbaren Prüfskripte sind `research/qa/check-links.mjs` und
   fremdem Origin bzw. ungültigen Nutzdaten.
 - **Noch offen:** echter Zustellungstest von Admin-Mail und Autoresponder;
   bei den technischen Prüfungen wurden keine echten Nachrichten versendet.
+
+## 13. Mobiles Menü: Schließen-X und Reihenfolge
+
+- Sprachwahl im Markup vor den Menü-Button gesetzt: DE/EN links, Hamburger
+  ganz rechts; sichtbare Reihenfolge und Tab-Reihenfolge stimmen überein.
+- Erzwungene schwarze Farbe beim geöffneten mobilen Menü entfernt. Die dunkle
+  Scroll-Farbe gilt nur bei geschlossenem Menü; offen bleibt das X weiß.
+- Beschriftung des Buttons wechselt je Sprache zwischen Öffnen und Schließen.
+- Astro-Prüfung und Build bestanden, Link-/Sprachpaar- und SEO-Abgleich ohne
+  Probleme. Lokal bei 390 px auf DE-Startseite und EN-Services im Browser
+  geprüft: weißes X, über dem Overlay anklickbar, Klick und Escape schließen.
+  Auch nach Scrollen bleibt das geöffnete X weiß und sichtbar.

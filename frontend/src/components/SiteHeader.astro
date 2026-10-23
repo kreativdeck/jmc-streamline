@@ -13,6 +13,7 @@ interface Props {
 const { lang, translations, currentPath = Astro.url.pathname } = Astro.props;
 const t = site[lang];
 const isHome = currentPath === t.homeUrl;
+const closeMenuLabel = lang === 'de' ? 'Schließen Sie das mobile Menü' : 'Close mobile menu';
 // Startseite: Overlay-Header (weißes Logo über dem Hero), alle anderen Seiten:
 // Standard-Header (dunkles Logo, sticky im Seitenfluss).
 
@@ -67,20 +68,44 @@ const langLinks: { code: Lang; label: string; htmlLang: string; href: string }[]
       </a>
 
       <div class="flex items-center">
+        <ul class="m-0 flex list-none gap-[10px] p-0">
+          {
+            langLinks.map((l) => (
+              <li>
+                <a
+                  class:list={[
+                    'flex items-center gap-[10px] leading-[1.3333] hover:text-accent group-data-[scrolled=true]/header:text-primary!',
+                    isHome ? 'text-white' : 'text-primary',
+                    l.code === lang ? 'font-bold' : 'font-light',
+                  ]}
+                  lang={l.htmlLang}
+                  hreflang={l.htmlLang}
+                  href={l.href}
+                  aria-current={l.code === lang ? 'true' : undefined}
+                >
+                  {l.label}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+
         <div data-nav data-open="false" class="group/nav">
           <button
             data-menu-toggle
             type="button"
             class:list={[
-              'relative block h-4 w-5 min-w-3 cursor-pointer border-0 bg-transparent p-0 mr-[30px] transition-colors',
+              'relative block h-4 w-5 min-w-3 cursor-pointer border-0 bg-transparent p-0 ml-[30px] transition-colors',
               'before:absolute before:inset-0 before:z-[1] before:content-[""]',
               'group-data-[open=true]/nav:z-[1000]',
               isHome ? 'text-white' : 'text-heading',
-              'group-data-[scrolled=true]/header:text-heading!',
-              'group-data-[open=true]/nav:max-phablet:text-black!',
+              'group-data-[scrolled=true]/header:group-data-[open=false]/nav:text-heading!',
+              'group-data-[open=true]/nav:text-white!',
             ]}
             aria-haspopup="true"
             aria-label={t.openMenu}
+            data-label-open={t.openMenu}
+            data-label-close={closeMenuLabel}
             aria-expanded="false"
           >
             <span
@@ -119,28 +144,6 @@ const langLinks: { code: Lang; label: string; htmlLang: string; href: string }[]
             class="invisible fixed inset-0 z-[-1] bg-primary/80 opacity-0 transition-all duration-200 group-data-[open=true]/nav:visible group-data-[open=true]/nav:z-[998] group-data-[open=true]/nav:opacity-100"
           ></div>
         </div>
-
-        <ul class="m-0 flex list-none gap-[10px] p-0">
-          {
-            langLinks.map((l) => (
-              <li>
-                <a
-                  class:list={[
-                    'flex items-center gap-[10px] leading-[1.3333] hover:text-accent group-data-[scrolled=true]/header:text-primary!',
-                    isHome ? 'text-white' : 'text-primary',
-                    l.code === lang ? 'font-bold' : 'font-light',
-                  ]}
-                  lang={l.htmlLang}
-                  hreflang={l.htmlLang}
-                  href={l.href}
-                  aria-current={l.code === lang ? 'true' : undefined}
-                >
-                  {l.label}
-                </a>
-              </li>
-            ))
-          }
-        </ul>
       </div>
     </div>
   </div>

@@ -125,6 +125,10 @@ const alternates = translations
         if (!nav) return;
         nav.dataset.open = String(open);
         menuToggle?.setAttribute('aria-expanded', String(open));
+        menuToggle?.setAttribute(
+          'aria-label',
+          (open ? menuToggle.dataset.labelClose : menuToggle.dataset.labelOpen) ?? '',
+        );
         document.body.dataset.scrollLock = String(open);
       };
       menuToggle?.addEventListener('click', () => setMenu(nav?.dataset.open !== 'true'));
